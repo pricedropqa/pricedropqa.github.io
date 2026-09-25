@@ -45,10 +45,17 @@ COLUMNS = ["type", "tier", "brand", "model", "storage", "shop", "area", "price",
 UA = "Mozilla/5.0 (compatible; PriceDropQA/1.0; +https://pricedropqa.github.io/)"
 
 
-def get_json(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read().decode("utf-8"))
+def get_json(url, tries=4):
+    for i in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.loads(r.read().decode("utf-8"))
+        except Exception as e:
+            if i == tries - 1:
+                raise
+            print(f"  retry {i + 1} after error: {e}")
+            time.sleep(5 * (i + 1))
 
 
 SIZE_RE = re.compile(r"(\d+(?:\.\d+)?)\s*(GB|TB)\b", re.I)
@@ -119,7 +126,8 @@ def rows_for_product(p, kind, store, today):
         vt = " ".join(str(v.get(k) or "") for k in ("title", "option1", "option2", "option3"))
         storage = storage_of(vt) or storage_of(title)
         if not storage and kind == "Camera":  # cameras: keep "Body" and "Body+Kit Lens" apart
-            opt = str(v.get("option1") or v.get("title") or "").split("/")[0].strip()
+            opt = str(v.get("option1") or v.get("title") or "").split("/")[0]
+            opt = re.split(r"\s+[-\u2013]\s+", opt)[0].strip()  # "Body - Black" -> "Body"
             if re.search(r"body|kit|lens", opt, re.I):
                 storage = opt
         price = num(v.get("price"))
@@ -151,9 +159,15 @@ def fetch_store(store, today):
     rows = []
     for handle, kind in store["collections"]:
         page = 1
-        while page <= 20:
-            url = f"{store['base']}/collections/{handle}/products.json?limit=250&page={page}"
-            data = get_json(url)
+        while page <= 60:
+            url = f"{store['base']}/collections/{handle}/products.json?limit=50&page={page}"
+            try:
+                data = get_json(url)
+            except Exception as e:
+                if rows:  # keep what we already have from earlier pages
+                    print(f"  {store['shop']}: stopped at page {page} ({e})")
+                    break
+                raise
             products = data.get("products", [])
             if not products:
                 break
