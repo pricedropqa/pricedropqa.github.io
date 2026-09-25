@@ -137,6 +137,14 @@
   .spec{background:var(--card-2);border-radius:12px;padding:9px 11px;font-size:13px}
   .spec small{display:block;color:var(--muted);font-size:11.5px}
   .yt{display:flex;align-items:center;gap:10px;margin-top:12px;padding:11px 13px;border-radius:12px;background:#dc2626;color:#fff;text-decoration:none;font-weight:700;font-size:14px}
+  .scores,.experts{margin-top:14px;background:var(--card-2);border-radius:12px;padding:12px}
+  .stitle{font-weight:700;font-size:14px;margin-bottom:8px}
+  .experts .btns{margin-top:0;flex-wrap:wrap}
+  .experts .btn{font-size:13px;white-space:nowrap}
+  .bar{display:grid;grid-template-columns:90px 1fr 42px;align-items:center;gap:8px;font-size:13px;margin:6px 0}
+  .bar i{height:8px;border-radius:8px;background:var(--line);overflow:hidden;display:block}
+  .bar b{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--brand-2));border-radius:8px}
+  .bar em{font-style:normal;color:var(--muted);text-align:end}
   .range{margin-top:14px;font-size:14px;color:var(--muted)}
   .shop{border:1px solid var(--line);border-radius:14px;padding:12px;margin-top:10px}
   .shop.best{border-color:var(--good);box-shadow:0 0 0 1px var(--good) inset}
@@ -295,7 +303,7 @@ const OWNER_WHATSAPP = "97472124373";
 
 // Contact section. Phone in international format without + (974XXXXXXXX). Leave email "" to hide it.
 const CONTACT_PHONE = "97472124373";
-const CONTACT_EMAIL = "";
+const CONTACT_EMAIL = "pricedropqa@gmail.com";
 
 // Price tiers (must match the "tier" column)
 const TIERS = ["Flagship", "Mid-Range", "Budget", "Low End"];
@@ -305,7 +313,9 @@ const TYPES = [
   {key:"Phone",     icon:"📱", en:"Phones",      ar:"هواتف"},
   {key:"Tablet",    icon:"📲", en:"Tablets",     ar:"تابلت"},
   {key:"Watch",     icon:"⌚", en:"Watches",     ar:"ساعات"},
-  {key:"Earbuds",   icon:"🎧", en:"Earbuds",     ar:"سماعات"},
+  {key:"Speaker",   icon:"🔊", en:"Speakers",    ar:"مكبرات صوت"},
+  {key:"Headphones",icon:"🎧", en:"Headphones",  ar:"سماعات رأس"},
+  {key:"Earbuds",   icon:"🎵", en:"Earbuds",     ar:"سماعات أذن"},
   {key:"Accessory", icon:"🔋", en:"Accessories", ar:"إكسسوارات"},
   {key:"Camera",    icon:"📷", en:"Cameras",     ar:"كاميرات"}
 ];
@@ -333,7 +343,7 @@ const I18N = {
       cmpEmpty:"Tap ⚖️ on up to 3 devices to compare them here.",savedEmpty:"Nothing saved yet. Tap ❤️ on a device to save it.",
       lowest:"Lowest price",category:"Category",discount:"Discount",bestShop:"Best shop",offer:"Offer",remove:"Remove",
       added:"Added to compare",max3:"You can compare up to 3 devices",savedT:"Saved ❤️",removedT:"Removed",copied:"Link copied",
-      lastUpdated:"Last updated",contactUs:"📞 Contact us",contactText:"Questions, wrong price, or want your shop listed? We're happy to help.",email:"Email",website:"View on website",onlineStore:"Online store",results:"Results for",preview:"Preview mode – showing sample data. Real prices appear once the site is online.",
+      lastUpdated:"Last updated",contactUs:"📞 Contact us",contactText:"Questions, wrong price, or want your shop listed? We're happy to help.",email:"Email",website:"View on website",onlineStore:"Online store",ourScore:"PriceDrop Score",experts:"Expert reviews",results:"Results for",preview:"Preview mode – showing sample data. Real prices appear once the site is online.",
       sheetFail:"Could not read the Google Sheet – showing saved data.",loading:"Loading prices…",view:"View details"},
   ar:{search:"ابحث عن هاتف، تابلت، ماركة…",install:"تثبيت",topDeals:"🔥 أفضل 10 عروض",seeAll:"عرض الكل",noMatch:"لا توجد أجهزة مطابقة. جرّب فلتر آخر.",
       allDeals:"🔥 كل العروض – الأعلى خصماً أولاً",compare:"مقارنة",saved:"المحفوظة",home:"الرئيسية",deals:"العروض",
@@ -345,7 +355,7 @@ const I18N = {
       cmpEmpty:"اضغط ⚖️ على 3 أجهزة كحد أقصى لمقارنتها هنا.",savedEmpty:"لا يوجد شيء محفوظ. اضغط ❤️ لحفظ جهاز.",
       lowest:"أقل سعر",category:"الفئة",discount:"الخصم",bestShop:"أفضل محل",offer:"العرض",remove:"إزالة",
       added:"أضيف للمقارنة",max3:"يمكنك مقارنة 3 أجهزة فقط",savedT:"تم الحفظ ❤️",removedT:"تمت الإزالة",copied:"تم نسخ الرابط",
-      lastUpdated:"آخر تحديث",contactUs:"📞 اتصل بنا",contactText:"لديك سؤال، سعر خاطئ، أو تريد إضافة محلك؟ يسعدنا مساعدتك.",email:"البريد",website:"عرض في الموقع",onlineStore:"متجر إلكتروني",results:"نتائج",preview:"وضع المعاينة – بيانات تجريبية.",
+      lastUpdated:"آخر تحديث",contactUs:"📞 اتصل بنا",contactText:"لديك سؤال، سعر خاطئ، أو تريد إضافة محلك؟ يسعدنا مساعدتك.",email:"البريد",website:"عرض في الموقع",onlineStore:"متجر إلكتروني",ourScore:"تقييم PriceDrop",experts:"مراجعات الخبراء",results:"نتائج",preview:"وضع المعاينة – بيانات تجريبية.",
       sheetFail:"تعذر قراءة الجدول – عرض البيانات المحفوظة.",loading:"جاري تحميل الأسعار…",view:"التفاصيل"}
 };
 const TIER_AR = {"Flagship":"رائد","Mid-Range":"متوسط","Budget":"اقتصادي","Low End":"أساسي"};
@@ -417,7 +427,8 @@ function buildProducts(){
     const id=[r.brand,r.model,r.storage].join("|").toLowerCase().replace(/\s+/g," ");
     if(!map.has(id)) map.set(id,{id,type:r.type,tier:r.tier,brand:r.brand,model:r.model,storage:r.storage,shops:[],spec:{}});
     const p=map.get(id); p.shops.push(r);
-    ["image","ram","display","camera","battery","chipset","youtube"].forEach(k=>{ if(r[k] && !p.spec[k]) p.spec[k]=r[k]; });
+    ["image","ram","display","camera","battery","chipset","youtube","dxomark"].forEach(k=>{ if(r[k] && !p.spec[k]) p.spec[k]=r[k]; });
+    Object.keys(r).forEach(k=>{ if(k.startsWith("score_") && r[k] && !p.scores?.[k]) (p.scores=p.scores||{})[k]=r[k]; });
   });
   products=[...map.values()].map(p=>{
     p.shops.sort((a,b)=>(b.in_stock-a.in_stock)||(a.price-b.price));
@@ -586,11 +597,31 @@ function openProduct(id, push=true){
       <div class="price" style="font-size:24px">${fmt(p.min)}</div></div></div>
     ${specs?`<div class="specs">${specs}</div>`:""}
     ${p.spec.youtube?`<a class="yt" href="${esc(p.spec.youtube)}" target="_blank" rel="noopener">▶ ${t("review")}</a>`:""}
+    ${scoreBars(p)}
+    ${expertLinks(p)}
     <div class="range">${t("range")}: <b>${fmt(p.min)} – ${fmt(p.max)}</b> ${t("in")} ${p.shops.length} ${p.shops.length>1?t("shops"):t("shop")}</div>
     ${shops}
     <p class="hint">${t("tell")}</p>`;
   $("bg").style.display="block"; requestAnimationFrame(()=>$("sheet").classList.add("open"));
   $("sheet").scrollTop=0;
+}
+/* PriceDrop's own scores: any sheet column named score_xxx (0-10), e.g. score_bass, score_camera */
+function scoreBars(p){
+  const s=p.scores; if(!s) return "";
+  const rows=Object.entries(s).map(([k,v])=>{ const n=Math.max(0,Math.min(10,parseFloat(v)||0));
+    const label=k.replace(/^score_/,"").replace(/_/g," ").replace(/\b\w/g,c=>c.toUpperCase());
+    return `<div class="bar"><span>${esc(label)}</span><i><b style="width:${n*10}%"></b></i><em>${n}/10</em></div>`; }).join("");
+  return `<div class="scores"><div class="stitle">⭐ ${t("ourScore")}</div>${rows}</div>`;
+}
+/* Links to independent expert reviews (we only link – their scores stay on their sites) */
+function expertLinks(p){
+  const q=encodeURIComponent(`${p.brand} ${p.model}`), audio=["Speaker","Headphones","Earbuds"].includes(p.type);
+  const links=[];
+  if(p.type==="Phone"||p.type==="Camera"||audio) links.push(["DXOMARK", p.spec.dxomark || `https://www.dxomark.com/?s=${q}`]);
+  if(audio) links.push(["SoundGuys", `https://www.soundguys.com/?s=${q}`]);
+  if(!p.spec.youtube) links.push(["YouTube", `https://www.youtube.com/results?search_query=${q}+review`]);
+  if(!links.length) return "";
+  return `<div class="experts"><div class="stitle">🔎 ${t("experts")}</div><div class="btns">${links.map(([n,u])=>`<a class="btn" target="_blank" rel="noopener" href="${esc(u)}">${n} ↗</a>`).join("")}</div></div>`;
 }
 function closeSheet(){ $("sheet").classList.remove("open"); setTimeout(()=>$("bg").style.display="none",280);
   if(location.hash) history.replaceState(null,"",location.pathname+location.search); }

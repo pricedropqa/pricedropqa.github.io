@@ -7,18 +7,36 @@ which the app shows next to the local-shop prices from the Google Sheet.
 
 To add a store or a collection: add a line to STORES below.
   handle = the part after /collections/ in the store's URL
-  type   = which app tab it goes to (Phone, Tablet, Watch, Earbuds, Accessory, Camera)
+  type   = which app tab it goes to (Phone, Tablet, Watch, Earbuds, Headphones, Speaker, Accessory, Camera)
+           or "Audio" = sort each product into Speaker / Headphones / Earbuds / Accessory by its name
+
+To track single product pages from other (non-Shopify) stores, add them to WATCHLIST below.
 """
 import csv, json, re, sys, time, datetime, urllib.request
 
 STORES = [
     {"shop": "iConnect Qatar", "base": "https://iconnectqatar.com",
-     "collections": [("mobile-phones-price-in-qatar", "Phone")]},
+     "collections": [("mobile-phones-price-in-qatar", "Phone"), ("jbl-bluetooth-speaker", "Speaker"),
+                     ("jbl-partybox", "Speaker"), ("bose", "Audio")]},
     {"shop": "Digital Zone", "base": "https://digitalzone.qa",
      "collections": [("mobile-phones", "Phone")]},
     {"shop": "Sony World", "base": "https://sonyworld.qa",
      "collections": [("sony-camera-lens-offer", "Camera")]},
+    {"shop": "Chordz", "base": "https://chordz.shop",
+     "collections": [("sonos", "Audio")]},
+    {"shop": "TechBay Qatar", "base": "https://techbayqatar.com",
+     "collections": [("marshall", "Audio")]},
 ]
+
+# Single product pages (any store whose pages carry standard schema.org Product data).
+# (shop name, type, product page URL)
+WATCHLIST = [
+    ("Alanees", "Speaker", "https://alaneesqatar.qa/product/bang-olufsen-beosound-a1-2nd-gen-bluetooth-speaker-green-in-qatar/"),
+    ("Alanees", "Speaker", "https://alaneesqatar.qa/product/bang-olufsen-beosound-a1-2nd-gen-bluetooth-speaker-gold-tone-in-qatar/"),
+    ("Alanees", "Speaker", "https://alaneesqatar.qa/product/bang-olufsen-beosound-explore-in-qatar/"),
+]
+
+DELAY = 4  # seconds between requests to the same store (be polite)
 
 # Price tiers (QR) per device type: [Flagship from, Mid-Range from, Budget from]; below = Low End
 TIERS = {
@@ -26,6 +44,8 @@ TIERS = {
     "Tablet":  [3000, 1500, 700],
     "Watch":   [1500, 700, 250],
     "Earbuds": [800, 400, 150],
+    "Headphones": [1200, 600, 200],
+    "Speaker": [2000, 800, 300],
     "Camera":  [8000, 4000, 1500],
     "Accessory": [400, 150, 60],
 }
@@ -35,14 +55,16 @@ USE_STORE_IMAGES = False
 
 BRANDS = ["Apple", "Samsung", "Xiaomi", "Redmi", "Poco", "Honor", "Huawei", "Oppo", "Vivo", "Realme",
           "OnePlus", "Google", "Nothing", "Tecno", "Infinix", "Nokia", "Motorola", "TCL", "Sony", "Lenovo",
-          "ZTE", "Nubia", "Itel", "Anker", "JBL", "Canon", "Nikon", "Fujifilm", "DJI", "GoPro", "Asus", "Meizu"]
+          "ZTE", "Nubia", "Itel", "Anker", "JBL", "Canon", "Nikon", "Fujifilm", "DJI", "GoPro", "Asus", "Meizu",
+          "Sonos", "Bose", "Marshall", "Bang & Olufsen", "Harman Kardon", "Ultimate Ears", "Beats", "Soundcore",
+          "Sennheiser", "Beyerdynamic", "Jabra", "Skullcandy", "Devialet", "Bowers & Wilkins", "Denon", "Yamaha"]
 BRAND_FIX = {b.lower(): b for b in BRANDS}
 
 COLUMNS = ["type", "tier", "brand", "model", "storage", "shop", "area", "price", "old_price", "offer",
            "in_stock", "whatsapp", "phone", "map_url", "updated", "image", "ram", "display", "camera",
            "battery", "chipset", "youtube", "url"]
 
-UA = "Mozilla/5.0 (compatible; PriceDropQA/1.0; +https://pricedropqa.github.io/)"
+UA = "Mozilla/5.0 (compatible; PriceDropQA/1.0; +https://pricedropqa.github.io/; contact: pricedropqa@gmail.com)"
 
 
 def get_json(url, tries=4):
@@ -85,9 +107,11 @@ def ram_of(text):
 
 def clean_model(title, brand):
     t = re.split(r"\s+[-–—|]\s+", title)[0]           # drop " - Colour" / " – 12GB, 256GB"
+    t = re.sub(r"\s+-\s*[A-Za-z][A-Za-z ]*$", "", t)   # drop " -Silver"
     t = re.sub(r"\(.*?\)", " ", t)
     t = SIZE_RE.sub(" ", t)
-    t = re.sub(r"\b(RAM|ROM|Storage|5G|4G|LTE|Dual\s*SIM|Smart\s*phone|Smartphone|Mobile\s*Phone|Unlocked)\b", " ", t, flags=re.I)
+    t = re.sub(r"\b(RAM|ROM|Storage|5G|4G|LTE|Dual\s*SIM|Smart\s*phone|Smartphone|Mobile\s*Phone|Unlocked|in Qatar)\b", " ", t, flags=re.I)
+    t = t.replace("&amp;", "&")
     t = re.sub(r"[,+/]", " ", t)
     t = re.sub(r"\s+", " ", t).strip()
     if brand and t.lower().startswith(brand.lower() + " "):
@@ -99,8 +123,24 @@ def brand_of(product):
     vendor = (product.get("vendor") or "").strip()
     if vendor.lower() in BRAND_FIX:
         return BRAND_FIX[vendor.lower()]
-    first = (product.get("title") or "").split(" ")[0]
-    return BRAND_FIX.get(first.lower(), first)
+    title = (product.get("title") or "").replace("&amp;", "&").lower()
+    for b in sorted(BRANDS, key=len, reverse=True):   # "Bang & Olufsen" before "Bang"
+        if title.startswith(b.lower() + " "):
+            return b
+    first = title.split(" ")[0] if title else ""
+    return BRAND_FIX.get(first, first.title())
+
+
+def audio_kind(title, ptype=""):
+    """Sort an audio product into the right tab by its name."""
+    t = f"{title} {ptype}".lower()
+    if re.search(r"\b(case|cover|strap|cable|adapter|mount|stand|bracket|charger|charging|dock|wall|cushion|ear ?pads?)\b", t):
+        return "Accessory"
+    if re.search(r"\b(buds|earbuds?|earphones?|in-ear|tws|airpods|earfun)\b", t):
+        return "Earbuds"
+    if re.search(r"\b(headphones?|headset|over-ear|on-ear|major|monitor ii|quietcomfort ultra headphones)\b", t):
+        return "Headphones"
+    return "Speaker"
 
 
 def tier_of(kind, price):
@@ -116,6 +156,8 @@ def num(x):
 
 
 def rows_for_product(p, kind, store, today):
+    if kind == "Audio":
+        kind = audio_kind(p.get("title", ""), p.get("product_type", ""))
     brand = brand_of(p)
     title = p.get("title", "")
     model = clean_model(title, brand)
@@ -174,7 +216,51 @@ def fetch_store(store, today):
             for p in products:
                 rows += rows_for_product(p, kind, store, today)
             page += 1
-            time.sleep(2)  # be polite
+            time.sleep(DELAY)  # be polite
+    return rows
+
+
+def fetch_watchlist(today):
+    """Read price + stock from the schema.org Product data on single product pages."""
+    rows = []
+    for shop, kind, url in WATCHLIST:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html"})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                html = r.read().decode("utf-8", "replace")
+            product = None
+            for block in re.findall(r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', html, re.S | re.I):
+                try:
+                    data = json.loads(block)
+                except ValueError:
+                    continue
+                items = data.get("@graph", [data]) if isinstance(data, dict) else data
+                for it in items if isinstance(items, list) else [items]:
+                    if isinstance(it, dict) and "Product" in str(it.get("@type")) and it.get("offers"):
+                        product = it
+                        break
+                if product:
+                    break
+            if not product:
+                print(f"  watchlist: no product data on {url}")
+                continue
+            offer = product["offers"][0] if isinstance(product["offers"], list) else product["offers"]
+            price = num(offer.get("price") or offer.get("lowPrice"))
+            if price <= 0:
+                continue
+            title = re.sub(r"\s+[-–]\s+[A-Za-z ]+$", "", product.get("name", "")).replace("&amp;", "&")
+            fake = {"title": title, "vendor": (product.get("brand") or {}).get("name", "") if isinstance(product.get("brand"), dict) else ""}
+            brand = brand_of(fake)
+            rows.append({
+                "type": kind, "tier": tier_of(kind, price), "brand": brand, "model": clean_model(title, brand),
+                "storage": "", "shop": shop, "area": "Online store", "price": f"{price:.0f}", "old_price": "",
+                "offer": "", "in_stock": "Yes" if "InStock" in str(offer.get("availability")) else "No",
+                "whatsapp": "", "phone": "", "map_url": "", "updated": today, "image": "", "ram": "", "display": "",
+                "camera": "", "battery": "", "chipset": "", "youtube": "", "url": url,
+            })
+        except Exception as e:
+            print(f"  watchlist: failed {url} ({e})")
+        time.sleep(DELAY)
     return rows
 
 
@@ -188,6 +274,9 @@ def main():
             report.append(f"{store['shop']}: {len(rows)} rows")
         except Exception as e:  # one broken store must not stop the others
             report.append(f"{store['shop']}: FAILED ({e})")
+    wl = fetch_watchlist(today)
+    all_rows += wl
+    report.append(f"Watchlist: {len(wl)} rows")
     print("\n".join(report))
     if not all_rows:
         print("Nothing fetched - keeping the old online.csv")
