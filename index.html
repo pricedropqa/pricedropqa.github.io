@@ -4,413 +4,623 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PriceDrop QA – Phone & Gadget Prices in Qatar</title>
-<meta name="description" content="Compare phone, tablet and gadget prices from local shops in Qatar.">
+<meta name="description" content="Compare phone, tablet and gadget prices from local shops in Qatar. Find the best deal and contact the shop on WhatsApp.">
 <meta name="theme-color" content="#0f766e">
+<meta property="og:title" content="PriceDrop QA – Phone & Gadget Prices in Qatar">
+<meta property="og:description" content="Compare prices from local shops in Qatar and find the best deal.">
+<meta property="og:image" content="icons/icon-512.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="PriceDrop">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 <style>
   /* ===== Colours – change these to re-brand the app ===== */
   :root{
-    --brand:#0f766e; --brand-dark:#115e59; --accent:#f59e0b;
-    --bg:#f4f6f8; --card:#ffffff; --text:#111827; --muted:#6b7280; --line:#e5e7eb;
-    --good:#16a34a; --bad:#dc2626;
+    --brand:#0f766e; --brand-2:#14b8a6; --brand-ink:#0f766e; --accent:#f59e0b;
+    --bg:#f3f5f7; --card:#ffffff; --card-2:#f8fafc; --text:#0f172a; --muted:#64748b; --line:#e2e8f0;
+    --good:#16a34a; --bad:#e11d48; --shadow:0 1px 2px rgba(15,23,42,.06),0 4px 14px rgba(15,23,42,.06);
+    --radius:16px;
   }
   @media (prefers-color-scheme: dark){
-    :root{ --bg:#0b1220; --card:#131c2e; --text:#e5e7eb; --muted:#9ca3af; --line:#243047; }
+    :root{ --bg:#0b1120; --card:#131b2e; --card-2:#18223a; --text:#e5e7eb; --muted:#94a3b8; --line:#243049;
+           --brand-ink:#2dd4bf; --shadow:0 1px 2px rgba(0,0,0,.3); }
   }
-  *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);padding-bottom:80px}
-  header{position:sticky;top:0;z-index:10;background:var(--brand);color:#fff;padding:12px 16px 10px;padding-top:calc(12px + env(safe-area-inset-top))}
-  .brand{display:flex;align-items:center;justify-content:space-between;gap:8px}
-  .brand h1{font-size:20px;margin:0;letter-spacing:.2px}
-  .brand h1 span{color:var(--accent)}
-  .brand small{opacity:.85;font-size:12px}
-  .search{margin-top:10px;display:flex;gap:8px}
-  .search input{flex:1;border:0;border-radius:10px;padding:11px 12px;font-size:15px;outline:none}
-  .tabs{display:flex;gap:6px;overflow-x:auto;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);scrollbar-width:none}
-  .tabs::-webkit-scrollbar{display:none}
-  .chip{flex:0 0 auto;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:7px 13px;font-size:14px;cursor:pointer;white-space:nowrap}
-  .chip.on{background:var(--brand);border-color:var(--brand);color:#fff}
-  .tiers{display:flex;gap:6px;overflow-x:auto;padding:10px 16px 0;scrollbar-width:none}
-  .filters{display:flex;gap:8px;padding:10px 16px;flex-wrap:wrap}
-  .filters select{flex:1 1 30%;min-width:0;padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:14px}
-  main{padding:0 16px;max-width:900px;margin:0 auto}
-  h2{font-size:17px;margin:18px 0 10px}
-  .deals{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}
-  .deal{flex:0 0 170px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;cursor:pointer;position:relative}
-  .deal .rank{position:absolute;top:8px;right:10px;font-weight:700;color:var(--muted);font-size:13px}
-  .badge{display:inline-block;background:var(--bad);color:#fff;font-size:11px;font-weight:700;border-radius:6px;padding:2px 6px}
-  .badge.tier{background:transparent;color:var(--brand);border:1px solid var(--brand)}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;cursor:pointer}
-  .card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
-  .name{font-weight:650;font-size:15px;line-height:1.3}
-  .sub{color:var(--muted);font-size:13px;margin-top:2px}
-  .price{font-size:20px;font-weight:750;color:var(--brand);margin-top:8px}
-  [data-theme] .price{color:var(--brand)}
-  @media (prefers-color-scheme: dark){ .price{color:#2dd4bf} }
-  .old{color:var(--muted);text-decoration:line-through;font-size:13px;margin-left:6px;font-weight:400}
-  .meta{display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-size:13px;color:var(--muted)}
-  .cmp{font-size:13px;display:flex;align-items:center;gap:4px}
-  .empty{text-align:center;color:var(--muted);padding:40px 0}
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Arabic",sans-serif;background:var(--bg);color:var(--text);
+       padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  button{font:inherit;color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:30;background:linear-gradient(135deg,var(--brand),#115e59);color:#fff;
+         padding-top:env(safe-area-inset-top);box-shadow:0 2px 10px rgba(0,0,0,.12)}
+  .hrow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0 8px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:.2px}
+  .logo img{width:34px;height:34px;border-radius:9px}
+  .logo span{color:var(--accent)}
+  .hbtns{display:flex;gap:8px}
+  .hbtn{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff;border-radius:10px;padding:6px 11px;font-size:14px;font-weight:600;cursor:pointer}
+  .hbtn.install{display:none;background:var(--accent);border-color:var(--accent);color:#111}
+  .search{position:relative;padding-bottom:12px}
+  .search input{width:100%;border:0;border-radius:12px;padding:12px 14px 12px 40px;font-size:15px;outline:none;background:#fff;color:#0f172a}
+  [dir=rtl] .search input{padding:12px 40px 12px 14px}
+  .search svg{position:absolute;left:13px;top:13px;width:18px;height:18px;color:#64748b}
+  [dir=rtl] .search svg{left:auto;right:13px}
+
+  /* Banner */
+  .banners{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:14px 0 2px;scrollbar-width:none}
+  .banners::-webkit-scrollbar,.hs::-webkit-scrollbar{display:none}
+  .banner{flex:0 0 min(100%,520px);scroll-snap-align:start;border-radius:var(--radius);padding:18px;color:#fff;min-height:104px;
+          display:flex;flex-direction:column;justify-content:center;text-decoration:none;position:relative;overflow:hidden}
+  .banner b{font-size:18px;display:block;margin-bottom:4px}
+  .banner small{opacity:.9;font-size:14px;line-height:1.4}
+  .banner .tag{position:absolute;top:10px;right:12px;font-size:10px;opacity:.7;text-transform:uppercase;letter-spacing:.5px}
+  [dir=rtl] .banner .tag{right:auto;left:12px}
+
+  /* Category tiles */
+  .hs{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding:14px 0 4px}
+  .tile{flex:0 0 auto;min-width:84px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;text-align:center;cursor:pointer;box-shadow:var(--shadow)}
+  .tile i{font-style:normal;font-size:24px;display:block;margin-bottom:4px}
+  .tile span{font-size:13px;font-weight:600}
+  .tile.on{background:var(--brand);border-color:var(--brand);color:#fff}
+  .chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:10px 0 2px}
+  .chip{flex:0 0 auto;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 14px;font-size:14px;cursor:pointer}
+  .chip.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+  .filters{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:10px 0}
+  .filters select{width:100%;padding:9px 8px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:14px}
+
+  h2{font-size:18px;margin:18px 0 10px;display:flex;justify-content:space-between;align-items:center}
+  h2 a{font-size:14px;color:var(--brand-ink);text-decoration:none;font-weight:600;cursor:pointer}
+
+  /* Product cards */
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  @media (min-width:640px){ .grid{grid-template-columns:repeat(3,1fr)} }
+  @media (min-width:900px){ .grid{grid-template-columns:repeat(4,1fr)} }
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;cursor:pointer;box-shadow:var(--shadow);
+        display:flex;flex-direction:column;position:relative;transition:transform .12s}
+  .card:active{transform:scale(.98)}
+  .pic{aspect-ratio:1/1;background:var(--card-2);display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .pic img{width:100%;height:100%;object-fit:contain;padding:10px}
+  .pic svg{width:100%;height:100%}
+  .body{padding:10px 12px 12px;display:flex;flex-direction:column;gap:3px;flex:1}
+  .brand{font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+  .name{font-weight:700;font-size:14.5px;line-height:1.3}
+  .sub{color:var(--muted);font-size:12.5px}
+  .price{font-size:18px;font-weight:800;color:var(--brand-ink);margin-top:4px}
+  .old{color:var(--muted);text-decoration:line-through;font-size:12px;font-weight:400;margin-inline-start:4px}
+  .shops{font-size:12px;color:var(--muted);margin-top:auto;padding-top:4px}
+  .disc{position:absolute;top:8px;left:8px;background:var(--bad);color:#fff;font-size:11.5px;font-weight:800;border-radius:7px;padding:3px 7px}
+  [dir=rtl] .disc{left:auto;right:8px}
+  .heart{position:absolute;top:6px;right:6px;width:34px;height:34px;border-radius:50%;border:0;background:rgba(255,255,255,.9);cursor:pointer;
+         display:flex;align-items:center;justify-content:center;font-size:17px;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+  [dir=rtl] .heart{right:auto;left:6px}
+  .cmpbtn{position:absolute;top:44px;right:6px;width:34px;height:34px;border-radius:50%;border:0;background:rgba(255,255,255,.9);cursor:pointer;
+          font-size:15px;box-shadow:0 1px 4px rgba(0,0,0,.12);color:#0f172a}
+  [dir=rtl] .cmpbtn{right:auto;left:6px}
+  .cmpbtn.on{background:var(--brand);color:#fff}
+  .tier{display:inline-block;font-size:10.5px;font-weight:700;border-radius:6px;padding:2px 6px;background:rgba(20,184,166,.12);color:var(--brand-ink)}
+  .oosb{font-size:11px;color:var(--bad);font-weight:700}
+  .empty{text-align:center;color:var(--muted);padding:50px 10px}
+  .empty i{font-style:normal;font-size:40px;display:block;margin-bottom:8px}
+
+  /* Deals strip */
+  .strip{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
+  .strip .card{flex:0 0 150px}
+  @media (min-width:640px){ .strip .card{flex-basis:180px} }
+
+  .notice{margin:12px 0 0;padding:10px 12px;border-radius:12px;background:#fef3c7;color:#78350f;font-size:13px}
+
+  /* Bottom nav */
+  nav.bottom{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:1px solid var(--line);
+             padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -2px 12px rgba(0,0,0,.05)}
+  nav.bottom .in{max-width:620px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+  nav.bottom button{border:0;background:none;padding:8px 0 9px;cursor:pointer;color:var(--muted);font-size:11.5px;font-weight:600;position:relative}
+  nav.bottom button i{font-style:normal;font-size:21px;display:block;line-height:1.3;filter:grayscale(1);opacity:.75}
+  nav.bottom button.on{color:var(--brand-ink)}
+  nav.bottom button.on i{filter:none;opacity:1}
+  .count{position:absolute;top:4px;left:calc(50% + 6px);background:var(--bad);color:#fff;border-radius:999px;font-size:10px;padding:1px 5px;min-width:16px}
+
   /* Detail sheet */
-  .sheet-bg{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;z-index:20}
-  .sheet{position:fixed;left:0;right:0;bottom:0;max-height:88vh;overflow:auto;background:var(--card);border-radius:18px 18px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom));z-index:21;transform:translateY(100%);transition:transform .25s;max-width:900px;margin:0 auto}
+  .sheet-bg{position:fixed;inset:0;background:rgba(2,6,23,.5);display:none;z-index:40}
+  .sheet{position:fixed;left:0;right:0;bottom:0;max-height:92vh;overflow:auto;background:var(--card);border-radius:22px 22px 0 0;z-index:41;
+         transform:translateY(105%);transition:transform .28s cubic-bezier(.2,.8,.2,1);max-width:720px;margin:0 auto;
+         padding:0 16px calc(20px + env(safe-area-inset-bottom))}
   .sheet.open{transform:none}
-  .sheet .close{float:right;border:0;background:var(--bg);color:var(--text);border-radius:50%;width:32px;height:32px;font-size:18px;cursor:pointer}
-  .shop{border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:10px}
+  .grab{position:sticky;top:0;background:var(--card);padding:10px 0 6px;display:flex;justify-content:space-between;align-items:center;z-index:2}
+  .grab::before{content:"";position:absolute;left:50%;top:6px;width:40px;height:4px;border-radius:4px;background:var(--line);transform:translateX(-50%)}
+  .ibtn{border:0;background:var(--card-2);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+  .hero{display:flex;gap:14px;align-items:center}
+  .hero .pic{width:120px;flex:0 0 120px;border-radius:14px}
+  .specs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:14px}
+  .spec{background:var(--card-2);border-radius:12px;padding:9px 11px;font-size:13px}
+  .spec small{display:block;color:var(--muted);font-size:11.5px}
+  .yt{display:flex;align-items:center;gap:10px;margin-top:12px;padding:11px 13px;border-radius:12px;background:#dc2626;color:#fff;text-decoration:none;font-weight:700;font-size:14px}
+  .range{margin-top:14px;font-size:14px;color:var(--muted)}
+  .shop{border:1px solid var(--line);border-radius:14px;padding:12px;margin-top:10px}
   .shop.best{border-color:var(--good);box-shadow:0 0 0 1px var(--good) inset}
-  .shop .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
-  .btns{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
-  .btn{flex:1;text-align:center;text-decoration:none;border-radius:9px;padding:9px 6px;font-size:14px;font-weight:600;border:1px solid var(--line);color:var(--text);background:var(--card)}
+  .shop .row{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+  .bestb{display:inline-block;background:var(--good);color:#fff;font-size:10.5px;font-weight:700;border-radius:6px;padding:2px 6px;margin-inline-start:6px;vertical-align:2px}
+  .btns{display:flex;gap:6px;margin-top:10px}
+  .btn{flex:1;text-align:center;text-decoration:none;border-radius:10px;padding:10px 6px;font-size:14px;font-weight:700;border:1px solid var(--line);color:var(--text);background:var(--card);cursor:pointer}
   .btn.wa{background:#25d366;border-color:#25d366;color:#fff}
-  .offer{color:var(--good);font-size:13px;margin-top:4px}
-  .oos{color:var(--bad);font-size:12px;font-weight:600}
-  table{width:100%;border-collapse:collapse;font-size:14px;margin-top:10px}
-  td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
-  th{color:var(--muted);font-weight:600}
-  /* Compare bar */
-  .cbar{position:fixed;left:12px;right:12px;bottom:12px;background:var(--text);color:var(--bg);border-radius:14px;padding:12px 14px;display:none;align-items:center;justify-content:space-between;z-index:15;max-width:876px;margin:0 auto}
-  .cbar button{background:var(--accent);border:0;border-radius:9px;padding:8px 14px;font-weight:700;cursor:pointer}
-  .cbar .clear{background:transparent;color:var(--bg);font-weight:400;text-decoration:underline}
-  footer{text-align:center;color:var(--muted);font-size:12px;padding:30px 16px}
-  .notice{margin:12px 0 0;padding:10px 12px;border-radius:10px;background:#fef3c7;color:#78350f;font-size:13px}
-  .install{display:none;background:var(--accent);color:#111;border:0;border-radius:8px;padding:6px 10px;font-weight:700;font-size:13px;cursor:pointer}
+  .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+  .offer{color:var(--good);font-size:13px;margin-top:6px}
+  .hint{color:var(--muted);font-size:12.5px;text-align:center;margin:16px 0 4px}
+
+  /* Compare */
+  .ctable{width:100%;border-collapse:collapse;font-size:14px;background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+  .ctable td,.ctable th{border-bottom:1px solid var(--line);padding:10px 8px;text-align:start;vertical-align:top}
+  .ctable th{color:var(--muted);font-weight:600;font-size:12.5px;width:24%}
+  .ctable .pic{width:80px;border-radius:10px;margin-bottom:6px}
+  .win{color:var(--good);font-weight:800}
+  .rm{border:0;background:none;color:var(--bad);font-size:12px;cursor:pointer;padding:4px 0;font-weight:600}
+
+  .toast{position:fixed;left:50%;bottom:calc(86px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);opacity:0;z-index:50;
+         background:var(--text);color:var(--bg);padding:10px 16px;border-radius:12px;font-size:14px;transition:.25s;pointer-events:none;white-space:nowrap}
+  .toast.show{opacity:1;transform:translateX(-50%)}
+  footer{text-align:center;color:var(--muted);font-size:12px;padding:28px 16px 10px;line-height:1.6}
+  footer a{color:var(--brand-ink)}
+  .view[hidden]{display:none}
 </style>
 </head>
 <body>
 
 <header>
-  <div class="brand">
-    <div>
-      <h1>PriceDrop<span> QA</span></h1>
-      <small>Phone & gadget prices from local shops in Qatar</small>
+  <div class="wrap">
+    <div class="hrow">
+      <div class="logo"><img src="icons/icon-192.png" alt=""><div>PriceDrop<span> QA</span></div></div>
+      <div class="hbtns">
+        <button class="hbtn install" id="installBtn" data-t="install">Install</button>
+        <button class="hbtn" id="langBtn">عربي</button>
+      </div>
     </div>
-    <button class="install" id="installBtn">Install app</button>
-  </div>
-  <div class="search">
-    <input id="q" type="search" placeholder="Search phones, tablets, brands…" autocomplete="off">
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" autocomplete="off" data-tp="search">
+    </div>
   </div>
 </header>
 
-<nav class="tabs" id="types"></nav>
-<div class="tiers" id="tiers"></div>
-<div class="filters">
-  <select id="brand"><option value="">All brands</option></select>
-  <select id="area"><option value="">All areas</option></select>
-  <select id="sort">
-    <option value="low">Price: low → high</option>
-    <option value="high">Price: high → low</option>
-    <option value="disc">Biggest discount</option>
-    <option value="name">Name A–Z</option>
-  </select>
-</div>
-
-<main>
-  <section id="topSection">
-    <h2>🔥 Top 10 Deals</h2>
-    <div class="deals" id="deals"></div>
+<div class="wrap">
+  <!-- HOME -->
+  <section class="view" id="v-home">
+    <div class="banners" id="banners"></div>
+    <div class="hs" id="types"></div>
+    <div class="chips" id="tiers"></div>
+    <div class="filters">
+      <select id="brand"></select>
+      <select id="area"></select>
+      <select id="sort"></select>
+    </div>
+    <div id="topBlock">
+      <h2><span data-t="topDeals">🔥 Top 10 Deals</span><a data-go="deals" data-t="seeAll">See all</a></h2>
+      <div class="strip" id="deals"></div>
+    </div>
+    <h2 id="listTitle"></h2>
+    <div class="grid" id="list"></div>
+    <div class="empty" id="empty" hidden><i>🔍</i><span data-t="noMatch">No devices match. Try another filter.</span></div>
   </section>
-  <h2 id="listTitle">All devices</h2>
-  <div class="grid" id="list"></div>
-  <div class="empty" id="empty" hidden>No devices match. Try another filter.</div>
-</main>
 
-<footer>
-  Prices are provided by shops and may change. Please confirm with the shop before visiting.<br>
-  <span id="updated"></span>
-</footer>
+  <!-- DEALS -->
+  <section class="view" id="v-deals" hidden>
+    <h2 data-t="allDeals">🔥 All deals – biggest discount first</h2>
+    <div class="grid" id="dealList"></div>
+  </section>
 
-<div class="cbar" id="cbar">
-  <span id="ctext"></span>
-  <span><button class="clear" id="cclear">Clear</button> <button id="cgo">Compare</button></span>
+  <!-- COMPARE -->
+  <section class="view" id="v-compare" hidden>
+    <h2 data-t="compare">Compare</h2>
+    <div id="cmpBox"></div>
+  </section>
+
+  <!-- SAVED -->
+  <section class="view" id="v-saved" hidden>
+    <h2 data-t="saved">❤️ Saved</h2>
+    <div class="grid" id="savedList"></div>
+  </section>
+
+  <footer>
+    <span data-t="disclaimer">Prices are provided by shops and may change. Please confirm with the shop before visiting.</span><br>
+    <span id="updated"></span><br>
+    <a id="shopLink" target="_blank" rel="noopener" data-t="shopOwner" hidden>Shop owner? List your prices for free</a>
+  </footer>
 </div>
+
+<nav class="bottom"><div class="in">
+  <button data-go="home" class="on"><i>🏠</i><span data-t="home">Home</span></button>
+  <button data-go="deals"><i>🔥</i><span data-t="deals">Deals</span></button>
+  <button data-go="compare"><i>⚖️</i><span data-t="compare">Compare</span><b class="count" id="cCount" hidden></b></button>
+  <button data-go="saved"><i>❤️</i><span data-t="saved">Saved</span><b class="count" id="sCount" hidden></b></button>
+</div></nav>
 
 <div class="sheet-bg" id="bg"></div>
 <div class="sheet" id="sheet"></div>
+<div class="toast" id="toast"></div>
 
 <!-- Sample data, used only when the page is opened directly from your computer -->
 <script type="text/plain" id="sample">
-type,tier,brand,model,storage,shop,area,price,old_price,offer,in_stock,whatsapp,phone,map_url,updated
-Phone,Flagship,Apple,iPhone 17 Pro Max,256GB,Sample Mobiles,Al Sadd,4299,4599,Free cover + screen guard,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25
-Phone,Flagship,Apple,iPhone 17 Pro Max,256GB,Demo Gadget Store,Najma,4349,4599,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25
-Phone,Flagship,Apple,iPhone 17 Pro Max,256GB,Test Tech Center,Al Wakra,4399,,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-24
-Phone,Flagship,Apple,iPhone 17 Pro,256GB,Sample Mobiles,Al Sadd,3899,4199,Free AirTag,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25
-Phone,Flagship,Apple,iPhone 17 Pro,256GB,Demo Gadget Store,Najma,3949,,,No,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-24
-Phone,Mid-Range,Apple,iPhone 17,256GB,Sample Mobiles,Al Sadd,2849,3099,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25
-Phone,Mid-Range,Apple,iPhone 17,256GB,Test Tech Center,Al Wakra,2799,3099,Cashback QR 100,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25
-Phone,Flagship,Samsung,Galaxy S25 Ultra,256GB,Demo Gadget Store,Najma,3499,4299,Free Galaxy Buds,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25
-Phone,Flagship,Samsung,Galaxy S25 Ultra,256GB,Sample Mobiles,Al Sadd,3599,4299,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-24
-Phone,Flagship,Samsung,Galaxy Z Fold7,512GB,Test Tech Center,Al Wakra,6199,6899,Free Watch,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25
-Phone,Mid-Range,Samsung,Galaxy A56,256GB,Sample Mobiles,Al Sadd,1449,1699,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25
-Phone,Mid-Range,Samsung,Galaxy A56,256GB,Demo Gadget Store,Najma,1399,1699,Free charger,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25
-Phone,Budget,Samsung,Galaxy A26,128GB,Test Tech Center,Al Wakra,899,999,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25
-Phone,Low End,Samsung,Galaxy A06,64GB,Sample Mobiles,Al Sadd,379,429,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25
-Phone,Low End,Samsung,Galaxy A06,64GB,Demo Gadget Store,Najma,369,,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-23
-Phone,Mid-Range,Xiaomi,Redmi Note 15 Pro+,512GB,Demo Gadget Store,Najma,1599,1899,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25
-Phone,Budget,Xiaomi,Redmi Note 15,256GB,Sample Mobiles,Al Sadd,799,899,Free cover,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25
-Phone,Low End,Xiaomi,Redmi A5,128GB,Test Tech Center,Al Wakra,349,399,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25
-Phone,Budget,Honor,X9c,256GB,Test Tech Center,Al Wakra,1099,1299,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25
-Phone,Low End,Tecno,Spark 40,128GB,Sample Mobiles,Al Sadd,429,,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25
-Tablet,Flagship,Apple,iPad Pro 11 M5,256GB,Sample Mobiles,Al Sadd,4199,4399,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25
-Tablet,Mid-Range,Apple,iPad Air 11 M3,128GB,Demo Gadget Store,Najma,2249,2499,Free pencil tip set,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25
-Tablet,Budget,Apple,iPad 11th Gen,128GB,Test Tech Center,Al Wakra,1299,1449,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25
-Tablet,Mid-Range,Samsung,Galaxy Tab S10 FE,128GB,Sample Mobiles,Al Sadd,1599,1899,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25
-Tablet,Low End,Samsung,Galaxy Tab A9,64GB,Demo Gadget Store,Najma,549,649,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25
-Watch,Flagship,Apple,Apple Watch Ultra 3,49mm,Sample Mobiles,Al Sadd,3099,3299,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25
-Watch,Mid-Range,Samsung,Galaxy Watch8,44mm,Test Tech Center,Al Wakra,1049,1299,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25
-Earbuds,Mid-Range,Apple,AirPods Pro 3,,Demo Gadget Store,Najma,899,999,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25
-Earbuds,Budget,Xiaomi,Redmi Buds 6,,Sample Mobiles,Al Sadd,129,169,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25
-Accessory,Budget,Anker,Power Bank 20000mAh,,Test Tech Center,Al Wakra,119,149,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25
+type,tier,brand,model,storage,shop,area,price,old_price,offer,in_stock,whatsapp,phone,map_url,updated,image,ram,display,camera,battery,chipset,youtube
+Phone,Flagship,Apple,iPhone 17 Pro Max,256GB,Sample Mobiles,Al Sadd,4299,4599,Free cover + screen guard,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
+Phone,Flagship,Apple,iPhone 17 Pro Max,256GB,Demo Gadget Store,Najma,4349,4599,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,,,,,,
+Phone,Flagship,Apple,iPhone 17 Pro Max,256GB,Test Tech Center,Al Wakra,4399,,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-24,,,,,,,
+Phone,Flagship,Apple,iPhone 17 Pro,256GB,Sample Mobiles,Al Sadd,3899,4199,Free AirTag,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
+Phone,Flagship,Apple,iPhone 17 Pro,256GB,Demo Gadget Store,Najma,3949,,,No,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-24,,,,,,,
+Phone,Mid-Range,Apple,iPhone 17,256GB,Sample Mobiles,Al Sadd,2849,3099,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
+Phone,Mid-Range,Apple,iPhone 17,256GB,Test Tech Center,Al Wakra,2799,3099,Cashback QR 100,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
+Phone,Flagship,Samsung,Galaxy S25 Ultra,256GB,Demo Gadget Store,Najma,3499,4299,Free Galaxy Buds,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,12GB,"6.9"" AMOLED 120Hz",200MP main,5000mAh,Snapdragon 8 Elite,
+Phone,Flagship,Samsung,Galaxy S25 Ultra,256GB,Sample Mobiles,Al Sadd,3599,4299,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-24,,,,,,,
+Phone,Flagship,Samsung,Galaxy Z Fold7,512GB,Test Tech Center,Al Wakra,6199,6899,Free Watch,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
+Phone,Mid-Range,Samsung,Galaxy A56,256GB,Sample Mobiles,Al Sadd,1449,1699,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,8GB,"6.7"" AMOLED 120Hz",50MP main,5000mAh,Exynos 1580,
+Phone,Mid-Range,Samsung,Galaxy A56,256GB,Demo Gadget Store,Najma,1399,1699,Free charger,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,,,,,,
+Phone,Budget,Samsung,Galaxy A26,128GB,Test Tech Center,Al Wakra,899,999,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
+Phone,Low End,Samsung,Galaxy A06,64GB,Sample Mobiles,Al Sadd,379,429,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
+Phone,Low End,Samsung,Galaxy A06,64GB,Demo Gadget Store,Najma,369,,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-23,,,,,,,
+Phone,Mid-Range,Xiaomi,Redmi Note 15 Pro+,512GB,Demo Gadget Store,Najma,1599,1899,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,,,,,,
+Phone,Budget,Xiaomi,Redmi Note 15,256GB,Sample Mobiles,Al Sadd,799,899,Free cover,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
+Phone,Low End,Xiaomi,Redmi A5,128GB,Test Tech Center,Al Wakra,349,399,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
+Phone,Budget,Honor,X9c,256GB,Test Tech Center,Al Wakra,1099,1299,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
+Phone,Low End,Tecno,Spark 40,128GB,Sample Mobiles,Al Sadd,429,,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
+Tablet,Flagship,Apple,iPad Pro 11 M5,256GB,Sample Mobiles,Al Sadd,4199,4399,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
+Tablet,Mid-Range,Apple,iPad Air 11 M3,128GB,Demo Gadget Store,Najma,2249,2499,Free pencil tip set,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,,,,,,
+Tablet,Budget,Apple,iPad 11th Gen,128GB,Test Tech Center,Al Wakra,1299,1449,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
+Tablet,Mid-Range,Samsung,Galaxy Tab S10 FE,128GB,Sample Mobiles,Al Sadd,1599,1899,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
+Tablet,Low End,Samsung,Galaxy Tab A9,64GB,Demo Gadget Store,Najma,549,649,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,,,,,,
+Watch,Flagship,Apple,Apple Watch Ultra 3,49mm,Sample Mobiles,Al Sadd,3099,3299,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
+Watch,Mid-Range,Samsung,Galaxy Watch8,44mm,Test Tech Center,Al Wakra,1049,1299,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
+Earbuds,Mid-Range,Apple,AirPods Pro 3,,Demo Gadget Store,Najma,899,999,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,,,,,,
+Earbuds,Budget,Xiaomi,Redmi Buds 6,,Sample Mobiles,Al Sadd,129,169,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
+Accessory,Budget,Anker,Power Bank 20000mAh,,Test Tech Center,Al Wakra,119,149,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
 </script>
 
 <script>
 /* ============================================================
    SETTINGS – the only part you normally need to change
    ============================================================ */
-// Paste your Google Sheet "Publish to web → CSV" link here.
-// Leave it empty ("") to use the local data.csv file instead.
+// Google Sheet "Publish to web → CSV" link. Leave "" to use data.csv
 const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSqzhWqh0owb8PXtowEXL_nrhhqWcS4ExRpAJJ5rdqG05X_tEI5xvUiMAMiTE7Hw97q1z8V-aovur1y/pub?output=csv";
 
-// Price tiers shown as filter chips (must match the "tier" column)
+// Your own WhatsApp number (974XXXXXXXX) – shows "Shop owner? List your prices" link + banner. Leave "" to hide.
+const OWNER_WHATSAPP = "";
+
+// Price tiers (must match the "tier" column)
 const TIERS = ["Flagship", "Mid-Range", "Budget", "Low End"];
-// Device types shown as tabs (must match the "type" column)
+
+// Device types / tabs (must match the "type" column). Add new ones here, e.g. {key:"Laptop", icon:"💻", en:"Laptops", ar:"لابتوب"}
 const TYPES = [
-  {key:"Phone",     label:"📱 Phones"},
-  {key:"Tablet",    label:"📲 Tablets"},
-  {key:"Watch",     label:"⌚ Watches"},
-  {key:"Earbuds",   label:"🎧 Earbuds"},
-  {key:"Accessory", label:"🔋 Accessories"}
+  {key:"Phone",     icon:"📱", en:"Phones",      ar:"هواتف"},
+  {key:"Tablet",    icon:"📲", en:"Tablets",     ar:"تابلت"},
+  {key:"Watch",     icon:"⌚", en:"Watches",     ar:"ساعات"},
+  {key:"Earbuds",   icon:"🎧", en:"Earbuds",     ar:"سماعات"},
+  {key:"Accessory", icon:"🔋", en:"Accessories", ar:"إكسسوارات"}
+];
+
+// Home screen banners. Later you can sell these spots to brands/shops.
+// link: any URL (or "" for none). color: background.
+const BANNERS = [
+  {en:["Compare before you buy","Prices from local shops across Qatar – in one place."], ar:["قارن قبل أن تشتري","أسعار المحلات في قطر في مكان واحد."], link:"", color:"linear-gradient(135deg,#0f766e,#14b8a6)"},
+  {en:["Save your favourites ❤️","Tap the heart on any device to find it later."], ar:["احفظ المفضلة ❤️","اضغط على القلب لحفظ أي جهاز."], link:"", color:"linear-gradient(135deg,#7c3aed,#db2777)"}
 ];
 const CURRENCY = "QR";
 /* ============================================================ */
 
-let rows = [], products = [];
-const state = { type:"Phone", tier:"", brand:"", area:"", q:"", sort:"low", compare:[] };
+const I18N = {
+  en:{search:"Search phones, tablets, brands…",install:"Install",topDeals:"🔥 Top 10 Deals",seeAll:"See all",noMatch:"No devices match. Try another filter.",
+      allDeals:"🔥 All deals – biggest discount first",compare:"Compare",saved:"Saved",home:"Home",deals:"Deals",
+      disclaimer:"Prices are provided by shops and may change. Please confirm with the shop before visiting.",shopOwner:"Shop owner? List your prices for free",
+      all:"All",allBrands:"All brands",allAreas:"All areas",low:"Price: low → high",high:"Price: high → low",disc:"Biggest discount",name:"Name A–Z",
+      shop:"shop",shops:"shops",from:"from",best:"Best price",oos:"Out of stock",updated:"updated",call:"Call",map:"Map",whatsapp:"WhatsApp",
+      range:"Price range",in:"in",ram:"RAM",display:"Display",camera:"Camera",battery:"Battery",chipset:"Chipset",storage:"Storage",
+      review:"Watch our video review",share:"Share",tell:"Tell the shop you found them on PriceDrop QA 🙂",
+      cmpEmpty:"Tap ⚖️ on up to 3 devices to compare them here.",savedEmpty:"Nothing saved yet. Tap ❤️ on a device to save it.",
+      lowest:"Lowest price",category:"Category",discount:"Discount",bestShop:"Best shop",offer:"Offer",remove:"Remove",
+      added:"Added to compare",max3:"You can compare up to 3 devices",savedT:"Saved ❤️",removedT:"Removed",copied:"Link copied",
+      lastUpdated:"Last updated",results:"Results for",preview:"Preview mode – showing sample data. Real prices appear once the site is online.",
+      sheetFail:"Could not read the Google Sheet – showing saved data.",loading:"Loading prices…",view:"View details"},
+  ar:{search:"ابحث عن هاتف، تابلت، ماركة…",install:"تثبيت",topDeals:"🔥 أفضل 10 عروض",seeAll:"عرض الكل",noMatch:"لا توجد أجهزة مطابقة. جرّب فلتر آخر.",
+      allDeals:"🔥 كل العروض – الأعلى خصماً أولاً",compare:"مقارنة",saved:"المحفوظة",home:"الرئيسية",deals:"العروض",
+      disclaimer:"الأسعار من المحلات وقد تتغير. يرجى التأكد مع المحل قبل الزيارة.",shopOwner:"صاحب محل؟ أضف أسعارك مجاناً",
+      all:"الكل",allBrands:"كل الماركات",allAreas:"كل المناطق",low:"السعر: من الأقل",high:"السعر: من الأعلى",disc:"أعلى خصم",name:"الاسم أ–ي",
+      shop:"محل",shops:"محلات",from:"من",best:"أفضل سعر",oos:"غير متوفر",updated:"تحديث",call:"اتصال",map:"الموقع",whatsapp:"واتساب",
+      range:"نطاق السعر",in:"في",ram:"الرام",display:"الشاشة",camera:"الكاميرا",battery:"البطارية",chipset:"المعالج",storage:"التخزين",
+      review:"شاهد مراجعتنا بالفيديو",share:"مشاركة",tell:"أخبر المحل أنك وجدته عبر PriceDrop QA 🙂",
+      cmpEmpty:"اضغط ⚖️ على 3 أجهزة كحد أقصى لمقارنتها هنا.",savedEmpty:"لا يوجد شيء محفوظ. اضغط ❤️ لحفظ جهاز.",
+      lowest:"أقل سعر",category:"الفئة",discount:"الخصم",bestShop:"أفضل محل",offer:"العرض",remove:"إزالة",
+      added:"أضيف للمقارنة",max3:"يمكنك مقارنة 3 أجهزة فقط",savedT:"تم الحفظ ❤️",removedT:"تمت الإزالة",copied:"تم نسخ الرابط",
+      lastUpdated:"آخر تحديث",results:"نتائج",preview:"وضع المعاينة – بيانات تجريبية.",
+      sheetFail:"تعذر قراءة الجدول – عرض البيانات المحفوظة.",loading:"جاري تحميل الأسعار…",view:"التفاصيل"}
+};
+const TIER_AR = {"Flagship":"رائد","Mid-Range":"متوسط","Budget":"اقتصادي","Low End":"أساسي"};
+
+/* ---------- state & helpers ---------- */
+const store = {
+  get(k,d){ try{ const v=localStorage.getItem("pd_"+k); return v?JSON.parse(v):d; }catch(e){ return d; } },
+  set(k,v){ try{ localStorage.setItem("pd_"+k,JSON.stringify(v)); }catch(e){} }
+};
+let rows=[], products=[];
+const state = { view:"home", type:"Phone", tier:"", brand:"", area:"", q:"", sort:"low",
+  compare: store.get("compare",[]), favs: store.get("favs",[]), lang: store.get("lang","en") };
 const $ = id => document.getElementById(id);
+const t = k => (I18N[state.lang]||I18N.en)[k] || I18N.en[k] || k;
 const fmt = n => CURRENCY + " " + Number(n).toLocaleString("en-US");
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const tierName = x => state.lang==="ar" ? (TIER_AR[x]||x) : x;
+const typeName = k => { const ty=TYPES.find(x=>x.key===k); return ty ? ty[state.lang]||ty.en : k; };
+function toast(msg){ const el=$("toast"); el.textContent=msg; el.classList.add("show"); clearTimeout(toast.t); toast.t=setTimeout(()=>el.classList.remove("show"),1800); }
 
-// ---- CSV parser (handles quotes and commas inside quotes) ----
+/* ---------- CSV ---------- */
 function parseCSV(text){
   const out=[]; let row=[], field="", q=false;
   for(let i=0;i<text.length;i++){
     const c=text[i];
-    if(q){
-      if(c==='"'){ if(text[i+1]==='"'){field+='"';i++;} else q=false; }
-      else field+=c;
-    } else if(c==='"') q=true;
+    if(q){ if(c==='"'){ if(text[i+1]==='"'){field+='"';i++;} else q=false; } else field+=c; }
+    else if(c==='"') q=true;
     else if(c===','){ row.push(field); field=""; }
-    else if(c==='\n'||c==='\r'){
-      if(c==='\r'&&text[i+1]==='\n') i++;
-      row.push(field); field=""; if(row.some(v=>v.trim()!=="")) out.push(row); row=[];
-    } else field+=c;
+    else if(c==='\n'||c==='\r'){ if(c==='\r'&&text[i+1]==='\n') i++; row.push(field); field=""; if(row.some(v=>v.trim()!=="")) out.push(row); row=[]; }
+    else field+=c;
   }
   row.push(field); if(row.some(v=>v.trim()!=="")) out.push(row);
   const head=out.shift().map(h=>h.trim().toLowerCase());
   return out.map(r=>Object.fromEntries(head.map((h,i)=>[h,(r[i]||"").trim()])));
 }
-
-// ---- Load data (Google Sheet first, then local file, then offline cache) ----
 async function getCSV(url){
   const res = await fetch(url + (url.includes("?")?"&":"?") + "t=" + Date.now());
   if(!res.ok) throw new Error(res.status);
   const text = await res.text();
-  if(/^\s*</.test(text)) throw new Error("Not a CSV link (use the link ending in output=csv)");
+  if(/^\s*</.test(text)) throw new Error("not csv");
   return parseCSV(text);
 }
+
+/* ---------- load ---------- */
 async function load(){
-  buildControls();                       // show tabs even before data arrives
-  $("listTitle").textContent = "Loading prices…";
-  let note = "";
-  try{
-    if(!SHEET_CSV_URL) throw new Error("no sheet link");
-    rows = await getCSV(SHEET_CSV_URL);
-  }catch(e1){
-    try{ rows = await getCSV("data.csv"); if(SHEET_CSV_URL) note = "Could not read the Google Sheet – showing data.csv instead."; }
-    catch(e2){
-      // Opened by double-clicking the file: browsers block reading data.csv this way.
-      rows = parseCSV(document.getElementById("sample").textContent.trim());
-      note = "Preview mode – showing sample data. Real prices appear once the site is online (GitHub Pages).";
-    }
+  applyLang(); buildControls();
+  $("listTitle").textContent = t("loading");
+  let note="";
+  try{ if(!SHEET_CSV_URL || SHEET_CSV_URL.startsWith("__")) throw 0; rows = await getCSV(SHEET_CSV_URL); }
+  catch(e1){
+    try{ rows = await getCSV("data.csv"); if(SHEET_CSV_URL && !SHEET_CSV_URL.startsWith("__")) note=t("sheetFail"); }
+    catch(e2){ rows = parseCSV($("sample").textContent.trim()); note=t("preview"); }
   }
-  if(note){ const n=document.createElement("div"); n.className="notice"; n.textContent=note; document.querySelector("main").prepend(n); }
-  rows = rows.filter(r=>r.model && r.price).map(r=>({
-    ...r,
-    price:+String(r.price).replace(/[^\d.]/g,""),
-    old_price:+String(r.old_price).replace(/[^\d.]/g,"")||0,
-    in_stock: !/^(no|n|0|false|out)$/i.test(r.in_stock||"yes")
-  }));
+  if(note){ const n=document.createElement("div"); n.className="notice"; n.textContent=note; $("v-home").prepend(n); }
+  rows = rows.filter(r=>r.model && r.price).map(r=>({ ...r,
+    price:+String(r.price).replace(/[^\d.]/g,""), old_price:+String(r.old_price||"").replace(/[^\d.]/g,"")||0,
+    in_stock: !/^(no|n|0|false|out)$/i.test(r.in_stock||"yes") }));
   buildProducts(); buildControls(); render();
   const latest = rows.map(r=>r.updated).filter(Boolean).sort().pop();
-  if(latest) $("updated").textContent = "Last updated: " + latest;
+  if(latest) $("updated").textContent = t("lastUpdated")+": "+latest;
+  openFromHash();
 }
 
-// Group rows (one per shop) into products (one per model + storage)
 function buildProducts(){
-  const map = new Map();
+  const map=new Map();
   rows.forEach(r=>{
-    const id = [r.brand,r.model,r.storage].join("|").toLowerCase();
-    if(!map.has(id)) map.set(id,{id,type:r.type,tier:r.tier,brand:r.brand,model:r.model,storage:r.storage,shops:[]});
-    map.get(id).shops.push(r);
+    const id=[r.brand,r.model,r.storage].join("|").toLowerCase().replace(/\s+/g," ");
+    if(!map.has(id)) map.set(id,{id,type:r.type,tier:r.tier,brand:r.brand,model:r.model,storage:r.storage,shops:[],spec:{}});
+    const p=map.get(id); p.shops.push(r);
+    ["image","ram","display","camera","battery","chipset","youtube"].forEach(k=>{ if(r[k] && !p.spec[k]) p.spec[k]=r[k]; });
   });
-  products = [...map.values()].map(p=>{
+  products=[...map.values()].map(p=>{
     p.shops.sort((a,b)=>(b.in_stock-a.in_stock)||(a.price-b.price));
-    const avail = p.shops.filter(s=>s.in_stock);
-    const best = (avail[0]||p.shops[0]);
-    p.best = best; p.min = best.price;
-    p.max = Math.max(...p.shops.map(s=>s.price));
-    p.ref = Math.max(...p.shops.map(s=>s.old_price||0));
-    p.disc = p.ref>p.min ? Math.round((p.ref-p.min)/p.ref*100) : 0;
-    p.areas = [...new Set(p.shops.map(s=>s.area))];
+    p.best=p.shops.find(s=>s.in_stock)||p.shops[0];
+    p.min=p.best.price; p.max=Math.max(...p.shops.map(s=>s.price));
+    p.ref=Math.max(...p.shops.map(s=>s.old_price||0));
+    p.disc=p.ref>p.min?Math.round((p.ref-p.min)/p.ref*100):0;
+    p.areas=[...new Set(p.shops.map(s=>s.area))];
+    p.anyStock=p.shops.some(s=>s.in_stock);
     return p;
   });
+  state.compare=state.compare.filter(id=>products.some(p=>p.id===id));
+  state.favs=state.favs.filter(id=>products.some(p=>p.id===id));
 }
 
+/* ---------- picture: real image or generated placeholder ---------- */
+const BRAND_HUE = {apple:220, samsung:215, xiaomi:24, redmi:24, poco:48, honor:190, huawei:0, oppo:150, vivo:230, realme:50, oneplus:355, google:140, nothing:0, tecno:265, infinix:120, nokia:205, motorola:200, anker:200, jbl:25, sony:280, lenovo:350};
+function hue(s){ const k=(s||"").toLowerCase(); if(k in BRAND_HUE) return BRAND_HUE[k]; let h=7; for(const c of k) h=(h*131+c.charCodeAt(0))%360; return h; }
+function placeholder(p){
+  const h=hue(p.brand||"x"), ty=(TYPES.find(x=>x.key===p.type)||{icon:"📦"}).icon;
+  const phone = p.type==="Phone", tab = p.type==="Tablet";
+  const body = phone ? `<rect x="70" y="30" width="60" height="120" rx="12" fill="hsl(${h} 45% 30%)"/><rect x="75" y="38" width="50" height="104" rx="7" fill="url(#g${h}${p.brand&&p.brand.toLowerCase()==="apple"?"a":""})"/><circle cx="100" cy="44" r="2.4" fill="#0b1120"/>`
+    : tab ? `<rect x="45" y="45" width="110" height="80" rx="10" fill="hsl(${h} 45% 30%)"/><rect x="52" y="51" width="96" height="68" rx="6" fill="url(#g${h}${p.brand&&p.brand.toLowerCase()==="apple"?"a":""})"/>`
+    : `<circle cx="100" cy="88" r="50" fill="url(#g${h}${p.brand&&p.brand.toLowerCase()==="apple"?"a":""})"/><text x="100" y="104" text-anchor="middle" font-size="44">${ty}</text>`;
+  return `<svg viewBox="0 0 200 180" role="img" aria-label="${esc(p.brand)}"><defs><linearGradient id="g${h}${p.brand&&p.brand.toLowerCase()==="apple"?"a":""}" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="hsl(${h} ${p.brand&&p.brand.toLowerCase()==="apple"?12:70}% 64%)"/><stop offset="1" stop-color="hsl(${(h+35)%360} ${p.brand&&p.brand.toLowerCase()==="apple"?12:70}% 42%)"/></linearGradient></defs>
+    ${body}<text x="100" y="172" text-anchor="middle" font-size="13" font-weight="700" fill="hsl(${h} 30% 50%)" font-family="system-ui">${esc((p.brand||"").toUpperCase())}</text></svg>`;
+}
+function pic(p){
+  const src=p.spec.image;
+  return `<div class="pic">${src?`<img src="${esc(src)}" alt="${esc(p.brand+" "+p.model)}" loading="lazy" onerror="this.parentNode.innerHTML=placeholderById('${esc(p.id)}')">`:placeholder(p)}</div>`;
+}
+window.placeholderById = id => placeholder(products.find(p=>p.id===id)||{brand:"",type:""});
+
+/* ---------- controls ---------- */
 function buildControls(){
-  $("types").innerHTML = TYPES.map(t=>`<button class="chip ${t.key===state.type?"on":""}" data-type="${t.key}">${t.label}</button>`).join("");
-  $("tiers").innerHTML = ["All",...TIERS].map(t=>`<button class="chip ${(t==="All"?"":t)===state.tier?"on":""}" data-tier="${t==="All"?"":t}">${t}</button>`).join("");
-  fillSelect("brand","All brands",[...new Set(rows.map(r=>r.brand))].sort());
-  fillSelect("area","All areas",[...new Set(rows.map(r=>r.area))].sort());
+  $("types").innerHTML = TYPES.map(x=>`<div class="tile ${x.key===state.type?"on":""}" data-type="${x.key}"><i>${x.icon}</i><span>${esc(x[state.lang]||x.en)}</span></div>`).join("");
+  $("tiers").innerHTML = ["",...TIERS].map(x=>`<button class="chip ${x===state.tier?"on":""}" data-tier="${x}">${x?esc(tierName(x)):t("all")}</button>`).join("");
+  fill("brand",t("allBrands"),[...new Set(rows.map(r=>r.brand))].sort());
+  fill("area",t("allAreas"),[...new Set(rows.map(r=>r.area))].sort());
+  $("sort").innerHTML=["low","high","disc","name"].map(k=>`<option value="${k}" ${k===state.sort?"selected":""}>${t(k)}</option>`).join("");
+  $("banners").innerHTML = BANNERS.concat(OWNER_WHATSAPP?[{en:["Own a mobile shop?","List your prices on PriceDrop QA for free. Tap to WhatsApp us."],ar:["عندك محل جوالات؟","أضف أسعارك مجاناً. اضغط لمراسلتنا."],link:"https://wa.me/"+OWNER_WHATSAPP,color:"linear-gradient(135deg,#f59e0b,#ea580c)"}]:[])
+    .map(b=>{ const [h,s]=b[state.lang]||b.en; const tag=b.link?"a":"div";
+      return `<${tag} class="banner" style="background:${b.color}" ${b.link?`href="${esc(b.link)}" target="_blank" rel="noopener"`:""}><b>${esc(h)}</b><small>${esc(s)}</small></${tag}>`; }).join("");
+  if(OWNER_WHATSAPP){ $("shopLink").hidden=false; $("shopLink").href="https://wa.me/"+OWNER_WHATSAPP; }
 }
-function fillSelect(id,label,vals){
-  const cur=$(id).value;
-  $(id).innerHTML=`<option value="">${label}</option>`+vals.map(v=>`<option ${v===cur?"selected":""}>${esc(v)}</option>`).join("");
-}
+function fill(id,label,vals){ const cur=state[id]; $(id).innerHTML=`<option value="">${esc(label)}</option>`+vals.map(v=>`<option ${v===cur?"selected":""}>${esc(v)}</option>`).join(""); }
 
 function filtered(){
-  const q = state.q.toLowerCase();
-  let list = products.filter(p=>
-    (!state.type || p.type===state.type) &&
-    (!state.tier || p.tier===state.tier) &&
-    (!state.brand || p.brand===state.brand) &&
-    (!state.area || p.areas.includes(state.area)) &&
-    (!q || (p.brand+" "+p.model+" "+p.storage).toLowerCase().includes(q))
-  );
-  if(q) list = products.filter(p=>(p.brand+" "+p.model+" "+p.storage+" "+p.type).toLowerCase().includes(q)
-      && (!state.brand||p.brand===state.brand) && (!state.area||p.areas.includes(state.area)));
-  const s = {low:(a,b)=>a.min-b.min, high:(a,b)=>b.min-a.min, disc:(a,b)=>b.disc-a.disc, name:(a,b)=>(a.brand+a.model).localeCompare(b.brand+b.model)}[state.sort];
-  return list.sort(s);
+  const q=state.q.toLowerCase();
+  return products.filter(p=>
+    (q ? (p.brand+" "+p.model+" "+p.storage+" "+p.type).toLowerCase().includes(q) : p.type===state.type) &&
+    (!state.tier || p.tier===state.tier) && (!state.brand || p.brand===state.brand) && (!state.area || p.areas.includes(state.area))
+  ).sort({low:(a,b)=>a.min-b.min, high:(a,b)=>b.min-a.min, disc:(a,b)=>b.disc-a.disc, name:(a,b)=>(a.brand+a.model).localeCompare(b.brand+b.model)}[state.sort]);
 }
 
+/* ---------- cards ---------- */
 function card(p){
-  const on = state.compare.includes(p.id);
+  const fav=state.favs.includes(p.id), cmp=state.compare.includes(p.id), n=p.shops.length;
   return `<div class="card" data-id="${esc(p.id)}">
-    <div class="top">
-      <div><div class="name">${esc(p.brand)} ${esc(p.model)}</div>
-      <div class="sub">${esc(p.storage)} ${p.storage?"·":""} <span class="badge tier">${esc(p.tier)}</span></div></div>
-      ${p.disc?`<span class="badge">-${p.disc}%</span>`:""}
-    </div>
-    <div class="price">${fmt(p.min)}${p.ref>p.min?`<span class="old">${fmt(p.ref)}</span>`:""}</div>
-    <div class="meta">
-      <span>${p.shops.length} shop${p.shops.length>1?"s":""} · best at ${esc(p.best.shop)}</span>
-      <label class="cmp" onclick="event.stopPropagation()"><input type="checkbox" data-cmp="${esc(p.id)}" ${on?"checked":""}> Compare</label>
-    </div>
-  </div>`;
+    ${pic(p)}
+    ${p.disc?`<span class="disc">-${p.disc}%</span>`:""}
+    <button class="heart" data-fav="${esc(p.id)}" aria-label="Save">${fav?"❤️":"🤍"}</button>
+    <button class="cmpbtn ${cmp?"on":""}" data-cmp="${esc(p.id)}" aria-label="Compare">⚖️</button>
+    <div class="body">
+      <div class="brand">${esc(p.brand)}</div>
+      <div class="name">${esc(p.model)}</div>
+      <div class="sub">${p.storage?esc(p.storage)+" · ":""}<span class="tier">${esc(tierName(p.tier))}</span></div>
+      <div class="price">${fmt(p.min)}${p.ref>p.min?`<span class="old">${fmt(p.ref)}</span>`:""}</div>
+      <div class="shops">${p.anyStock?`${n} ${n>1?t("shops"):t("shop")} · ${esc(p.best.shop)}`:`<span class="oosb">${t("oos")}</span>`}</div>
+    </div></div>`;
 }
 
+/* ---------- render ---------- */
 function render(){
-  document.querySelectorAll("#types .chip").forEach(b=>b.classList.toggle("on",b.dataset.type===state.type && !state.q));
+  document.querySelectorAll("#types .tile").forEach(b=>b.classList.toggle("on",b.dataset.type===state.type && !state.q));
   document.querySelectorAll("#tiers .chip").forEach(b=>b.classList.toggle("on",b.dataset.tier===state.tier));
-  // Top 10 deals (by discount) in the current device type
-  const top = products.filter(p=>p.disc>0 && p.best.in_stock && (state.q || p.type===state.type)).sort((a,b)=>b.disc-a.disc).slice(0,10);
-  $("topSection").hidden = !top.length || !!state.q;
-  $("deals").innerHTML = top.map((p,i)=>`<div class="deal" data-id="${esc(p.id)}"><span class="rank">#${i+1}</span>
-    <span class="badge">-${p.disc}%</span><div class="name" style="margin-top:6px">${esc(p.brand)} ${esc(p.model)}</div>
-    <div class="sub">${esc(p.storage)}</div><div class="price" style="font-size:17px">${fmt(p.min)}</div>
-    <div class="sub">${esc(p.best.shop)}</div></div>`).join("");
-  const list = filtered();
-  const tlabel = (TYPES.find(t=>t.key===state.type)||{}).label||"";
-  $("listTitle").textContent = state.q ? `Results for “${state.q}”` : `${state.tier||"All"} ${tlabel.replace(/^\S+\s/,"")} (${list.length})`;
-  $("list").innerHTML = list.map(card).join("");
-  $("empty").hidden = list.length>0;
-  renderCompareBar();
+  document.querySelectorAll("nav.bottom button").forEach(b=>b.classList.toggle("on",b.dataset.go===state.view));
+  ["home","deals","compare","saved"].forEach(v=>$("v-"+v).hidden = v!==state.view);
+
+  if(state.view==="home"){
+    const top=products.filter(p=>p.disc>0 && p.anyStock && p.type===state.type).sort((a,b)=>b.disc-a.disc).slice(0,10);
+    $("topBlock").hidden = !top.length || !!state.q;
+    $("deals").innerHTML = top.map(card).join("");
+    const list=filtered();
+    $("listTitle").textContent = state.q ? `${t("results")} “${state.q}” (${list.length})` : `${state.tier?tierName(state.tier)+" ":""}${typeName(state.type)} (${list.length})`;
+    $("list").innerHTML = list.map(card).join("");
+    $("empty").hidden = list.length>0;
+  }
+  if(state.view==="deals"){
+    const all=products.filter(p=>p.disc>0 && p.anyStock).sort((a,b)=>b.disc-a.disc);
+    $("dealList").innerHTML = all.map(card).join("") || `<div class="empty"><i>🔥</i></div>`;
+  }
+  if(state.view==="saved"){
+    const favs=state.favs.map(id=>products.find(p=>p.id===id)).filter(Boolean);
+    $("savedList").innerHTML = favs.map(card).join("");
+    if(!favs.length) $("savedList").innerHTML=`<div class="empty" style="grid-column:1/-1"><i>🤍</i>${t("savedEmpty")}</div>`;
+  }
+  if(state.view==="compare") renderCompare();
+  const c=state.compare.length, s=state.favs.length;
+  $("cCount").hidden=!c; $("cCount").textContent=c; $("sCount").hidden=!s; $("sCount").textContent=s;
 }
 
-// ---- Detail sheet: price in every shop ----
-function openProduct(id){
-  const p = products.find(x=>x.id===id); if(!p) return;
-  const shops = p.shops.map((s,i)=>{
-    const msg = encodeURIComponent(`Hi, I saw on PriceDrop QA: ${p.brand} ${p.model} ${p.storage} for ${fmt(s.price)}. Is it available?`);
-    return `<div class="shop ${i===0&&s.in_stock?"best":""}">
-      <div class="row"><div><b>${esc(s.shop)}</b> ${i===0&&s.in_stock?'<span class="badge" style="background:var(--good)">Best price</span>':""}
-        <div class="sub">📍 ${esc(s.area)} ${s.updated?"· updated "+esc(s.updated):""}</div></div>
-        <div style="text-align:right"><div class="price" style="margin:0;font-size:18px">${fmt(s.price)}</div>
-        ${s.old_price>s.price?`<span class="old">${fmt(s.old_price)}</span>`:""}</div></div>
+function renderCompare(){
+  const ps=state.compare.map(id=>products.find(p=>p.id===id)).filter(Boolean);
+  if(!ps.length){ $("cmpBox").innerHTML=`<div class="empty"><i>⚖️</i>${t("cmpEmpty")}</div>`; return; }
+  const minP=Math.min(...ps.map(p=>p.min));
+  const rowsDef=[
+    [t("lowest"), p=>`<span class="${p.min===minP&&ps.length>1?"win":""}">${fmt(p.min)}</span>`],
+    [t("category"), p=>esc(tierName(p.tier))],
+    [t("storage"), p=>esc(p.storage||"–")],
+    [t("ram"), p=>esc(p.spec.ram||"–")],
+    [t("display"), p=>esc(p.spec.display||"–")],
+    [t("camera"), p=>esc(p.spec.camera||"–")],
+    [t("battery"), p=>esc(p.spec.battery||"–")],
+    [t("chipset"), p=>esc(p.spec.chipset||"–")],
+    [t("discount"), p=>p.disc?p.disc+"%":"–"],
+    [t("bestShop"), p=>esc(p.best.shop)+`<br><span class="sub">${esc(p.best.area)}</span>`],
+    [t("offer"), p=>esc(p.best.offer||"–")]
+  ];
+  $("cmpBox").innerHTML=`<div style="overflow-x:auto"><table class="ctable">
+    <tr><th></th>${ps.map(p=>`<td>${pic(p)}<b>${esc(p.brand)} ${esc(p.model)}</b><br><button class="rm" data-cmp="${esc(p.id)}">✕ ${t("remove")}</button></td>`).join("")}</tr>
+    ${rowsDef.map(([l,f])=>`<tr><th>${l}</th>${ps.map(p=>`<td>${f(p)}</td>`).join("")}</tr>`).join("")}
+    <tr><th></th>${ps.map(p=>`<td><button class="btn primary" data-open="${esc(p.id)}">${t("view")}</button></td>`).join("")}</tr>
+  </table></div>`;
+}
+
+/* ---------- detail sheet ---------- */
+function openProduct(id, push=true){
+  const p=products.find(x=>x.id===id); if(!p) return;
+  if(push) history.replaceState(null,"","#p="+encodeURIComponent(id));
+  const fav=state.favs.includes(p.id);
+  const specs=[["storage",p.storage],["ram",p.spec.ram],["display",p.spec.display],["camera",p.spec.camera],["battery",p.spec.battery],["chipset",p.spec.chipset]]
+    .filter(([,v])=>v).map(([k,v])=>`<div class="spec"><small>${t(k)}</small>${esc(v)}</div>`).join("");
+  const shops=p.shops.map((s,i)=>{
+    const msg=encodeURIComponent(`Hi, I saw on PriceDrop QA: ${p.brand} ${p.model} ${p.storage} for ${fmt(s.price)}. Is it available?`);
+    const best=i===0&&s.in_stock&&p.shops.length>1;
+    return `<div class="shop ${best?"best":""}">
+      <div class="row"><div><b>${esc(s.shop)}</b>${best?`<span class="bestb">${t("best")}</span>`:""}
+        <div class="sub">📍 ${esc(s.area)}${s.updated?` · ${t("updated")} ${esc(s.updated)}`:""}</div>
+        ${!s.in_stock?`<div class="oosb">${t("oos")}</div>`:""}</div>
+        <div style="text-align:end"><div class="price" style="margin:0">${fmt(s.price)}</div>${s.old_price>s.price?`<span class="old">${fmt(s.old_price)}</span>`:""}</div></div>
       ${s.offer?`<div class="offer">🎁 ${esc(s.offer)}</div>`:""}
-      ${!s.in_stock?`<div class="oos">Out of stock</div>`:""}
       <div class="btns">
-        ${s.whatsapp?`<a class="btn wa" target="_blank" rel="noopener" data-lead="whatsapp" data-shop="${esc(s.shop)}" href="https://wa.me/${esc(s.whatsapp.replace(/\D/g,""))}?text=${msg}">WhatsApp</a>`:""}
-        ${s.phone?`<a class="btn" data-lead="call" data-shop="${esc(s.shop)}" href="tel:+${esc(s.phone.replace(/\D/g,""))}">Call</a>`:""}
-        ${s.map_url?`<a class="btn" target="_blank" rel="noopener" data-lead="map" data-shop="${esc(s.shop)}" href="${esc(s.map_url)}">Map</a>`:""}
+        ${s.whatsapp?`<a class="btn wa" target="_blank" rel="noopener" data-lead="whatsapp" data-shop="${esc(s.shop)}" href="https://wa.me/${esc(s.whatsapp.replace(/\D/g,""))}?text=${msg}">${t("whatsapp")}</a>`:""}
+        ${s.phone?`<a class="btn" data-lead="call" data-shop="${esc(s.shop)}" href="tel:+${esc(s.phone.replace(/\D/g,""))}">📞 ${t("call")}</a>`:""}
+        ${s.map_url?`<a class="btn" target="_blank" rel="noopener" data-lead="map" data-shop="${esc(s.shop)}" href="${esc(s.map_url)}">📍 ${t("map")}</a>`:""}
       </div></div>`;
   }).join("");
-  $("sheet").innerHTML = `<button class="close" id="x">×</button>
-    <div class="name" style="font-size:19px">${esc(p.brand)} ${esc(p.model)}</div>
-    <div class="sub">${esc(p.storage)} · ${esc(p.tier)} · ${esc(p.type)}</div>
-    <div class="sub" style="margin-top:8px">Price range: <b>${fmt(p.min)} – ${fmt(p.max)}</b> in ${p.shops.length} shop(s)</div>
+  $("sheet").innerHTML=`
+    <div class="grab"><button class="ibtn" id="x" aria-label="Close">✕</button>
+      <span><button class="ibtn" data-share="${esc(p.id)}" aria-label="${t("share")}">↗</button>
+      <button class="ibtn" data-fav="${esc(p.id)}" aria-label="Save">${fav?"❤️":"🤍"}</button>
+      <button class="ibtn" data-cmp="${esc(p.id)}" aria-label="Compare" style="${state.compare.includes(p.id)?"background:var(--brand);color:#fff":""}">⚖️</button></span></div>
+    <div class="hero">${pic(p)}<div>
+      <div class="brand">${esc(p.brand)} · ${esc(typeName(p.type))}</div>
+      <div class="name" style="font-size:20px">${esc(p.model)}</div>
+      <div class="sub" style="margin-top:4px"><span class="tier">${esc(tierName(p.tier))}</span> ${p.disc?`<span class="disc" style="position:static">-${p.disc}%</span>`:""}</div>
+      <div class="price" style="font-size:24px">${fmt(p.min)}</div></div></div>
+    ${specs?`<div class="specs">${specs}</div>`:""}
+    ${p.spec.youtube?`<a class="yt" href="${esc(p.spec.youtube)}" target="_blank" rel="noopener">▶ ${t("review")}</a>`:""}
+    <div class="range">${t("range")}: <b>${fmt(p.min)} – ${fmt(p.max)}</b> ${t("in")} ${p.shops.length} ${p.shops.length>1?t("shops"):t("shop")}</div>
     ${shops}
-    <p class="sub" style="margin-top:14px">Tell the shop you found them on PriceDrop QA 🙂</p>`;
-  showSheet();
+    <p class="hint">${t("tell")}</p>`;
+  $("bg").style.display="block"; requestAnimationFrame(()=>$("sheet").classList.add("open"));
+  $("sheet").scrollTop=0;
+}
+function closeSheet(){ $("sheet").classList.remove("open"); setTimeout(()=>$("bg").style.display="none",280);
+  if(location.hash) history.replaceState(null,"",location.pathname+location.search); }
+function openFromHash(){ const m=location.hash.match(/^#p=(.+)$/); if(m) openProduct(decodeURIComponent(m[1]),false); }
+
+/* ---------- actions ---------- */
+function toggleFav(id){
+  const on=state.favs.includes(id);
+  state.favs = on ? state.favs.filter(x=>x!==id) : [...state.favs,id];
+  store.set("favs",state.favs); toast(on?t("removedT"):t("savedT")); refresh(id);
+}
+function toggleCmp(id){
+  if(state.compare.includes(id)) state.compare=state.compare.filter(x=>x!==id);
+  else { if(state.compare.length>=3){ toast(t("max3")); return; } state.compare.push(id); toast(t("added")); }
+  store.set("compare",state.compare); refresh(id);
+}
+function refresh(id){ render(); if($("sheet").classList.contains("open")) openProduct(id,false); }
+async function share(id){
+  const p=products.find(x=>x.id===id); const url=location.origin+location.pathname+"#p="+encodeURIComponent(id);
+  const text=`${p.brand} ${p.model} ${p.storage} – ${t("from")} ${fmt(p.min)} on PriceDrop QA`;
+  try{ if(navigator.share) await navigator.share({title:"PriceDrop QA",text,url}); else { await navigator.clipboard.writeText(text+" "+url); toast(t("copied")); } }catch(e){}
+}
+function go(v){ state.view=v; window.scrollTo(0,0); render(); }
+function applyLang(){
+  document.documentElement.lang=state.lang; document.documentElement.dir=state.lang==="ar"?"rtl":"ltr";
+  $("langBtn").textContent = state.lang==="ar"?"English":"عربي";
+  document.querySelectorAll("[data-t]").forEach(el=>el.textContent=t(el.dataset.t));
+  $("q").placeholder=t("search");
 }
 
-function openCompare(){
-  const ps = state.compare.map(id=>products.find(p=>p.id===id)).filter(Boolean);
-  const rowsHtml = [
-    ["Lowest price", p=>`<b>${fmt(p.min)}</b>`],
-    ["Category", p=>esc(p.tier)],
-    ["Storage / size", p=>esc(p.storage||"-")],
-    ["Discount", p=>p.disc?p.disc+"%":"-"],
-    ["Best shop", p=>esc(p.best.shop)+"<br><span class='sub'>"+esc(p.best.area)+"</span>"],
-    ["Offer", p=>esc(p.best.offer||"-")],
-    ["Shops", p=>p.shops.length]
-  ].map(([l,f])=>`<tr><th>${l}</th>${ps.map(p=>`<td>${f(p)}</td>`).join("")}</tr>`).join("");
-  $("sheet").innerHTML = `<button class="close" id="x">×</button><div class="name" style="font-size:19px">Compare</div>
-    <div style="overflow-x:auto"><table><tr><th></th>${ps.map(p=>`<th style="color:var(--text)">${esc(p.brand)} ${esc(p.model)}</th>`).join("")}</tr>${rowsHtml}</table></div>`;
-  showSheet();
-}
-
-function showSheet(){ $("bg").style.display="block"; requestAnimationFrame(()=>$("sheet").classList.add("open")); }
-function hideSheet(){ $("sheet").classList.remove("open"); setTimeout(()=>$("bg").style.display="none",250); }
-
-function renderCompareBar(){
-  const n = state.compare.length;
-  $("cbar").style.display = n ? "flex" : "none";
-  $("ctext").textContent = n===1 ? "Select 1–2 more to compare" : `${n} selected`;
-  $("cgo").disabled = n<2;
-}
-
-// ---- Events ----
 document.addEventListener("click", e=>{
-  const t = e.target;
-  if(t.dataset.type){ state.type=t.dataset.type; state.q=""; $("q").value=""; render(); return; }
-  if(t.dataset.tier!==undefined && t.classList.contains("chip")){ state.tier=t.dataset.tier; render(); return; }
-  if(t.id==="x"||t.id==="bg"){ hideSheet(); return; }
-  if(t.dataset.lead){ trackLead(t.dataset.lead, t.dataset.shop); return; }
-  const c = t.closest(".card,.deal"); if(c) openProduct(c.dataset.id);
+  const el=e.target.closest("[data-fav],[data-cmp],[data-share],[data-open],[data-lead],[data-go],[data-type],[data-tier],.card,#x,#bg");
+  if(!el) return;
+  if(el.dataset.fav){ e.stopPropagation(); toggleFav(el.dataset.fav); return; }
+  if(el.dataset.cmp){ e.stopPropagation(); toggleCmp(el.dataset.cmp); return; }
+  if(el.dataset.share){ share(el.dataset.share); return; }
+  if(el.dataset.open){ openProduct(el.dataset.open); return; }
+  if(el.dataset.lead){ trackLead(el.dataset.lead, el.dataset.shop); return; }
+  if(el.dataset.go){ closeSheet(); go(el.dataset.go); return; }
+  if(el.dataset.type){ state.type=el.dataset.type; state.q=""; $("q").value=""; render(); return; }
+  if(el.dataset.tier!==undefined && el.classList.contains("chip")){ state.tier=el.dataset.tier; render(); return; }
+  if(el.id==="x"||el.id==="bg"){ closeSheet(); return; }
+  if(el.classList.contains("card")) openProduct(el.dataset.id);
 });
-document.addEventListener("change", e=>{
-  const id = e.target.dataset.cmp; if(!id) return;
-  if(e.target.checked){ if(state.compare.length>=3){ e.target.checked=false; alert("You can compare up to 3 devices."); return; } state.compare.push(id); }
-  else state.compare = state.compare.filter(x=>x!==id);
-  renderCompareBar();
-});
-$("q").addEventListener("input", e=>{ state.q=e.target.value.trim(); render(); });
+$("q").addEventListener("input", e=>{ state.q=e.target.value.trim(); if(state.view!=="home") state.view="home"; render(); });
 ["brand","area","sort"].forEach(id=>$(id).addEventListener("change",e=>{ state[id]=e.target.value; render(); }));
-$("cgo").onclick = openCompare;
-$("cclear").onclick = ()=>{ state.compare=[]; render(); };
+$("langBtn").onclick=()=>{ state.lang=state.lang==="ar"?"en":"ar"; store.set("lang",state.lang); applyLang(); buildControls(); render(); };
+document.addEventListener("keydown", e=>{ if(e.key==="Escape") closeSheet(); });
 
-// Lead tracking: counts WhatsApp / call / map taps per shop.
-// If you add Google Analytics later, these show up as events you can report to shops.
-function trackLead(kind, shop){
-  if(window.gtag) gtag("event","lead_"+kind,{shop});
-}
+// Lead tracking: WhatsApp / call / map taps per shop (shows in Google Analytics once added)
+function trackLead(kind, shop){ if(window.gtag) gtag("event","lead_"+kind,{shop}); }
 
-// ---- Install as app (PWA) ----
+// Install as app
 let deferred;
 window.addEventListener("beforeinstallprompt", e=>{ e.preventDefault(); deferred=e; $("installBtn").style.display="block"; });
-$("installBtn").onclick = async ()=>{ if(!deferred) return; deferred.prompt(); await deferred.userChoice; deferred=null; $("installBtn").style.display="none"; };
+$("installBtn").onclick=async()=>{ if(!deferred) return; deferred.prompt(); await deferred.userChoice; deferred=null; $("installBtn").style.display="none"; };
 if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js");
 
 load();
