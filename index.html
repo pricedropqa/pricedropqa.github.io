@@ -160,6 +160,9 @@
   .toast{position:fixed;left:50%;bottom:calc(86px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);opacity:0;z-index:50;
          background:var(--text);color:var(--bg);padding:10px 16px;border-radius:12px;font-size:14px;transition:.25s;pointer-events:none;white-space:nowrap}
   .toast.show{opacity:1;transform:translateX(-50%)}
+  .contact{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-top:28px;box-shadow:var(--shadow)}
+  .contact h2{margin:0 0 4px}
+  .contact .sub{margin:0}
   footer{text-align:center;color:var(--muted);font-size:12px;padding:28px 16px 10px;line-height:1.6}
   footer a{color:var(--brand-ink)}
   .view[hidden]{display:none}
@@ -219,6 +222,12 @@
   <section class="view" id="v-saved" hidden>
     <h2 data-t="saved">❤️ Saved</h2>
     <div class="grid" id="savedList"></div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 data-t="contactUs">Contact us</h2>
+    <p class="sub" data-t="contactText">Questions, wrong price, or want your shop listed? We're happy to help.</p>
+    <div class="btns" id="contactBtns"></div>
   </section>
 
   <footer>
@@ -282,7 +291,11 @@ Accessory,Budget,Anker,Power Bank 20000mAh,,Test Tech Center,Al Wakra,119,149,,Y
 const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSqzhWqh0owb8PXtowEXL_nrhhqWcS4ExRpAJJ5rdqG05X_tEI5xvUiMAMiTE7Hw97q1z8V-aovur1y/pub?output=csv";
 
 // Your own WhatsApp number (974XXXXXXXX) – shows "Shop owner? List your prices" link + banner. Leave "" to hide.
-const OWNER_WHATSAPP = "";
+const OWNER_WHATSAPP = "97472124373";
+
+// Contact section. Phone in international format without + (974XXXXXXXX). Leave email "" to hide it.
+const CONTACT_PHONE = "97472124373";
+const CONTACT_EMAIL = "";
 
 // Price tiers (must match the "tier" column)
 const TIERS = ["Flagship", "Mid-Range", "Budget", "Low End"];
@@ -320,7 +333,7 @@ const I18N = {
       cmpEmpty:"Tap ⚖️ on up to 3 devices to compare them here.",savedEmpty:"Nothing saved yet. Tap ❤️ on a device to save it.",
       lowest:"Lowest price",category:"Category",discount:"Discount",bestShop:"Best shop",offer:"Offer",remove:"Remove",
       added:"Added to compare",max3:"You can compare up to 3 devices",savedT:"Saved ❤️",removedT:"Removed",copied:"Link copied",
-      lastUpdated:"Last updated",website:"View on website",onlineStore:"Online store",results:"Results for",preview:"Preview mode – showing sample data. Real prices appear once the site is online.",
+      lastUpdated:"Last updated",contactUs:"📞 Contact us",contactText:"Questions, wrong price, or want your shop listed? We're happy to help.",email:"Email",website:"View on website",onlineStore:"Online store",results:"Results for",preview:"Preview mode – showing sample data. Real prices appear once the site is online.",
       sheetFail:"Could not read the Google Sheet – showing saved data.",loading:"Loading prices…",view:"View details"},
   ar:{search:"ابحث عن هاتف، تابلت، ماركة…",install:"تثبيت",topDeals:"🔥 أفضل 10 عروض",seeAll:"عرض الكل",noMatch:"لا توجد أجهزة مطابقة. جرّب فلتر آخر.",
       allDeals:"🔥 كل العروض – الأعلى خصماً أولاً",compare:"مقارنة",saved:"المحفوظة",home:"الرئيسية",deals:"العروض",
@@ -332,7 +345,7 @@ const I18N = {
       cmpEmpty:"اضغط ⚖️ على 3 أجهزة كحد أقصى لمقارنتها هنا.",savedEmpty:"لا يوجد شيء محفوظ. اضغط ❤️ لحفظ جهاز.",
       lowest:"أقل سعر",category:"الفئة",discount:"الخصم",bestShop:"أفضل محل",offer:"العرض",remove:"إزالة",
       added:"أضيف للمقارنة",max3:"يمكنك مقارنة 3 أجهزة فقط",savedT:"تم الحفظ ❤️",removedT:"تمت الإزالة",copied:"تم نسخ الرابط",
-      lastUpdated:"آخر تحديث",website:"عرض في الموقع",onlineStore:"متجر إلكتروني",results:"نتائج",preview:"وضع المعاينة – بيانات تجريبية.",
+      lastUpdated:"آخر تحديث",contactUs:"📞 اتصل بنا",contactText:"لديك سؤال، سعر خاطئ، أو تريد إضافة محلك؟ يسعدنا مساعدتك.",email:"البريد",website:"عرض في الموقع",onlineStore:"متجر إلكتروني",results:"نتائج",preview:"وضع المعاينة – بيانات تجريبية.",
       sheetFail:"تعذر قراءة الجدول – عرض البيانات المحفوظة.",loading:"جاري تحميل الأسعار…",view:"التفاصيل"}
 };
 const TIER_AR = {"Flagship":"رائد","Mid-Range":"متوسط","Budget":"اقتصادي","Low End":"أساسي"};
@@ -449,6 +462,12 @@ function buildControls(){
   $("banners").innerHTML = BANNERS.concat(OWNER_WHATSAPP?[{en:["Own a mobile shop?","List your prices on PriceDrop QA for free. Tap to WhatsApp us."],ar:["عندك محل جوالات؟","أضف أسعارك مجاناً. اضغط لمراسلتنا."],link:"https://wa.me/"+OWNER_WHATSAPP,color:"linear-gradient(135deg,#f59e0b,#ea580c)"}]:[])
     .map(b=>{ const [h,s]=b[state.lang]||b.en; const tag=b.link?"a":"div";
       return `<${tag} class="banner" style="background:${b.color}" ${b.link?`href="${esc(b.link)}" target="_blank" rel="noopener"`:""}><b>${esc(h)}</b><small>${esc(s)}</small></${tag}>`; }).join("");
+  const msg=encodeURIComponent("Hi PriceDrop QA, ");
+  $("contactBtns").innerHTML =
+    (CONTACT_PHONE?`<a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/${CONTACT_PHONE}?text=${msg}">${t("whatsapp")}</a>
+     <a class="btn" href="tel:+${CONTACT_PHONE}">📞 ${t("call")}</a>`:"")+
+    (CONTACT_EMAIL?`<a class="btn" href="mailto:${esc(CONTACT_EMAIL)}">✉️ ${t("email")}</a>`:"");
+  $("contact").hidden = !CONTACT_PHONE && !CONTACT_EMAIL;
   if(OWNER_WHATSAPP){ $("shopLink").hidden=false; $("shopLink").href="https://wa.me/"+OWNER_WHATSAPP; }
 }
 function fill(id,label,vals){ const cur=state[id]; $(id).innerHTML=`<option value="">${esc(label)}</option>`+vals.map(v=>`<option ${v===cur?"selected":""}>${esc(v)}</option>`).join(""); }
