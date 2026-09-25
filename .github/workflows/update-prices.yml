@@ -1,0 +1,27 @@
+name: Update online prices
+
+on:
+  schedule:
+    - cron: "0 3,15 * * *"   # 6 AM and 6 PM Qatar time
+  workflow_dispatch:          # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch prices from online stores
+        run: python fetch_online.py
+      - name: Save online.csv if prices changed
+        run: |
+          git config user.name "pricedrop-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add online.csv
+          git diff --staged --quiet || git commit -m "Update online prices $(date -u +'%Y-%m-%d %H:%M')"
+          git push
