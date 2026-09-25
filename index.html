@@ -293,7 +293,8 @@ const TYPES = [
   {key:"Tablet",    icon:"📲", en:"Tablets",     ar:"تابلت"},
   {key:"Watch",     icon:"⌚", en:"Watches",     ar:"ساعات"},
   {key:"Earbuds",   icon:"🎧", en:"Earbuds",     ar:"سماعات"},
-  {key:"Accessory", icon:"🔋", en:"Accessories", ar:"إكسسوارات"}
+  {key:"Accessory", icon:"🔋", en:"Accessories", ar:"إكسسوارات"},
+  {key:"Camera",    icon:"📷", en:"Cameras",     ar:"كاميرات"}
 ];
 
 // Home screen banners. Later you can sell these spots to brands/shops.
@@ -303,6 +304,9 @@ const BANNERS = [
   {en:["Save your favourites ❤️","Tap the heart on any device to find it later."], ar:["احفظ المفضلة ❤️","اضغط على القلب لحفظ أي جهاز."], link:"", color:"linear-gradient(135deg,#7c3aed,#db2777)"}
 ];
 const CURRENCY = "QR";
+
+// Online-store prices, updated automatically twice a day by GitHub Actions (fetch_online.py)
+const ONLINE_CSV_URL = "https://raw.githubusercontent.com/pricedropqa/pricedropqa.github.io/main/online.csv";
 /* ============================================================ */
 
 const I18N = {
@@ -316,7 +320,7 @@ const I18N = {
       cmpEmpty:"Tap ⚖️ on up to 3 devices to compare them here.",savedEmpty:"Nothing saved yet. Tap ❤️ on a device to save it.",
       lowest:"Lowest price",category:"Category",discount:"Discount",bestShop:"Best shop",offer:"Offer",remove:"Remove",
       added:"Added to compare",max3:"You can compare up to 3 devices",savedT:"Saved ❤️",removedT:"Removed",copied:"Link copied",
-      lastUpdated:"Last updated",results:"Results for",preview:"Preview mode – showing sample data. Real prices appear once the site is online.",
+      lastUpdated:"Last updated",website:"View on website",onlineStore:"Online store",results:"Results for",preview:"Preview mode – showing sample data. Real prices appear once the site is online.",
       sheetFail:"Could not read the Google Sheet – showing saved data.",loading:"Loading prices…",view:"View details"},
   ar:{search:"ابحث عن هاتف، تابلت، ماركة…",install:"تثبيت",topDeals:"🔥 أفضل 10 عروض",seeAll:"عرض الكل",noMatch:"لا توجد أجهزة مطابقة. جرّب فلتر آخر.",
       allDeals:"🔥 كل العروض – الأعلى خصماً أولاً",compare:"مقارنة",saved:"المحفوظة",home:"الرئيسية",deals:"العروض",
@@ -328,7 +332,7 @@ const I18N = {
       cmpEmpty:"اضغط ⚖️ على 3 أجهزة كحد أقصى لمقارنتها هنا.",savedEmpty:"لا يوجد شيء محفوظ. اضغط ❤️ لحفظ جهاز.",
       lowest:"أقل سعر",category:"الفئة",discount:"الخصم",bestShop:"أفضل محل",offer:"العرض",remove:"إزالة",
       added:"أضيف للمقارنة",max3:"يمكنك مقارنة 3 أجهزة فقط",savedT:"تم الحفظ ❤️",removedT:"تمت الإزالة",copied:"تم نسخ الرابط",
-      lastUpdated:"آخر تحديث",results:"نتائج",preview:"وضع المعاينة – بيانات تجريبية.",
+      lastUpdated:"آخر تحديث",website:"عرض في الموقع",onlineStore:"متجر إلكتروني",results:"نتائج",preview:"وضع المعاينة – بيانات تجريبية.",
       sheetFail:"تعذر قراءة الجدول – عرض البيانات المحفوظة.",loading:"جاري تحميل الأسعار…",view:"التفاصيل"}
 };
 const TIER_AR = {"Flagship":"رائد","Mid-Range":"متوسط","Budget":"اقتصادي","Low End":"أساسي"};
@@ -382,6 +386,8 @@ async function load(){
     try{ rows = await getCSV("data.csv"); if(SHEET_CSV_URL && !SHEET_CSV_URL.startsWith("__")) note=t("sheetFail"); }
     catch(e2){ rows = parseCSV($("sample").textContent.trim()); note=t("preview"); }
   }
+  // add online-store prices (silently skipped if not available yet)
+  try{ const online = await getCSV(ONLINE_CSV_URL).catch(()=>getCSV("online.csv")); rows = rows.concat(online); }catch(e){}
   if(note){ const n=document.createElement("div"); n.className="notice"; n.textContent=note; $("v-home").prepend(n); }
   rows = rows.filter(r=>r.model && r.price).map(r=>({ ...r,
     price:+String(r.price).replace(/[^\d.]/g,""), old_price:+String(r.old_price||"").replace(/[^\d.]/g,"")||0,
@@ -404,7 +410,7 @@ function buildProducts(){
     p.shops.sort((a,b)=>(b.in_stock-a.in_stock)||(a.price-b.price));
     p.best=p.shops.find(s=>s.in_stock)||p.shops[0];
     p.min=p.best.price; p.max=Math.max(...p.shops.map(s=>s.price));
-    p.ref=Math.max(...p.shops.map(s=>s.old_price||0));
+    p.ref=p.best.old_price||0;  // discount = best shop's own old price
     p.disc=p.ref>p.min?Math.round((p.ref-p.min)/p.ref*100):0;
     p.areas=[...new Set(p.shops.map(s=>s.area))];
     p.anyStock=p.shops.some(s=>s.in_stock);
@@ -538,7 +544,7 @@ function openProduct(id, push=true){
     const best=i===0&&s.in_stock&&p.shops.length>1;
     return `<div class="shop ${best?"best":""}">
       <div class="row"><div><b>${esc(s.shop)}</b>${best?`<span class="bestb">${t("best")}</span>`:""}
-        <div class="sub">📍 ${esc(s.area)}${s.updated?` · ${t("updated")} ${esc(s.updated)}`:""}</div>
+        <div class="sub">${s.url?"🌐 "+t("onlineStore"):"📍 "+esc(s.area)}${s.updated?` · ${t("updated")} ${esc(s.updated)}`:""}</div>
         ${!s.in_stock?`<div class="oosb">${t("oos")}</div>`:""}</div>
         <div style="text-align:end"><div class="price" style="margin:0">${fmt(s.price)}</div>${s.old_price>s.price?`<span class="old">${fmt(s.old_price)}</span>`:""}</div></div>
       ${s.offer?`<div class="offer">🎁 ${esc(s.offer)}</div>`:""}
@@ -546,6 +552,7 @@ function openProduct(id, push=true){
         ${s.whatsapp?`<a class="btn wa" target="_blank" rel="noopener" data-lead="whatsapp" data-shop="${esc(s.shop)}" href="https://wa.me/${esc(s.whatsapp.replace(/\D/g,""))}?text=${msg}">${t("whatsapp")}</a>`:""}
         ${s.phone?`<a class="btn" data-lead="call" data-shop="${esc(s.shop)}" href="tel:+${esc(s.phone.replace(/\D/g,""))}">📞 ${t("call")}</a>`:""}
         ${s.map_url?`<a class="btn" target="_blank" rel="noopener" data-lead="map" data-shop="${esc(s.shop)}" href="${esc(s.map_url)}">📍 ${t("map")}</a>`:""}
+        ${s.url?`<a class="btn primary" target="_blank" rel="noopener" data-lead="website" data-shop="${esc(s.shop)}" href="${esc(s.url)}">🌐 ${t("website")}</a>`:""}
       </div></div>`;
   }).join("");
   $("sheet").innerHTML=`
