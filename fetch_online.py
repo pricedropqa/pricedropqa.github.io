@@ -192,6 +192,16 @@ def main():
     if not all_rows:
         print("Nothing fetched - keeping the old online.csv")
         sys.exit(1)
+    # one row per shop + phone + storage: keep in-stock first, then the cheapest
+    best = {}
+    for r in all_rows:
+        key = (r["shop"], r["type"], r["brand"].lower(), r["model"].lower(), r["storage"].lower())
+        cur = best.get(key)
+        score = (r["in_stock"] == "Yes", -float(r["price"]))
+        if cur is None or score > (cur["in_stock"] == "Yes", -float(cur["price"])):
+            best[key] = r
+    all_rows = list(best.values())
+    print(f"{len(all_rows)} rows after removing duplicate colours")
     with open("online.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=COLUMNS, lineterminator="\n")
         w.writeheader()
