@@ -29,11 +29,35 @@ STORES = [
 ]
 
 # Single product pages (any store whose pages carry standard schema.org Product data).
-# (shop name, type, product page URL)
+# shop, type, url  +  optional: brand, model, storage (to match other stores), note, link (your affiliate link)
+NOON = "https://www.noon.com/qatar-en/"
 WATCHLIST = [
-    ("Alanees", "Speaker", "https://alaneesqatar.qa/product/bang-olufsen-beosound-a1-2nd-gen-bluetooth-speaker-green-in-qatar/"),
-    ("Alanees", "Speaker", "https://alaneesqatar.qa/product/bang-olufsen-beosound-a1-2nd-gen-bluetooth-speaker-gold-tone-in-qatar/"),
-    ("Alanees", "Speaker", "https://alaneesqatar.qa/product/bang-olufsen-beosound-explore-in-qatar/"),
+    # noon Qatar - flagship phones (one colour per model/storage). Add "link": "https://s.noon.com/..." for affiliate links.
+    {"shop": "noon Qatar", "type": "Phone", "brand": "Apple", "model": "iPhone 18 Pro Max", "storage": "256GB", "note": "International version · eSIM only",
+     "url": NOON + "iphone-18-pro-max-256gb-esim-only-burgundy-5g-with-facetime-international-version/N70432341V/p/"},
+    {"shop": "noon Qatar", "type": "Phone", "brand": "Apple", "model": "iPhone 18 Pro Max", "storage": "512GB", "note": "International version · eSIM only",
+     "url": NOON + "iphone-18-pro-max-512-gb-esim-only-burgundy-5g-with-facetime-international-version/N70432417V/p/",
+     "link": "https://s.noon.com/xmttALmutUI"},
+    {"shop": "noon Qatar", "type": "Phone", "brand": "Apple", "model": "iPhone 18 Pro Max", "storage": "1TB", "note": "Middle East version · eSIM only",
+     "url": NOON + "iphone-18-pro-max-1tb-esim-only-burgundy-5g-with-facetime-middle-east-version/N70432408V/p/"},
+    {"shop": "noon Qatar", "type": "Phone", "brand": "Apple", "model": "iPhone 18 Pro", "storage": "256GB", "note": "International version · eSIM only",
+     "url": NOON + "iphone-18-pro-256gb-esim-only-black-5g-with-facetime-international-version/N70432367V/p/"},
+    {"shop": "noon Qatar", "type": "Phone", "brand": "Apple", "model": "iPhone 18 Pro", "storage": "512GB", "note": "International version · eSIM only",
+     "url": NOON + "iphone-18-pro-512-gb-esim-only-silver-5g-with-facetime-international-version/N70432336V/p/"},
+    {"shop": "noon Qatar", "type": "Phone", "brand": "Samsung", "model": "Galaxy Z Fold 8", "storage": "256GB", "note": "Middle East version",
+     "url": NOON + "galaxy-z-fold-8-dual-sim-graphite-12gb-ram-256gb-5g-middle-east-version/N70395347V/p/"},
+    {"shop": "noon Qatar", "type": "Phone", "brand": "Samsung", "model": "Galaxy Z Fold 8", "storage": "512GB", "note": "Middle East version",
+     "url": NOON + "galaxy-z-fold-8-dual-sim-graphite-12gb-ram-512gb-5g-middle-east-version/N70395350V/p/"},
+    {"shop": "noon Qatar", "type": "Phone", "brand": "Samsung", "model": "Galaxy Z Fold 8", "storage": "1TB", "note": "Middle East version",
+     "url": NOON + "galaxy-z-fold-8-dual-sim-graphite-16gb-ram-1tb-5g-middle-east-version/N70395344V/p/"},
+    {"shop": "noon Qatar", "type": "Phone", "brand": "Samsung", "model": "Galaxy Z Fold 8 Ultra", "storage": "512GB", "note": "Middle East version",
+     "url": NOON + "galaxy-z-fold-8-ultra-dual-sim-violet-shadow-12gb-ram-512gb-5g-middle-east-version/N70395359V/p/"},
+    {"shop": "noon Qatar", "type": "Phone", "brand": "Samsung", "model": "Galaxy S26 Ultra", "storage": "256GB", "note": "Middle East version",
+     "url": NOON + "galaxy-s26-ultra-dual-sim-black-12gb-ram-256gb-5g-middle-east-version/N70283855V/p/"},
+    {"shop": "noon Qatar", "type": "Phone", "brand": "Samsung", "model": "Galaxy S26 Ultra", "storage": "512GB", "note": "Middle East version",
+     "url": NOON + "galaxy-s26-ultra-dual-sim-black-12gb-ram-512gb-5g-middle-east-version/N70283859V/p/"},
+    {"shop": "noon Qatar", "type": "Phone", "brand": "Samsung", "model": "Galaxy S25 Ultra", "storage": "256GB", "note": "Middle East version",
+     "url": NOON + "galaxy-s25-ultra-ai-dual-sim-titanium-black-12gb-ram-256gb-5g-middle-east-version/N70140491V/p/"},
 ]
 
 DELAY = 4  # seconds between requests to the same store (be polite)
@@ -134,7 +158,7 @@ def brand_of(product):
 def audio_kind(title, ptype=""):
     """Sort an audio product into the right tab by its name."""
     t = f"{title} {ptype}".lower()
-    if re.search(r"\b(case|cover|strap|cable|adapter|mount|stand|bracket|charger|charging|dock|wall|cushion|ear ?pads?)\b", t):
+    if re.search(r"\b(case|cover|strap|cable|adapter|mount|stand|bracket|charger|charging|dock|wall|cushion|ear ?pads?|bag|pouch|sleeve|backpack|skin|remote|battery pack)\b", t):
         return "Accessory"
     if re.search(r"\b(buds|earbuds?|earphones?|in-ear|tws|airpods|earfun)\b", t):
         return "Earbuds"
@@ -223,7 +247,8 @@ def fetch_store(store, today):
 def fetch_watchlist(today):
     """Read price + stock from the schema.org Product data on single product pages."""
     rows = []
-    for shop, kind, url in WATCHLIST:
+    for w in WATCHLIST:
+        url, kind, shop = w["url"], w["type"], w["shop"]
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html"})
             with urllib.request.urlopen(req, timeout=60) as r:
@@ -249,14 +274,27 @@ def fetch_watchlist(today):
             if price <= 0:
                 continue
             title = re.sub(r"\s+[-–]\s+[A-Za-z ]+$", "", product.get("name", "")).replace("&amp;", "&")
-            fake = {"title": title, "vendor": (product.get("brand") or {}).get("name", "") if isinstance(product.get("brand"), dict) else ""}
-            brand = brand_of(fake)
+            b = product.get("brand")
+            fake = {"title": title, "vendor": b.get("name", "") if isinstance(b, dict) else (b or "")}
+            brand = w.get("brand") or brand_of(fake)
+            note = [w["note"]] if w.get("note") else []
+            seller = (offer.get("seller") or {}).get("name") if isinstance(offer.get("seller"), dict) else ""
+            if seller and seller.lower() not in shop.lower():
+                note.append(f"Sold by {seller}")
+            try:
+                sd = offer["shippingDetails"]["deliveryTime"]
+                lo = sd["handlingTime"]["minValue"] + sd["transitTime"]["minValue"]
+                hi = sd["handlingTime"]["maxValue"] + sd["transitTime"]["maxValue"]
+                note.append(f"Delivery {lo}-{hi} days")
+            except (KeyError, TypeError):
+                pass
             rows.append({
-                "type": kind, "tier": tier_of(kind, price), "brand": brand, "model": clean_model(title, brand),
-                "storage": "", "shop": shop, "area": "Online store", "price": f"{price:.0f}", "old_price": "",
-                "offer": "", "in_stock": "Yes" if "InStock" in str(offer.get("availability")) else "No",
+                "type": kind, "tier": tier_of(kind, price), "brand": brand,
+                "model": w.get("model") or clean_model(title, brand), "storage": w.get("storage", ""),
+                "shop": shop, "area": "Online store", "price": f"{price:.0f}", "old_price": "",
+                "offer": " · ".join(note), "in_stock": "Yes" if "InStock" in str(offer.get("availability")) else "No",
                 "whatsapp": "", "phone": "", "map_url": "", "updated": today, "image": "", "ram": "", "display": "",
-                "camera": "", "battery": "", "chipset": "", "youtube": "", "url": url,
+                "camera": "", "battery": "", "chipset": "", "youtube": "", "url": w.get("link") or url,
             })
         except Exception as e:
             print(f"  watchlist: failed {url} ({e})")
