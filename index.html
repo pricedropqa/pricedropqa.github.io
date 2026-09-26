@@ -158,6 +158,9 @@
   .hint{color:var(--muted);font-size:12.5px;text-align:center;margin:16px 0 4px}
 
   /* Compare */
+  .specs-link{display:grid;gap:2px;margin:0 0 14px;padding:14px 16px;border-radius:var(--radius);background:linear-gradient(135deg,#0f766e,#14b8a6);color:#fff;text-decoration:none;box-shadow:var(--shadow)}
+  .specs-link b{font-size:16px}
+  .specs-link span{font-size:13px;opacity:.9}
   .ctable{width:100%;border-collapse:collapse;font-size:14px;background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
   .ctable td,.ctable th{border-bottom:1px solid var(--line);padding:10px 8px;text-align:start;vertical-align:top}
   .ctable th{color:var(--muted);font-weight:600;font-size:12.5px;width:24%}
@@ -253,6 +256,10 @@
   <!-- COMPARE -->
   <section class="view" id="v-compare" hidden>
     <h2 data-t="compare">Compare</h2>
+    <a class="specs-link" href="compare.html">
+      <b>📱 Full spec comparison</b>
+      <span>30 phones · flagship, mid-range and budget · every spec side by side</span>
+    </a>
     <div id="cmpBox"></div>
   </section>
 

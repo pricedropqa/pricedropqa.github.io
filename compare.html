@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f766e">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<title>PriceDrop Phone Compare</title>
+<meta name="description" content="Full spec comparison of 30 popular phones in Qatar: flagship, mid-range and budget.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#f3f5f7; --panel:#ffffff; --panel2:#eef2f4; --line:#e2e8f0; --ink:#0f172a; --muted:#64748b;
+  --accent:#0f766e; --accent-ink:#ffffff; --accent-soft:#e3f3f1;
+  --win:#9a5b00; --win-bg:#fdf1d8;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"Figtree", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0b1120; --panel:#131b2e; --panel2:#18223a; --line:#243049; --ink:#e5e7eb; --muted:#94a3b8;
+    --accent:#2dd4bf; --accent-ink:#04201c; --accent-soft:#12302c;
+    --win:#fbbf24; --win-bg:#33260a;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0b1120; --panel:#131b2e; --panel2:#18223a; --line:#243049; --ink:#e5e7eb; --muted:#94a3b8;
+  --accent:#2dd4bf; --accent-ink:#04201c; --accent-soft:#12302c;
+  --win:#fbbf24; --win-bg:#33260a;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:16px}
+a{color:var(--accent)}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;font-size:.92em}
+
+/* header */
+.top{background:var(--panel);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px}
+.brand{font-family:var(--f-display);font-weight:800;font-size:20px;letter-spacing:-.01em;text-decoration:none;color:var(--ink)}
+.brand b{color:var(--accent)}
+.top nav{display:flex;gap:16px;font-weight:600;font-size:14px}
+.top nav a{text-decoration:none;color:var(--muted)}
+.top nav a[aria-current]{color:var(--accent)}
+
+.intro{padding-block:28px 12px;display:grid;gap:8px}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(28px,5vw,44px);line-height:1.05;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.intro p{margin:0;color:var(--muted);max-width:62ch}
+.stamp{font-size:13px;color:var(--muted)}
+
+/* quick picks */
+.picks{display:flex;flex-wrap:wrap;gap:8px;padding-block:12px}
+.chip{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;cursor:pointer}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+.label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* compare panel */
+.cmp{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-block:8px 32px;overflow:hidden}
+.cmp-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:16px;border-bottom:1px solid var(--line)}
+.cmp-head h2{font-family:var(--f-display);font-size:22px;margin:0;letter-spacing:-.01em}
+.toggle{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;cursor:pointer}
+.toggle input{accent-color:var(--accent);width:18px;height:18px}
+.empty{padding:32px 16px;color:var(--muted);text-align:center}
+
+.score{display:grid;gap:10px;padding:16px;border-bottom:1px solid var(--line);background:var(--panel2)}
+.score-row{display:grid;grid-template-columns:120px 1fr;gap:12px;align-items:center;font-size:14px}
+.score-row .cat{font-weight:700}
+.bars{display:flex;flex-wrap:wrap;gap:6px}
+.pill{border-radius:6px;padding:3px 9px;font-weight:600;font-size:13px;background:var(--panel);border:1px solid var(--line)}
+.pill.lead{background:var(--win-bg);color:var(--win);border-color:transparent}
+.verdict{font-size:14px;margin:0}
+.verdict strong{color:var(--win)}
+
+.tbl-scroll{overflow-x:auto}
+table{border-collapse:separate;border-spacing:0;width:100%;min-width:560px;font-size:14px}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{position:sticky;top:0;background:var(--panel);z-index:2;border-bottom:2px solid var(--line)}
+tbody th{font-weight:600;color:var(--muted);width:170px;min-width:130px;position:sticky;left:0;background:var(--panel);z-index:1}
+td{min-width:170px}
+tr.sec th{background:var(--panel2);color:var(--ink);font-family:var(--f-display);font-size:16px;letter-spacing:-.005em;padding-block:12px}
+tr.sec td{background:var(--panel2)}
+td.win{background:var(--win-bg)}
+td.win .v::after{content:"Better";display:inline-block;margin-left:8px;font-family:var(--f-body);font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--win)}
+td ul{margin:0;padding-left:16px}
+td li+li{margin-top:4px}
+.ph-name{font-family:var(--f-display);font-weight:800;font-size:17px;line-height:1.15}
+.ph-sub{font-size:12px;color:var(--muted);font-weight:500}
+.x{border:0;background:none;color:var(--muted);cursor:pointer;font-size:12px;padding:0;text-decoration:underline}
+.na{color:var(--muted)}
+
+/* catalogue */
+.cat-head{display:flex;flex-wrap:wrap;gap:12px;align-items:end;justify-content:space-between;padding-block:8px 16px}
+.cat-head h2{font-family:var(--f-display);font-size:26px;margin:0;letter-spacing:-.01em}
+.tabs{display:flex;flex-wrap:wrap;gap:4px;background:var(--panel2);padding:4px;border-radius:10px}
+.tab{border:0;background:none;padding:7px 14px;border-radius:7px;font-weight:600;font-size:14px;cursor:pointer;color:var(--muted)}
+.tab[aria-selected="true"]{background:var(--panel);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;width:100%}
+.filters input,.filters select{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:14px}
+.filters input{flex:1 1 220px;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;padding-bottom:120px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;display:grid;gap:10px;align-content:start}
+.card.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.card-top{display:flex;justify-content:space-between;gap:8px;align-items:start}
+.card h3{font-family:var(--f-display);font-size:18px;margin:0;line-height:1.15}
+.tier{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:3px 8px;border-radius:5px;background:var(--panel2);color:var(--muted);white-space:nowrap}
+.tier.flagship{background:var(--accent-soft);color:var(--accent)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13px;margin:0}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0}
+.add{border:1px solid var(--accent);background:none;color:var(--accent);border-radius:8px;padding:8px;font-weight:700;cursor:pointer;font-size:14px}
+.card.on .add{background:var(--accent);color:var(--accent-ink)}
+.add:disabled{opacity:.4;cursor:not-allowed}
+.qar{font-size:12px;color:var(--muted)}
+
+/* tray */
+.tray{position:fixed;left:0;right:0;bottom:0;background:var(--panel);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));z-index:10;box-shadow:0 -6px 20px rgba(0,0,0,.06)}
+.tray-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.slots{display:flex;gap:6px;flex-wrap:wrap;flex:1;min-width:0}
+.slot{font-size:13px;font-weight:600;padding:5px 10px;border-radius:7px;background:var(--panel2)}
+.slot.blank{color:var(--muted);font-weight:500;border:1px dashed var(--line);background:none}
+.go{background:var(--accent);color:var(--accent-ink);border:0;border-radius:9px;padding:10px 18px;font-weight:700;cursor:pointer}
+.go:disabled{opacity:.4;cursor:not-allowed}
+footer{padding-block:24px 140px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+footer p{max-width:70ch}
+@media (max-width:560px){
+  .picks{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin}
+  .chip{white-space:nowrap}
+  .tray-in{flex-wrap:nowrap}
+  .tray-in>.label{display:none}
+  .slots{flex-wrap:nowrap;overflow-x:auto}
+  .slot{white-space:nowrap;font-size:12px}
+  .go{padding:9px 14px;white-space:nowrap}
+  .score-row{grid-template-columns:1fr;gap:4px}
+  tbody th{width:110px;min-width:110px}
+  td{min-width:150px}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://pricedropqa.qa/">PriceDrop <b>QA</b></a>
+    <nav aria-label="Main">
+      <a href="https://pricedropqa.qa/">Prices</a>
+      <a href="#compare" aria-current="page">Compare</a>
+      <a href="https://pricedropqa.qa/news.html">News</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <h1>Compare phones spec by spec</h1>
+    <p>Pick up to three phones. Every spec lines up side by side, and the better value in each measurable row is marked so you can see which phone wins where.</p>
+    <span class="stamp" id="stamp"></span>
+  </section>
+
+  <div>
+    <span class="label">Popular comparisons</span>
+    <div class="picks" id="picks"></div>
+  </div>
+
+  <section class="cmp" id="compare" aria-live="polite">
+    <div class="cmp-head">
+      <h2 id="cmp-title">Comparison</h2>
+      <label class="toggle"><input type="checkbox" id="diffOnly"> Show differences only</label>
+    </div>
+    <div id="cmp-body"></div>
+  </section>
+
+  <section id="phones">
+    <div class="cat-head">
+      <h2>All phones</h2>
+      <div class="tabs" role="tablist" id="tabs">
+        <button class="tab" role="tab" data-tier="all" aria-selected="true">All</button>
+        <button class="tab" role="tab" data-tier="flagship" aria-selected="false">Flagship</button>
+        <button class="tab" role="tab" data-tier="mid" aria-selected="false">Mid-range</button>
+        <button class="tab" role="tab" data-tier="budget" aria-selected="false">Budget</button>
+      </div>
+      <div class="filters">
+        <input id="q" type="search" placeholder="Search phone or brand" aria-label="Search phone or brand">
+        <select id="sort" aria-label="Sort phones">
+          <option value="tier">Sort: Category</option>
+          <option value="rel">Newest first</option>
+          <option value="gb">Fastest (Geekbench 6)</option>
+          <option value="bat">Biggest battery</option>
+          <option value="wired">Fastest charging</option>
+          <option value="wt">Lightest</option>
+        </select>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>Specs come from GSMArena spec pages and the maker's own site (links in the Source row of each comparison). Test results (Geekbench, AnTuTu, 3DMark, measured brightness, active use score) are GSMArena lab numbers. Qatar prices will appear here once stores confirm them. Specs can differ by region; check the box before you buy.</p>
+</footer>
+
+<div class="tray" id="tray">
+  <div class="tray-in">
+    <span class="label">Compare</span>
+    <div class="slots" id="slots"></div>
+    <button class="go" id="go">Compare now</button>
+  </div>
+</div>
+
+<script src="phones.js"></script>
+<script>
+(function(){
+const P = window.PHONES || [];
+const byId = Object.fromEntries(P.map(p=>[p.id,p]));
+const TIER = {flagship:"Flagship", mid:"Mid-range", budget:"Budget"};
+const MAX = 3;
+let sel = ["galaxy-s26-ultra","iphone-18-pro-max"];
+let tier = "all";
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmtN = n => n==null ? null : n.toLocaleString("en-US");
+const date = r => { if(!r) return "—"; const s=String(r); return new Date(+s.slice(0,4), +s.slice(4,6)-1, +s.slice(6,8)).toLocaleDateString("en-GB",{month:"short",year:"numeric"}); };
+
+$("#stamp").textContent = P.length + " phones · specs checked " + (window.SPECS_UPDATED||"");
+
+/* ---------- rows ---------- */
+// [label, text(p), numKey, better: "hi"|"lo"|null, category for scoreboard]
+const list = a => "<ul>"+a.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>";
+const SECTIONS = [
+ ["Overview",[
+  ["Category", p=>TIER[p.tier]],
+  ["Announced", p=>p.ann],
+  ["Released", p=>p.rel],
+  ["Qatar price", p=>"Coming soon"],
+ ]],
+ ["Design",[
+  ["Dimensions", p=>p.dims],
+  ["Thickness", p=>p.n.th!=null? p.n.th+" mm"+(p.id.includes("fold")||p.id.includes("flip")?" (folded)":""):null, "th","lo","Design"],
+  ["Weight", p=>p.wt, "wt","lo","Design"],
+  ["Build", p=>p.build],
+  ["SIM", p=>p.sim],
+  ["Water / dust", p=>p.ip, "ip","hi","Design"],
+ ]],
+ ["Display",[
+  ["Type", p=>p.disp],
+  ["Size", p=>p.size],
+  ["Resolution", p=>p.res, "ppi","hi","Display"],
+  ["Refresh rate", p=>p.n.hz+"Hz", "hz","hi","Display"],
+  ["Brightness (claimed)", p=>p.bright, "peak","hi","Display"],
+  ["Brightness (measured)", p=>p.meas, "meas","hi","Display"],
+  ["Protection", p=>p.prot],
+ ]],
+ ["Performance",[
+  ["Chipset", p=>p.chip],
+  ["CPU", p=>p.cpu],
+  ["GPU", p=>p.gpu],
+  ["Geekbench 6 (multi)", p=>p.tests.gb, "gb","hi","Performance"],
+  ["AnTuTu", p=>p.tests.an, "an11","hi","Performance"],
+  ["3DMark Wild Life Extreme", p=>p.tests.wle, "wle","hi","Performance"],
+ ]],
+ ["Memory",[
+  ["Storage / RAM", p=>p.mem],
+  ["Max RAM", p=>p.n.ram+" GB", "ram","hi","Performance"],
+  ["Max storage", p=>p.n.sto>=1024? (p.n.sto/1024)+" TB" : p.n.sto+" GB", "sto","hi","Performance"],
+  ["Memory card", p=>p.card],
+ ]],
+ ["Main camera",[
+  ["Cameras", p=>({html:list(p.cams)})],
+  ["Main sensor", p=>p.n.mp+" MP"],
+  ["Optical zoom", p=>p.n.zoom>1? p.n.zoom+"x" : "No telephoto", "zoom","hi","Camera"],
+  ["Features", p=>p.camf],
+  ["Video", p=>p.vid],
+ ]],
+ ["Selfie camera",[
+  ["Cameras", p=>({html:list(p.selfie)})],
+  ["Video", p=>p.svid],
+ ]],
+ ["Battery",[
+  ["Capacity", p=>p.bat, "bat","hi","Battery"],
+  ["Active use score", p=>p.tests.act, "act","hi","Battery"],
+  ["Wired charging", p=>p.n.wired? p.n.wired+"W" : "Not stated in watts", "wired","hi","Battery"],
+  ["Wireless charging", p=>p.n.wless? p.n.wless+"W" : "No", "wless","hi","Battery"],
+  ["Charging details", p=>({html:list(p.chg)})],
+ ]],
+ ["Software",[
+  ["OS", p=>p.os],
+  ["OS updates", p=>p.upd, "upd","hi","Software"],
+ ]],
+ ["Connectivity",[
+  ["Wi-Fi", p=>p.wifi],
+  ["Bluetooth", p=>p.bt],
+  ["NFC", p=>p.nfc],
+  ["USB", p=>p.usb],
+  ["3.5mm jack", p=>p.jack],
+  ["Speakers", p=>p.spk],
+ ]],
+ ["Other",[
+  ["Sensors", p=>p.sens],
+  ["Colors", p=>p.colors],
+  ["Source", p=>({html:'<a href="'+esc(p.src)+'" target="_blank" rel="noopener">Full spec sheet ↗</a>'})],
+ ]],
+];
+const CATS = ["Performance","Display","Camera","Battery","Design","Software"];
+
+function winners(key, dir, phones){
+  if(!key || phones.length<2) return new Set();
+  const vals = phones.map(p=>p.n[key]).filter(v=>v!=null);
+  if(vals.length<2) return new Set();
+  const best = dir==="lo" ? Math.min(...vals) : Math.max(...vals);
+  if(vals.every(v=>v===best)) return new Set();
+  return new Set(phones.filter(p=>p.n[key]===best).map(p=>p.id));
+}
+
+function renderCompare(){
+  const phones = sel.map(id=>byId[id]).filter(Boolean);
+  const body = $("#cmp-body");
+  $("#cmp-title").textContent = phones.length ? phones.map(p=>p.name).join(" vs ") : "Comparison";
+  if(phones.length<2){
+    body.innerHTML = '<p class="empty">Add '+(2-phones.length)+' more phone'+(phones.length?'':'s')+' from the list below to start comparing.</p>';
+    return;
+  }
+  const diffOnly = $("#diffOnly").checked;
+  const tally = {}; phones.forEach(p=>{tally[p.id]={total:0}; CATS.forEach(c=>tally[p.id][c]=0);});
+
+  let rows = "";
+  for(const [sec, defs] of SECTIONS){
+    let secRows = "";
+    for(const [label, fn, key, dir, cat] of defs){
+      const vals = phones.map(p=>fn(p));
+      const plain = vals.map(v=> v && v.html ? v.html : String(v==null?"":v));
+      if(diffOnly && plain.every(v=>v===plain[0])) continue;
+      const w = winners(key, dir, phones);
+      w.forEach(id=>{ tally[id].total++; if(cat) tally[id][cat]++; });
+      secRows += "<tr><th scope=\"row\">"+esc(label)+"</th>"+phones.map((p,i)=>{
+        const v = vals[i];
+        const inner = v==null || v==="" ? '<span class="na">—</span>' : (v.html ? v.html : '<span class="v">'+esc(v)+'</span>');
+        return '<td class="'+(w.has(p.id)?"win":"")+'">'+inner+"</td>";
+      }).join("")+"</tr>";
+    }
+    if(secRows) rows += '<tr class="sec"><th scope="rowgroup">'+esc(sec)+'</th>'+phones.map(()=>"<td></td>").join("")+"</tr>"+secRows;
+  }
+
+  // scoreboard
+  const lead = cat => { const m=Math.max(...phones.map(p=>tally[p.id][cat])); return m>0? m : -1; };
+  let sb = '<div class="score">';
+  for(const c of CATS){
+    const m = lead(c); if(m<0) continue;
+    sb += '<div class="score-row"><span class="cat">'+c+'</span><div class="bars">'+phones.map(p=>
+      '<span class="pill'+(tally[p.id][c]===m?' lead':'')+'">'+esc(p.name)+' · '+tally[p.id][c]+'</span>').join("")+'</div></div>';
+  }
+  const tm = Math.max(...phones.map(p=>tally[p.id].total));
+  const top = phones.filter(p=>tally[p.id].total===tm);
+  sb += '<p class="verdict">'+(top.length===1
+    ? '<strong>'+esc(top[0].name)+'</strong> is better in '+tm+' measurable rows, the most in this comparison.'
+    : 'Tied on '+tm+' better rows each: '+top.map(p=>'<strong>'+esc(p.name)+'</strong>').join(" and ")+'.')
+    +' Row counts show specs only. Camera quality, software and price still matter.</p></div>';
+
+  const head = '<thead><tr><th scope="col"><span class="label">Spec</span></th>'+phones.map(p=>
+    '<th scope="col"><div class="ph-name">'+esc(p.name)+'</div><div class="ph-sub">'+esc(p.brand)+' · '+TIER[p.tier]+'</div><button class="x" data-rm="'+p.id+'">Remove</button></th>').join("")+'</tr></thead>';
+  body.innerHTML = sb + '<div class="tbl-scroll"><table>'+head+'<tbody>'+rows+'</tbody></table></div>';
+}
+
+/* ---------- catalogue ---------- */
+function card(p){
+  const on = sel.includes(p.id);
+  const full = !on && sel.length>=MAX;
+  const n = p.n;
+  return '<article class="card'+(on?' on':'')+'">'+
+    '<div class="card-top"><div><h3>'+esc(p.name)+'</h3><span class="ph-sub">'+esc(p.brand)+' · '+esc(date(n.rel))+'</span></div><span class="tier '+p.tier+'">'+TIER[p.tier]+'</span></div>'+
+    '<dl class="kv">'+
+      '<dt>Chip</dt><dd>'+esc(p.chip.split(" - ")[0].split(";")[0])+'</dd>'+
+      '<dt>Display</dt><dd><span class="num">'+n.size+'"</span> · <span class="num">'+n.hz+'Hz</span></dd>'+
+      '<dt>Camera</dt><dd><span class="num">'+n.mp+' MP</span>'+(n.zoom>1?' · <span class="num">'+n.zoom+'x</span> zoom':'')+'</dd>'+
+      '<dt>Battery</dt><dd><span class="num">'+fmtN(n.bat)+' mAh</span>'+(n.wired?' · <span class="num">'+n.wired+'W</span>':'')+'</dd>'+
+      '<dt>Geekbench 6</dt><dd>'+(n.gb?'<span class="num">'+fmtN(n.gb)+'</span>':'<span class="na">Not tested</span>')+'</dd>'+
+    '</dl>'+
+    '<span class="qar">Qatar price: coming soon</span>'+
+    '<button class="add" data-id="'+p.id+'"'+(full?' disabled title="You can compare up to 3 phones"':'')+'>'+(on?'✓ Added to compare':'+ Add to compare')+'</button>'+
+  '</article>';
+}
+function renderGrid(){
+  const q = $("#q").value.trim().toLowerCase();
+  const s = $("#sort").value;
+  let list = P.filter(p=>(tier==="all"||p.tier===tier) && (!q || (p.name+" "+p.brand).toLowerCase().includes(q)));
+  const order = {flagship:0,mid:1,budget:2};
+  if(s!=="tier"){
+    const dir = s==="wt" ? 1 : -1;
+    list = list.slice().sort((a,b)=>{
+      const av=a.n[s], bv=b.n[s];
+      if(av==null&&bv==null) return 0; if(av==null) return 1; if(bv==null) return -1;
+      return dir*(av-bv);
+    });
+  } else list = list.slice().sort((a,b)=>order[a.tier]-order[b.tier]);
+  $("#grid").innerHTML = list.length ? list.map(card).join("") : '<p class="empty">No phone matches "'+esc(q)+'".</p>';
+}
+function renderTray(){
+  let h = "";
+  for(let i=0;i<MAX;i++){
+    const p = byId[sel[i]];
+    h += p ? '<span class="slot">'+esc(p.name)+'</span>' : '<span class="slot blank">Empty</span>';
+  }
+  $("#slots").innerHTML = h;
+  $("#go").disabled = sel.length<2;
+}
+function sync(){
+  renderCompare(); renderGrid(); renderTray();
+  try{ history.replaceState(null,"","#"+sel.join(".")); }catch(e){}
+  try{ localStorage.setItem("pdqa-compare", JSON.stringify(sel)); }catch(e){}
+}
+function toggle(id){
+  if(sel.includes(id)) sel = sel.filter(x=>x!==id);
+  else if(sel.length<MAX) sel = sel.concat(id);
+  sync();
+}
+
+/* ---------- popular ---------- */
+const POP = [
+  ["galaxy-s26-ultra","iphone-18-pro-max"],
+  ["iphone-18-pro","pixel-11-pro"],
+  ["galaxy-s26","iphone-17"],
+  ["oneplus-15","xiaomi-17-ultra"],
+  ["galaxy-z-fold8","galaxy-z-flip8"],
+  ["galaxy-s26-fe","iphone-17e","pixel-10a"],
+  ["galaxy-a57","redmi-note-15-pro-plus","nothing-phone-4a-pro"],
+  ["poco-f8-pro","oneplus-15r"],
+  ["galaxy-a17","redmi-note-15","honor-x9d"],
+  ["galaxy-a07","redmi-15c","realme-c85"],
+];
+$("#picks").innerHTML = POP.map((ids,i)=>'<button class="chip" data-pop="'+i+'">'+ids.map(id=>byId[id].name).join(" vs ")+'</button>').join("");
+
+/* ---------- events ---------- */
+document.addEventListener("click", e=>{
+  const t = e.target.closest("button"); if(!t) return;
+  if(t.dataset.id){ toggle(t.dataset.id); }
+  else if(t.dataset.rm){ toggle(t.dataset.rm); }
+  else if(t.dataset.pop){ sel = POP[+t.dataset.pop].slice(); sync(); $("#compare").scrollIntoView(); }
+  else if(t.dataset.tier){
+    tier = t.dataset.tier;
+    document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected", String(b===t)));
+    renderGrid();
+  }
+  else if(t.id==="go"){ $("#compare").scrollIntoView(); }
+});
+$("#q").addEventListener("input", renderGrid);
+$("#sort").addEventListener("change", renderGrid);
+$("#diffOnly").addEventListener("change", renderCompare);
+
+/* ---------- start ---------- */
+const fromHash = (location.hash||"").slice(1).split(".").filter(id=>byId[id]).slice(0,MAX);
+if(fromHash.length) sel = fromHash;
+else { try{ const s=JSON.parse(localStorage.getItem("pdqa-compare")||"null"); if(Array.isArray(s)){ const v=s.filter(id=>byId[id]).slice(0,MAX); if(v.length) sel=v; } }catch(e){} }
+sync();
+})();
+</script>
+</body>
+</html>
