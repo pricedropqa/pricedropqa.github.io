@@ -174,6 +174,12 @@
   footer{text-align:center;color:var(--muted);font-size:12px;padding:28px 16px 10px;line-height:1.6}
   footer a{color:var(--brand-ink)}
   .view[hidden]{display:none}
+  .soon{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px 18px;margin-top:16px;text-align:center}
+  .soon i{font-style:normal;font-size:44px;display:block;margin-bottom:6px}
+  .soon h3{margin:0 0 6px;font-size:21px}
+  .soon p{margin:0 auto;color:var(--muted);font-size:14.5px;line-height:1.5;max-width:460px}
+  .soon .btns{justify-content:center;margin-top:16px}
+  .soon .btn{flex:0 1 220px}
 
   /* News */
   .nlist{display:grid;gap:10px}
@@ -216,6 +222,12 @@
   <!-- HOME -->
   <section class="view" id="v-home">
     <div class="banners" id="banners"></div>
+    <div class="soon" id="soon" hidden>
+      <i>⏳</i>
+      <h3 data-t="soonTitle">Prices coming soon</h3>
+      <p data-t="soonText">We're partnering with shops across Qatar to bring you trusted, up-to-date phone and gadget prices. Check back soon!</p>
+      <div class="btns"><button class="btn primary" data-go="news">📰 <span data-t="soonNews">Read tech news</span></button></div>
+    </div>
     <div class="hs" id="types"></div>
     <div class="chips" id="tiers"></div>
     <div class="filters">
@@ -358,6 +370,10 @@ const CURRENCY = "QR";
 
 // Online-store prices, updated automatically twice a day by GitHub Actions (fetch_online.py)
 const ONLINE_CSV_URL = "https://raw.githubusercontent.com/pricedropqa/pricedropqa.github.io/main/online.csv";
+// Online-store prices are ON HOLD until each store gives written permission. Set to true to show them again.
+const SHOW_ONLINE_PRICES = false;
+// Shop prices (Google Sheet / data.csv) are ON HOLD too: the home screen shows "Prices coming soon". Set to true to show prices again.
+const SHOW_SHOP_PRICES = false;
 /* ============================================================ */
 
 const I18N = {
@@ -372,7 +388,7 @@ const I18N = {
       lowest:"Lowest price",category:"Category",discount:"Discount",bestShop:"Best shop",offer:"Offer",remove:"Remove",
       added:"Added to compare",max3:"You can compare up to 3 devices",savedT:"Saved ❤️",removedT:"Removed",copied:"Link copied",
       lastUpdated:"Last updated",contactUs:"📞 Contact us",contactText:"Questions, wrong price, or want your shop listed? We're happy to help.",email:"Email",website:"View on website",onlineStore:"Online store",ourScore:"PriceDrop Score",experts:"Expert reviews",results:"Results for",preview:"Preview mode – showing sample data. Real prices appear once the site is online.",
-      sheetFail:"Could not read the Google Sheet – showing saved data.",loading:"Loading prices…",view:"View details",
+      sheetFail:"Could not read the Google Sheet – showing saved data.",loading:"Loading prices…",view:"View details",soonTitle:"Prices coming soon",soonText:"We're partnering with shops across Qatar to bring you trusted, up-to-date phone and gadget prices. Check back soon!",soonNews:"Read tech news",
       news:"News",newsTitle:"📰 Tech News",newsNote:"Headlines link to the original publishers.",allSources:"All sources",android:"Android",iphone:"iPhone",tech:"Tech",loadMore:"Load more",newsFail:"Could not load news. Try again.",newsLoading:"Loading news…",ago_m:"m ago",ago_h:"h ago",ago_d:"d ago",justNow:"just now"},
   ar:{search:"ابحث عن هاتف، تابلت، ماركة…",install:"تثبيت",topDeals:"🔥 أفضل 10 عروض",seeAll:"عرض الكل",noMatch:"لا توجد أجهزة مطابقة. جرّب فلتر آخر.",
       allDeals:"🔥 كل العروض – الأعلى خصماً أولاً",compare:"مقارنة",saved:"المحفوظة",home:"الرئيسية",deals:"العروض",
@@ -385,7 +401,7 @@ const I18N = {
       lowest:"أقل سعر",category:"الفئة",discount:"الخصم",bestShop:"أفضل محل",offer:"العرض",remove:"إزالة",
       added:"أضيف للمقارنة",max3:"يمكنك مقارنة 3 أجهزة فقط",savedT:"تم الحفظ ❤️",removedT:"تمت الإزالة",copied:"تم نسخ الرابط",
       lastUpdated:"آخر تحديث",contactUs:"📞 اتصل بنا",contactText:"لديك سؤال، سعر خاطئ، أو تريد إضافة محلك؟ يسعدنا مساعدتك.",email:"البريد",website:"عرض في الموقع",onlineStore:"متجر إلكتروني",ourScore:"تقييم PriceDrop",experts:"مراجعات الخبراء",results:"نتائج",preview:"وضع المعاينة – بيانات تجريبية.",
-      sheetFail:"تعذر قراءة الجدول – عرض البيانات المحفوظة.",loading:"جاري تحميل الأسعار…",view:"التفاصيل",
+      sheetFail:"تعذر قراءة الجدول – عرض البيانات المحفوظة.",loading:"جاري تحميل الأسعار…",view:"التفاصيل",soonTitle:"الأسعار قريباً",soonText:"نعمل مع المحلات في قطر لنقدم لكم أسعاراً موثوقة ومحدّثة للهواتف والأجهزة. تابعونا قريباً!",soonNews:"اقرأ أخبار التقنية",
       news:"الأخبار",newsTitle:"📰 أخبار التقنية",newsNote:"العناوين تفتح في مواقع الناشرين الأصلية.",allSources:"كل المصادر",android:"أندرويد",iphone:"آيفون",tech:"تقنية",loadMore:"عرض المزيد",newsFail:"تعذر تحميل الأخبار. حاول مرة أخرى.",newsLoading:"جاري تحميل الأخبار…",ago_m:"د",ago_h:"س",ago_d:"ي",justNow:"الآن"}
 };
 const TIER_AR = {"Flagship":"رائد","Mid-Range":"متوسط","Budget":"اقتصادي","Low End":"أساسي"};
@@ -434,13 +450,14 @@ async function load(){
   applyLang(); buildControls();
   $("listTitle").textContent = t("loading");
   let note="";
-  try{ if(!SHEET_CSV_URL || SHEET_CSV_URL.startsWith("__")) throw 0; rows = await getCSV(SHEET_CSV_URL); }
+  if(!SHOW_SHOP_PRICES){ rows=[]; }
+  else try{ if(!SHEET_CSV_URL || SHEET_CSV_URL.startsWith("__")) throw 0; rows = await getCSV(SHEET_CSV_URL); }
   catch(e1){
     try{ rows = await getCSV("data.csv"); if(SHEET_CSV_URL && !SHEET_CSV_URL.startsWith("__")) note=t("sheetFail"); }
     catch(e2){ rows = parseCSV($("sample").textContent.trim()); note=t("preview"); }
   }
   // add online-store prices (silently skipped if not available yet)
-  try{ const online = await getCSV(ONLINE_CSV_URL).catch(()=>getCSV("online.csv")); rows = rows.concat(online); }catch(e){}
+  if(SHOW_ONLINE_PRICES){ try{ const online = await getCSV(ONLINE_CSV_URL).catch(()=>getCSV("online.csv")); rows = rows.concat(online); }catch(e){} }
   if(note){ const n=document.createElement("div"); n.className="notice"; n.textContent=note; $("v-home").prepend(n); }
   rows = rows.filter(r=>r.model && r.price).map(r=>({ ...r,
     price:+String(r.price).replace(/[^\d.]/g,""), old_price:+String(r.old_price||"").replace(/[^\d.]/g,"")||0,
@@ -546,7 +563,12 @@ function render(){
   ["home","deals","compare","saved","news"].forEach(v=>$("v-"+v).hidden = v!==state.view);
   if(state.view==="news") renderNews();
 
-  if(state.view==="home"){
+  const soon = !SHOW_SHOP_PRICES && !SHOW_ONLINE_PRICES;
+  $("soon").hidden = !soon;
+  ["types","tiers","topBlock","listTitle","list"].forEach(id=>{ $(id).style.display = soon?"none":""; });
+  document.querySelector(".filters").style.display = soon?"none":"";
+  if(soon){ $("empty").hidden=true; $("dealList").innerHTML=`<div class="empty" style="grid-column:1/-1"><i>⏳</i>${t("soonTitle")}</div>`; }
+  if(state.view==="home" && !soon){
     const top=products.filter(p=>p.disc>0 && p.anyStock && p.type===state.type).sort((a,b)=>b.disc-a.disc).slice(0,10);
     $("topBlock").hidden = !top.length || !!state.q;
     $("deals").innerHTML = top.map(card).join("");
@@ -555,7 +577,7 @@ function render(){
     $("list").innerHTML = list.map(card).join("");
     $("empty").hidden = list.length>0;
   }
-  if(state.view==="deals"){
+  if(state.view==="deals" && !soon){
     const all=products.filter(p=>p.disc>0 && p.anyStock).sort((a,b)=>b.disc-a.disc);
     $("dealList").innerHTML = all.map(card).join("") || `<div class="empty"><i>🔥</i></div>`;
   }
