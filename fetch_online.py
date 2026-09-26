@@ -12,7 +12,7 @@ To add a store or a collection: add a line to STORES below.
 
 To track single product pages from other (non-Shopify) stores, add them to WATCHLIST below.
 """
-import csv, json, re, sys, time, datetime, urllib.request
+import csv, json, re, sys, time, datetime, urllib.request, urllib.parse
 
 STORES = [
     {"shop": "iConnect Qatar", "base": "https://iconnectqatar.com",
@@ -246,12 +246,15 @@ def fetch_store(store, today):
 
 def fetch_watchlist(today):
     """Read price + stock from the schema.org Product data on single product pages."""
-    rows = []
+    rows, fails = [], {}
     for w in WATCHLIST:
         url, kind, shop = w["url"], w["type"], w["shop"]
+        host = urllib.parse.urlparse(url).netloc
+        if fails.get(host, 0) >= 2:  # site isn't answering us - stop asking, don't retry around it
+            continue
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html"})
-            with urllib.request.urlopen(req, timeout=60) as r:
+            with urllib.request.urlopen(req, timeout=25) as r:
                 html = r.read().decode("utf-8", "replace")
             product = None
             for block in re.findall(r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', html, re.S | re.I):
@@ -298,6 +301,9 @@ def fetch_watchlist(today):
             })
         except Exception as e:
             print(f"  watchlist: failed {url} ({e})")
+            fails[host] = fails.get(host, 0) + 1
+            if fails[host] == 2:
+                print(f"  watchlist: {host} not answering - skipping its other pages this run")
         time.sleep(DELAY)
     return rows
 
