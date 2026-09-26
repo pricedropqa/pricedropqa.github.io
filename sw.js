@@ -1,6 +1,6 @@
 // Service worker: lets the app open offline and load fast.
 // Change the version number whenever you update index.html so phones get the new version.
-const CACHE = "pricedrop-v7";
+const CACHE = "pricedrop-v8";
 const SHELL = ["./", "index.html", "manifest.json", "data.csv", "icons/icon-192.png", "icons/icon-512.png"];
 
 self.addEventListener("install", e => {

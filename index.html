@@ -115,7 +115,7 @@
   /* Bottom nav */
   nav.bottom{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:1px solid var(--line);
              padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -2px 12px rgba(0,0,0,.05)}
-  nav.bottom .in{max-width:620px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+  nav.bottom .in{max-width:620px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
   nav.bottom button{border:0;background:none;padding:8px 0 9px;cursor:pointer;color:var(--muted);font-size:11.5px;font-weight:600;position:relative}
   nav.bottom button i{font-style:normal;font-size:21px;display:block;line-height:1.3;filter:grayscale(1);opacity:.75}
   nav.bottom button.on{color:var(--brand-ink)}
@@ -174,6 +174,24 @@
   footer{text-align:center;color:var(--muted);font-size:12px;padding:28px 16px 10px;line-height:1.6}
   footer a{color:var(--brand-ink)}
   .view[hidden]{display:none}
+
+  /* News */
+  .nlist{display:grid;gap:10px}
+  @media (min-width:760px){ .nlist{grid-template-columns:1fr 1fr} }
+  .nitem{display:flex;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px;text-decoration:none;color:inherit;box-shadow:var(--shadow)}
+  .nitem:active{transform:scale(.99)}
+  .nitem img{flex:0 0 92px;width:92px;height:92px;border-radius:10px;object-fit:cover;background:var(--card-2)}
+  .nitem .nb{min-width:0;display:flex;flex-direction:column;gap:3px}
+  .nmeta{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);flex-wrap:wrap}
+  .ntag{font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.4px;padding:2px 6px;border-radius:5px;color:#fff;background:#7c3aed}
+  .ntag.android{background:#16a34a} .ntag.iphone{background:#2563eb}
+  .ntitle{font-weight:700;font-size:14.5px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .nsum{font-size:12.5px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .nitem.top{flex-direction:column}
+  .nitem.top img{width:100%;height:180px;flex-basis:auto}
+  .nitem.top .ntitle{font-size:17px}
+  .nsrc{padding-top:6px}
+  .nmore{display:block;margin:12px auto 0;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:10px 18px;font-weight:700;cursor:pointer}
 </style>
 </head>
 <body>
@@ -232,6 +250,15 @@
     <div class="grid" id="savedList"></div>
   </section>
 
+  <!-- NEWS -->
+  <section class="view" id="v-news" hidden>
+    <h2><span data-t="newsTitle">📰 Tech News</span><small id="newsUpd" style="font-size:12px;color:var(--muted);font-weight:500"></small></h2>
+    <div class="chips" id="newsCats" style="padding-top:0"></div>
+    <div class="chips nsrc" id="newsSrcs"></div>
+    <div class="nlist" id="newsList" style="margin-top:10px"></div>
+    <p class="hint" data-t="newsNote">Headlines link to the original publishers.</p>
+  </section>
+
   <section class="contact" id="contact">
     <h2 data-t="contactUs">Contact us</h2>
     <p class="sub" data-t="contactText">Questions, wrong price, or want your shop listed? We're happy to help.</p>
@@ -250,6 +277,7 @@
   <button data-go="deals"><i>🔥</i><span data-t="deals">Deals</span></button>
   <button data-go="compare"><i>⚖️</i><span data-t="compare">Compare</span><b class="count" id="cCount" hidden></b></button>
   <button data-go="saved"><i>❤️</i><span data-t="saved">Saved</span><b class="count" id="sCount" hidden></b></button>
+  <button data-go="news"><i>📰</i><span data-t="news">News</span></button>
 </div></nav>
 
 <div class="sheet-bg" id="bg"></div>
@@ -344,7 +372,8 @@ const I18N = {
       lowest:"Lowest price",category:"Category",discount:"Discount",bestShop:"Best shop",offer:"Offer",remove:"Remove",
       added:"Added to compare",max3:"You can compare up to 3 devices",savedT:"Saved ❤️",removedT:"Removed",copied:"Link copied",
       lastUpdated:"Last updated",contactUs:"📞 Contact us",contactText:"Questions, wrong price, or want your shop listed? We're happy to help.",email:"Email",website:"View on website",onlineStore:"Online store",ourScore:"PriceDrop Score",experts:"Expert reviews",results:"Results for",preview:"Preview mode – showing sample data. Real prices appear once the site is online.",
-      sheetFail:"Could not read the Google Sheet – showing saved data.",loading:"Loading prices…",view:"View details"},
+      sheetFail:"Could not read the Google Sheet – showing saved data.",loading:"Loading prices…",view:"View details",
+      news:"News",newsTitle:"📰 Tech News",newsNote:"Headlines link to the original publishers.",allSources:"All sources",android:"Android",iphone:"iPhone",tech:"Tech",loadMore:"Load more",newsFail:"Could not load news. Try again.",newsLoading:"Loading news…",ago_m:"m ago",ago_h:"h ago",ago_d:"d ago",justNow:"just now"},
   ar:{search:"ابحث عن هاتف، تابلت، ماركة…",install:"تثبيت",topDeals:"🔥 أفضل 10 عروض",seeAll:"عرض الكل",noMatch:"لا توجد أجهزة مطابقة. جرّب فلتر آخر.",
       allDeals:"🔥 كل العروض – الأعلى خصماً أولاً",compare:"مقارنة",saved:"المحفوظة",home:"الرئيسية",deals:"العروض",
       disclaimer:"الأسعار من المحلات وقد تتغير. يرجى التأكد مع المحل قبل الزيارة.",shopOwner:"صاحب محل؟ أضف أسعارك مجاناً",
@@ -356,7 +385,8 @@ const I18N = {
       lowest:"أقل سعر",category:"الفئة",discount:"الخصم",bestShop:"أفضل محل",offer:"العرض",remove:"إزالة",
       added:"أضيف للمقارنة",max3:"يمكنك مقارنة 3 أجهزة فقط",savedT:"تم الحفظ ❤️",removedT:"تمت الإزالة",copied:"تم نسخ الرابط",
       lastUpdated:"آخر تحديث",contactUs:"📞 اتصل بنا",contactText:"لديك سؤال، سعر خاطئ، أو تريد إضافة محلك؟ يسعدنا مساعدتك.",email:"البريد",website:"عرض في الموقع",onlineStore:"متجر إلكتروني",ourScore:"تقييم PriceDrop",experts:"مراجعات الخبراء",results:"نتائج",preview:"وضع المعاينة – بيانات تجريبية.",
-      sheetFail:"تعذر قراءة الجدول – عرض البيانات المحفوظة.",loading:"جاري تحميل الأسعار…",view:"التفاصيل"}
+      sheetFail:"تعذر قراءة الجدول – عرض البيانات المحفوظة.",loading:"جاري تحميل الأسعار…",view:"التفاصيل",
+      news:"الأخبار",newsTitle:"📰 أخبار التقنية",newsNote:"العناوين تفتح في مواقع الناشرين الأصلية.",allSources:"كل المصادر",android:"أندرويد",iphone:"آيفون",tech:"تقنية",loadMore:"عرض المزيد",newsFail:"تعذر تحميل الأخبار. حاول مرة أخرى.",newsLoading:"جاري تحميل الأخبار…",ago_m:"د",ago_h:"س",ago_d:"ي",justNow:"الآن"}
 };
 const TIER_AR = {"Flagship":"رائد","Mid-Range":"متوسط","Budget":"اقتصادي","Low End":"أساسي"};
 
@@ -513,7 +543,8 @@ function render(){
   document.querySelectorAll("#types .tile").forEach(b=>b.classList.toggle("on",b.dataset.type===state.type && !state.q));
   document.querySelectorAll("#tiers .chip").forEach(b=>b.classList.toggle("on",b.dataset.tier===state.tier));
   document.querySelectorAll("nav.bottom button").forEach(b=>b.classList.toggle("on",b.dataset.go===state.view));
-  ["home","deals","compare","saved"].forEach(v=>$("v-"+v).hidden = v!==state.view);
+  ["home","deals","compare","saved","news"].forEach(v=>$("v-"+v).hidden = v!==state.view);
+  if(state.view==="news") renderNews();
 
   if(state.view==="home"){
     const top=products.filter(p=>p.disc>0 && p.anyStock && p.type===state.type).sort((a,b)=>b.disc-a.disc).slice(0,10);
@@ -644,6 +675,55 @@ async function share(id){
   const text=`${p.brand} ${p.model} ${p.storage} – ${t("from")} ${fmt(p.min)} on PriceDrop QA`;
   try{ if(navigator.share) await navigator.share({title:"PriceDrop QA",text,url}); else { await navigator.clipboard.writeText(text+" "+url); toast(t("copied")); } }catch(e){}
 }
+/* ---------- news ---------- */
+const news = { items:null, updated:"", cat:"", src:"", shown:30, loading:false, failed:false };
+function ago(iso){
+  const s=(Date.now()-new Date(iso))/1000;
+  if(s<60) return t("justNow");
+  if(s<3600) return Math.floor(s/60)+" "+t("ago_m");
+  if(s<86400) return Math.floor(s/3600)+" "+t("ago_h");
+  return Math.floor(s/86400)+" "+t("ago_d");
+}
+async function loadNews(){
+  if(news.loading) return; news.loading=true; news.failed=false;
+  try{
+    const r=await fetch("news.json?t="+Date.now()); if(!r.ok) throw 0;
+    const d=await r.json(); news.items=d.items||[]; news.updated=d.updated||"";
+  }catch(e){ news.failed=true; }
+  news.loading=false; if(state.view==="news") renderNews();
+}
+function renderNews(){
+  const list=$("newsList");
+  if(!news.items){
+    list.innerHTML=`<div class="empty">${news.failed?t("newsFail"):t("newsLoading")}</div>`;
+    if(!news.failed) loadNews(); return;
+  }
+  $("newsUpd").textContent = news.updated ? t("updated")+" "+ago(news.updated) : "";
+  const cats=[["",t("all")],["android",t("android")],["iphone",t("iphone")],["general",t("tech")]];
+  $("newsCats").innerHTML=cats.map(([v,l])=>`<button class="chip ${news.cat===v?"on":""}" data-ncat="${v}">${esc(l)}</button>`).join("");
+  const srcs=[...new Set(news.items.map(i=>i.source))].sort();
+  $("newsSrcs").innerHTML=[["",t("allSources")],...srcs.map(s=>[s,s])].map(([v,l])=>`<button class="chip ${news.src===v?"on":""}" data-nsrc="${esc(v)}">${esc(l)}</button>`).join("");
+  const items=news.items.filter(i=>(!news.cat||i.category===news.cat)&&(!news.src||i.source===news.src));
+  if(!items.length){ list.innerHTML=`<div class="empty"><i>📰</i></div>`; return; }
+  const lab={android:t("android"),iphone:t("iphone"),general:t("tech")};
+  list.innerHTML=items.slice(0,news.shown).map((i,n)=>`
+    <a class="nitem ${n===0&&i.image?"top":""}" href="${esc(i.link)}" target="_blank" rel="noopener">
+      ${i.image?`<img src="${esc(i.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:""}
+      <div class="nb">
+        <div class="nmeta"><span class="ntag ${esc(i.category)}">${esc(lab[i.category]||i.category)}</span><span>${esc(i.source)}</span><span>· ${ago(i.published)}</span></div>
+        <div class="ntitle">${esc(i.title)}</div>
+        ${i.summary?`<div class="nsum">${esc(i.summary)}</div>`:""}
+      </div>
+    </a>`).join("") + (items.length>news.shown?`<button class="nmore" data-nmore="1">${t("loadMore")}</button>`:"");
+}
+document.addEventListener("click", e=>{
+  const b=e.target.closest("[data-ncat],[data-nsrc],[data-nmore]"); if(!b) return;
+  if(b.dataset.ncat!==undefined){ news.cat=b.dataset.ncat; news.shown=30; }
+  else if(b.dataset.nsrc!==undefined){ news.src=b.dataset.nsrc; news.shown=30; }
+  else news.shown+=30;
+  renderNews();
+});
+
 function go(v){ state.view=v; window.scrollTo(0,0); render(); }
 function applyLang(){
   document.documentElement.lang=state.lang; document.documentElement.dir=state.lang==="ar"?"rtl":"ltr";
