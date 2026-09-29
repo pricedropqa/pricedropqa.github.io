@@ -1,12 +1,12 @@
 {
- "updated": "2026-09-28T23:59:44.676373+00:00",
+ "updated": "2026-09-29T04:27:54.981827+00:00",
  "sources": {
   "androidpolice": {
    "items": 10,
    "feed": "https://www.androidpolice.com/feed/"
   },
   "xda": {
-   "items": 9,
+   "items": 10,
    "feed": "https://www.xda-developers.com/feed/"
   },
   "9to5mac": {
@@ -22,25 +22,135 @@
    "feed": "https://www.tomsguide.com/feeds.xml"
   },
   "gn-android": {
-   "items": 38,
+   "items": 37,
    "feed": "https://news.google.com/rss/search?q=android+phone+OR+samsung+galaxy+OR+google+pixel+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   },
   "gn-iphone": {
-   "items": 35,
+   "items": 32,
    "feed": "https://news.google.com/rss/search?q=iphone+OR+ios+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   }
  },
  "items": [
   {
-   "id": "854edffb248a",
-   "title": "I’m surprised at how low demand for the iPhone 18 Pro seems to be",
+   "id": "3e1fb37146ae",
+   "title": "7 Hidden Settings You Should Change On An Older iPhone",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZlFGUmhlcDZTb1gza0JaRXZYQlpEUkxKNGxqem9vSWRTNFl6b1c3MVFtdS1TOFRuMTdDLXcwaUROYmRhcktFS1h3a21oclBfQWc4SVQxV0tiOHFGaEJ4SUlwbjd3bUFnZWJCVmJnd21GTnlWVTIzTWJzQVd6RnRGOWVJdEJHdDAxc2hJRHdB?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA4dkpBOUtKLUpHcm5faVQ0RzI2RWtNRW5OWmVZMDAyMjFPR0h5c1N3bHk2RGpULUFWdjlOcVNObGJkRFdkZ0VyWW5hN21FRDNGUDNwa1RaLXhLb2N6Z01hWTlsYTlfZlpvTnc?oc=5",
    "image": null,
-   "source": "PhoneArena",
+   "source": "bgr.com",
    "sourceId": "gn-iphone",
    "category": "iphone",
-   "published": "2026-09-28T23:55:55+00:00"
+   "published": "2026-09-29T03:38:01+00:00"
+  },
+  {
+   "id": "631b09933496",
+   "title": "One Tech Tip: iOS 27 comes with revamped screen time controls and other useful new features",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVmJBQV96MmE1U2prbjF0czBNdkhiR090NFdsaFd4TkEyN1FKVm85UFJPZ0NmWnNEZ3dNN1Rma0lYc1BGbEhWZUJUdmNUSDFIaHhqZ0VsVFRpVFp6aEV4OG5kXzl3TnE1eVVNeWI3OWhOZ21LWHpZbm5pSkFpOEsxRVdld0xMYWRxRG1Od0ZoOThHMXpoMDQxMWJpc00zUQ?oc=5",
+   "image": null,
+   "source": "Texarkana Gazette",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-29T03:00:00+00:00"
+  },
+  {
+   "id": "daacdbdd045d",
+   "title": "Emmy wins and recent premieres help Apple TV reach highest weekly viewership ever",
+   "summary": "Deadline reports that Apple TV recently recorded its biggest week ever for viewership, fueled by its 29 Emmy wins and recent releases such as Ted Lasso and Mayday. Here are the details. more…",
+   "link": "https://9to5mac.com/2026/09/28/emmy-wins-and-recent-premieres-help-apple-tv-reach-highest-weekly-viewership-ever/",
+   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/apple-tv-intro-vibrant.jpg?quality=82&#038;strip=all&#038;w=1600",
+   "source": "9to5Mac",
+   "sourceId": "9to5mac",
+   "category": "iphone",
+   "published": "2026-09-29T01:44:04+00:00"
+  },
+  {
+   "id": "c343ed248967",
+   "title": "Apple and Amazon face renewed UK antitrust lawsuit",
+   "summary": "A UK tribunal has allowed part of a renewed antitrust lawsuit against Apple and Amazon to move forward, over allegations that the companies restricted competition for Apple and Beats products sold on Amazon. Here are…",
+   "link": "https://9to5mac.com/2026/09/28/apple-and-amazon-face-renewed-uk-antitrust-lawsuit/",
+   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/02/amazon-apple.jpg?quality=82&#038;strip=all&#038;w=1600",
+   "source": "9to5Mac",
+   "sourceId": "9to5mac",
+   "category": "iphone",
+   "published": "2026-09-29T01:21:23+00:00"
+  },
+  {
+   "id": "109e4f89aceb",
+   "title": "iPhone 20 display leak teases massive upgrade over iPhone 18 Pro",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5QdUdfdXFuY2Q4UE1Uc3NTRzVNTUQ2LWcxT0FfMlgzVXhHUHh2blRGX1ZuMGxMMWlzQi1WX1pxM052VFBpdVBmSFpvM3hkZk5CeFNkLTk3TkVmTXlnVDF0NzJ1SlpxRmRrcFFqVl8taw?oc=5",
+   "image": null,
+   "source": "Mashable",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-29T01:12:59+00:00"
+  },
+  {
+   "id": "d37c909b92fd",
+   "title": "Best Google deal: Save $75 on Google Pixel 10a",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5pSGt4RVNBWlJkMkJybzNCTFVpZVRDWW03Uk5PNEtJdERlaEZEV2pDTldoMGtLc3hIUm05WEdvZWlweFVfVVhwZUlmZ1lpMFBpb2dsTHNBZTExUW5DeVJxb1RRU2VFdw?oc=5",
+   "image": null,
+   "source": "Mashable",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-09-29T01:09:31+00:00"
+  },
+  {
+   "id": "ec5dace7adec",
+   "title": "This website lets you explore nearly 30 years of Apple product colors",
+   "summary": "The folks at sheets.works are back at it again, this time with an interactive archive of 341 Apple product colors spanning nearly three decades. Here are the details. more…",
+   "link": "https://9to5mac.com/2026/09/28/this-website-lets-you-explore-nearly-30-years-of-apple-product-colors/",
+   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/09/apple-in-colour.jpg?quality=82&#038;strip=all&#038;w=1600",
+   "source": "9to5Mac",
+   "sourceId": "9to5mac",
+   "category": "iphone",
+   "published": "2026-09-29T01:01:54+00:00"
+  },
+  {
+   "id": "a67e2720800a",
+   "title": "Nothing Headphone (1) Pro have three drivers, 46dB noise cancellation, and an unusual studio mode",
+   "summary": "Will these be Nothing's most capable headphones yet?",
+   "link": "https://www.androidpolice.com/nothing-headphone-1-pro-news/",
+   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/09/nothing-headphone-1-pro-back.jpg",
+   "source": "Android Police",
+   "sourceId": "androidpolice",
+   "category": "android",
+   "published": "2026-09-29T01:00:10+00:00"
+  },
+  {
+   "id": "7e84f2864a6a",
+   "title": "Going on a casual date with the iPhone 18 Pro Max (VIDEO)",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1HQU1RdDFjU1E2Z0ktclo2RmZDRTk0Z1VXV0hiZktwbklXWkNBWElObkZmbWk1RmRlaFJUVW82T1FfaWpYMXRuUW1NTVNkVkd0QllzZl9vS3hkWWMybWx4bFRicVdKcE5KelY5MFNyYzEzSW4wLXU5dnVtSXlrc2c?oc=5",
+   "image": null,
+   "source": "Yahoo",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-29T00:45:00+00:00"
+  },
+  {
+   "id": "26e4bbc7bbaf",
+   "title": "Someone got Super Mario 64 running on the SNES using the Super FX chip",
+   "summary": "It looks surprisingly good.",
+   "link": "https://www.xda-developers.com/someone-got-super-mario-64-running-on-the-snes-using-the-super-fx-chip/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2026/09/snes-mario-64-featured.jpg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-09-29T00:07:32+00:00"
+  },
+  {
+   "id": "c1695308bd66",
+   "title": "I tried replacing Proxmox with an open-source OS you’ve never heard of",
+   "summary": "This Proxmox rival gets a lot of things right",
+   "link": "https://www.xda-developers.com/i-tried-replacing-proxmox-with-an-open-source-os-youve-never-heard-of/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/09/zsvirt-16.jpg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-09-29T00:00:17+00:00"
   },
   {
    "id": "2b03d6283df2",
@@ -59,10 +169,21 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9pVzkxZTFRQmtaVHF4ajgtZDNnTTMtMW1SVHBBS2tTTW5UVnllZEFPQ0RuX21qT00waEhtRXFCWjF3QXQ0ZHkwUEpvU3FtODBtLVJDODZ3Z3l4NHlseGtzalJNaFVPV09VYTVyUXZtMy1nUE5IUGZaSzZR?oc=5",
    "image": null,
-   "source": "engadget.com",
+   "source": "Engadget",
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-09-28T23:30:00+00:00"
+  },
+  {
+   "id": "d69809066cd2",
+   "title": "iOS 27 Running Hot on Your iPhone? Here’s Why & How to Fix It",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMzg3VTFXbmRXQXpYUy1tMU9uNEJRN1ZjMnljRWw0M09pa2xLclZOSTY1SFJNM3MxR3dGVG9jU0RDNVZxb1hjSGQ2cUIwcVpQMFlEMVNXOXBCd09mekY0T2lwTElzZTFHa0hySThJRGhRMmk0SHFmUi14NkEwYkUtSWRYQW9UVlJoNkdrYml4ZkhrYkFh?oc=5",
+   "image": null,
+   "source": "osxdaily.com",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-28T23:26:07+00:00"
   },
   {
    "id": "3dfb7f49f7e6",
@@ -125,10 +246,21 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQY0Q4TjVicm0ta2duRmtIS3U0Y3JZM3I5eG9tdHFwelFhTmE3TjA5UkNFZnZXcnhDR3ZQa3AzYVpMcUQ5cDNXS2M3NmtTRndQdXAzbmlwUHFOZWFYblFRYzlQMVVsVGMtZXljeUc2Y3VrclU5Z19mQUdjbGpPMEVNRERvSTc?oc=5",
    "image": null,
-   "source": "engadget.com",
+   "source": "Engadget",
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-09-28T22:30:00+00:00"
+  },
+  {
+   "id": "c9d0a304ffc4",
+   "title": "Woman mailed away new iPhone to scammers less than two hours after delivery",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPaW9VMFpGNE52SDM3cTRHekZtM3BxUnlieGRRRmdyaWE0NVBmTlh6T1hXaEIxb0VYbURadXZDWEROOTQtMkhfaHU1LUM1NktEYnRfSktOUVljYUNBN1R5U1JQeEtlVk5sV2RRQ2lGZmVZMFVkN05jU2FOelJCWDZsdTRCOFlZaWlJUzJzUGpwemh5YnNCX1J5QUE2THl5eFlSd1dESjY0Nm5FNXN1SWNhZ21kMEdDdFV3ZWhud0stZkdJT1hudUpwS0RUTDgza1ZaOVNEZXE3cVR0cTNDUUwwRUZTSdIB9wFBVV95cUxNbmFMblZHMEVwcnJTMHB4WXJVb2cxRXppZjlJMGRUZGoyTXFhZ0tDaVhIZVc4YTVwRXAyWEZnc0VVVUtZRDZSMWNOWkRXd0EtVVNHTFZUZU0zVEhoSFQxUzhlVk5GQWZJXzN0TTE2QUs0bk5XYkRXRWtFeXpqRjhLU2JlWkFvY0RFNURKZDVJbzhwMWxRUktzNXNSUXlHQ19vb1pPRnphU1BZeGhFNzBtMy02TVhaSjE4b1ktQ01RMmxqWmxoUTFhZHpVU3Qwa2NUTnRGbWpFazVLWFFybi0wallRbnJFQzJNLXF0ZUdmLXRqU2MwTWNV?oc=5",
+   "image": null,
+   "source": "WSB-TV",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-28T22:27:07+00:00"
   },
   {
    "id": "bf09d56de56e",
@@ -147,7 +279,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNS1U0R2pwVzdZUGxHQk9PNlJXdGM2SGwyanVZYWZfYjUxMWVOMkV3SVpWbWFuLUEtLVBWNk9HaVdlZ21seVNIaHI3OHZ0eEsxcnVUekZ3TmhubFg1WnI4clVSb3hwcEFCbXFVRnhpZ2hZSDgzODRLRXBMRld0QmZ2TnFoV2x3UVRDWFhHblFqdk5aY2Y2Wmc?oc=5",
    "image": null,
-   "source": "cnet.com",
+   "source": "CNET",
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-09-28T22:04:03+00:00"
@@ -172,7 +304,7 @@
    "source": "Android Headlines",
    "sourceId": "gn-android",
    "category": "android",
-   "published": "2026-09-28T21:45:17+00:00"
+   "published": "2026-09-28T21:49:35+00:00"
   },
   {
    "id": "3360edd8856c",
@@ -186,15 +318,15 @@
    "published": "2026-09-28T21:38:21+00:00"
   },
   {
-   "id": "39333ff6dae9",
-   "title": "Google Wallet loses some of its magic on Pixel phones",
+   "id": "f8c06db8b196",
+   "title": "If you have an iPhone, Apple might owe you money. Here's how to claim it.",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1vWWlpS2VObFRnR2dJZzBxTDd0b0pSbmR2WVAzbmFuSExBa3UzMUJ2VEZpUHNlSlMxYnRYRlVGQ1ByWllPSkMzUDJDWl80VzFVczJJYnpNNGpONUktS2tXTjBzWXFMR0ljWlRoVWcxWW5BSWYyWHlCclpLZnc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80UmltZDJRQ211UXp5amlUcnluOHBOM2pOa3ExSXRHV2piZnNScHE3RWVSQnYwYkRxS0Y3Z0M0OWkyVG9vcnZraFFKYU9Oa0FfbzVkcXZQTHkyTWJZQ1NrNnptLXdlZUZyX2g1QW9NbG1TQ3M?oc=5",
    "image": null,
-   "source": "Android Police",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-09-28T21:38:21+00:00"
+   "source": "Mashable",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-28T21:35:02+00:00"
   },
   {
    "id": "741d4bbda080",
@@ -206,28 +338,6 @@
    "sourceId": "xda",
    "category": "android",
    "published": "2026-09-28T21:30:18+00:00"
-  },
-  {
-   "id": "db351d5147fe",
-   "title": "iOS 27.0.1 Update with Bug Fixes Released for iPhone & iPad",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVHNPUWtRampHT0RVYnpBOGgwTkJnbVFoYndWTU9hRURpUGVIX0JxanUxNnpMR0N0RW1uMjdENFA5ZkdDNHBRd1pGbFpuNmFEWmJjTjB3S2R1enRNRUJSSEt5UHFTSGNrbjZKbEdvWkd1YUpDNkZtblA1YjZZd25LanlYRHVndmZuUGE4anpVVE5DeHN5?oc=5",
-   "image": null,
-   "source": "OS X Daily",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-28T21:28:39+00:00"
-  },
-  {
-   "id": "7e2d30bcf6ca",
-   "title": "Honor's new phone has cinema cameras the iPhone 18 Pro can't touch",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9fTUZOOEN6V0NSVndYd3lTNWtPNFp0UzJmV2lRVUg5TmxTdnZxV2tpbEFrUDk3a0g3dHJRVTF2Y0diaEFQb2g5UHlfNmZDYVpSZkdzSFU5eEdBcjIxQVJOMlVNeDFGdldrUDJVOVlNZTJVSFJ6eXQxWW84WGFMUQ?oc=5",
-   "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-28T21:18:42+00:00"
   },
   {
    "id": "72cbdf0b89f3",
@@ -246,7 +356,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPV21vZ0psb3Rka1ppcm5XUXphVTloMV96Yk40WXlHbzc5VktiSGJ4SG1NcXg5eW9oQzdUM2ZBVUF3OC1hRlk1QVZvQzB4LW1CajA0dTRCcjlLUkpiZkpLZVZpekhFUXJncjIyM3FwQUpNd3J1eElZdHdxVEZvc3BvQXNPRzZPNHRCWTF4bTVBWnFaZE5FTVhSakxHOVR2Y0l4d2hTcDhleFh1dw?oc=5",
    "image": null,
-   "source": "cnet.com",
+   "source": "CNET",
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-09-28T21:10:53+00:00"
@@ -263,28 +373,6 @@
    "published": "2026-09-28T21:10:42+00:00"
   },
   {
-   "id": "8bba1b98c7dc",
-   "title": "iPhone 18 Pro demand looks ‘healthy’ as lead times barely ease – JPMorgan",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUmc5bFJEMjFmYkpzbnZIWXRXbFozSFZybEFPeFdxaEdfTTBOem9RaGpHZjkycTRBNlNyTW9qejkzMnpHcjF0RTY4S2I1Ny1zaFoxMFRYZFM4UF81aEZWTmgwX2tmcFlXb0dEaENNYzRSemlZWWVrTGsyT2JZSjVjck56NW9wR3hIOFhIdGgwZl9WamFZSWlNREZkRndLaWQ4cHI2VjVhbzRLQdIBrwFBVV95cUxNVjUtZm9MdHU5aHhTZENTcUJ4VEVVUnB0VnVhVVZER0N5STNMOWFTOWUtRGY3R05sLVZ3UlBtQ2c1V2lvTzhFNWFVQjBsS29tMXZYSnEwc1ZIUERIWlVaUGh4YVBiTzNTNWR2RkJHcGstZmJTbjdZRWFHb2JEcGR0SURXNHhhNmdxazdiUk1DV2hiWWI4Y1gtbHVJRm96c2kxZTZiQURON2NpbnZPT3Vv?oc=5",
-   "image": null,
-   "source": "MacDailyNews",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-28T21:06:44+00:00"
-  },
-  {
-   "id": "02c404698583",
-   "title": "Apple iPhone 18 Pro vs. iPhone Duo: To Fold or Not to Fold, That Is the Question",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSDlPWVR2ejdJMllMV251bmFlTUJPWXBmUG1GNWpoS3VpbW9XTGxMektVRkhUdkJXZk1ZNlV6NXlURlJSWE1tVnJpNEJlMmtWRkpwNWxJY0U2V215UlFWVUs5bUlXaGNCbkViX2dVY2dFT3FLdDVhZV9mNDdVMzVXazhOb1FUSE5FRGRJM0hvcEdGZWQwOGVFb0JGLUcwS2RlaFpIQ0tOYWUySHNYVk5Pbw?oc=5",
-   "image": null,
-   "source": "PCMag",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-28T21:00:31+00:00"
-  },
-  {
    "id": "cb41e4f7df0a",
    "title": "Windows 11 and my old Android phone made buying a webcam feel like a waste of money",
    "summary": "A decade of webcam stagnation meets a modern workaround using Windows 11 and a phone's superior camera hardware.",
@@ -294,17 +382,6 @@
    "sourceId": "xda",
    "category": "android",
    "published": "2026-09-28T21:00:16+00:00"
-  },
-  {
-   "id": "360d1db9f468",
-   "title": "One Tech Tip: iOS 27 comes with revamped screen time controls and other useful new features",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxONzBfWnhsVGdPMzU1ZkpEZWNvNVJqdFdxbkR0Ung1aWNVR2I4Zm1OYlpCaGpZQ2hoNXdkdFo4d0FWdUhIdlktMUF2a01ab1dSWkM2QWxnbGZzN1RQZDBpaTlyajB1SHdDOHdET3VLNXk1RXRMT2VabUFTdzRIR1FMNkJib0J0YzVQVXNXYjVJRGR1MG5ab2hWUGpKa2tkSFg2ZTVEdE9aZDdFZ3JDRnR3TUpRa3c2ay1uTmdrTEVNUWpVRkg0anpnSmVYWlc5S1E?oc=5",
-   "image": null,
-   "source": "Sentinel Colorado",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-28T20:47:26+00:00"
   },
   {
    "id": "1c97702eeddc",
@@ -505,6 +582,17 @@
    "published": "2026-09-28T19:24:26+00:00"
   },
   {
+   "id": "5907bdca2968",
+   "title": "Pixel phones' notifications and Quick Settings are going haywire",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE50UklockoxbkRsQk9hNlczdEtMZExmWWRMVmVTVnpDZ0ZBTzhBejllT0ZVaE9Ka0x0cFlhdlhoaVNNUEtMdWhUWHUxNWsxcHJpZTVQRmQ2amRxYWQxcUFHci1MTkVtanpYRmRzTTY3ZDlCbnFpQzdrUWlrRUE3QQ?oc=5",
+   "image": null,
+   "source": "Android Authority",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-09-28T19:23:00+00:00"
+  },
+  {
    "id": "fd8400265882",
    "title": "An iPhone Helped Shyamsundar Solve a Nanoparticle Mystery",
    "summary": "",
@@ -587,7 +675,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUW9iMXNiSmxnamtlVEU0ZzhSaFdWbFdGb19ielVMczZRRU9LdE1ubjlHXzUxQWpOVjBKcjFscXVFUWhwQWlmTjBmbVR6SzZyZW9tY09xakN4Q3FnQklzX3JFOF9UNlFDMG5yZU5lTC03TlRfclNRWlpQVHhUSGtMSXBTWkYtSXZwQ09DRllDRGdEa2pPbGlPbDJndkZnb2l3akQ5LTZ6eU50SVA2aUZpOQ?oc=5",
    "image": null,
-   "source": "cnet.com",
+   "source": "CNET",
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-09-28T18:40:00+00:00"
@@ -602,28 +690,6 @@
    "sourceId": "tomsguide",
    "category": "general",
    "published": "2026-09-28T18:38:45+00:00"
-  },
-  {
-   "id": "4b734195fafd",
-   "title": "My Wi-Fi drops every day at the same time, and I finally understand it's not my router",
-   "summary": "Your Wi-Fi may be suffering due to all the network activity around it",
-   "link": "https://www.xda-developers.com/wi-fi-drops-every-day-same-time-i-finally-understand-why/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/09/wi-fi-speed-test-phone-pc-setup.jpeg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-09-28T18:30:17+00:00"
-  },
-  {
-   "id": "f9575abd49f9",
-   "title": "iPhone software patch fixes nasty iOS 27 freeze bug and more",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUEhzZlhiaGVzZmRaX1M4ZEZ2OU1tOWZSel9IWnc3VlVkclVEVk5sbmNuamhXQ3FpdDhYWC0wWVhLM1BtZk4xVExWeldHTlBqMVFRLVZELV95QXBxSFNwWTZmel9VbnRNS19FeUlGWXRrU3NRV19yM1owbmQwcGFSby1NM1pYRURnOEhuZy1NUWZEaHhTWFE?oc=5",
-   "image": null,
-   "source": "Cult of Mac",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-28T18:29:53+00:00"
   },
   {
    "id": "c4cd3582740c",
@@ -657,6 +723,17 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-09-28T18:21:21+00:00"
+  },
+  {
+   "id": "b9881de751ef",
+   "title": "Apple announces first-ever foldable iPhone, starting at $1,999",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUndmcnBXT0RUR3lObFJ6clFkYUxfNVNJOU5FdWR2ZWo3UHBzOWhhaFJMbTZ5Nm5ZOVMtNGN1NVFzZzhxMm80QWZibTRyVlhtNFRIM3BGOEtfQmRWbkE2T1NocXI0NXphaUhNM1U3eU5UZXFMUU1IQl93QjRjb1hHM2RJLXFRUdIBiwFBVV95cUxOZkFrUHVlN1M5ZmNtTVpfZnkwZHNESmVkUUkxODFQWkk2X0VjM0llVGZuUnV4TnQxbFdJaF8xZ191YWotSm5kNjd4ZXJDSEVJVXVOYk5GRWk0U3AtZjVUSGxGSzd1YWc5bDlVQXBTM2pfeEdYNEJhb1NTNnR6QkRBMkRjLVZGdHM1bVFz?oc=5",
+   "image": null,
+   "source": "ABC News - Breaking News, Latest News and Videos",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-28T18:15:54+00:00"
   },
   {
    "id": "929ddf668d1c",
@@ -703,17 +780,6 @@
    "published": "2026-09-28T18:00:35+00:00"
   },
   {
-   "id": "848cdba42a8a",
-   "title": "Apple releases iOS 27.0.1 and iOS 26.7.1",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQVRYSVFmOVpkZjBHZ0QtYUJtdGk3RzB6cG9VWVJ0NVp1cS1PajBFaDJXdWVsUzhYU3pkanpGZl9qZW1KV3paakNFcmxVekExT0V6WTdSWTFVcm9kM3A4dEJNRnh6UWJ2dTdsQzdlRWszc19GbjdFemNMYzV6b2EzQjlYVdIBiAFBVV95cUxOVk1PLXVoaVB6UVd0MzhkT28xT2RrcUVDSUFsMG5oS0E1bEVIcnpIUU9Sam1CVEZwVlJLSTBmOERxYlhkTWY2ckg0ejlHYWNVSWdBRmswX3hkTlZUS3pfckVXcndRdHU2SzkzTV9lcnlvSW9FTW04UWkyYUU2Uy03aW8xbWgzZE5p?oc=5",
-   "image": null,
-   "source": "MacDailyNews",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-28T18:00:27+00:00"
-  },
-  {
    "id": "f77cec6722df",
    "title": "12 budget-friendly Amazon fall decor finds from $6 to give your home a seasonal glow-up",
    "summary": "As we enter fall, it's the perfect time to refresh your living space. It doesn't have to be expensive, though. Check out these 12 Amazon deals and transform your house into a cozy autumnal environment.",
@@ -725,12 +791,23 @@
    "published": "2026-09-28T18:00:00+00:00"
   },
   {
+   "id": "0a7de82d8fd5",
+   "title": "Apple iOS 27.0.1 Out Now: Core Bug Fixes Land For All iPhone Users",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNWk1oZnpjLWxYa2dXWGFfSUZpVWJjaFNjSXpUM2dqTTY2MWpHLWdpOS1ON3JuRTFMaUVDVldOVVFURU1DX2FyTnJhSFF6WVpPaVh5N3ZqRWdZZnFxYVk4YnN4SlEtOGpZRDNybFNnVDhnVGxpNkxJMlcxNjg1c01qUTJSMUZuLVdVNjNDTmY3OHFEMF9PdEZXV1UtMmN0WDZXdUV1bU9UQ0RTczE5d2VCR29ONjRqUU5Cd29leXhWMG9WRXVFUW40bW13?oc=5",
+   "image": null,
+   "source": "Forbes",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-28T18:00:00+00:00"
+  },
+  {
    "id": "50d64ac10252",
    "title": "With iOS 27, Apple Is Quietly Setting the Stage to Paywall Your iPhone",
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTzBQdlFGZnFWM1E0MkNESkVHRUg3VUVqWkZHWDhkZ3ZoZnJWVk90WUhfMDZUYlVLSmY2YnFOQmxsX3A0WTJMU0d5NnR5X3NnUkRBM2s5WER0T29CXzh1OXBlbHVpbURJeXNBT0pZODJVT1NndXV0ekE1ZVV6MTNJVUlpVzVzMkFFV3Riand1UXMyOHNfQW5jU01kUl9QLXhjTkww?oc=5",
    "image": null,
-   "source": "PCMag UK",
+   "source": "uk.pcmag.com",
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-09-28T17:58:35+00:00"
@@ -780,17 +857,6 @@
    "published": "2026-09-28T17:29:47+00:00"
   },
   {
-   "id": "19722ccdb11d",
-   "title": "Every 2027 iPhone could ditch Qualcomm for Apple’s own modem",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZOXpwbmp6MDZZRmVGeVB5TjhkejNqb3RDSHgtMWpCaDdZWFhRQ3VkVDdjVVcxRmtpcFUySWxVT2VMVHNrMnF4RGJUVWZoUWp1VGNrWkdQa1FzaThZSlp5M3BZOEdkUGdDR01rNXp3?oc=5",
-   "image": null,
-   "source": "Cult of Mac",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-28T17:21:41+00:00"
-  },
-  {
    "id": "11e0cf321c57",
    "title": "Apple releases macOS 27.0.1 Golden Gate, plus macOS Tahoe 26.7.1 and macOS Sequoia 15.8.1 [U]",
    "summary": "Following two release candidates, Apple today released macOS Tahoe 26.7.1 and macOS Sequoia 15.8.1, as well as macOS 27.0.1. Here are the details. more…",
@@ -835,17 +901,6 @@
    "published": "2026-09-28T17:08:19+00:00"
   },
   {
-   "id": "624679b3ade3",
-   "title": "With the release of the One UI 9 changelog, Samsung details everything coming to phones",
-   "summary": "A redesign of Samsung Health, accessibility improvements, and more customization options",
-   "link": "https://www.androidpolice.com/with-the-release-of-the-one-ui-9-changelog-samsung-details-everything-coming-to-phones/",
-   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2026/09/samsung-mobile-one-ui-9.jpg",
-   "source": "Android Police",
-   "sourceId": "androidpolice",
-   "category": "android",
-   "published": "2026-09-28T17:05:26+00:00"
-  },
-  {
    "id": "ded2aeebeaae",
    "title": "9to5Mac Daily: September 28, 2026 – New HomePod and Apple TV leaks, more",
    "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our dedicated RSS feed for Overcast and other…",
@@ -873,21 +928,10 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQWmw0QzB6TUdnZEZnV0pnVS1XTkRtTnB6Mkdra1Y4bUhiUENHbmxDSWdNV0RkejVxc0RTdjVyTE5rZ1Z1aTdVYkJ1ZnBFUFhDUWFIVFZCTnB1b3ZNUEZSMEdBT2xUZFlKWGc3VS1STnhUN1dfTW84UG5MZk9JNHJ5bUZqNnpBeDZEcUw2OWdEZFNvUmxfLUM3TWxmNlJ2MDY5aDV5a0gxQklhWldXVTktRGZEZm9HU1IwS2NURmNicVlyMS13MmtPOU93SklMR2NRdzE1Wm5xMlprQ0pZ?oc=5",
    "image": null,
-   "source": "androidcentral.com",
+   "source": "Android Central",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-09-28T16:12:05+00:00"
-  },
-  {
-   "id": "d37c909b92fd",
-   "title": "Best Google deal: Save $75 on Google Pixel 10a",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5pSGt4RVNBWlJkMkJybzNCTFVpZVRDWW03Uk5PNEtJdERlaEZEV2pDTldoMGtLc3hIUm05WEdvZWlweFVfVVhwZUlmZ1lpMFBpb2dsTHNBZTExUW5DeVJxb1RRU2VFdw?oc=5",
-   "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-09-28T15:58:35+00:00"
   },
   {
    "id": "1603b65b2513",
@@ -899,17 +943,6 @@
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-09-28T15:57:54+00:00"
-  },
-  {
-   "id": "ea03c6971a93",
-   "title": "Apple Confirms Fix Is Coming for iPhone 18 Pro ‘Panic-Full’ Reboots",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZ3lCaWRMS2FudmF6cUFRNkF3VUFYc0lwbXpxWDlzR09YZmJ0bGhkbnEyLXdzbzhRazYwT19IYk9YZGw1OEltX2lCRFhfbjJjd0JvcGNkQmMtWElETzIyZU1FN2U2QXEyT2VOamkzbmRwem9OMlF0U2Y1ZjFXZWtzTTBZb1M5cC1sSXMtVHJYMncyTWltN3QtWHlEcHZWMWZNQjRLWjJNdVdlVUNkSVREMC03Tk1SQWxtOEQ3cHoxQ28?oc=5",
-   "image": null,
-   "source": "Yahoo Creators",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-28T15:57:01+00:00"
   },
   {
    "id": "56c95e64fb7a",
@@ -932,6 +965,17 @@
    "sourceId": "tomsguide",
    "category": "general",
    "published": "2026-09-28T15:55:49+00:00"
+  },
+  {
+   "id": "5ffb04861e7b",
+   "title": "iPhone 18 Pro and Pro Max sold 1.3 million units in China during the first week, beating the 17 Pros - GSMArena.com news",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNVzdFTXRnVzdqNnhFdm5SSlBXZHdIUDlINVZiM21ia0t3TlJoY1hPa2VkQ2xFM2ZxMFd6bUROeHBLdEZ0VEJfS05lTXU0S0R1WlFGUFRTUDdiUFZsTm1IeWRvTDFvSWV3TkRUQUM3UHZSNDVJRDVhcmtIalhhRDBxZERqcWE5WDU4NVlzOE5xSWY5NDhsNTZvMkVlSzJ1LXduNkhfTWY5bW01ZFdQWVlsdGh1b2MzOFZMbWl5S09jS0NDS0pkNGFxWTR1bUw1N3dEb2NVddIB0AFBVV95cUxQOXFWdTdaUkJSMjJiNUszX0RsTjRzN0hqRUR6WjhPQzJTQmtGalAzRTRWYkphRUs3LXRQYmROR3VOS3BIeGgwRTRwVWIxeW5Jdy1FTjFjQU5nT3RNMTN5bXlsWWVZemV5bmhXOUQ0SnJ6cS1ocG1WanF5dVVUcnVjRGFWbFU3dkxUMU1IVEZBSzc1YUIzbVNLX1hsUHFxcEcwSUg2ZFhKRjByaXRzNXBkWndFM1Q3MVczYjQ4ME5zM1I5YlZpOV9XTEJHbmEwZmhU?oc=5",
+   "image": null,
+   "source": "GSMArena.com",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-28T15:54:02+00:00"
   },
   {
    "id": "dfb4faf7bb2d",
@@ -1044,12 +1088,12 @@
    "published": "2026-09-28T13:39:06+00:00"
   },
   {
-   "id": "6b904f665485",
+   "id": "79abab398ff4",
    "title": "Google's new Pixel VIPs widget does the one thing my Galaxy phone never could",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMTdkZTNzY2xNV3JGa0hMcXh5akZDQzlTUTAzV1A2OXJzNFNyMmlyaHVFOTJxaUswSzZDQ2w0RDg5NEwyVUxzVmpGdHF3aVJzVmhmRmhBOUxvREVaNktxcW11Vk1fUGp4elQ3VGQwNlJFT0ZDRTVvb1M0cE1uMVE1QWp3eVJhejEzUVlXUmhveGpvaThnY1BWNzlmREFlZw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdVZpTF9DaXVpNWdtZUhXeGZWYUY4MjI2WkYtUzNrTXFrVThWTEdobllQMVFWSXAxcXpZOFVEWGdaMVRwSm9IdmxYN0Y0M3pmdUJCUWhIaGNCR25USEs5ck9wVE1JVDZTTmlwTmhvNXhEX0RfSl9XbEJZRlBqcThwR29ldmRRakhoMFF1cg?oc=5",
    "image": null,
-   "source": "Android Police",
+   "source": "Yahoo Tech",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-09-28T13:30:10+00:00"
@@ -1075,17 +1119,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-09-28T13:20:43+00:00"
-  },
-  {
-   "id": "26e1d7fe9766",
-   "title": "Apple's Foldable iPhone Ultra: Release Date, Price, and Leaks",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRjV6VDdNdmFDdVlFVmRrUzI0dTZfRDRTT1ZxeGc4eDZrR2IwYlRRVFR0c3pSRHJWQmJQT2xMelJnQ1VCZXdiUXE2eU9JRnZxOEZNcFJlenN3N0tmNTV3TEhzdjRzSXRfZHBxd2tuSlBWelM3MGFaRVdPMDU4LXVVaEc2NDRNNjNKcDFhYVdKZVItV3d2amk0?oc=5",
-   "image": null,
-   "source": "cnet.com",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-28T13:17:00+00:00"
   },
   {
    "id": "f3640ae194d1",
@@ -1176,17 +1209,6 @@
    "published": "2026-09-28T12:19:32+00:00"
   },
   {
-   "id": "270237201986",
-   "title": "Authority Insights: Exclusive reports, app teardowns, leaks, and in-depth tech coverage you won't find anywhere else.",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1PUU9sYWw0SEgyTVpKRnBsNDkzREpuMFFWR25wSzhaVHJGMzRSdkU5bkZ1YVYyUWhJZl9WZ2gtRDRScVdfSVRocUV2UnRKS1lIODhXeEh6UXRzNzQtbk9Pc2RR?oc=5",
-   "image": null,
-   "source": "Android Authority",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-09-28T12:13:24+00:00"
-  },
-  {
    "id": "bd5fef1686ee",
    "title": "The iPhone 18 Pro: The best and final iteration of the current form factor?",
    "summary": "There’s a running joke that Apple always breathlessly announces that each year’s iPhone Pro is “the best iPhone we’ve ever made,” as if that were in some way surprising. But I do think that there’s some poignancy to the…",
@@ -1196,6 +1218,17 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-09-28T12:08:02+00:00"
+  },
+  {
+   "id": "270237201986",
+   "title": "Authority Insights: Exclusive reports, app teardowns, leaks, and in-depth tech coverage you won't find anywhere else.",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1PUU9sYWw0SEgyTVpKRnBsNDkzREpuMFFWR25wSzhaVHJGMzRSdkU5bkZ1YVYyUWhJZl9WZ2gtRDRScVdfSVRocUV2UnRKS1lIODhXeEh6UXRzNzQtbk9Pc2RR?oc=5",
+   "image": null,
+   "source": "Android Authority",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-09-28T12:07:16+00:00"
   },
   {
    "id": "d56aed1c0a65",
@@ -1280,7 +1313,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMU5valc3M0g3QVJ6M3JqY1gyN3dvUHVLTUY3TlJvczJjOWJuVnROX29WYTlFM0gzbEZJR0tMVnREWTJVeDRxTGFZc2VUMzJWM2RyZlU5R3NUUkZRdUtraUFReDMxVzZhNGVWV1VMVXRkMERyN0JNbkVPaW5FUkNvc0tGZjV0R2hDQlhkRmI1aUVBS3QxM1R0bHZKX3RDeFlXMFF4XzF6bFRxVXl5NHg2RExuc0k2WHZDXzJxN3RXQmlnempXemRtMnR3?oc=5",
    "image": null,
-   "source": "androidcentral.com",
+   "source": "Android Central",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-09-28T10:41:14+00:00"
@@ -1352,17 +1385,6 @@
    "published": "2026-09-28T08:12:03+00:00"
   },
   {
-   "id": "0a7de82d8fd5",
-   "title": "Apple iOS 27.0.1 Out Now: Core Bug Fixes Land For All iPhone Users",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNWk1oZnpjLWxYa2dXWGFfSUZpVWJjaFNjSXpUM2dqTTY2MWpHLWdpOS1ON3JuRTFMaUVDVldOVVFURU1DX2FyTnJhSFF6WVpPaVh5N3ZqRWdZZnFxYVk4YnN4SlEtOGpZRDNybFNnVDhnVGxpNkxJMlcxNjg1c01qUTJSMUZuLVdVNjNDTmY3OHFEMF9PdEZXV1UtMmN0WDZXdUV1bU9UQ0RTczE5d2VCR29ONjRqUU5Cd29leXhWMG9WRXVFUW40bW13?oc=5",
-   "image": null,
-   "source": "Forbes",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-28T08:02:27+00:00"
-  },
-  {
    "id": "e72ee2ad31fb",
    "title": "I asked Meta’s Muse AI for productivity hacks — these 7 unconventional ideas surprised me the most",
    "summary": "Asking Meta’s Muse AI for a collection of recommended productivity boosters that are different from the norm resulted in some good to great ideas worth using.",
@@ -1372,17 +1394,6 @@
    "sourceId": "tomsguide",
    "category": "general",
    "published": "2026-09-28T07:30:00+00:00"
-  },
-  {
-   "id": "20ef709c76eb",
-   "title": "T-Mobile is giving away the new Apple iPhone 18 Pro for free — how to claim",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9Wbzh4SXQtdmdVOV9oRTEzS2dNeFdnWUpaaE90d0JrSTlvR2tFNHBwRFMzWjZjbHNMcEU0djhvT0dXRzBQWkJrMWRwSUc4eml4OFJhaGVMRWh1VlBYaGllRUZ2ZWdpcWZyYl9F?oc=5",
-   "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-28T07:00:20+00:00"
   },
   {
    "id": "643d29f33f9e",
@@ -1522,7 +1533,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1XaDlVQVFLRG1KM3hLRUJ0Q21WUXdmMzdScy1TQnYtWUoxTjY0cHA4dXhpY2tmMHB2Uko3TXRkU1V4U3p4c1JvUjVvMnZIWGpoZEk5eWkzWU5mSG5QcTk2Z3pwOHBmNkZPNTAtZlNqYTI?oc=5",
    "image": null,
-   "source": "9to5Google",
+   "source": "9to5google.com",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-09-27T16:40:00+00:00"
@@ -1555,7 +1566,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4tLUtJeXh2TVN6eVRsYjZlX00zUGNkeVRjU1N0T3I4WWR5bnh4ZGFNNlFIODUtOEh2cUFYQ0tYNm5sa3hKa0ZlajdtQXplaEtXeTRnV05BUW1JRFRFbzJqVkFJLThLMURqMDhEcy1QMDhFOUhNek1OaFk3bw?oc=5",
    "image": null,
-   "source": "engadget.com",
+   "source": "Engadget",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-09-27T16:15:00+00:00"
@@ -1588,7 +1599,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPblhhV3JxRWJYLXp6aFZmSl9qaHZTdlBzNGxKNTJEeEt2Zm9DQ2FPQ3V0UmpOZDBQSmhBUS0wZWJyaXc0alJwM0NQSFFiMGVnZ1h5QlVpSG9HVFJWOVJHc1VUVm5GMTFvRE1RZ2E3VEt1aVlOODdzbEl3MkRJTHlEeE5FQ0w2TUJDVGhCc2JB?oc=5",
    "image": null,
-   "source": "9to5Google",
+   "source": "9to5google.com",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-09-27T13:00:00+00:00"
@@ -1713,17 +1724,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-09-27T08:24:00+00:00"
-  },
-  {
-   "id": "bb63cf1f6fad",
-   "title": "Google Pixel 10a deal drops price to just $3 away from its lowest ever on Amazon",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaWVJcS1LUkxtZjRMUFF0SEtTbkF1cV93eWZMMHhFWW5kR0xsSGlINEdTMUZ2WVhQNzJOXzY1WUZjTXV2aXA2a1R4NlN0QzEzRGtGRDJXVlRrcU1MbHE4T0RfWW5fRXhZZFZCcjFEVE5yeDBSWnRDc0ZPeU4wbFZjRjk5OVd3ZG9MYVBEM0tVR0RHWDlURVgxVDZjZTFLTzNiS2U2OEJPb09VYTNBNC1n?oc=5",
-   "image": null,
-   "source": "pcguide.com",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-09-27T03:01:15+00:00"
   },
   {
    "id": "187f69b700b2",
@@ -1856,39 +1856,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-09-25T23:07:09+00:00"
-  },
-  {
-   "id": "47b922f002f8",
-   "title": "TestFlight now works in landscape as Apple prepares for iPhone Duo",
-   "summary": "Apple updated TestFlight this week with support for landscape orientation, and for macOS 27 Golden Gate’s new resizable iPhone Mirroring window. Here are the details. more…",
-   "link": "https://9to5mac.com/2026/09/25/testflight-now-works-in-landscape-as-apple-prepares-for-iphone-duo/",
-   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/testflight-app.webp?w=1600",
-   "source": "9to5Mac",
-   "sourceId": "9to5mac",
-   "category": "iphone",
-   "published": "2026-09-25T22:19:53+00:00"
-  },
-  {
-   "id": "a00d8550a24d",
-   "title": "Apple faces class action over Apple Pay fees charged to card issuers",
-   "summary": "U.S. District Judge Jeffrey S. White has certified a class-action lawsuit accusing Apple of charging payment card issuers inflated fees for Apple Pay transactions. Here are the details. more…",
-   "link": "https://9to5mac.com/2026/09/25/apple-faces-class-action-over-apple-pay-fees-charged-to-card-issuers/",
-   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/01/walmart-apple-pay.jpg?quality=82&#038;strip=all&#038;w=1600",
-   "source": "9to5Mac",
-   "sourceId": "9to5mac",
-   "category": "iphone",
-   "published": "2026-09-25T21:01:42+00:00"
-  },
-  {
-   "id": "ab1131741b95",
-   "title": "Apple Music Hall confirms first eight shows, starting with Elton John",
-   "summary": "Apple today revealed the first eight shows coming to its new Apple Music Hall in London, with Elton John set to kick things off next week. Here are the details. more…",
-   "link": "https://9to5mac.com/2026/09/25/apple-music-hall-confirms-first-eight-shows-starting-with-elton-john/",
-   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/09/apple-music-hall_5c7713.jpg?quality=82&#038;strip=all&#038;w=1600",
-   "source": "9to5Mac",
-   "sourceId": "9to5mac",
-   "category": "iphone",
-   "published": "2026-09-25T20:08:16+00:00"
   },
   {
    "id": "9264707a27eb",
