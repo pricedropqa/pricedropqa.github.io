@@ -1,12 +1,12 @@
 {
- "updated": "2026-09-30T22:24:51.970811+00:00",
+ "updated": "2026-10-01T01:21:11.620300+00:00",
  "sources": {
   "androidpolice": {
    "items": 10,
    "feed": "https://www.androidpolice.com/feed/"
   },
   "xda": {
-   "items": 9,
+   "items": 10,
    "feed": "https://www.xda-developers.com/feed/"
   },
   "9to5mac": {
@@ -22,7 +22,7 @@
    "feed": "https://www.tomsguide.com/feeds.xml"
   },
   "gn-android": {
-   "items": 37,
+   "items": 36,
    "feed": "https://news.google.com/rss/search?q=android+phone+OR+samsung+galaxy+OR+google+pixel+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   },
   "gn-iphone": {
@@ -32,15 +32,158 @@
  },
  "items": [
   {
+   "id": "24a69639d975",
+   "title": "Some iPhone 18 Pro and Pro Max units have a weird new problem - GSMArena.com news",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZGltclExX21UQzc1akJoeHdjNmQ1azdzeU1pVElfamdWTDlldi1DSzVVZFRsN1pYR2dvbm5Sc1BYWENjdlZnOTlJakIxZ2N5RDFtUWtoQV82eVkyczFyWGpnTUZuVVRmQl8xT1dzeURsME1RX3ZnNmdFbkdUOFduZTZtTnh0TUo3dmhicHNIcUlPT3FjVjVpZ200dlRfQ0laSjYw0gGfAUFVX3lxTFBCLWFRZkZnRkJydHViS3V4V2hMNDliUEViaWkyNDNLTVN0U1czdHlaT19IZUYtdEtCN2NMSllnMmU0cjdNUnpVRnUyLUxFN1dQY05SdG9oMG9QV3RLdmdTaXV6dFdwUFpLZkEweG9adnFoZURRMmc0anVVaGRfb25BMTZZSFdWSGVfZk13Tkx4YklUdDdRQWhWNWNwR0JJcw?oc=5",
+   "image": null,
+   "source": "GSMArena.com",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-01T01:01:01+00:00"
+  },
+  {
+   "id": "6b91f1c031fc",
+   "title": "I replaced Microsoft’s default Windows apps with open-source alternatives and never looked back",
+   "summary": "Better apps without Microsoft’s baggage",
+   "link": "https://www.xda-developers.com/replaced-microsoft-default-windows-apps-with-open-source-alternatives-and-never-looked-back/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/09/replaced-windows-apps-with-open-source-alternatives.jpg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-01T00:00:17+00:00"
+  },
+  {
+   "id": "24f8b9c14d1d",
+   "title": "Install Windows 11 For Just $15 And Microsoft Office From $27 With These Software Deals",
+   "summary": "Paying a small fortune for Microsoft software is a thing of the past, and you can buy the software that you need for considerably less than buying it directly from Microsoft itself. Keysfan offers prices on single and…",
+   "link": "https://www.redmondpie.com/install-windows-11-for-just-15-and-microsoft-office-from-27-with-these-software-deals/",
+   "image": "https://cdn.redmondpie.com/wp-content/uploads/2024/08/294d05503826dae805982dbebf0891c1_windows-11-logo-on-laptop-screen_p1.jpeg",
+   "source": "Redmond Pie",
+   "sourceId": "redmondpie",
+   "category": "iphone",
+   "published": "2026-09-30T23:59:13+00:00"
+  },
+  {
+   "id": "96bd38b7c046",
+   "title": "This vibrant De'Longhi coffee machine caught my eye — and now it's 41% off for Prime Day",
+   "summary": "Need a new coffee machine? This one from De'Longhi has taken my fancy and it's even more attractive at 41% off.",
+   "link": "https://www.tomsguide.com/home/coffee-makers/this-vibrant-delonghi-coffee-machine-caught-my-eye-and-now-its-41-percent-off-for-prime-day",
+   "image": "https://cdn.mos.cms.futurecdn.net/TwonnqKdsMTPLBMgWhmpi5-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-09-30T23:52:38+00:00"
+  },
+  {
+   "id": "759f4f654f75",
+   "title": "Jailbreak iOS 27.0.1: Everything You Need To Know",
+   "summary": "If you are updating to latest firmware and want to know whether you can jailbreak iOS 27.0.1, this is the place to be. Here’s what you need to know before updating your iPhone to Apple's latest iPhone software. The post…",
+   "link": "https://www.redmondpie.com/jailbreak-ios-27.0.1-everything-you-need-to-know/",
+   "image": "https://cdn.redmondpie.com/wp-content/uploads/2026/09/ios-27-jailbreak-status-1024x546.jpg",
+   "source": "Redmond Pie",
+   "sourceId": "redmondpie",
+   "category": "iphone",
+   "published": "2026-09-30T23:33:54+00:00"
+  },
+  {
+   "id": "fce312c4fec8",
+   "title": "Portainer stopped supporting its community edition, so I switched to this simpler Docker manager instead",
+   "summary": "Dockge replaced Portainer as my Docker GUI, and the difference in simplicity is night and day",
+   "link": "https://www.xda-developers.com/portainer-stopped-supporting-its-community-edition-so-i-switched-to-this-simpler-docker-manager-instead/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/09/dockge-running-on-a-mac.jpg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-09-30T23:00:16+00:00"
+  },
+  {
+   "id": "08bff41448f9",
+   "title": "The overlooked Pixel lock screen tweaks that saved me hours of daily frustration",
+   "summary": "Stop tapping through Pixel settings: this subtle lock screen tweak changes everything",
+   "link": "https://www.androidpolice.com/overlooked-pixel-lock-screen-tweak-saved-me-hours-of-daily-frustration/",
+   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2023/10/google-pixel-8-android-14-lock-screen.jpg",
+   "source": "Android Police",
+   "sourceId": "androidpolice",
+   "category": "android",
+   "published": "2026-09-30T23:00:10+00:00"
+  },
+  {
+   "id": "6520c1226526",
+   "title": "Apple's Home Hub Borrows From the iPhone Duo's StandBy Mode",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBLMVRpSjJtcTg0VU41WUI5eGhuN05XQmVLNG9OYnRpS21zZ0NDbnRsVTdVakxyd3pydmdvdUdRWGVtYzVSd1JRU01DeXI5emM5ZkYwR2l3VDBnMGRja1c0YlRjSS1ZT1NE?oc=5",
+   "image": null,
+   "source": "MacRumors",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-30T22:56:59+00:00"
+  },
+  {
+   "id": "dd1aaa894414",
+   "title": "Apple TV is currently down for some users, as other Apple services also face issues [U]",
+   "summary": "Update, 7:37 p.m. ET: Apple says all of the outages have now been resolved, with the exception of Apple TV. Apple is currently reporting issues affecting Apple TV and subscription purchases, while some users are also…",
+   "link": "https://9to5mac.com/2026/09/30/apple-tv-is-currently-down-for-some-users-as-other-apple-services-also-face-issues/",
+   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/06/apple-hacked.jpg?quality=82&#038;strip=all&#038;w=1600",
+   "source": "9to5Mac",
+   "sourceId": "9to5mac",
+   "category": "iphone",
+   "published": "2026-09-30T22:47:35+00:00"
+  },
+  {
+   "id": "77e6807ea8db",
+   "title": "Apple iOS 27.2 arrives soon: 6 new features on the way",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1ibHZKYVhUaERvcVBCNnJOSzc4Vm9UNkxud0NOYTZ2Q1NkUGUtc0tOc3lUbGdRUkZGc2x4Y0NwYnhjV3RVWW1vTVNJY18tU1l1cGRVbWtaUG42a284Qk55c1p4dGpEZjhMSXp5NnU5RUlIeFhB?oc=5",
+   "image": null,
+   "source": "Mashable",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-30T22:45:48+00:00"
+  },
+  {
+   "id": "ee1d949a9522",
+   "title": "Apple expected to sell 6 million iPhone Duo units before the end of 2026",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMUZNZHl1Sm5pZjExa2VqaVVzTTlDek9yanE1MzkwR0F1YjQ2RW9ydWRXa1Y1SHptT0dKaXVxdmJ0MU9CMGR2V0Z3dVV1bmRob190Y0lCdUpkRUw3UmgwV09XSW9qQm1qVmlWVkJZeFhMdDVsbGhLU0p6Y2J5QkVmczU4LUtacmpEWGgySExsQkFuOW16TXdRZ25Qc0xYb0lybnd5TGlnajlGMHpvX3gtWnV3TUVseEV4WFlB0gHAAUFVX3lxTE1FNnN3Z2JUMjdqY3VDWXhuQkVZQWhzUno5bFpxYkZLSVp1OUlTWVhXd09fVW90aG4tQXMtakNCQk16WFd1Sm42amhGSU5ab0ljUEFfdDdCbkF2a3hKOFVhdmFaUm83TTRhYjN2NE5Qa3hZR1pqWEdpT1EyaUlhcDd3TnF5aUY2UGJqaFpZYlp5T1pLempzY0Vrb3hGR3RWcUJpaGdybDdRd01UVW54YjF0Qno3cWx5RWJtQV95YzYxRA?oc=5",
+   "image": null,
+   "source": "The Apple Post",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-30T22:31:06+00:00"
+  },
+  {
+   "id": "cd4a61a342b1",
+   "title": "Elder fraud is rising – here’s how to protect your family",
+   "summary": "Elder fraud – where seniors are deliberately targeted due to this demographic having lower rates of tech literacy – is becoming a growing problem in the US. According to Incogni’s analysis of FBI data, 72% of elder…",
+   "link": "https://9to5mac.com/2026/09/30/elder-fraud-rising-heres-how-to-protect-your-family/",
+   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/09/danger-angle-3.jpg?quality=82&#038;strip=all&#038;w=1600",
+   "source": "9to5Mac",
+   "sourceId": "9to5mac",
+   "category": "iphone",
+   "published": "2026-09-30T22:30:00+00:00"
+  },
+  {
    "id": "223c872b3702",
    "title": "My favorite 24-year-old MMO finally got the generous free trial it deserved all along",
    "summary": "Better late than never.",
    "link": "https://www.xda-developers.com/my-favorite-24-year-old-mmo-finally-got-the-generous-free-trial-it-deserved-all-along/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2025/11/ffxi-party.png",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2026/09/final-fantasy-xi.jpg",
    "source": "XDA",
    "sourceId": "xda",
    "category": "android",
    "published": "2026-09-30T22:06:57+00:00"
+  },
+  {
+   "id": "fea516579d84",
+   "title": "Is the Volume Bar Missing From Your iPhone Lock Screen? Here’s How to Bring It Back",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbjFFTG5aRzkyWVA3Tk5LNWEzU09lcmxmbUN0bjFDak1lc3pOaXk2Wmlzdm5mc2tBSFV4RDRVaGdtaUtXNTVqajdQZTJPelh4TDRwUUFMVWxpaUpwLXZmTEhBNVRibjRCSFZpXzRwWmViZjh0Wkl3YWJ6Tmw1R3JOaGM0SWpsVzZUM2NvZFBMSTd3WUhBcFczMVFxVFhEYkRfX01pbmtzelQyMHNVYzV6S1VQZno2WVozWGE3aGZGNTBLUUU?oc=5",
+   "image": null,
+   "source": "CNET",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-30T22:01:41+00:00"
   },
   {
    "id": "1ce6bd31749d",
@@ -65,15 +208,15 @@
    "published": "2026-09-30T22:00:00+00:00"
   },
   {
-   "id": "77e6807ea8db",
-   "title": "Apple iOS 27.2 arrives soon: 6 new features on the way",
+   "id": "714035895fa3",
+   "title": "Samsung Unveils Galaxy SmartTag 3 With IPhone Support",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1ibHZKYVhUaERvcVBCNnJOSzc4Vm9UNkxud0NOYTZ2Q1NkUGUtc0tOc3lUbGdRUkZGc2x4Y0NwYnhjV3RVWW1vTVNJY18tU1l1cGRVbWtaUG42a284Qk55c1p4dGpEZjhMSXp5NnU5RUlIeFhB?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOS1FvVnFLWml1OTcyaExUT3g5ZVVsUkpQYS1xeUV5WDhxaTVic2FGT19SNWd1TFRGUDg2bmlkeWp6MHVmaDJ2d181bDRLN0drUTk5ZEJUamNybmFtNTQ1NHhJNzR6dlhDUHpfUG5OQWhaVlMyLXNfX2R5blZZelNidUV3a1BsSE1QWG8zazg2OF9SZnpHZWdnaVVB?oc=5",
    "image": null,
-   "source": "Mashable",
+   "source": "RTTNews",
    "sourceId": "gn-iphone",
    "category": "iphone",
-   "published": "2026-09-30T21:51:22+00:00"
+   "published": "2026-09-30T21:57:00+00:00"
   },
   {
    "id": "e78a9e108dab",
@@ -212,7 +355,7 @@
    "title": "You can now play the original Halo for free in your browser with 128-player multiplayer",
    "summary": "Activision may have taken over the Halo series, but at least you can play the OG game in a browser now.",
    "link": "https://www.xda-developers.com/you-can-now-play-the-original-halo-for-free-in-your-browser-with-128-player-multiplayer/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2026/09/halo-in-a-browser.jpg",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2026/09/halo-combat-evolved-blowser.jpg",
    "source": "XDA",
    "sourceId": "xda",
    "category": "android",
@@ -296,6 +439,17 @@
    "published": "2026-09-30T20:00:16+00:00"
   },
   {
+   "id": "b9881de751ef",
+   "title": "Apple announces first-ever foldable iPhone, starting at $1,999",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUndmcnBXT0RUR3lObFJ6clFkYUxfNVNJOU5FdWR2ZWo3UHBzOWhhaFJMbTZ5Nm5ZOVMtNGN1NVFzZzhxMm80QWZibTRyVlhtNFRIM3BGOEtfQmRWbkE2T1NocXI0NXphaUhNM1U3eU5UZXFMUU1IQl93QjRjb1hHM2RJLXFRUdIBiwFBVV95cUxOZkFrUHVlN1M5ZmNtTVpfZnkwZHNESmVkUUkxODFQWkk2X0VjM0llVGZuUnV4TnQxbFdJaF8xZ191YWotSm5kNjd4ZXJDSEVJVXVOYk5GRWk0U3AtZjVUSGxGSzd1YWc5bDlVQXBTM2pfeEdYNEJhb1NTNnR6QkRBMkRjLVZGdHM1bVFz?oc=5",
+   "image": null,
+   "source": "ABC News - Breaking News, Latest News and Videos",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-30T19:45:46+00:00"
+  },
+  {
    "id": "e090b0c6fce6",
    "title": "Apple iPhone Duo Release Timeline: New Date Enters The Schedule",
    "summary": "",
@@ -329,17 +483,6 @@
    "published": "2026-09-30T19:32:47+00:00"
   },
   {
-   "id": "2d359ffdf787",
-   "title": "4 forgotten gadgets an ESP32 can resurrect on the cheap",
-   "summary": "Don't toss that old gadget yet, a cheap ESP32 can bring it back",
-   "link": "https://www.xda-developers.com/4-cheap-esp32-projects-that-give-your-old-gadgets-a-second-life/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/09/img_7197.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-09-30T19:31:17+00:00"
-  },
-  {
    "id": "5a6ad150a238",
    "title": "Apple Invites update leans on iOS 27's new features",
    "summary": "",
@@ -362,17 +505,6 @@
    "published": "2026-09-30T19:23:15+00:00"
   },
   {
-   "id": "8a699e65be8d",
-   "title": "iPhone 18 Pro sales rise 12% YoY in China launch week, lifting apple to No. 1",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNkN1OW5XWDIwc0ZxZi02dWtMdDFaN2cwdHdFYVBPRi1nUWdlTHZRQTd5YXdqR1Y5QVA4OVg1WWhvMHh3M0xGa1dwUkxZU1hRRngyQl82MFNyeE91XzZCUUgwLV9QNThNZmxoaVNTMzI3b3FPTjlNWnVKQm1yY2E1TVg0TXI5M2ZRUG1jcWlUdTA1YVBkLVhJc3lMRXFOR0hWcVJadXZwVWlkWkxneUpYUtIBtgFBVV95cUxPVjQ0UVpMczY1VlJfZ1ZvcS04LTF6OVBTMmlselJNcHBiMU80V2Z4VWR2dXVMQmtZb3NCM09iN21WenlaaW40T05YLXByYkhxR2VaS2E0VGVJYXVwaEZYdXhBNm1LclhXeUhWWTFlc0hQdEZPclZVcWFmcXFHNHlNaEhmdXcwOF84d0Q5dDBldWpvaWttRXlsaGJWdjFsWGVXbVhsV3h1T2hqMWVIZGgyTkcwcXVpdw?oc=5",
-   "image": null,
-   "source": "MacDailyNews",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-30T19:15:40+00:00"
-  },
-  {
    "id": "882c0f0fb061",
    "title": "Bad news if you're waiting for the Galaxy S27, prices could go up again",
    "summary": "Samsung's next flagships could cost more",
@@ -393,17 +525,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-09-30T19:06:56+00:00"
-  },
-  {
-   "id": "fea516579d84",
-   "title": "Is the Volume Bar Missing From Your iPhone Lock Screen? Here’s How to Bring It Back",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbjFFTG5aRzkyWVA3Tk5LNWEzU09lcmxmbUN0bjFDak1lc3pOaXk2Wmlzdm5mc2tBSFV4RDRVaGdtaUtXNTVqajdQZTJPelh4TDRwUUFMVWxpaUpwLXZmTEhBNVRibjRCSFZpXzRwWmViZjh0Wkl3YWJ6Tmw1R3JOaGM0SWpsVzZUM2NvZFBMSTd3WUhBcFczMVFxVFhEYkRfX01pbmtzelQyMHNVYzV6S1VQZno2WVozWGE3aGZGNTBLUUU?oc=5",
-   "image": null,
-   "source": "CNET",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-30T19:01:41+00:00"
   },
   {
    "id": "0368f3a5de2f",
@@ -549,17 +670,6 @@
    "published": "2026-09-30T17:45:10+00:00"
   },
   {
-   "id": "f2bc501af75c",
-   "title": "Samsung's Galaxy SmartTag3 Tracks Items Across Galaxy and iPhone",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNb05qVTYwa0k5TlcwdjNQbk9sUXY3RlNjRmxYbzVrYWFYWDVObXVmS19vYzE0Z1MxQ0ptaHJrT0ktQ3o4V0h3S21TcGFROHRVZjdGMlNTcEZZRlg0RW1RMVJQV3dYMTl6Tk92cjN2VG1JMC1FZW5QSDRvMGZqR2piR29FQWRHZUtpLXFv?oc=5",
-   "image": null,
-   "source": "Technobezz",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-30T17:41:52+00:00"
-  },
-  {
    "id": "4b691d1a52d3",
    "title": "15 best lightweight jacketdeals to shopahead of October Prime Day — up to 50% off Columbia, The North Face and more",
    "summary": "I'm sharing my favorite jackets from Columbia, The North Face and Carhartt to make sure you're comfortable and dry this fall — all on sale ahead of Prime Day.",
@@ -571,6 +681,17 @@
    "published": "2026-09-30T17:36:28+00:00"
   },
   {
+   "id": "9cddbce63b15",
+   "title": "\"Is that the new iPhone?\" How my Samsung foldable has fascinated the world",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQSU5MTm1hOU1ZR0kyLU0xR1dzeVprNU4yX1pHM0FjR2lyTGhLTjdJeWhHTHM1QncyLVpucTREcjN2dk9FUkVjQ2NROGtieWxDU3I1WHJJVnFGekJid0hsa1dCWXR3UWoxRTlua21TVVRnN2x6OGZNS2RLV2xvSmFVVkJESm95dEN4VWJaZkhLb2xEaXFkcXIyMzNEa3FFSWpCdnZTSXE3OHNrN1c1SmxSZnBoc080RlBqNFNGZ1JVOTA1TGlKSFVlM3RmYVpUcFp0WFdZQlFnRkVoakE?oc=5",
+   "image": null,
+   "source": "t3.com",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-30T17:30:00+00:00"
+  },
+  {
    "id": "3a5c72b48c52",
    "title": "Skip the Galaxy SmartTag 3, and get the Android-compatible Moto Tag 2 instead",
    "summary": "Plus, it's cheaper",
@@ -580,6 +701,17 @@
    "sourceId": "androidpolice",
    "category": "android",
    "published": "2026-09-30T17:15:20+00:00"
+  },
+  {
+   "id": "874398953182",
+   "title": "I stopped caring about benchmarks when I switched to Pixel phones",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVEx2eWliN0lFMGlhNm5oLW5sc3ZxQ2dQaVZzNWdsY3QwWERvUlpidmJnaktSWTRlZUdqTUUxM1ZNVkZkLVZFQlgxRU5qYUNEbkNDd0NqQjFQM1NpNjlNX2doT0o4Vk5wNjJId1NRby00cHMweVQzempVQTlkeEZHOUIwRjVVWlVUOVlya2RmZVhJSkV1eWpj?oc=5",
+   "image": null,
+   "source": "How-To Geek",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-09-30T17:00:15+00:00"
   },
   {
    "id": "fe3709164c5b",
@@ -634,18 +766,7 @@
    "source": "Android Authority",
    "sourceId": "gn-android",
    "category": "android",
-   "published": "2026-09-30T16:22:57+00:00"
-  },
-  {
-   "id": "e3910dca3f05",
-   "title": "Samsung Galaxy SmartTag3: iPhone Support Has Key Limits",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVkFlXzItb2hkekJvUVhtcGxGVFN3UUxGbDNIcE5icGQ0UU9JdGswOEhOTUY4T0tFYWlCU0YwdXJnazdnX2tueEdBM2VXazdqTkozSVhrLTA5ZjNDOU1qSkRfaXFIUWRfRk5uT2ZTeXZzYzVZRXhKWEVUZUxoalA5ZldTMERtR2FjVDRHYkhpWUI5MXV0OXVz?oc=5",
-   "image": null,
-   "source": "Gadget Hacks",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-30T16:16:35+00:00"
+   "published": "2026-09-30T16:22:05+00:00"
   },
   {
    "id": "967dbfaec6ca",
@@ -668,17 +789,6 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-09-30T16:13:00+00:00"
-  },
-  {
-   "id": "eb9dd8c8970c",
-   "title": "iPhone Security Warning: Apple Says iOS 26 Flaw May Have Been Exploited",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSXUwejZPd2lkRk5qai1hcGNfeG1PR0pITXFEaDBqNHJzOWZiS0Q0eDEyOEpsc2ZhODZFelJDZHFzYnBtdy1Jb3ZBa1RPMVBPSmx3SWVtUThkRnR0aDA1c3g1cW45M2M1SXk4Rkh4bFVkSVI4a1RYaFhuRVNnb0doWV84cTdpYWlES1pxaGRzcw?oc=5",
-   "image": null,
-   "source": "TechRepublic",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-30T16:00:31+00:00"
   },
   {
    "id": "c6471adb45ae",
@@ -709,17 +819,6 @@
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1FenJxU3FaTHB4UTg4RE5BR19MT21VdXpNVGNlaTM3WWVNQkxtWkVsZzVENGF1MjNTeWlxaXVDSUJ1VzhlaERRZ185SXBSRk5ORktwb3Zxd2lNU1pHejNEM1M5RGhCR2dSSGVCd3J3WEJ5WTNtTUE?oc=5",
    "image": null,
    "source": "Taipei Times",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-30T16:00:00+00:00"
-  },
-  {
-   "id": "ccf50bd2abd5",
-   "title": "The Halide camera app now offers full control of the iPhone 18 Pro’s aperture",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQb3NpUDZhQkFxMWo5bl9ONnhPTXBQLVplZ3hhN3h5SjJDNk9QR1NqN2d6N2M0QmlESHBYNHg5WXNaQnZscW14bzFucWZNbmVhZ25LY0VRZjUxXzdNSjBrUTNYRkUwMER0bHpFZEFoX3l0ZGx4VlFzQTdSMm82M1Z4dVQ1LXFkZDB2TmVjT0k0RFZoZUtFY2NKQ3owSDMtdV94UkY2dQ?oc=5",
-   "image": null,
-   "source": "The Verge",
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-09-30T16:00:00+00:00"
@@ -824,17 +923,6 @@
    "published": "2026-09-30T15:26:46+00:00"
   },
   {
-   "id": "78b03e0eb7cd",
-   "title": "I swapped my Google Photos filter editing routine for Moods; my pics look like authentic 35mm film",
-   "summary": "My camera roll is a pro collection",
-   "link": "https://www.androidpolice.com/google-photos-moods-filters/",
-   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/09/google-photos-moods-showing-retro-photo-styles.png",
-   "source": "Android Police",
-   "sourceId": "androidpolice",
-   "category": "android",
-   "published": "2026-09-30T15:15:10+00:00"
-  },
-  {
    "id": "a013d4503403",
    "title": "New Apple TV comedy has 100% Rotten Tomatoes, here’s the trailer",
    "summary": "Apple TV currently has a packed lineup of new shows airing, and it’s about to add another. Small Prophets is a British comedy premiering next week that has a 100% Rotten Tomatoes score. Here’s the trailer. more…",
@@ -923,23 +1011,12 @@
    "published": "2026-09-30T14:28:30+00:00"
   },
   {
-   "id": "b72b547acfdf",
-   "title": "Mobile malware warning from Ukrainian researchers includes iPhone exploit kit",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HLWRHMVpfVXFMY2h4cllGdmFVMWdUazZCQnd5OENGSkg2VmpkNm1hTHllT2dYQmMxRzNONVQtWEoyS09mUVAtRnB0SDd3ZFg4OXVNVm01OGYwdEZsbjdWSERPYmpXRFRfOU5Sb3NhOEJZdEdTeTNqWC1BNXdxQQ?oc=5",
-   "image": null,
-   "source": "therecord.media",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-30T14:18:47+00:00"
-  },
-  {
    "id": "37219056b8ae",
    "title": "Some Pixel models reportedly experiencing an NFC bug that breaks contactless payments",
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMEp2dlVXcWpNdUR2U2xzUld1TV9LeFdERi1uSUM0RXVGU3NFYnlIVlV4aW1hU2JnQ2doTlE1QjdEbVRHYWxtdzdmZ2ZzbFhDM3FyenFUYk44QjlQVGJQZ1B6NUdwakdiNk1qRTNXUldBWmlPaTlCT01lX0h3dFlBaUhfWXpZV1g5T01vak1LNFJjZw?oc=5",
    "image": null,
-   "source": "9to5google.com",
+   "source": "9to5Google",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-09-30T14:18:00+00:00"
@@ -1071,7 +1148,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5OZnFweVFSNlplMTkteTA4cmQtRjBQXzV6OUROMDd5UXdHQUpBenMya0xhWEhJdElGSklZZmtxT280SWMyVWFGX0pBdVBLMHdWdmZiT2J4LUUtcnVUMkgzRnl6elVZWGEzS3hCOWFaVGNFRkJoNnRnWEFBS0t4ZE3SAX9BVV95cUxOTmZxcHlRUjZaZTE5LXkwOHJkLUYwUF81ejlETjA3eVF3R0FKQXpzMmtMYVhISXRJRkpJWWZrcU9vNEljMlVhRl9KQXVQSzB3VnZmYk9ieC1FLXJ1VDJIM0Z5enpVWVhhM0t4QjlhWlRjRUZCaDZ0Z1hBQUtLeGRN?oc=5",
    "image": null,
-   "source": "foxnews.com",
+   "source": "Fox News",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-09-30T12:23:36+00:00"
@@ -1130,17 +1207,6 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-09-30T11:54:09+00:00"
-  },
-  {
-   "id": "2c7ce9db0ed4",
-   "title": "Amazon now has iPhone 17 Pro Max models at up to $513 less than 18 Pro (Renewed Premium)",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE41VFE5MUlpUUIzenFZSUZlb2x2dWZTNHhUZXE0ekJzbXF2eHc4Q0diRDRrbFhZUGpiMzB6dXIwZW1wNXpMTVZyQ3R1MTc5dmlkNVNYQ2tGQmRJcmZfSXVMVkZOSWRWQUN2S0VBM1FiLUg?oc=5",
-   "image": null,
-   "source": "9to5Toys",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-09-30T11:40:00+00:00"
   },
   {
    "id": "c7fc4b29ea8a",
@@ -1284,6 +1350,17 @@
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-09-30T09:45:00+00:00"
+  },
+  {
+   "id": "bb1ed5d6914a",
+   "title": "iPhone 18 Pro users hit by bizarre speaker audio glitch",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdVJ1eEJXVDNPQ0xjQVBEY1JaUlZfalhWbmFwMExrdXBtMkJJRWpqWG9FWmU4akZ6dnRBXzdZN01wSkJJQmotbk45ckNRRnNiN3dwSmRiUFVFQUp6ZHRrbDl4cDR4a2pwOS1yUElScm41dmZWVDJiRkJMVVRCOC1JcVJXMzVIcHp0Tzk2cF9qQ25tNjRtTWRma0NXZDg?oc=5",
+   "image": null,
+   "source": "PhoneArena",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-09-30T09:35:40+00:00"
   },
   {
    "id": "590a0dbbf073",
@@ -1473,17 +1550,6 @@
    "published": "2026-09-30T04:30:00+00:00"
   },
   {
-   "id": "ec34ce4bc4e9",
-   "title": "Prime Big Deal Days are the best time to shop Ninja's impressive kitchen appliance range — save up to AU$363 on ice cream makers, slushy machines and blenders",
-   "summary": "Ninja's Prime Day deals are hard to beat, with up to AU$363 sliced across its entire range of kitchen appliances during Amazon's members-only sale.",
-   "link": "https://www.tomsguide.com/home/air-fryers/prime-big-deal-days-are-the-best-time-to-shop-ninjas-impressive-kitchen-appliance-range-save-up-to-au-usd363-on-ice-cream-makers-slushy-machines-and-blenders",
-   "image": "https://cdn.mos.cms.futurecdn.net/VCBawb7G7tb6FxnRcQfHKK-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-09-30T04:20:15+00:00"
-  },
-  {
    "id": "39c6b64c656e",
    "title": "A Close Look At Xiaomi 18 Fold vs Samsung Galaxy Z Fold8 vs Google Pixel 11 Pro Fold",
    "summary": "",
@@ -1594,17 +1660,6 @@
    "published": "2026-09-29T21:55:56+00:00"
   },
   {
-   "id": "47ed7d2c4951",
-   "title": "Android 17 QPR2 enables Pixel 11 Pro HiLight for messages",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1aMlJrOVhKdjhVeGhVb2lTQlp0TWd5X0NmZTA0RUJFYkhVQlBvM0Njb2p2UEV4TkpZTi1XX3VtaVRHemtlUDNVYjVDT1djWHl1WUZrT0JZRlQxUzgzdlBRWGRielJwUlRHWVNRTGpXWm9vaVk?oc=5",
-   "image": null,
-   "source": "9to5google.com",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-09-29T21:08:00+00:00"
-  },
-  {
    "id": "41877601b4d9",
    "title": "9to5Mac Daily: September 29, 2026 – iOS 27.0.1, iPhone Duo features",
    "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our dedicated RSS feed for Overcast and other…",
@@ -1713,17 +1768,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-09-29T18:53:52+00:00"
-  },
-  {
-   "id": "d401f7828350",
-   "title": "Galaxy S27 Ultra's camera processing may change in a few 'noticeable' ways",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPX3VLTVVMQ05wUVRiWVpYcFVQU19hZ2FHdjAxR1ZVREViVUctRXVZOUtuNnZoczJWVW5PcTZvUE5KYWZSVV81TUxvZkVZMnVGVlY0d1RmOGdTb1ZNY25GeUhXTVlWSDVsd1NUUlV6TEgxN2dTOTZJXzQ4YkxydTNKNjdZa0tzcFYtZnlMU2ROa0Q2SnY0cG1aSUlveVRkZ2pIT1VkSlIwOGFzUndSRVpTRWV6LWlyNnNUQ0lwc2lnaTc1d3RuNG4xM2RQdC12dw?oc=5",
-   "image": null,
-   "source": "Android Central",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-09-29T18:39:26+00:00"
   },
   {
    "id": "9b2cb61a8d80",
@@ -1858,28 +1902,6 @@
    "published": "2026-09-29T15:35:22+00:00"
   },
   {
-   "id": "24a3059751be",
-   "title": "Prime Members Can Pick Up This 160W Anker USB-C Charger With A $34 Discount",
-   "summary": "The big Prime Day sales aren't underway just yet, but you don't have to wait for the big day to snag a powerful USB-C charger with a 23% discount. The Anker Prime 160W charger can be yours for just $115.99. The post…",
-   "link": "https://www.redmondpie.com/prime-members-can-pick-up-this-160w-anker-usb-c-charger-with-a-34-discount/",
-   "image": "https://cdn.redmondpie.com/wp-content/uploads/2026/09/anker-prime-160w-max-discounted-1024x576.jpg",
-   "source": "Redmond Pie",
-   "sourceId": "redmondpie",
-   "category": "iphone",
-   "published": "2026-09-29T15:28:38+00:00"
-  },
-  {
-   "id": "4667a7afc30e",
-   "title": "Get This 3-Pack Of Dual-Port USB-C Chargers And Cables For $20 Before This Deal Ends",
-   "summary": "You can never have too many USB-C chargers, especially when you remember that you don't get one when you buy a new phone or tablet these days. Thankfully, you can snag three new dual-port USB-C chargers with three…",
-   "link": "https://www.redmondpie.com/get-this-3-pack-of-dual-port-usb-c-chargers-and-cables-for-20-before-this-deal-ends/",
-   "image": "https://cdn.redmondpie.com/wp-content/uploads/2026/09/lofpye-3-pack-chargers-discounted-1024x576.jpg",
-   "source": "Redmond Pie",
-   "sourceId": "redmondpie",
-   "category": "iphone",
-   "published": "2026-09-29T15:22:22+00:00"
-  },
-  {
    "id": "a5bbe391972c",
    "title": "October Prime Day Google Pixel deals 2026 — what to expect from Amazon's Big Deal Days sale",
    "summary": "",
@@ -1900,28 +1922,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-09-29T14:36:26+00:00"
-  },
-  {
-   "id": "6931b79cd52e",
-   "title": "Reminders just got more powerful, here’s what’s new in iOS 27",
-   "summary": "iOS 27 adds new features to Apple Notes , Messages , Wallet , and more , and it has a few improvements for the Reminders app too. Here’s everything new for Reminders in iOS 27. more…",
-   "link": "https://9to5mac.com/2026/09/29/heres-everything-new-for-reminders-in-ios-27/",
-   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/reminders-app-icon-ios-27.jpg?quality=82&#038;strip=all&#038;w=1600",
-   "source": "9to5Mac",
-   "sourceId": "9to5mac",
-   "category": "iphone",
-   "published": "2026-09-29T14:14:15+00:00"
-  },
-  {
-   "id": "13cb5e161e5c",
-   "title": "Apple TV unveils chilling serial killer thriller based on bestselling novel",
-   "summary": "Today Apple TV unveiled the trailer for Nocturne, a new thriller series based on bestselling crime novel “The Sandman” by Lars Kepler. more…",
-   "link": "https://9to5mac.com/2026/09/29/apple-tv-unveils-chilling-serial-killer-thriller-based-on-bestselling-novel/",
-   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/09/nocturne-liev-schreiber-hat.jpg?quality=82&#038;strip=all&#038;w=1600",
-   "source": "9to5Mac",
-   "sourceId": "9to5mac",
-   "category": "iphone",
-   "published": "2026-09-29T13:52:28+00:00"
   },
   {
    "id": "176b63712e82",
