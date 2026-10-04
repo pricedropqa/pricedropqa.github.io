@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03T23:11:40.583333+00:00",
+ "updated": "2026-10-04T02:46:12.249679+00:00",
  "sources": {
   "androidpolice": {
    "items": 10,
@@ -22,15 +22,92 @@
    "feed": "https://www.tomsguide.com/feeds.xml"
   },
   "gn-android": {
-   "items": 38,
+   "items": 37,
    "feed": "https://news.google.com/rss/search?q=android+phone+OR+samsung+galaxy+OR+google+pixel+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   },
   "gn-iphone": {
-   "items": 35,
+   "items": 36,
    "feed": "https://news.google.com/rss/search?q=iphone+OR+ios+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   }
  },
  "items": [
+  {
+   "id": "a64abd7486d9",
+   "title": "MoviePro 10 for iPhone",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5UU3BQMUYxeFVmMDhCZEtrTTlEcDU5clQtSkdYd0IxQ2pCRmdQZER2bzNjZ0JkYlVNZFB0OUljUDd6b0RTRWt2TkZFSUl5cktmVG1aSmpCc1pqbjRJeXpuX2lFVndjX2FlNDd4YXhlYw?oc=5",
+   "image": null,
+   "source": "Newsshooter",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-04T02:10:32+00:00"
+  },
+  {
+   "id": "69882b6499b7",
+   "title": "Google raises Pixel 10a price by $100 in US store",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVEdzWFRobFBqdnJhWXo2Smhobzc3OWZ2Q3JLMW5TYzZ5dHRwRmlIX2U1cVk3VDY5UGxyWVhVdjZUVW1qUmhSVWJySEhZSUN3MXY3ZTFBNl9kNmtpNTVXaWE3UW5mRU44M2x4TDVMVFBwZ0ZZa0lsYUpYbUw5X19fWWNhRQ?oc=5",
+   "image": null,
+   "source": "news.lavx.hu",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-04T00:34:46+00:00"
+  },
+  {
+   "id": "d6d965b03fa8",
+   "title": "Apple will replace AT&T iPhone 18 Pro Max units with connectivity issue",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOXo0RTZlSm5jTndLYk1DQXBGVXlScFlDTGwtY3lHSFV5eXdMUEFsNXZvWFlhcVdTTE9VVzc1QzFwQ2dOUFhEbEN0UlY0Z0FzVzQwTjlXdE01NE9RZXB2QjVKVGwxWUw5T2x0UGZlOGl1OWRKYTI3YjVLajUzN2hlczNvNUhYNUlSMmVld3ZUbDdFMEdWekE?oc=5",
+   "image": null,
+   "source": "PhoneArena",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-04T00:28:52+00:00"
+  },
+  {
+   "id": "22b3213e69c8",
+   "title": "My unsupported Kindle runs Linux now, and it's more useful than when it was new",
+   "summary": "Sometimes the end of manufacturer support is a good thing",
+   "link": "https://www.xda-developers.com/my-unsupported-kindle-runs-linux-now-and-its-more-useful-than-when-it-was-new/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/kindle-kual.jpg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-04T00:00:17+00:00"
+  },
+  {
+   "id": "04564831d5ec",
+   "title": "ID5 faces Apple's iOS 27 Safari block as CEO says regulators should look",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTGx0VlJDVmN3Y2Z6U0lQMFVrdElCcTZTLXFreGFKNy1pWUVQcERTTU1pcVBzZEFyazNWbi1CY3lPWmNLZFhfYXV3Q1FmT1VXUi1lTG15d3dpZzdYMEk5ZnR0WWJRYnZJUW9Oc1UyRlBJaWVoTDd1OWl3U2lxeGpnTC04bHZMbEhPbncyOGdQMUI0S28?oc=5",
+   "image": null,
+   "source": "ppc.land",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-03T23:56:56+00:00"
+  },
+  {
+   "id": "9239b78fc7ce",
+   "title": "Apple confirms iPhone cellular issue, admits affected units can’t be fixed",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObG41ZEpJTXJlcXljRXF0U09KRVg3SXZ6cjFkV19UVG90WVpHbUdtd00tQjFYbUJJZWRWdmNWVnpHU3R6Sm1KRkZnTkhHZUVmY204R1pYWWVRU3dNQThWclJWc1RZWnM0d29UMFVac0FrODFwQkNjTFBmbC1LT0UtTGZZcDVSQk5TX3RXbXVjWUR2UUttWVZwUVhqM3l1ZjlIU3FNSmM3ZWJWVDF1Nm1tektQMkltRkNPWUE?oc=5",
+   "image": null,
+   "source": "macworld.com",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-03T23:18:57+00:00"
+  },
+  {
+   "id": "40760ecee35b",
+   "title": "Stellar Repair For Outlook Detailed Review: Online Service Vs Desktop Tool What To Choose",
+   "summary": "That is where dedicated PST file repair solutions can help. Stellar offers two different approaches to the problem: Stellar Online PST Repair, which works directly through a web browser, and Stellar Repair for Outlook…",
+   "link": "https://www.redmondpie.com/stellar-repair-for-outlook-detailed-review-online-service-vs-desktop-tool-what-to-choose/",
+   "image": "https://cdn.redmondpie.com/wp-content/uploads/2026/10/Image-1024x575.jpg",
+   "source": "Redmond Pie",
+   "sourceId": "redmondpie",
+   "category": "iphone",
+   "published": "2026-10-03T23:06:34+00:00"
+  },
   {
    "id": "a69016d155ab",
    "title": "I set up Claude Code the way Spotify does to save tokens, and it cost me more",
@@ -54,15 +131,37 @@
    "published": "2026-10-03T23:00:10+00:00"
   },
   {
-   "id": "9239b78fc7ce",
-   "title": "Apple confirms iPhone cellular issue, admits affected units can’t be fixed",
+   "id": "f9b78b757489",
+   "title": "Having Cellular Issue With iPhone 18 Pro Max On AT&T? Apple Says You’ll Need A Replacement",
+   "summary": "Apple has confirmed a cellular issue affecting a small number of iPhone 18 Pro Max users on AT&T. The problem can cause the phone to lose cellular service, preventing calls, texts, and mobile data from working. The post…",
+   "link": "https://www.redmondpie.com/having-cellular-issue-with-iphone-18-pro-max-on-att-apple-says-youll-need-a-replacement/",
+   "image": "https://cdn.redmondpie.com/wp-content/uploads/2026/10/image_2026-10-03_234722383-1024x576.png",
+   "source": "Redmond Pie",
+   "sourceId": "redmondpie",
+   "category": "iphone",
+   "published": "2026-10-03T22:46:54+00:00"
+  },
+  {
+   "id": "081849365705",
+   "title": "I found the best iPhone 18 Pro cases and grips to protect your new phone",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObG41ZEpJTXJlcXljRXF0U09KRVg3SXZ6cjFkV19UVG90WVpHbUdtd00tQjFYbUJJZWRWdmNWVnpHU3R6Sm1KRkZnTkhHZUVmY204R1pYWWVRU3dNQThWclJWc1RZWnM0d29UMFVac0FrODFwQkNjTFBmbC1LT0UtTGZZcDVSQk5TX3RXbXVjWUR2UUttWVZwUVhqM3l1ZjlIU3FNSmM3ZWJWVDF1Nm1tektQMkltRkNPWUE?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVkE3eExreTkzUWJsTTdkMTVGX3hwVVNWb0dqOXZwT1VJbUI1NWFpSmsybHhzcF9OSXlSRmtzNVV6dm9vdWQtdW1qMS1vRHdneXhfNEhpdEQ4WXhpZV84ZUpTOFM4akRCMmVpMEU0bElGX1ZuUVRzYjRVSXBXSmRLNnBlcFVpRW9MbGF1ZHBXTmNyZHZZR0JCVGF4RQ?oc=5",
    "image": null,
-   "source": "Macworld",
+   "source": "Mashable",
    "sourceId": "gn-iphone",
    "category": "iphone",
-   "published": "2026-10-03T22:44:05+00:00"
+   "published": "2026-10-03T22:39:11+00:00"
+  },
+  {
+   "id": "f9ec717b237b",
+   "title": "Best iPhone to buy in 2026: We compare cameras, value, battery",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBkaGExbXRkTDF3MjRQNWtrZFBHX19IZ1Y2YkRXM0Y1VU5YQWZacUY3ejZlUHNqcFJ6VnNHTjk0WXRTTzFiMHJnOG1yM1VXMzdxVG81b3Bkaw?oc=5",
+   "image": null,
+   "source": "Mashable",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-03T22:36:36+00:00"
   },
   {
    "id": "2cd9945e3547",
@@ -175,6 +274,17 @@
    "published": "2026-10-03T20:47:00+00:00"
   },
   {
+   "id": "79552ea730cc",
+   "title": "Photos Captured on iPhone Duo Shared by Apple",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQb0dDQzJ2U1ZKbVlGb1JtMUs4cl9kUlJsZGRTTU5PQWtscmFIWTdKNlo5THB6SVlOQjJUaUIwY0NfYzVPVVB3dkROeGljV09hN0RvWjJSRXA0SEZiOUFVTUxrR3NPcktXaGc1eGUteGFTdmRqTmlRRWRjZlRyU2duOTJCbmZnRVVi?oc=5",
+   "image": null,
+   "source": "ilounge.com",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-03T20:40:39+00:00"
+  },
+  {
    "id": "19cca4f8b26d",
    "title": "Your M.2 slot does more than SSDs, but nobody talks about the boring cards that prove it",
    "summary": "Your humble M.2 slot can do a lot more than meets the eye",
@@ -186,12 +296,12 @@
    "published": "2026-10-03T20:30:17+00:00"
   },
   {
-   "id": "65b9d46191c9",
+   "id": "37b5c29c7005",
    "title": "4 iPhone 18 Pro Upgrades That Are Bigger Than You Might Realize",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZmFBN2RjZ0tmT0ZpcHVDQm5tRWRBejBuS29YYWJkUklHWVVBLTNsTEMyRWtoSVhHMFFfYkNuR05zdlJhWC1XdWxzVXBDcHdScGpGWU45TVFyMEhaRTk1T2VCSnJnTTI1NklsRnVCOVMtVmw3bzhmVDJRRUFMUEhxa3NmMzk?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9zYjAyZ25nQVROTzFBMU85dzhGVXp6clluRmRiU2ZYeUlKUXR2VWZvQ1g0NVhjdl9GeTc0LUIzUWFQay1pNXRBa2pWN1dpTFE2YV9KQ3lHS2JBV2lCVkJFN1dEOTBHXzdHZ25kN2pQd3NENGpKbEE?oc=5",
    "image": null,
-   "source": "tech.yahoo.com",
+   "source": "SlashGear",
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-03T20:15:00+00:00"
@@ -340,17 +450,6 @@
    "published": "2026-10-03T18:05:00+00:00"
   },
   {
-   "id": "21afb9a29909",
-   "title": "Microsoft keeps fumbling Halo, so fans are fixing it themselves with 64-player Halo 3",
-   "summary": "The impressive project aims to modernize the iconic first-person shooter in a more authentic way.",
-   "link": "https://www.xda-developers.com/microsoft-keeps-fumbling-halo-fans-fixing-it-themselves-64-player-halo-3-project-reclaimer/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/halo-3-project-reclaimer-screenshot-header.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-03T18:02:54+00:00"
-  },
-  {
    "id": "60a4db1f1a1c",
    "title": "I've waited years for the Kindle Click just to escape Amazon's relentless touchscreen-only e-reader design",
    "summary": "Amazon is finally fixing its touchscreen-only Kindle design with the new Kindle Click and Page-Turn Cover",
@@ -412,17 +511,6 @@
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUUJkVVlwWE91Y1JERVJYcHVTaUQ5STdJU1VWWVdSb1BjYWNGVHNkN19MenN0azZjWndra2x5aEhlY3pUUDVUblJPWFpSLUZBSC0wdG41ZEFjSkk5R0wwUGhlWFdMWEx0NHdyOW5MUVFONmc2amtwMDJBdUFqWVhsbTRHbE9HNFVLWk4zaGprc19JUlNIUVBGQS1Relg4UC1LQkE?oc=5",
    "image": null,
    "source": "TechRadar",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-03T17:00:00+00:00"
-  },
-  {
-   "id": "f45df37af4e1",
-   "title": "iPhone Duo Lands On October 23 And Starts At $1,999 For 256GB",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1YQl9FZzJvME9CQ0FsT05wSEt0cEF3cG80dGNYSVJRUTdFWUdySHpwRHY5a1RUdEdaTHlmZ2JCUGlwZXk1d0ZSN19GdlNOSlVNbFAwTVlkUEpzMEs4cFUwY0RqN1d5d05BdW1vdnlCSEVjVmdYNjNnSW9TWWM?oc=5",
-   "image": null,
-   "source": "tech.yahoo.com",
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-03T17:00:00+00:00"
@@ -637,17 +725,6 @@
    "published": "2026-10-03T12:00:00+00:00"
   },
   {
-   "id": "081849365705",
-   "title": "I found the best iPhone 18 Pro cases and grips to protect your new phone",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVkE3eExreTkzUWJsTTdkMTVGX3hwVVNWb0dqOXZwT1VJbUI1NWFpSmsybHhzcF9OSXlSRmtzNVV6dm9vdWQtdW1qMS1vRHdneXhfNEhpdEQ4WXhpZV84ZUpTOFM4akRCMmVpMEU0bElGX1ZuUVRzYjRVSXBXSmRLNnBlcFVpRW9MbGF1ZHBXTmNyZHZZR0JCVGF4RQ?oc=5",
-   "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-03T11:56:57+00:00"
-  },
-  {
    "id": "37c7c03c1e2c",
    "title": "October Prime Day monitor deals: Save up to $300 on Samsung, LG, Dell and more",
    "summary": "October Prime Day is the best time to save money on your next monitor. Here are 7 deals worth your money.",
@@ -664,7 +741,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNR3lwRGxMckltRkxGczllcEtyVFpDZUsxNHI5b0twR3hkQlZWQ2I3Nk1yczc0WWxYbUlKX0NIX2p4R0dsSWNZTDZpWTEwLTRXQkRVdURTbU5XejRGYnpFQzVwd2RRR2ItNWFYa2hYY09FOFlqMG1qemtXVmI3c21uQzI0dEd4YldWcy1GNGFjV1hDSUFSNmRDN1hYVmpqbFdydDhOcmtIcFdZX0ZFUUZoZVQtbm1wSWdtZjZJaTQ5dDNxQ2xOZ0E?oc=5",
    "image": null,
-   "source": "Forbes",
+   "source": "forbes.com",
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-03T11:00:01+00:00"
@@ -681,17 +758,6 @@
    "published": "2026-10-03T11:00:00+00:00"
   },
   {
-   "id": "2c0d1f1df8b2",
-   "title": "iPhone 18 Pro Randomly Restarting? Apple Confirms Face ID Bug",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPb1pGMVlYOWFYVTNiQ0tqUEVoYmdHd29lZUs0TEdRWFdoNW1GSUU0cmhMZDZCcWFMQW5Dc0YtREgxNkExV0kxZi1ubk0yQ0FBM3pqT0VVSE9QWF9abXNULVQ5cHcyUFVLUWQwek5vR1lEMVZBWEtpWkFUQkNYVHk0TF9IQlYySDFFMTlR?oc=5",
-   "image": null,
-   "source": "Vocal",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-03T10:51:29+00:00"
-  },
-  {
    "id": "38733daebabd",
    "title": "Ace Combat 8 is high-flying aerial combat perfection that's more exhilarating than 'Top Gun' — despite its unavoidable contradictions",
    "summary": "Ace Combat 8: Wings of Theve is the latest entry in the long-running aerial combat series, and it might be the best one yet.",
@@ -701,17 +767,6 @@
    "sourceId": "tomsguide",
    "category": "general",
    "published": "2026-10-03T10:45:00+00:00"
-  },
-  {
-   "id": "f9ec717b237b",
-   "title": "Best iPhone to buy in 2026: We compare cameras, value, battery",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBkaGExbXRkTDF3MjRQNWtrZFBHX19IZ1Y2YkRXM0Y1VU5YQWZacUY3ejZlUHNqcFJ6VnNHTjk0WXRTTzFiMHJnOG1yM1VXMzdxVG81b3Bkaw?oc=5",
-   "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-03T10:39:48+00:00"
   },
   {
    "id": "4261e69dc03d",
@@ -758,17 +813,6 @@
    "published": "2026-10-03T10:30:00+00:00"
   },
   {
-   "id": "297a04bcff1f",
-   "title": "I found the iPhone 18 Pro’s best camera feature – and it isn’t variable aperture",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeG0tSFVBY1pqQUpSQVpQeFA5aExPck1pWXNLSWlTQU1rLTVxR0hvTXBma3QyXzM0VGRJZmV1Q0RKblFMRnlsdlNkQ3ZuNFV2NUtYbWluWHVfUVFWNnJIRURHWWpjWE01SDJXMEVDRl83LWZMbUFOekl1T1d1Z1BoMUZwcVRneU1mX24yQw?oc=5",
-   "image": null,
-   "source": "ZDNET",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-03T10:30:00+00:00"
-  },
-  {
    "id": "b3fa27e5518b",
    "title": "Sugar, creamer, and microplastics? The inside story on the plastic-free coffee revolution",
    "summary": "Is plastic inherently harmful? Is the rise in demand for plastic-free appliances a passing fad, or here to stay? I deep-dive into plastic and coffee makers.",
@@ -796,7 +840,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPS1hmWHp0QlZKVDRTdDNVZ1JUTk1iRHByYzFFaHpUTUdKZ2w3WFIyU1I5UDBRMjBfdTBEQ3ozcy1pdmFwTWlkQXBnNG94aEtnSi1WbTZtRU5QVVJSaUdJLVMwekphU0NwWGRlYlZWU0RKVzlpU1VkdlRMS3FhcGJWZXI4SQ?oc=5",
    "image": null,
-   "source": "Macworld",
+   "source": "macworld.com",
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-03T09:20:26+00:00"
@@ -822,17 +866,6 @@
    "sourceId": "tomsguide",
    "category": "iphone",
    "published": "2026-10-03T09:00:00+00:00"
-  },
-  {
-   "id": "9247562f346d",
-   "title": "iPhone 18 Pro Max Can Lose AT&T Service, And Apple Says No Update Fixes It",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1vZGN2M0FsRFBEaUo2R2g1Z1g1bEV2WWgwSUJlZjQweXZnUE00UlJIU0dacVhNUUYtTUFqeFpUdFJhN1ExZnM2QnpYWU1TcUpSSU1LaFh0ZjkySDJIQmdVSXl3?oc=5",
-   "image": null,
-   "source": "Yellow.com",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-03T08:50:46+00:00"
   },
   {
    "id": "8ca6493ba695",
@@ -884,7 +917,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9PNmVwRkQ5WGN5MEc1Rm5lSS1kSTNtVXhHMHV4eExFbDlJVl92SEZJYndhcTl6SUVfLVEzSkFWZG9QNDFKeFNmNVFRZTgxOVI0VXp2YzlVaGVtNzVjQ0p0SWF0c0Q3NUpqUm1JN0pPc3Jrb0tLUjRHZw?oc=5",
    "image": null,
-   "source": "memeburn.com",
+   "source": "Memeburn",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-03T05:51:56+00:00"
@@ -972,7 +1005,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOeHFpRTl2MmhmSnl5R1IwTW56Qjhod2dfZTJDX19kOS1nVmcteWJoR0FVVm1mTDd4ak52eEhaZkhnaXJ0ZmRXVlpZWHN3cWZJTW5wclRXZU13Qy1VQTdmLVo2TGdJNVljNnQtT2h4SW10ZkMtVm9weFFza29wMnRLWjJUb0pEcDc3X0dSc0tEcld5cEVkRWI2UWRCc0RlOENpcENOQm12S1FuSnJWSzlINy1ELWFpRHZKaWZuNVBzTVJYOF9lQVI0ZFVhLWJBUFotTHRDY1pWbGE5ejFCaUZ2TEN5WQ?oc=5",
    "image": null,
-   "source": "Forbes",
+   "source": "forbes.com",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-02T23:27:32+00:00"
@@ -1132,6 +1165,17 @@
    "published": "2026-10-02T20:00:00+00:00"
   },
   {
+   "id": "77f76ba53b9f",
+   "title": "Four Major Issues Are Plaguing the iPhone 18 Pro and 18 Pro Max",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE02UDBfUF9WTHhGVXBwVm5XLURFZWFTakp5QnpKMXQ3clk4QXltUXREekNPeTZXZ2lsUUZLbkZjYmJObWdHNlhvaW80M3ViTHhFV2s1Q1haSS1NdndiTmdvNXJHRFdBbFhWeFJwSnloajZydw?oc=5",
+   "image": null,
+   "source": "Lifehacker",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-02T19:49:35+00:00"
+  },
+  {
    "id": "a04ff85b1a79",
    "title": "Samsung Galaxy SmartTag 3 Works With iPhone But Leaves Another Popular Phone In The Dust",
    "summary": "",
@@ -1174,17 +1218,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-02T19:26:34+00:00"
-  },
-  {
-   "id": "243817f25dbe",
-   "title": "AT&T issues urgent warning to some iPhone 18 Pro Max owners to update their software right away",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNHhGMktGc29QVXFzOUhIQnlITElJMnNhbmE1U3A5Y0dTblY1WWdITVluQWlidkoxV1RjVjFiR2VWdTNsUUY3aE5wZmdPdWxxME5UVzhtQmttbFlTTVhvVldUck5WS2ktU2NuZHNCclJUbGRYcHpfM01JbUtwQll3VExlc01fN1h4OG9Pbkw3czBHbFF6bEtnMS03eHRQUQ?oc=5",
-   "image": null,
-   "source": "Fast Company",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-02T19:14:33+00:00"
   },
   {
    "id": "f02f43a6371a",
@@ -1240,17 +1273,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-02T18:15:26+00:00"
-  },
-  {
-   "id": "8320f8547342",
-   "title": "The Google Pixel 10a is a Lot More Expensive Now",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQa3dwVGliUHpaTloxV0xDaDVuYzdmN1ZlR08wZUdFb3B6WE9ZcFk1QmIzeXFCU1psamJUMkd6ZGp6ZGFYaXhrb2xuUllMc1NFWDFOQ1hRc2dGR1U3cHFCSkIzZWpKTHhFQVRuRVgwNk44a3ZqVzY1T1NONUxpQ3EtRjU3Z3JLclktX3fSAY8BQVVfeXFMUGxkVksyc3QzQzlNeHpMVTZZZG9XN0xHQVNEem1TbDh0MXEyU0c0YTFFSGFLMFpCX1VCdThfOHZEbktxRTVxcUppR01mV2lKS0x4akZ3a1FoVC1pbklVZkU3SEdCMkQ2ZW00ckY4TFExeFdXbjN2WmtCOUJ2OG1tTTA3RmdGaHJwSVdPV1dpYTQ?oc=5",
-   "image": null,
-   "source": "Phandroid",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-02T18:07:00+00:00"
   },
   {
    "id": "07e29540e62e",
@@ -1374,17 +1396,6 @@
    "published": "2026-10-02T16:35:13+00:00"
   },
   {
-   "id": "def3c777d62a",
-   "title": "There's only one smartphone battery spec that matters, and it's the one nobody checks",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQY0Nra1JNMVUtXzFMMUlVZEdOUVdQNWMtX1BGdzJreE9KZlFRWEZNMVdod2JYYURVTnl4TVBnSndqUENKeGFfSl9HZ1AyUkFUbDhmX2ZYYXFzeHhFMVMzWldjTnR2SGJoVkliVkVhWE5WYzJLSHFlcnlNOTlFV0tsSS1TQQ?oc=5",
-   "image": null,
-   "source": "MakeUseOf",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-02T16:00:15+00:00"
-  },
-  {
    "id": "b7b12147991f",
    "title": "Using an iPad mini to preview the iPhone Duo experience",
    "summary": "Alongside using the iPhone 18 Pro , I’ve also been carrying out a little experiment as we await the launch of the iPhone Duo . To get a sense of what it might be like to use the large screen of the upcoming device, I’ve…",
@@ -1401,7 +1412,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tQmNFb2hvaTJJb3Zqb2taZFhXWkJ3Q1BNaEYtWEtBdnlNc2lnZkJacVBYQzI0N1VBYVRmMUdKQWZVY2k2dkE2YlYwdHdha1huQ29NSkwxdGpkSmd5Qk9lRlJ5TGFpWnBDVnBadWl0em1BUUxra0E?oc=5",
    "image": null,
-   "source": "Pocket-lint",
+   "source": "pocket-lint.com",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-02T15:56:55+00:00"
@@ -1715,6 +1726,17 @@
    "published": "2026-10-02T10:30:00+00:00"
   },
   {
+   "id": "6f37d02a1d74",
+   "title": "Best iPhone 18 cases for iPhone 18 Pro & 18 Pro Max",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNVQyeGtaZFppOHY5a01HamFhOXJrRF9iMHVIaS1kdjhtTm1qMkgxYkhXSkNvVVFETVhlUEJFYzRiSzNtbG1WbXVIalVNX1dkclptWWdDU19OLURLZ0FMSkk4V0l0bUNXT3hMTlVic0lLSmFuVlpjT1lLN216VlVUbDI3MURnclVoREVCaTNITEhUOWRwNXB5NHB4WQ?oc=5",
+   "image": null,
+   "source": "macworld.com",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-02T07:00:00+00:00"
+  },
+  {
    "id": "f39e2c3c152a",
    "title": "Apple TV’s acclaimed ‘The Last First: Winter K2’ documentary now streaming",
    "summary": "Sporting a 100% Rotten Tomatoes score, the extreme mountain climbing documentary “ The Last First: Winter K2 ” is now available to Apple TV subscribers. Watch the trailer below. more…",
@@ -1825,17 +1847,6 @@
    "published": "2026-10-01T19:26:47+00:00"
   },
   {
-   "id": "a3c727073585",
-   "title": "This Amazon Fire HD 10 Tablet Is Now 53% Off With This Early Prime Day Deal",
-   "summary": "The Amazon Fire HD is a great tablet at a great price, even when it's being sold for its usual $155 asking price. But it's 53% off right now, making it an absolute steal. This early Prime Day deal isn't going to be…",
-   "link": "https://www.redmondpie.com/this-amazon-fire-hd-10-tablet-is-now-53-off-with-this-early-prime-day-deal/",
-   "image": "https://cdn.redmondpie.com/wp-content/uploads/2026/10/fire-hd-10-tablet-1024x575.jpg",
-   "source": "Redmond Pie",
-   "sourceId": "redmondpie",
-   "category": "iphone",
-   "published": "2026-10-01T19:20:46+00:00"
-  },
-  {
    "id": "dea883e0185c",
    "title": "Apple says iPhone Duo has ‘replaceable’ folding display layer to minimize crease",
    "summary": "Foldable displays tend to show a more visible crease over time, but Apple‘s Kate Bergeron says iPhone Duo has a replaceable cover layer on its folding screen to help mitigate that issue. more…",
@@ -1856,17 +1867,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-01T18:16:46+00:00"
-  },
-  {
-   "id": "fbcfe4670203",
-   "title": "Apple’s Rumored Home Hub Device Could Launch In Four Colors",
-   "summary": "Apple's rumored Home Hub device could be available in four colors, giving buyers several options for Apple's upcoming smart home device. The post Apple’s Rumored Home Hub Device Could Launch In Four Colors first…",
-   "link": "https://www.redmondpie.com/apples-rumored-home-hub-device-could-launch-in-four-colors/",
-   "image": "https://cdn.redmondpie.com/wp-content/uploads/2026/10/image_2026-10-01_221607822.png",
-   "source": "Redmond Pie",
-   "sourceId": "redmondpie",
-   "category": "iphone",
-   "published": "2026-10-01T17:42:29+00:00"
   },
   {
    "id": "abab9e283622",
