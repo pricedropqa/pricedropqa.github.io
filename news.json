@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T21:41:04.534649+00:00",
+ "updated": "2026-10-05T00:15:56.603181+00:00",
  "sources": {
   "androidpolice": {
    "items": 10,
@@ -22,23 +22,177 @@
    "feed": "https://www.tomsguide.com/feeds.xml"
   },
   "gn-android": {
-   "items": 37,
+   "items": 38,
    "feed": "https://news.google.com/rss/search?q=android+phone+OR+samsung+galaxy+OR+google+pixel+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   },
   "gn-iphone": {
-   "items": 38,
+   "items": 36,
    "feed": "https://news.google.com/rss/search?q=iphone+OR+ios+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   }
  },
  "items": [
   {
-   "id": "d77000a7a34c",
-   "title": "iPhone Duo shows what the future of smartphones could look like",
+   "id": "9c3831d47123",
+   "title": "I forced DLSS 5 onto my RTX 4080, and the performance penalty made me regret it instantly",
+   "summary": "Nightmare visuals weren't the only downside.",
+   "link": "https://www.xda-developers.com/tested-dlss-5-on-rtx-4080-performance-cost-made-me-regret-enabling-it/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/09/whatsapp-image-2026-09-30-at-14-23-41.jpeg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-05T00:00:18+00:00"
+  },
+  {
+   "id": "51018dd3f5e5",
+   "title": "Espanso has saved me more time than any AI tool I've tried this year",
+   "summary": "A few shortcuts have done more for my productivity than any chatbot.",
+   "link": "https://www.xda-developers.com/espanso-has-saved-me-more-time-than-any-ai-tool-ive-tried-this-year/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/warmly-lit-monitor-with-code.png",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-04T23:01:18+00:00"
+  },
+  {
+   "id": "aad263bf6ef7",
+   "title": "Unexpected Keyboard does what Gboard won't: let me customize every single keystroke",
+   "summary": "Gboard feels like training wheels now",
+   "link": "https://www.androidpolice.com/unexpected-keyboard-gboard-alternative/",
+   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/unexpected-keyboard-shown-in-multiple-customizable-layouts-on-android.png",
+   "source": "Android Police",
+   "sourceId": "androidpolice",
+   "category": "android",
+   "published": "2026-10-04T23:00:10+00:00"
+  },
+  {
+   "id": "393925c2939d",
+   "title": "The Popular Apple Features You Won't Be Getting With The iPhone Duo",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbDlnbXpfSlhzZHBqbERVTWNfTGtwM1J6VVpnekFuX1UwdUxUVE9weEJhalVsc0RHRDhHRE0ySnRnalpQenRnTkdFMmREX2NNd3dFbzRmUlVWRzV5Qjh2TlVPR01hU05CblI0RHAtbGYtOW9LYkNteVY3b3d2UUFiMTlPWnRpeXltWFFIOVZxc0RfSkdvcC1CNXRJQQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRXVJcUVOb1VVNHBKUFlpa2FobmZlanVTSFN6eDBIYjRwNFV1UGNONXhrbWxUWVJJUmNDU25oQ1dWSVhOaTJPem14ZnVBZlhjcHVzYl9ZVjEwcUhDRlhmSEZmeEh5bjBIYlA0dzdITFRBNDhLS2ZHRjlCU2psc2xsNG5lYS01bVlKLUE?oc=5",
    "image": null,
-   "source": "9to5Mac",
+   "source": "Engadget",
    "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-04T22:45:00+00:00"
+  },
+  {
+   "id": "6cdba60d6c2d",
+   "title": "Custom Phone Lock Screens: Apple Adds iOS 27 Controls for Wallpapers and Clock",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1EdThRQVl4Vl9BdExKY2ZYWW5pV05CVFpBUG9uNlFyNmlNSVJjNTJNdThDNm1kNTdzTDRMeHlLWFNUSkVDdUZYYU4zN0FaWnZKNVZfd2JyWlVXNVhVSllmaUx2bXBmM1BxU0lWTw?oc=5",
+   "image": null,
+   "source": "Trend Hunter",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-04T22:44:07+00:00"
+  },
+  {
+   "id": "81f3179c2ae9",
+   "title": "APRS Connect is Now on iPhone",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbGlrNFc2MW01c1hTNzFkMkcteU5NSjFXeVR0Q1Qycmg1SjlISVFqaG44dVNmZ0cwbXpUWlhwRkJrN0pZakFBTlY4aUxVQmRpTEc3RFZMQjBBblZxSnJEbXhkNjRNSG0teGFFY0xfelUxVVVxcnQta2U1RXJaQS0xVS1TWQ?oc=5",
+   "image": null,
+   "source": "Amateur Radio Daily",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-04T22:43:18+00:00"
+  },
+  {
+   "id": "51e9a63c3219",
+   "title": "How The iPhone Duo Will Improve Your Group Selfies",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMDBCTUVuYmo4SDNRY0t3cXM5d3NyTWRnODBCbThFWWUxWm5NVUJ0LXprR0ZIbTVmNjZ4b05fSDFyQWtWMF9lMktubUlXelJTUl85MWtnOUMxNElEblF1QjVIbS0yNWxhNDc4Mzk1aUhiWkd3b2J4SFJfdkFPOEQ0QUFpT0lRbGxSYW9PRnhXcVltYk5ZRmlUV1FKWHFZQnFlTTk2dDVlWQ?oc=5",
+   "image": null,
+   "source": "Engadget",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-04T22:30:00+00:00"
+  },
+  {
+   "id": "bbb93897e17e",
+   "title": "iPhone 18 Pro Max owners on AT&T got the right treatment, but I think it exposes a bigger problem",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQb2xSMXhqNTBZd2NDRTdJZmxNRzcwZ1RGTXYwMUJMemtGUUdEM1EtOTlHSlI0NXhBVDk3SXVpWVg1YmgwV2JPeHktMlBUdHRVSjl3ZlB3SWVHbHcyQlUyM2Z0QUozYWloNTVMTzFWT3dfemtXMXFkWERBeEZhS0w0dFltekpUMjZud0JyMGtwNzZJWG45WFVoU2gwOVBYQ0xuQkQtWDFwN1NtVktzdU5UUUlmYVBUVFZjMjR3YXNSeVNrUjRTUEVIVmxSREw4Q1ZWaWY0?oc=5",
+   "image": null,
+   "source": "PhoneArena",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-04T22:13:03+00:00"
+  },
+  {
+   "id": "275c55f2ccf2",
+   "title": "Jellyfin is free and beautiful, but Plex does one thing that keeps me paying",
+   "summary": "My friends shouldn't need to understand my network",
+   "link": "https://www.xda-developers.com/jellyfin-is-almost-perfect-but-plex-does-one-thing-that-keeps-me-paying/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/the-plex-app-on-google-tv.png",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-04T22:00:18+00:00"
+  },
+  {
+   "id": "cdedfd9f6258",
+   "title": "I turned Gemini Notebook into my gardening expert; my plants finally stopped dying",
+   "summary": "Use AI to grow more plants",
+   "link": "https://www.androidpolice.com/turned-gemini-notebook-into-gardening-expert-plants-finally-stopped-dying/",
+   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/gemini-notebook-shown-beside-several-potted-plants.png",
+   "source": "Android Police",
+   "sourceId": "androidpolice",
+   "category": "android",
+   "published": "2026-10-04T22:00:10+00:00"
+  },
+  {
+   "id": "d62e2b51259d",
+   "title": "How To Improve Your iPhone's Call Quality",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNb0JfVWdVQTN2VE84a2hNVWpmMGhINHd4UWJfb0QyTHRGUF9VOEdXdkpxN1NJWGdXZERsc1RnS1VZZk1sVWJleURpR29LanJZbU5rYWJtTUhpODEyRkZELXpYNWt1U1N5cEtia1h3Y3JhWWR6R1hWZmpsRGFFc3BGb2l0YnZFZFYtSTdybw?oc=5",
+   "image": null,
+   "source": "Engadget",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-04T22:00:00+00:00"
+  },
+  {
+   "id": "4c815f143ea0",
+   "title": "I used Pixel 11 Pro Fold for one month - is it the unsung hero of the '26 foldable smartphone world?",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOelFITDJNbUJ3S1FEZHBoNmE3TUp6eHdtSVNMQjlRbmY5RjlocDRDNTJzb3VXRzhjcXd2ZnB3MTZ6M1ZNY00tcWxURlprZGVCRFdObVlKT0lTQmxuR3dFY2g1N0NaMGJ2c2ZPYzJJZFA0TGlwQ0FjcTZvbF8xN01hUnNSTmlQd9IBiwFBVV95cUxQbVNlUzJBVUxGcThUVHlEYlpwR3lwMVRpeHJtNlYtTVFuQjA5T1BZYzF6cUk5aDZvekVYanFWdnR2enRIMUhaN2k5NzJHUEtVWnBoT1VSeXhGWGNBVXBLQm5iMVdPbUM2azAwektNMWp6TUVCdDRKcGQ1NG9Db3o3ZDlYdUNrQ1p4UVFj?oc=5",
+   "image": null,
+   "source": "Irish Mirror",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-04T21:56:15+00:00"
+  },
+  {
+   "id": "e783d94c44fa",
+   "title": "Final Cut Camera 2.4 Adds iPhone 18 Pro Aperture Control, but Scopes and SDI Need iOS 27",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUWlQT2JsYjA2cXR3MDlKcmJzeDRRSGxoUDI5VFhqeW5TSU5Xem5lUXZWdGJGMmppTTJ4ZUtFVy1sdzYyQnJ3YU1vb2J2TFV6MGxaamJwY1pUOFJ1VXJLRE9YRmQtSTlicllnQkU0YlZTcm5XbzJOaVpaem5qWDhXdEl0Z1FHb2h3QWJHNE1ORlg3NE9tWXFXR00yMU1WREg1SllJNDFOTHdtR3lFa2pNMWhPRnhjZ2RIRHdlenctQnDSAcABQVVfeXFMTVFpUE9ibGIwNnF0dzA5SnJic3g0UUhsaFAyOVRYanluU0lOV3puZVF2VnRiRjJqaU0yeGVLRVctbHc2MkJyd2FNb29idkxVejBsWmpicGNaVDhSdVVyS0RPWEZkLUk5YnJZZ0JFNGJWU3JuV28yTmlaWnpualg4V3RJdGdRR29od0FiRzRNTkZYNzRPbVlxV0dNMjFNVkRINUpZSTQxTkx3bUd5RWtqTTFoT0Z4Y2dkSER3ZXp3LUJw?oc=5",
+   "image": null,
+   "source": "Tech My Money",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-04T21:52:34+00:00"
+  },
+  {
+   "id": "3a1bc3530445",
+   "title": "The 11 best phones of 2026, tested by experts",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE51cG9RVE5qYzlBNzFOMWlIc3lEelFmb1huY1FMa3hWdlRxMU9Rdi1WcHpYZmJ6Wk5GeDQwV0JrMkNMYnE5Z1I2UHdXZXBMdU0zX0k4cEZCX2FSTUFLeFJmakFtNUVYZw?oc=5",
+   "image": null,
+   "source": "Mashable",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-04T21:51:38+00:00"
+  },
+  {
+   "id": "72d8b8539d35",
+   "title": "iPhone Duo shows what the future of smartphones could look like",
+   "summary": "Since the unveiling of iPhone Duo , the idea of all major interface navigation elements being accessible from your thumb has been really interesting. Apple re-invented the idea of smartphone navigation with the outer…",
+   "link": "https://9to5mac.com/2026/10/04/iphone-duo-shows-what-the-future-of-smartphones-could-look-like/",
+   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/09/iphone-duo-front-display-hand.jpg?quality=82&#038;strip=all&#038;w=1600",
+   "source": "9to5Mac",
+   "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-04T21:32:00+00:00"
   },
@@ -52,6 +206,17 @@
    "sourceId": "xda",
    "category": "android",
    "published": "2026-10-04T21:30:17+00:00"
+  },
+  {
+   "id": "8a3ec5bdd8af",
+   "title": "iPhone 18 Pro Max users on AT&T: Take these steps to save your service",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONmN0cHRhWUlHaFRrZHd4S3lOelRra2xsYXdMaUI2X0NpNHIzeUZjdjJ5OERHbTNkQzZNN09mTTE0Wld1Y0VWNHRsajZxd3p4c3dIbjJMNVdLZEhpMFZDclJ6dkN4RmEtWTVUYTNQLTlkUDRSU3lob0dvMmtiNWNrMmdCQ04zdw?oc=5",
+   "image": null,
+   "source": "Mashable",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-04T21:11:22+00:00"
   },
   {
    "id": "54516c314c10",
@@ -87,19 +252,8 @@
    "published": "2026-10-04T20:30:17+00:00"
   },
   {
-   "id": "4c815f143ea0",
-   "title": "I used Pixel 11 Pro Fold for one month - is it the unsung hero of the '26 foldable smartphone world?",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOelFITDJNbUJ3S1FEZHBoNmE3TUp6eHdtSVNMQjlRbmY5RjlocDRDNTJzb3VXRzhjcXd2ZnB3MTZ6M1ZNY00tcWxURlprZGVCRFdObVlKT0lTQmxuR3dFY2g1N0NaMGJ2c2ZPYzJJZFA0TGlwQ0FjcTZvbF8xN01hUnNSTmlQd9IBiwFBVV95cUxQbVNlUzJBVUxGcThUVHlEYlpwR3lwMVRpeHJtNlYtTVFuQjA5T1BZYzF6cUk5aDZvekVYanFWdnR2enRIMUhaN2k5NzJHUEtVWnBoT1VSeXhGWGNBVXBLQm5iMVdPbUM2azAwektNMWp6TUVCdDRKcGQ1NG9Db3o3ZDlYdUNrQ1p4UVFj?oc=5",
-   "image": null,
-   "source": "Irish Mirror",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-04T20:15:00+00:00"
-  },
-  {
    "id": "f570f83c2c7d",
-   "title": "iPhone 18 Pro might be Apple's most problematic launch in years",
+   "title": "I can't help but notice that the iPhone 18 Pro is Apple's most problematic launch in years",
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPX2hFajdPTUZxV3VPV0NzdHpDQndhUURuY1FHbUdVLURQT0VndWU1WF9DbWNrTEt2MzdTcTJMcWw0Vy1VeHp2dm5HWThBUUg2VXRrbEVfbXY0SEdfblF2dmE1bkdORE1xUXRfMDRNbXlqYWVhdjdKd09mZTN6SDc5cGtMbWdHOWJYQ3pTSFc3ZFhmNWlnY3poQXdDMXVGRXNoMUlzWUNHWXFuRkk?oc=5",
    "image": null,
@@ -129,6 +283,17 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-04T20:00:14+00:00"
+  },
+  {
+   "id": "c5bfdfb41b40",
+   "title": "TOP-15: Best Wireless Headphones for iPhone – Ranking 2026:",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0zcHdoUDdKRmRRSFhXOUZEWU5SdmNmdXRiVUJmUjRfaU1xbUZKZDVIRWoydFAtVUVPM3gtRTRabTFxRGxCdHVJMGs5T1kwVmxXa09fUnRIaWREUjRNcDY4SFVub09JNVUyMGN2TzFvMS1JekpjSko1Tw?oc=5",
+   "image": null,
+   "source": "MyChooz.com",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-04T19:39:36+00:00"
   },
   {
    "id": "b53267cacf94",
@@ -230,15 +395,26 @@
    "published": "2026-10-04T18:30:00+00:00"
   },
   {
-   "id": "58acaba279fa",
-   "title": "I paired this Uptime Kuma killer with local LLMs, and monitoring my Proxmox servers has never been easier",
-   "summary": "The best part? Everything runs locally!",
-   "link": "https://www.xda-developers.com/i-paired-this-uptime-kuma-killer-with-local-llms-and-monitoring-my-proxmox-servers-has-never-been-easier/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/07/pulse-11.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
+   "id": "696d34ec4cea",
+   "title": "Pixel owners are fed up and threatening to leave the ecosystem over this one annoying change",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVWlDcVVCSWtmcTNGQ2lMNmg3SDR5NlZVMGVwbkozZzhkUUhidlZvOFlpeFdqaUlzckt2TmJJcHdVc3hKQVYyTFA4WjItbE9qNHd2RGJ2Y3NjSWV1aEZGQXNncjd5eG1TcjFOTUV6UVF1d0FWZEJBZ3cyT1FWLVN6WlI4ZVhtZ3V2U2NreHVXZjVaV19JLUV1clB1NURkQkJYZU83bjh3N0dGM0hmTHZleDdzblhSR0Z2Vm1CUTM2ZmdkVHBJbXFlVlZ1XzhfQQ?oc=5",
+   "image": null,
+   "source": "PhoneArena",
+   "sourceId": "gn-android",
    "category": "android",
-   "published": "2026-10-04T18:00:17+00:00"
+   "published": "2026-10-04T18:18:29+00:00"
+  },
+  {
+   "id": "0b92b7283d30",
+   "title": "Google makes it easier to share files between iPhone and Android",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOG1UbnVmLWc0Q3NSa0F4OWk4ODhVaEVNN3dnMjlOSmVRV1lfZlR5azhaUHpWVWNqUG02MkpQY0tsZnRBNXZjZzA3SnROMU0xQ0ZMc3h5bU1mU1Y5WGFXZFRSV193bzc4eDAzajA0bDhONW5mdVFnNE5CX3BIb0t2VlN2TFJXa2RfeHZfdDYxM3J0Tk1HamdIV1RBZkxTWWh2cXNtN25NX29vY3RuMk9iSEZxdlZzZw?oc=5",
+   "image": null,
+   "source": "آي-فون إسلام",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-04T17:57:33+00:00"
   },
   {
    "id": "9bcaf174bd3c",
@@ -263,28 +439,6 @@
    "published": "2026-10-04T17:36:51+00:00"
   },
   {
-   "id": "81f3179c2ae9",
-   "title": "APRS Connect is Now on iPhone",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbGlrNFc2MW01c1hTNzFkMkcteU5NSjFXeVR0Q1Qycmg1SjlISVFqaG44dVNmZ0cwbXpUWlhwRkJrN0pZakFBTlY4aUxVQmRpTEc3RFZMQjBBblZxSnJEbXhkNjRNSG0teGFFY0xfelUxVVVxcnQta2U1RXJaQS0xVS1TWQ?oc=5",
-   "image": null,
-   "source": "Amateur Radio Daily",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-04T17:32:32+00:00"
-  },
-  {
-   "id": "e13198333a84",
-   "title": "Your Windows PC has a free tool that outperforms every paid system monitor, and nobody knows about it",
-   "summary": "I stopped installing system monitors after discovering this forgotten Windows utility.",
-   "link": "https://www.xda-developers.com/windows-pc-has-a-free-tool-that-outperforms-every-paid-system-monitor/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/windows-resource-manager-lenovo-legion.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-04T17:30:20+00:00"
-  },
-  {
    "id": "081849365705",
    "title": "I found the best iPhone 18 Pro cases and grips to protect your new phone",
    "summary": "",
@@ -294,17 +448,6 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-04T17:15:30+00:00"
-  },
-  {
-   "id": "949567563bca",
-   "title": "When GPT-6 Astra started losing at StarCraft, it just stole the winning bot instead of playing fair",
-   "summary": "Like a real gamer, OpenAI's GPT-6 Astra wanted to win at all costs.",
-   "link": "https://www.xda-developers.com/gpt-6-astra-started-losing-starcraft-stole-winning-bot-instead-of-playing-fair/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2026/10/starcraft-starskirmish.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-04T17:10:54+00:00"
   },
   {
    "id": "bdaa7576d16a",
@@ -329,26 +472,15 @@
    "published": "2026-10-04T17:00:10+00:00"
   },
   {
-   "id": "8a3ec5bdd8af",
-   "title": "iPhone 18 Pro Max users on AT&T: Take these steps to save your service",
+   "id": "f3859ed6e9f5",
+   "title": "Google Raises Pixel 10a Price Just After Samsung’s Latest Increase",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONmN0cHRhWUlHaFRrZHd4S3lOelRra2xsYXdMaUI2X0NpNHIzeUZjdjJ5OERHbTNkQzZNN09mTTE0Wld1Y0VWNHRsajZxd3p4c3dIbjJMNVdLZEhpMFZDclJ6dkN4RmEtWTVUYTNQLTlkUDRSU3lob0dvMmtiNWNrMmdCQ04zdw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTmZ6U0kyYlBubEtzVFktemNRSEl4MUdCY2lLWWlONElKanp4R2pDUXJ2QWhfalY0LXRBd0w5WmEzWEJPdUJsci1DWUhISEE4dHlTNnBJOGd1eHpvckN6Rm83ek45dFBYR0g1NHVScldqbUpsWC1wdEtTbXMzQk9oMDdHWktheERpeEZ1bUk4Z0tEek90UGc?oc=5",
    "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-04T16:40:07+00:00"
-  },
-  {
-   "id": "f1d965cbb536",
-   "title": "Amazon Launches Early Prime Day Discounts on AirPods, iPad, MacBook Air, and More",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FbzBkTzFhTlFiank2aFRfRE9OVzdWTFRfMDJpRF9OeHBQOGNPc3dSUXI0N1NyWG1HQ0FLLVhzT1FGQno3R3hwMWI0NUpTYmxXY0lYaXJsOFBxdllaWjgxaFN1TFJNdTBOLVNlTWEwWGFPSS1s?oc=5",
-   "image": null,
-   "source": "MacRumors",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-04T16:15:12+00:00"
+   "source": "TechJuice",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-04T16:24:15+00:00"
   },
   {
    "id": "39d89d6a82c2",
@@ -406,28 +538,6 @@
    "published": "2026-10-04T15:00:10+00:00"
   },
   {
-   "id": "3a7e5afb08d6",
-   "title": "Unboxing the iPhone 18 Pro in Burgundy",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQYl9qVW9OX0RaS2pROXJ3YVhHLTcxV09zQzEyTE1lZFBmSGZjc1pDOGlheERRNDlpc184UEZjYTlvLWowYWp3OG51UTdlSXlydTYxTDRJSDRrQ3ZubXpmM3prQmpuSGRqOUFDcE0yRHFTSU5nektyWDQ2Xy03STdzc2ZB?oc=5",
-   "image": null,
-   "source": "Yahoo Tech",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-04T15:00:00+00:00"
-  },
-  {
-   "id": "684560846d02",
-   "title": "Today in Apple history: Siri debuts on iPhone 4s",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaFhraDlWekNNMTkzMVpyY3hNckNQcFU3Y2ZKcFFzRTlkXzhqRzE1SGhlZlNYN09JaHo2bDhzUldpY2RFTUw1Y2pTYnZDdkVGdEtrRlhBZklRSVZ4SW9tNER5VVdLNFdxaG05MDVZUHpGRmR4Sy10OTYzUVJFdHdyX2doSXZ0N1pmalUxckltc2Z3RTBSZFJvclRSUFNqcHM2enc?oc=5",
-   "image": null,
-   "source": "Yahoo Tech",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-04T14:53:15+00:00"
-  },
-  {
    "id": "b9ee1d8df926",
    "title": "I put Pixel's excellent Now Playing on my watch; now I can't go back",
    "summary": "Now On Wrist puts recognized tracks on your watch face so you can catch artists and save discoveries without touching your phone",
@@ -461,17 +571,6 @@
    "published": "2026-10-04T14:00:00+00:00"
   },
   {
-   "id": "6549295393bc",
-   "title": "I replaced my Samsung home screen with a TV launcher; my phone finally feels calm",
-   "summary": "The TV launcher feels undesirably good on a phone",
-   "link": "https://www.androidpolice.com/i-replaced-my-samsung-home-screen-with-a-tv-launcher/",
-   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/samsung-galaxy-phone-running-projectivy-launcher.png",
-   "source": "Android Police",
-   "sourceId": "androidpolice",
-   "category": "android",
-   "published": "2026-10-04T13:30:10+00:00"
-  },
-  {
    "id": "5afc46a98f55",
    "title": "Google Pixel turns 10 years old today, and we’re still talking about it",
    "summary": "",
@@ -481,17 +580,6 @@
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-04T13:00:00+00:00"
-  },
-  {
-   "id": "f27069b93756",
-   "title": "I found an Android note-taking app that puts Google Keep, OneNote, and Obsidian to shame",
-   "summary": "This hidden gem does almost everything",
-   "link": "https://www.androidpolice.com/found-android-note-taking-app-that-puts-google-keep-onenote-obsidian-to-shame/",
-   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/bundled-notes-puts-obsidian-onenote-google-keep-to-shame-7.jpg",
-   "source": "Android Police",
-   "sourceId": "androidpolice",
-   "category": "android",
-   "published": "2026-10-04T12:45:10+00:00"
   },
   {
    "id": "5fe61e75a536",
@@ -576,7 +664,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5ual9PRkRhc1VoMlpWMzd3Qm5vVHVhX25PWjFGTzF3a0NZRjY4cTE1WlBUYXpLNFFUTnRyZUw3c0hKQzFjREhfeVp0WFQwdW1Eb3RHVmRIREVTMUVXNURGTkpIWnFsdURTSGU1TGFQOG5Mc1dfUmJN?oc=5",
    "image": null,
-   "source": "androidpolice.com",
+   "source": "Android Police",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-04T11:00:10+00:00"
@@ -598,7 +686,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8wV25XcGEzTDFVV2VpMzdHdzhnUVZNQmtFcVBmRktDVDRKNlpkSnF3ZTlqSEZ4LTFvSVRVeGxacTBNZTdVMWo3SEhxaUFjLW00Y1ZfTkpqZWtfUWM2UTVPVjc4VEYyRFk?oc=5",
    "image": null,
-   "source": "concept-phones.com",
+   "source": "Concept Phones",
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-04T10:41:28+00:00"
@@ -668,17 +756,6 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-04T09:50:00+00:00"
-  },
-  {
-   "id": "f678c9954cce",
-   "title": "iPhone Duo Fake Preorder Uses $500 Bait To Target Crypto Wallets",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9PaGxnUW94WEZFcnJrWmJvZDNVRDE0aUNDQW9GOFFmUTJrX2kzTFhaMkFTVG5ZZHhxYXduVzNDcnJvQUlkRG0xU0p6N2xoZmhkNE51TzhQWFdFMDQ1QXRSNnVFUGFvOEdiM1hhNHYyUU4?oc=5",
-   "image": null,
-   "source": "Yellow.com",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-04T09:36:18+00:00"
   },
   {
    "id": "00d4f26726c9",
@@ -785,7 +862,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObG41ZEpJTXJlcXljRXF0U09KRVg3SXZ6cjFkV19UVG90WVpHbUdtd00tQjFYbUJJZWRWdmNWVnpHU3R6Sm1KRkZnTkhHZUVmY204R1pYWWVRU3dNQThWclJWc1RZWnM0d29UMFVac0FrODFwQkNjTFBmbC1LT0UtTGZZcDVSQk5TX3RXbXVjWUR2UUttWVZwUVhqM3l1ZjlIU3FNSmM3ZWJWVDF1Nm1tektQMkltRkNPWUE?oc=5",
    "image": null,
-   "source": "macworld.com",
+   "source": "Macworld",
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-04T07:13:48+00:00"
@@ -846,17 +923,6 @@
    "published": "2026-10-04T06:00:00+00:00"
   },
   {
-   "id": "04564831d5ec",
-   "title": "ID5 faces Apple's iOS 27 Safari block as CEO says regulators should look",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTGx0VlJDVmN3Y2Z6U0lQMFVrdElCcTZTLXFreGFKNy1pWUVQcERTTU1pcVBzZEFyazNWbi1CY3lPWmNLZFhfYXV3Q1FmT1VXUi1lTG15d3dpZzdYMEk5ZnR0WWJRYnZJUW9Oc1UyRlBJaWVoTDd1OWl3U2lxeGpnTC04bHZMbEhPbncyOGdQMUI0S28?oc=5",
-   "image": null,
-   "source": "PPC Land",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-04T05:06:54+00:00"
-  },
-  {
    "id": "1f0d2d7540aa",
    "title": "Pixel 11 & 11 Pro are finally good value with up to 20% off Prime Day bundles",
    "summary": "",
@@ -891,10 +957,10 @@
   },
   {
    "id": "5e29a32dc100",
-   "title": "I used Meta Muse as an AI house manager for my family of five — here’s what happened",
+   "title": "I used Meta Muse to run our 5-person household — and it beats Alexa+ at the hardest task",
    "summary": "I put Meta Muse to work managing my family of five, from schedules to everyday household tasks. Here’s what happened when AI took charge.",
    "link": "https://www.tomsguide.com/ai/i-used-meta-muse-as-an-ai-house-manager-for-my-family-of-five-heres-what-happened",
-   "image": "https://cdn.mos.cms.futurecdn.net/yhkFCmtazrGxa5cmaJGUh6-1920-80.jpg",
+   "image": "https://cdn.mos.cms.futurecdn.net/LSwPp74zfByJU9pqegQYKn-1920-80.png",
    "source": "Tom's Guide",
    "sourceId": "tomsguide",
    "category": "general",
@@ -923,26 +989,15 @@
    "published": "2026-10-04T03:47:00+00:00"
   },
   {
-   "id": "5be62f1028f3",
-   "title": "Director Mode– an iOS app for multicamera productions",
+   "id": "08bc07c22264",
+   "title": "Google Pixel Watch 5 review: From form factor to health tracking, is this the best Android wearable?",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTFRWWU44RTZ4NExrQWxsV0laWTREeUJ1bFRDaUtrYUxOcXdJV0ZhQ25ueXd5dXZwNlA4RzlnUl9FLTh1a2dXS011US10QmIzNXk5RU55VmRmTGdaQTZ1d0JhRnduME5SZWNDR3F2MENRLUZqODVIdkFrOUpGUU5iTV9mX1NNZDlsbmR4Tm5VWkxUN0FCWkY0?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTEtlNVdmZHBicXZObTNoNkdrOGRKSmcwTzlaYWZmek5DSjN1d1VqN3ZRWU8xVEFXMU5KVHdCQUEtZGs2SHBRRzhLQndtc0JlZ2xnYkxFVWJ0TU9PWUxZaFpoMVNjYzZuaUo2QmVOZUNuWTBwZzlnczBvT1BkaG9OTFhsbFl2d1RhMi15bHZ1OUtlN25ZN19jS0ZkSlBuVVBOQmpKVV8xaEdTT2FmemZwWU1rQdIBuAFBVV95cUxPUlJxQmJwVmthV0s3RmY4QVAtRjRfOC1wWWdDVnNwM2YxNmdzNGFOT2cyRWFFQWNEM3pqUFlVc1JxT3pacUpjLTJlMEZidmQ4ZnZDSktCWTBfalNmQUFYUHdYZENSVllmTlBUR29ScTNCT0FLU19RbksxYW5yTUJKRHUySFdpSE5rWU55dTNKdXZ3S1E3VVVPRjAtYi1McTdCQVRrZkJtcV9NV01vQ0VVVkpMckg4MVQ4?oc=5",
    "image": null,
-   "source": "Newsshooter",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-04T02:39:10+00:00"
-  },
-  {
-   "id": "a64abd7486d9",
-   "title": "MoviePro 10 for iPhone",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5UU3BQMUYxeFVmMDhCZEtrTTlEcDU5clQtSkdYd0IxQ2pCRmdQZER2bzNjZ0JkYlVNZFB0OUljUDd6b0RTRWt2TkZFSUl5cktmVG1aSmpCc1pqbjRJeXpuX2lFVndjX2FlNDd4YXhlYw?oc=5",
-   "image": null,
-   "source": "Newsshooter",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-04T02:10:32+00:00"
+   "source": "Livemint",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-04T03:30:25+00:00"
   },
   {
    "id": "037657ce662d",
@@ -1016,7 +1071,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbURFcWNnMVFKc3RNVGh2YWpaVVU2UnFSdUhkdUVValhFUjlSbXJKRjhtejlVQ0NybFFrdDFjeVdsTUt1VGFpREhIdi0zWjhQdExrYUM4TU9NRG4zdm9VSmU3OG1IN0Rpd1ltdlRPTDkxT2VHalBKRFdaS0xxOFMtUDl3MkoxNVlwMWdOS2JBNjVVUTZZZTNUNVJCbw?oc=5",
    "image": null,
-   "source": "androidpolice.com",
+   "source": "Android Police",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-03T22:00:10+00:00"
@@ -1038,7 +1093,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaUthZFExcXgzM1dnT3lObGJ2ZXFnODNvc0JqVjJDWTBkWF9JYnlOdnRvaU44blZjd1B2NjA5RnBzNkN5d0lRMjFRdHFHb1gzdDI3NjNlYXJRMXU3ZDl4bjhRTzBkZk9QUzc2ZEcyM3JEc2pkUUNHT3VyQlV0Wm9aN1prRmRSRnpU0gGEAUFVX3lxTE53dXl6YkRoMUdRSzhlQWtpWWFsVE9yUHR1X0tYQlUzU1NrY09WbjJjZTJPZVRrbENRdGdTVWtSeDNDcXk5ZHpBc0V2b1RkS3lwQ09mcUwwb29nakpVamNRVndMcUtpMFB2bHJoSDVtU2NqUTQ5elU2ZXcyM0ZvQ19oTzE3cQ?oc=5",
    "image": null,
-   "source": "gsmarena.com",
+   "source": "GSMArena.com",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-03T21:31:02+00:00"
@@ -1071,7 +1126,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORGtIMlZXSHdlcGdDR3Q0Z0VfX3ROLVAxNThWSFh5MzBnQWJPOTdLUVNEOVBSWUxKOWEyVmcxZXprWXdUUzRWZmtSMDZ5c0R3SWtaaUc5bUlmM2ZzQ244Sk1kS1NodkhEZ3dUay1SWUQxVkRJUHItVTFWSUtRZFdDcVZXeUJLTEJacnVya0xJNS1vRklzSmRXWVVn?oc=5",
    "image": null,
-   "source": "How-To Geek",
+   "source": "howtogeek.com",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-03T20:30:13+00:00"
@@ -1126,7 +1181,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdDl0YzJ1Y0tEN2FaRlRQaElyVUdNVTYwbTh0UWRGV29uZjlDamd0NDdYa0RaQ3lFeEJvcG9QSFJNaEthdG5xTEVCN0NxRDhRSU02Z2tjVVhDMFN5Z3I4NUs3dVVWN0QxWFQtVktHMEFYQl9ndEdrZkc0dHR4ZE1IeDJPWEFIUWVPaldRV1hmVTRDR0FGbEFZRkdyQVRPblhN?oc=5",
    "image": null,
-   "source": "How-To Geek",
+   "source": "howtogeek.com",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-03T19:00:14+00:00"
@@ -1137,7 +1192,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE83a1FxUGhZWXZ5cDJ1UjRkUDNJRzgxV3RPajZySF9femNiN25jTHZUR3ozY1o3ejZXWUxVdmIwS0ZheGlBaTBTV3hmOFFfbVdRLU83R29yVWhSTjhuTzVSeExwaEI5WWUxNTRqYmlueks?oc=5",
    "image": null,
-   "source": "androidpolice.com",
+   "source": "Android Police",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-03T19:00:10+00:00"
@@ -1152,6 +1207,17 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-03T18:48:22+00:00"
+  },
+  {
+   "id": "7a37e7caa82a",
+   "title": "Android 16 ‘Baklava’ might drop sooner than expected – June 2025 release?",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZ2Y0eWx1V3NLVFVYN2FQcVI3WklSTXFKUlgtbUtWdDFrQXJqTXVtVEYxTThpdXd3NXJpRkk3ZlVKSG5acVRRZllBY1FtVUdVZ2VjMFBSOVF4U1ZpeEZtN3pab242cktjT2VwSUlsMFI1Y2h1dThkMzdUYUNyM0hmTXVYVFNpWkXSAYwBQVVfeXFMTTlaZHNhc1lQcEtwOFg2SmlFdWxmRUx2UVRWNkxiYU5qOGlsbjJYSW1POTM2ZVVVZHFGaENVNEFVdzdoRHZ1U28wUldsUjlGRWZTeDZ1SS1peDdETlgxSWlQSTUtczRSeGpuVmtnTEh2THphOHZVMFlnRXZMZDg0dHRoQzdtM010bGsyWHc?oc=5",
+   "image": null,
+   "source": "Sammy Fans",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-03T17:34:27+00:00"
   },
   {
    "id": "f0ebbdeab470",
@@ -1192,7 +1258,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQjFha1BFTF9sYllkRU1aX3BWQWpXeXhoZTdBZDBueHpLenp3dkUtN01zMmNwM1drUElpaHI1Q2Q0TmdwU01MWTZiN2VyZEF1X2lQek44M3pEa0ZxQml3U3V4RTR5bF9iOGxCaGZDVFRxX0cya0RIQTN5RzQza1o4UzVJSVdRMFAtTXdMZ1FySW5uMWl3M21FY2xhMXhVYUpTNDlwdTZXMU11UQ?oc=5",
    "image": null,
-   "source": "androidpolice.com",
+   "source": "Android Police",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-03T17:00:10+00:00"
@@ -1236,7 +1302,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRFZaZXhYVXY1Y2xVaXpLSzJQNE1nQnVGSWY0akc0di1iX21yQ2gwZ2dYVkNyZEhlSmliYXVvSlo1TEhHUzZjdko5THQyMVNhUnBrMnBzMEloMVFTcWFDQWpwNjdPb19ON1R0TGdjOHJfeHhIU1hnV2pMc2ZzZEhRSVpxNFdpQUJwSlAzSF9XUVczdTdXZVBrbzIyVQ?oc=5",
    "image": null,
-   "source": "androidpolice.com",
+   "source": "Android Police",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-03T16:00:10+00:00"
@@ -1313,7 +1379,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5OcUc3VncwamdlanBMajE2bmZ2UW40clZWZHk2V2RkZGJWUVZxYTFZUlE2RGxMQnl0NXBXZnVzUllSbnpZMG1sNkRDdXdXSVdoVmR2QmxQTm9MUzhYdjFkMmcyQzk4a0hKU2ZqM2VuQ0NrbU50VkE?oc=5",
    "image": null,
-   "source": "androidpolice.com",
+   "source": "Android Police",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-03T12:45:10+00:00"
@@ -1412,7 +1478,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcUxGdUlHQVhUVmJIaGxCX2JBRDl3bkpYb0ZtaF9QTy1oZHZYYkJxVm4tQWoxTnBYRmpSWjN0NjdnWUtDV2ZqNlp3cERwc3RKNmZlUHlTV3FudEpMTDBNY0pyWlByUDJJTXRleTZEYTJTQ05nekJmTnZNczF6TlJZcU1mZVZFclV5ckE?oc=5",
    "image": null,
-   "source": "How-To Geek",
+   "source": "howtogeek.com",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-03T10:30:14+00:00"
@@ -1423,7 +1489,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZHBsZmktVGJRQXdJaXc2eHpOekM3Q1l0cVkzMDBMWlAxM3BaLVRGc3ZCTWJ3OFJCRGpnM3ZiY0RldXNScFJNWnpWMG5hSlRoeWpHbTluLW4yWlhNNGE0SU1BQUxtZVMxbEs5dzRGeVdZWFRmeXBLM2Fqcm52VWRZZy1GMDQ4LUY0dVFrajY1QjRhWGVnVVBsb0NNUDZFWFlFZzVJaUhpd0pJdm5UYlpIU3hBeW8?oc=5",
    "image": null,
-   "source": "androidpolice.com",
+   "source": "Android Police",
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-03T10:30:10+00:00"
@@ -1473,15 +1539,15 @@
    "published": "2026-10-03T09:30:00+00:00"
   },
   {
-   "id": "3a1bc3530445",
-   "title": "The 11 best phones of 2026, tested by experts",
+   "id": "c6b233451612",
+   "title": "Sending iPhone photos as email attachments – from iOS 14 onwards",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE51cG9RVE5qYzlBNzFOMWlIc3lEelFmb1huY1FMa3hWdlRxMU9Rdi1WcHpYZmJ6Wk5GeDQwV0JrMkNMYnE5Z1I2UHdXZXBMdU0zX0k4cEZCX2FSTUFLeFJmakFtNUVYZw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPS1hmWHp0QlZKVDRTdDNVZ1JUTk1iRHByYzFFaHpUTUdKZ2w3WFIyU1I5UDBRMjBfdTBEQ3ozcy1pdmFwTWlkQXBnNG94aEtnSi1WbTZtRU5QVVJSaUdJLVMwekphU0NwWGRlYlZWU0RKVzlpU1VkdlRMS3FhcGJWZXI4SQ?oc=5",
    "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-03T09:00:54+00:00"
+   "source": "Macworld",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-03T09:20:26+00:00"
   },
   {
    "id": "1592fa5d8812",
@@ -1526,72 +1592,6 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-03T03:10:00+00:00"
-  },
-  {
-   "id": "b1c9e683c925",
-   "title": "Android Circuit: Galaxy S27 Details, Honor Magic9 Pro, Pixel 11a Design",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOeHFpRTl2MmhmSnl5R1IwTW56Qjhod2dfZTJDX19kOS1nVmcteWJoR0FVVm1mTDd4ak52eEhaZkhnaXJ0ZmRXVlpZWHN3cWZJTW5wclRXZU13Qy1VQTdmLVo2TGdJNVljNnQtT2h4SW10ZkMtVm9weFFza29wMnRLWjJUb0pEcDc3X0dSc0tEcld5cEVkRWI2UWRCc0RlOENpcENOQm12S1FuSnJWSzlINy1ELWFpRHZKaWZuNVBzTVJYOF9lQVI0ZFVhLWJBUFotTHRDY1pWbGE5ejFCaUZ2TEN5WQ?oc=5",
-   "image": null,
-   "source": "Forbes",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-02T23:27:32+00:00"
-  },
-  {
-   "id": "957f9f93a0bd",
-   "title": "Pixel 11a Price in 2026: Why $599 Changes Everything",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBPbnQ0Wms2S0Ywa1hvbDZPR2V5NUUxUllPR1pJQmFRWmhicmdISmljU3BPRWRBQ29oUGpNZjlibVhtRndiOFRUcTN4aW9hZw?oc=5",
-   "image": null,
-   "source": "Memeburn",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-02T22:50:39+00:00"
-  },
-  {
-   "id": "54e2772d2707",
-   "title": "Android 17 QPR3 Beta 1 gives us an early look at next year’s Pixel updates",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNanBZMnN6NUJvT1kybnkwcXhNSkloS1J0NDRBa1FnQVRRTFNRRnlaOThyVEg2amhwQ1ZHQmVvZllPOGdyWlhXMzlrei1HUXhPcU9yLUlrN3c0Z3J5ZVFjQ0pUcmc1OW5rT3BHRFlqRDhrVTBGYWhuVXY5aVJhekhMeVdIWW9nVFcwa3U1VTloTWRQZzhBdmpNZ29WdlFYRjJiZW54c1JBeUgxX3lUblhnc0dINF9hakQtaVZvVzFaMGxlS1dNMzQtWQ?oc=5",
-   "image": null,
-   "source": "Android Central",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-02T22:41:01+00:00"
-  },
-  {
-   "id": "709139f8009d",
-   "title": "iPhone 18 Pro Max Can’t Make a Call on AT&T? Apple Says It Will Replace It for Free",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaHR1UEppaHotNmdDNW4zSUlyM0p2dmVUcHJ3UHV5NmNXcGttd0JucTVqVFQxNHExMEFXZzJ5OFBSOFVEeXpHZVMzTmd2N19Va3lmTmoxamJINDBOZlhlSVFZZkdIaDBuZldWN2hjczBXNXlFS2pfcFBva1NyUVZSb0xwTVVNSUM4a0dGZTNtcjE?oc=5",
-   "image": null,
-   "source": "CNET",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-02T22:37:43+00:00"
-  },
-  {
-   "id": "7bf83bb75105",
-   "title": "Apple iPhone 18 Pro Max AT&T Glitch Requires Device Replacements",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZDVNaGQxRVg3Mmo3STJkSDFuaElEbjNuN1J4Q0ZKY0x4ZGRQZk9iRzU2eDRSS0JPZ1dqaHlZOTNNNnRGZUJkSUNLWXlyT2NrSXoteXROX042SDZNeXhhYnhBbE51M1pSNmZaMzg4T24wVFZFNWdxU0l5RFJsbVJBSkVxeFlIQlhuSmZSREludUMwYl9HV243SFJEbHVwWWRRb2hxckNEWllZNkR3bDZpcHhNd1Y5QQ?oc=5",
-   "image": null,
-   "source": "Bloomberg.com",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-02T22:01:28+00:00"
-  },
-  {
-   "id": "949643ebd996",
-   "title": "Your Pixel phone's biggest bugs just got squashed in Android 17 QPR3 Beta 1",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObTdYN215OHg5VDI0UmxHbkdQVnZ4bkkwYmNQQWp2SHloOVFBVWR1bFYyc015WktaUU1uYmR0dnAwQmRCR2kxWTUyUDY2bHpwUXFxYlp5RDc0UUh3WTFWOGM0aXdORjFwYmVsZk5zYmMzQ1pBa3BLcnJESzNobnpieV9mQVQ?oc=5",
-   "image": null,
-   "source": "androidpolice.com",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-02T21:43:38+00:00"
   },
   {
    "id": "387b7b6c2fbc",
@@ -1911,17 +1911,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-01T20:44:52+00:00"
-  },
-  {
-   "id": "73425c0a21d6",
-   "title": "Audible announces AI-powered character guides, interactive stories, more",
-   "summary": "Audible today announced three features coming to “deepen customers’ connections to their favorite stories.” Here are the details. more…",
-   "link": "https://9to5mac.com/2026/10/01/audible-announces-ai-powered-character-guides-interactive-stories-more/",
-   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/audible.jpg?quality=82&#038;strip=all&#038;w=1600",
-   "source": "9to5Mac",
-   "sourceId": "9to5mac",
-   "category": "iphone",
-   "published": "2026-10-01T20:06:47+00:00"
   },
   {
    "id": "ed0378edd939",
