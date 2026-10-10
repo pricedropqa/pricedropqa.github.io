@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T08:45:00.449323+00:00",
+ "updated": "2026-10-10T14:51:24.559256+00:00",
  "sources": {
   "androidpolice": {
    "items": 10,
@@ -18,19 +18,492 @@
    "feed": "https://feeds.feedburner.com/RedmondPie"
   },
   "tomsguide": {
-   "items": 32,
+   "items": 29,
    "feed": "https://www.tomsguide.com/feeds.xml"
   },
   "gn-android": {
-   "items": 38,
+   "items": 37,
    "feed": "https://news.google.com/rss/search?q=android+phone+OR+samsung+galaxy+OR+google+pixel+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   },
   "gn-iphone": {
-   "items": 36,
+   "items": 35,
    "feed": "https://news.google.com/rss/search?q=iphone+OR+ios+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   }
  },
  "items": [
+  {
+   "id": "e39d591d6b1d",
+   "title": "I dropped Qwen and Gemma for a 27B model that runs smoothly on my 8GB graphics card",
+   "summary": "Chasing a big number finally paid off",
+   "link": "https://www.xda-developers.com/dropped-qwen-and-gemma-for-27b-model-that-runs-smoothly-on-8gb-card/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/bonsai-27b-in-lm-studio-on-desktop-pc.jpeg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-10T14:30:17+00:00"
+  },
+  {
+   "id": "d65c4205b32a",
+   "title": "5 Fast iPhone Chargers That Outperform Apple's 20W Adapter",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWG5vbkE5UXBONU80U2p0Y0tYZy1RaGZzYWkzQVRJc1lQc3BLdVRfeHkzUXBFQndBZVRzR3NmdUVhYlE2dVY3V0pWWEZYdjZqckprbmZFMTFyMXozbnlkRTBTMmZzT0dfeDQ5UFZua2pPUU9YN1RyNDhfdUZSZzkxZXhWUG5TekV6ajNlZ1JXR0dYOUpOSFg1QkZfM3g?oc=5",
+   "image": null,
+   "source": "SlashGear",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T14:30:00+00:00"
+  },
+  {
+   "id": "e80b03cb696d",
+   "title": "8 Of The Best Spatial Audio Earbuds You Can Buy In 2026",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8tRmgwa19lc0hhYS1VcWJESk50emItRXpVTjdZNjVDT2ZkbHJENktxMlVnZDU0WkJGTElkb082LXZWbEh3MDRVYWUtWGFlTlVTTi14ckZBWllieU50eHNCX0pfYnhkaWFLVXdDSnRabWE?oc=5",
+   "image": null,
+   "source": "BGR",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-10T14:02:00+00:00"
+  },
+  {
+   "id": "c526bddd45ad",
+   "title": "I decided I didn't need Ethernet everywhere, and my home network didn't fall apart",
+   "summary": "Modern Wi-Fi is surprisingly capable for almost every device in your house",
+   "link": "https://www.xda-developers.com/i-dont-need-ethernet-everywhere-my-network-is-fine/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/smart-tv-plex-main-screen-night-light.png",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-10T14:00:18+00:00"
+  },
+  {
+   "id": "5547143bb83b",
+   "title": "Apple iPhone 18 Pro vs. iPhone Duo: Don't Buy Apple's Foldable Until You Read This",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNREUyeVl0eGU5b2FsbUZ5SElhdE04R3FoazIzNzJCSU5fN05TWV9YYXJPNWxMc3V5dVYyME96WTBZTmFFXzBhcXFYS0NkZXJvX3JZSkhxVUFSckRJQmlqczBOWnV4a0JNUWFQSnNuY1pOZHVMX1NBZGQ4YlZEX1lEZWpZSzRYSGg5dGttWEJBVTVZaHk1SDdiejk5cWZwSUVoN1JLZDBNbzA?oc=5",
+   "image": null,
+   "source": "PCMag",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T13:35:42+00:00"
+  },
+  {
+   "id": "54337f6ea4d7",
+   "title": "You should disable Windows Fast Startup",
+   "summary": "Fast Startup sounds helpful, but it often causes more problems than it solves.",
+   "link": "https://www.xda-developers.com/should-disable-windows-fast/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/04/windows-start-update.jpg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-10T13:30:17+00:00"
+  },
+  {
+   "id": "afbc472acb52",
+   "title": "Android Auto just fixed my biggest messaging issue, but it's only a partial solution",
+   "summary": "A simpler two-way voice note workflow is the only fix I want",
+   "link": "https://www.androidpolice.com/android-auto-just-fixed-my-biggest-messaging-issue-but-its-only-a-partial-solution/",
+   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/android-auto-showing-a-voice-message-playing-and-voice-recording-blocked.png",
+   "source": "Android Police",
+   "sourceId": "androidpolice",
+   "category": "android",
+   "published": "2026-10-10T13:30:10+00:00"
+  },
+  {
+   "id": "6f8b584dc4ea",
+   "title": "iOS 27 Users Link Connectivity Assist to Battery Drain and Higher Data Use",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMndNekdoYkt3a0FYaU5XSFY1RHQ0dU1ObjBPOU5KMnRBTzZKSHZYVElMNmI1MlZ4MXBpaWk1Q1JFNHZwaC1RbERkY2JSd29oY2R1eXR6Q0wwRGtVckhaVnVPT2pJT2xHTUlFTU9ObjZyTVFPZXgtdFlaRE5pZkx6bWk1VERxWnBRZFp2Vi1oX0NfM2JhUzdjb1N6aWI?oc=5",
+   "image": null,
+   "source": "The Mac Observer",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T13:20:18+00:00"
+  },
+  {
+   "id": "d02a66402010",
+   "title": "iOS 27 May Ask You to Unlock Before Running Apple Home Commands",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBSN1hua2ZnaWhqSldhQnFmNDUxdDVsVjdZN0RHbkdfc3dpMjBHTjRidmhYMTVnOVhNSjl1bXBpZGFMN0FKQ0M2XzJTT3NnS3JaekxNYW1jZnhSbEMxYXkweEhiVnFoaEhqa2hPS0lGYjJKMllZNlFpcUJKaklxWW8?oc=5",
+   "image": null,
+   "source": "The Mac Observer",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T13:18:45+00:00"
+  },
+  {
+   "id": "db7fbd9bbf77",
+   "title": "A software company evicted the Linux community in 2005, and its replacement powers projects around the world",
+   "summary": "Never anger a community that can make their own solution.",
+   "link": "https://www.xda-developers.com/a-software-company-evicted-the-linux-community-in-2005-and-its-replacement-powers-projects-around-the-world/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2024/08/milk-v-mars-debian-6.jpg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-10T13:00:18+00:00"
+  },
+  {
+   "id": "b9cba150cffa",
+   "title": "The iPhone 18 Pro is great, but it feels like Apple brought back the ‘S’ year",
+   "summary": "Unless you're really into smartphone photography, there isn't a lot new with this year's iPhone.",
+   "link": "https://www.xda-developers.com/iphone-18-pro-review/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/iphone-18-pro-header-1.jpg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "iphone",
+   "published": "2026-10-10T13:00:18+00:00"
+  },
+  {
+   "id": "97228ec256bc",
+   "title": "Apple @ Work: Remote AppleCare log collection is one of the most underrated updates in macOS 27",
+   "summary": "Apple @ Work is exclusively brought to you by Mosyle , the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the solutions necessary to seamlessly and…",
+   "link": "https://9to5mac.com/2026/10/10/apple-work-remote-applecare-log-collection-is-one-of-the-most-useful-behind-the-scenes-updates-in-macos-27/",
+   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-at-work-27.jpg?quality=82&#038;strip=all&#038;w=1600",
+   "source": "9to5Mac",
+   "sourceId": "9to5mac",
+   "category": "iphone",
+   "published": "2026-10-10T13:00:00+00:00"
+  },
+  {
+   "id": "f8514bdd8a09",
+   "title": "There's a simple way to watch Chelsea vs Bournemouth for *FREE*",
+   "summary": "Here's how you can watch Chelsea vs Bournemouth in the Premier League for free from anywhere in the world.",
+   "link": "https://www.tomsguide.com/entertainment/sports/theres-a-simple-way-to-watch-chelsea-vs-bournemouth-for-free",
+   "image": "https://cdn.mos.cms.futurecdn.net/XeGErbYD7dR8c7tJzg5nvC-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-10T13:00:00+00:00"
+  },
+  {
+   "id": "0f210d972fd7",
+   "title": "How to watch IRONMAN World Championship 2026: Live stream for *FREE*",
+   "summary": "Here's how to watch IRONMAN World Championship 2026 live streams from anywhere, including for free, as the prestigious event returns to Kailua-Kona, Hawaii.",
+   "link": "https://www.tomsguide.com/entertainment/sports/watch-ironman-world-championship-2026-free",
+   "image": "https://cdn.mos.cms.futurecdn.net/Ns6GmfyTGy5MphdAQqofnZ-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-10T13:00:00+00:00"
+  },
+  {
+   "id": "a596af51c8c1",
+   "title": "I tried ditching Google Maps for Waze, but this one feature pulled me right back",
+   "summary": "The one feature that I use quite often",
+   "link": "https://www.androidpolice.com/google-maps-trending-section-waze/",
+   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/google-maps-highlighting-nearby-bars-restaurants-museums-and-other-places-to-explore.png",
+   "source": "Android Police",
+   "sourceId": "androidpolice",
+   "category": "android",
+   "published": "2026-10-10T12:45:10+00:00"
+  },
+  {
+   "id": "6ff11fc41000",
+   "title": "A $100 price hike may be all it takes to scare off iPhone buyers in this economy, as Apple reportedly slashes orders",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOEdMemNrLTVvQ3hSdHpSclFnUHlZVmIyZWRlOEJ0M1pQR1VoR0J6VFlSYzJ3M1hFRG5pMmlUMU9ZbUxkN0lvYmc0b1lhZWx1T3ZqbUlGTjU4NUpRTmZQYU8wbEI1bTRMNXFqN2NOWlFsXzE1QWdWME1BNXNKRTZhRk9aZ0ZPYllpQl8zdmgtUUpUZ2JNcE9ScmNn?oc=5",
+   "image": null,
+   "source": "Fortune",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T12:42:00+00:00"
+  },
+  {
+   "id": "c7e0bd7d791b",
+   "title": "Jellyfin's entire setup finished faster than Plex's paywall restrictions cost me",
+   "summary": "Jellyfin is just so much better",
+   "link": "https://www.xda-developers.com/jellyfin-setup-finished-faster-plex-paywall-restrictions-cost/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/jellyfin-mac-hero.jpg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-10T12:30:17+00:00"
+  },
+  {
+   "id": "bb24493cf04a",
+   "title": "If You’re Still on iOS 26, You Need to Download iOS 26.7.1 Now for This Zero-Day Patch",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUzNra1VBN2lxTlNKVHFXU09LUFZSM2pRQ3o5TjZPLUpxcU5Gc1dXOHN0SlYxSW9MYWVsUGNMY2dtNXo5QWV4aUFaSWpVTlBfLXYtZTYzVzFubUJvWV8waXdmX1dfVUFzamY2c1dZQi1UUlpUOGtSWFF3eGJ3Q0NvRlVDUlYtRVlSZmQ3UGxscmRRcV9PNndvSDRoYWlhTEdESVUwZnVtaXIzS0Fqcl83NjB3RmhBTmVzYmxNZjZxbEdpUQ?oc=5",
+   "image": null,
+   "source": "CNET",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T12:23:26+00:00"
+  },
+  {
+   "id": "ae6785467f8d",
+   "title": "This weekend's best Apple deals: AirPods, Mac mini, MacBook Air and Mac Studio $200 off, Series 12, more",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5raE8ycFN3VDAyampOVXR5aGd6UGpkbWNTaDB4NldGZUNYUC0zbnZpSDAxUllfYWFubXA3UjlydkItdDNNQVg4MWpuY3NnMTdBWVpFRWFSM2taR0F5MGpiTU56eWtSSld1aV9KOUN2Yw?oc=5",
+   "image": null,
+   "source": "9to5Toys",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T12:10:00+00:00"
+  },
+  {
+   "id": "ede29f66b445",
+   "title": "Apple weekend deals: AirPods, up to $200 off new Macs, Apple Watch, more from $41",
+   "summary": "Hot off fall Prime Day 2026, we are still up to $150 off the new M6 Mac mini and a $200 price drop on the new Mac Studio joined by the best prices in months on M5 MacBook Air at $200 off. While AirPods Pro 3 have jumped…",
+   "link": "https://9to5mac.com/2026/10/10/apple-weekend-deals-mac-mini/",
+   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/Apple-weekend-deals-october-2026-1.jpg?quality=82&#038;strip=all&#038;w=1600",
+   "source": "9to5Mac",
+   "sourceId": "9to5mac",
+   "category": "iphone",
+   "published": "2026-10-10T12:03:06+00:00"
+  },
+  {
+   "id": "f31f75c919a9",
+   "title": "I spent hours tuning rclone to replace Google Drive desktop app, but the real bottleneck wasn't what I thought",
+   "summary": "Is rclone worth the babysitting?",
+   "link": "https://www.xda-developers.com/tuning-rclone-replace-google-drive-desktop-app-bottleneck-wasnt-thought/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/rclone-vs-google-drive-hero.jpeg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-10T12:00:17+00:00"
+  },
+  {
+   "id": "8f79dafe3a8b",
+   "title": "Google Calendar in Android Auto unlocked a navigation shortcut I didn't know existed",
+   "summary": "It's been a game changer for my commute",
+   "link": "https://www.androidpolice.com/google-calendar-android-auto-unlocked-navigation-shortcut/",
+   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/google-calendar-and-google-maps-shown-alongside-a-calendar-event-in-android-auto.png",
+   "source": "Android Police",
+   "sourceId": "androidpolice",
+   "category": "android",
+   "published": "2026-10-10T12:00:10+00:00"
+  },
+  {
+   "id": "bffd6e0ea19f",
+   "title": "11 Birkenstock deals to snag this weekend from just $49 — from cozy clogs to sandals",
+   "summary": "Nordstrom Rack is knocking up to 42% off select Birkenstock sandals and clogs. Here are my favorite styles on sale right now.",
+   "link": "https://www.tomsguide.com/sales-events/11-birkenstock-deals-to-snag-this-weekend-from-just-usd49-from-cozy-clogs-to-sandals",
+   "image": "https://cdn.mos.cms.futurecdn.net/PstSxwWewusWqxrsJniPk8-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-10T12:00:00+00:00"
+  },
+  {
+   "id": "6d877d67ea13",
+   "title": "Forget Kindles and iPads: My 5 favorite TCL NXTPAPER devices are all on sale right now",
+   "summary": "Part tablet, part e-reader: TCL’s NXTPAPER phones and tablets let you do more on a budget without straining your eyes or your wallet.",
+   "link": "https://www.tomsguide.com/computing/tablets/forget-kindles-and-ipads-my-5-favorite-tcl-nxtpaper-devices-are-all-on-sale-right-now",
+   "image": "https://cdn.mos.cms.futurecdn.net/LQdkKzJDZKhsH8sxQZSN3f-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-10T11:45:00+00:00"
+  },
+  {
+   "id": "0645e12edb64",
+   "title": "MoE models changed what \"fits on my GPU\" means, and most hardware advice hasn't caught up",
+   "summary": "My 10-year-old GPU runs 26B LLMs now, and MoE models changed everything about LLM-hosting advice",
+   "link": "https://www.xda-developers.com/moe-models-changed-what-fits-on-my-gpu-means-and-most-hardware-advice-hasnt-caught-up/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/qwen-moe.jpg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-10T11:30:17+00:00"
+  },
+  {
+   "id": "68bc8687d6c0",
+   "title": "I ran 35 miles in the Saucony Hurricane 26 — here's my reasons to buy (and skip)",
+   "summary": "The Saucony Hurricane 26 offers a high level of comfort and support and is a great cushioned option for runners who need extra stability.",
+   "link": "https://www.tomsguide.com/wellness/running/saucony-hurricane-26-review",
+   "image": "https://cdn.mos.cms.futurecdn.net/HHHfLYC6eHSR2JpYUNzLVj-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-10T11:15:00+00:00"
+  },
+  {
+   "id": "7e5bf5c0a327",
+   "title": "Did Softer iPhone 18 Pro Demand and Memory Costs Just Rewire Apple’s (AAPL) AI Investment Narrative?",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPLWVTbmtRdXJnanRuaV9qOE1KTnJaSHlzVjJhc1dfUWZCbzQ0alhEV1ZSLVJOVGRkdm5QcUFZX01yR2FwSHlaLXJWMnhGTkRyRnhDSkhJeXRjcXpRa2RhWk90WVZ4X2pKZUpkZ2JqeHBsNEpQYXRsOHY5OUJINmZKVTB5RHdKTWtha1FPclFCNU5pem8?oc=5",
+   "image": null,
+   "source": "Yahoo Finance",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T11:14:19+00:00"
+  },
+  {
+   "id": "23f35ed045ce",
+   "title": "The RTX 3060's 12GB accidentally solved the GPU memory crisis Nvidia created",
+   "summary": "The GPU has outlived the GPUs that replaced it — twice",
+   "link": "https://www.xda-developers.com/the-rtx-3060-12gb-has-become-the-most-important-gpu-of-the-memory-crisis/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/msi-rtx-3060-12gb-graphics-card.jpg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-10T11:01:17+00:00"
+  },
+  {
+   "id": "94155ba2696e",
+   "title": "Music sounds better after I changed this one setting on Pixel 11",
+   "summary": "Manual bitrate adjustment? Sign me up!",
+   "link": "https://www.androidpolice.com/music-sounds-better-after-i-changed-this-one-setting-on-pixel-11/",
+   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/pixel-phone-and-wireless-earbuds-connected-through-bluetooth.png",
+   "source": "Android Police",
+   "sourceId": "androidpolice",
+   "category": "android",
+   "published": "2026-10-10T11:00:10+00:00"
+  },
+  {
+   "id": "05555df456f9",
+   "title": "My favorite iOS 27 feature finally makes your physical wallet redundant — here's how to use it",
+   "summary": "You can finally ditch those physical passes and tickets, thanks to the latest big feature in Apple Wallet. All courtesy of iOS 27.",
+   "link": "https://www.tomsguide.com/phones/iphones/one-of-my-favorite-ios-27-features-is-something-android-phones-have-had-for-over-2-years-and-it-means-your-physical-wallet-is-finally-redundant",
+   "image": "https://cdn.mos.cms.futurecdn.net/cWEhRGuhqxKYAaDtq4JBka-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "iphone",
+   "published": "2026-10-10T11:00:00+00:00"
+  },
+  {
+   "id": "6f1ff7c20172",
+   "title": "If you only care about the basics, this is the only Android phone I'd recommend",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLW9lVkg0WUNRSmlKN2p2Rk1sYzFObWQ5Wjl0V3lXajU2S3FHVm1GX3lzcUdHa18xMWxrRVl4WDV6WjNiTC10MzlYNS0xa1Z6aXprOTkwMlJxY0UyX1dldy1CaUpiYy1zNDY5c3RiMUVXQXZ2N0owTnlBR2MtZDhZNWQ5clF0M3M2?oc=5",
+   "image": null,
+   "source": "Android Authority",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-10T11:00:00+00:00"
+  },
+  {
+   "id": "749c5cc5ecd1",
+   "title": "This iOS 27 feature makes your physical wallet redundant — and Android’s had it for years",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQY2swdUxSNzNzMkxiTDJGX21ueFZsZHJpUFZ5d2NkbVkwRzliRVhFbGhmXzFCdVRlTUpzQVdKLURLeWVUbVRWT3Izd3V2TlFGUE13TVhkRHJpaWlOVDMxckhUWEJIa0p1OXpsXzBiU3JxV01objNRd2d4WW1uQUozLTJxV0ZYeFlnUl9OYlZRLTdtNm83bXJMT2xUdzd4d2paOXNNcWtpeFBmVnNFUzFyaWZCZ1U4VHh1OUFPNkU4d0YtQmhuTGVMWnlLakh4LUhhQURKR0pzOTlBbTJtQ1FXZnZXUnhMek9la0Y4OFFFcmFvTEVGV2dCZ3ZPSHZtTW4xSVcyR19LSS0yRDV2NzVZeERn?oc=5",
+   "image": null,
+   "source": "Tom's Guide",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T11:00:00+00:00"
+  },
+  {
+   "id": "e8673c5ed8d5",
+   "title": "Why your stainless steel appliances still look smudged — and the technique that fixes it",
+   "summary": "Discover the effortless method to clean stainless steel appliances without smudges or streaks using quick, effective techniques.",
+   "link": "https://www.tomsguide.com/home/why-your-stainless-steel-appliances-still-look-smudged-and-the-technique-that-fixes-it",
+   "image": "https://cdn.mos.cms.futurecdn.net/GJPfSYvdBP8Cv8YBkGxm9X-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-10T10:45:00+00:00"
+  },
+  {
+   "id": "7b09de4c7a26",
+   "title": "Which Phone Carriers Support iPhone Handoff & How Does It Work?",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQzQwVVhqR1A5aS1FZkxWbzgtM011eTV3Q2R4RmRaa3QzYzJsNFI0aDU1bExrUHA4V3h4b1BCV2RhRmFWTjZiYzVZWVU5SzQ4UUtqd293U1UwaU8wdjFuRzk1aVpjSEVzNjduajlDeWpyTHQyUTFBeDRWb0FzYTRWQ3l6ejc?oc=5",
+   "image": null,
+   "source": "SlashGear",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T10:45:00+00:00"
+  },
+  {
+   "id": "c6123b2b2bd5",
+   "title": "iPhone 18 Pro Max Scrolling Lag or Stutter? App, ProMotion & iOS 27 Checks",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQzlfS3ozWldRMlVEVG8xNzNQR1JVRWFndFN4bFdFTy14eEY2NjdKNWpXa01FZ1Etd2lvcnlPUERiQjVUSnVIN1FtWTRYSjFjamR0RFRnME1sSktTazRBdHpxWFJiTmgwaExUaGRQSTZUU3hKOFNQNlA3czkxYUVlQ2VFRGZMdw?oc=5",
+   "image": null,
+   "source": "zeera wireless",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T10:35:52+00:00"
+  },
+  {
+   "id": "0eaef343bdb9",
+   "title": "I fixed my Kindle's battery drain with one hidden brightness trick dark mode users miss",
+   "summary": "The Kindle is hiding a handy trick you might not have noticed",
+   "link": "https://www.androidpolice.com/how-to-get-more-battery-life-from-your-kindle/",
+   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/kindle-e-reader-beside-a-battery-icon-on-a-wooden-table.png",
+   "source": "Android Police",
+   "sourceId": "androidpolice",
+   "category": "android",
+   "published": "2026-10-10T10:30:10+00:00"
+  },
+  {
+   "id": "6d182787db10",
+   "title": "Apple’s iPhone 18 Pro Demand Is Likely Slipping — But Gene Munster Says That’s Not The Real Story",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdFpLWmRiOVZreGhISXJtdHJ0cVBpT1JuN1YyRmZvY2x4WllwVEV6QlQ3b01CdkpmOThPZ0s2N1ctczJiTTNkNlRObFRlSnhkd0Vvb0pja3BaMm1IWlFheHVhQkU0ekFZczNsUWRzMzZmeGdqem5GbHZ2OElrTEdyQjFVaUhjUHgwSzREYm1QLWFuUDFGSHc?oc=5",
+   "image": null,
+   "source": "Yahoo Finance",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T10:20:08+00:00"
+  },
+  {
+   "id": "b6eb380f5810",
+   "title": "iPhone Duo: Apple To Debut Special Extra For In-Store Buyers",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSkdwUHAzTk1teUlUX1NqZ3RIM2kyUXItN1lHZFRJN0pOMHJsMWk3dWZ5d2twNUF3cUlwUzNNNktpSjFfR0VOU19yT2xOY0lhNUtVS1htU3lmYkNpQVlQTUlsVmRlY0NJelVycnpfcU1hLVVVZWtNSTlhSkZsS1UtdkZHSmYzcU5WWWotdHMwZldDSk5IbFlYSXhUTmdBelNSaFRaU01iTG9HVXNpcFZBdml3?oc=5",
+   "image": null,
+   "source": "Forbes",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T10:02:36+00:00"
+  },
+  {
+   "id": "cd6ec901a0b2",
+   "title": "I tested ChatGPT, Claude, and Gemini on topics I actually know, and the results were embarrassing",
+   "summary": "Plenty of answers don't stand up to scrutiny.",
+   "link": "https://www.xda-developers.com/asking-ai-about-things-you-know/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/chatgpt-open-on-a-laptop.jpg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-10T10:00:16+00:00"
+  },
+  {
+   "id": "80bbb5de01a4",
+   "title": "Why Pixel Search solves the productivity problem for older Pixels",
+   "summary": "Pixel Search does what I've been waiting years for",
+   "link": "https://www.androidpolice.com/why-pixel-search-solves-the-productivity-problem-for-older-pixels/",
+   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/google-pixel-6a-with-a-search-bar-and-search-icon.png",
+   "source": "Android Police",
+   "sourceId": "androidpolice",
+   "category": "android",
+   "published": "2026-10-10T10:00:10+00:00"
+  },
+  {
+   "id": "d0c83ec2ef70",
+   "title": "Claude just landed in Google Docs, Sheets and Slides — here are 7 things you should try with it right now",
+   "summary": "Gemini isn’t the only AI assistant you can call upon while you work in Google Workspace — here are a few things you should try with Claude’s new integration.",
+   "link": "https://www.tomsguide.com/ai/claude-just-landed-in-google-docs-sheets-and-slides-here-are-7-things-you-should-try-with-it-right-now",
+   "image": "https://cdn.mos.cms.futurecdn.net/rium2cfbnbuy5smp7ZFam8-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-10T10:00:00+00:00"
+  },
+  {
+   "id": "1283e3285e81",
+   "title": "The iPhone Duo’s Unfolding Animation Is Giving Z Fold 8 Owners FOMO, but Not Me",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcmNfWGpDeUstMmhWMEZUZkZKT0NpMkpjVEdSSUpQT09UdlJaSDBRdHB4THhkUHBEUFE2a0QtT3o0dG0wNy1rN0d0amRKQnI5eVktMmNyMjJFbWh4WXRfcEF5YXZqc2ZfTGo5blM5Z2hUNE9ZMi1lNjlRZHZnbVptaDVEbnRCeDkxMzV5eno4eEN4b3ZqMm1PdlBjWHN6aFJPVk9VTmRB?oc=5",
+   "image": null,
+   "source": "CNET",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T09:00:10+00:00"
+  },
+  {
+   "id": "15dd243ffac5",
+   "title": "Forget the Fitbit Air — 5 things you need to know about the rumored Fitbit Edge",
+   "summary": "The Fitbit Charge 6 may finally get an update. Here are the most important things you need to know about the rumored Fitbit Edge.",
+   "link": "https://www.tomsguide.com/wellness/fitness-trackers/forget-the-fitbit-air-5-things-you-need-to-know-about-the-rumored-fitbit-edge",
+   "image": "https://cdn.mos.cms.futurecdn.net/kUL2oVNcMxT5WmAgXMUJQZ-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-10T09:00:00+00:00"
+  },
   {
    "id": "869d1f48051e",
    "title": "I asked an audio engineer which earbuds he actually wears — and it’s not Apple, Bose or Sony",
@@ -43,6 +516,17 @@
    "published": "2026-10-10T08:30:00+00:00"
   },
   {
+   "id": "36c7a9c56d05",
+   "title": "Best Smartphones in the World 2026: 10 Phones Worth Buying",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ENDhVTXBKY3pIZy1oNkRHZTVtNFpvZmhzbXUtNHVuNFAzd3k4NHhGX1RyTjBpX1BZV0x5TW9IbzZoV2tCeGxzdTJRRlpyMDhQaFRqVE1EaUdvTXhwOF9mNXNrNjh1Tml1ZmkxQ3lUMFdkSzNiSWc?oc=5",
+   "image": null,
+   "source": "Global Brands Magazine",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-10T08:09:35+00:00"
+  },
+  {
    "id": "d3bdf8584661",
    "title": "The iPhone 18 Pro just ended my affair with the iPhone Air",
    "summary": "",
@@ -52,17 +536,6 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-10T08:00:00+00:00"
-  },
-  {
-   "id": "bb24493cf04a",
-   "title": "If You’re Still on iOS 26, You Need to Download iOS 26.7.1 Now for This Zero-Day Patch",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUzNra1VBN2lxTlNKVHFXU09LUFZSM2pRQ3o5TjZPLUpxcU5Gc1dXOHN0SlYxSW9MYWVsUGNMY2dtNXo5QWV4aUFaSWpVTlBfLXYtZTYzVzFubUJvWV8waXdmX1dfVUFzamY2c1dZQi1UUlpUOGtSWFF3eGJ3Q0NvRlVDUlYtRVlSZmQ3UGxscmRRcV9PNndvSDRoYWlhTEdESVUwZnVtaXIzS0Fqcl83NjB3RmhBTmVzYmxNZjZxbEdpUQ?oc=5",
-   "image": null,
-   "source": "CNET",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-10T07:53:26+00:00"
   },
   {
    "id": "7d4bffe88c28",
@@ -87,17 +560,6 @@
    "published": "2026-10-10T07:18:20+00:00"
   },
   {
-   "id": "529e895c3195",
-   "title": "T-Mobile is giving away the Apple iPhone 17 for free — how to claim",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1iVnAtcnpZb0NBOF84Tmh5dGxpbDF3RlpwR3pJd2hTaDJFcjdqbHltMThYNEJBRzQxZ1AzX0JWYngyQjNxeDk0UG04VnhtOTVQZndxQkhpYkdWNURheEczVldIblJLUQ?oc=5",
-   "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-10T07:02:05+00:00"
-  },
-  {
    "id": "0d93e1d334c3",
    "title": "The Acer Googlebook 14 is a fantastic 2-in-1 laptop — but this one thing holds it back",
    "summary": "The Acer Googlebook 14 features a slim design, solid performance, and many Gemini AI features. While it's a great laptop, its Android OS isn't the smoothest.",
@@ -107,17 +569,6 @@
    "sourceId": "tomsguide",
    "category": "android",
    "published": "2026-10-10T06:30:00+00:00"
-  },
-  {
-   "id": "d80d32bac434",
-   "title": "Someone got Super Mario 64 running on the Zune HD, and so can you",
-   "summary": "Finally, Mario on a Microsoft device.",
-   "link": "https://www.xda-developers.com/someone-got-super-mario-64-running-on-the-zune-hd-and-so-can-you/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2026/10/super-mario-64-browser.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-10T06:22:43+00:00"
   },
   {
    "id": "8d7bfd4a1913",
@@ -153,17 +604,6 @@
    "published": "2026-10-10T06:00:00+00:00"
   },
   {
-   "id": "4c566d081cc6",
-   "title": "iPhone 18: What We Know About Apple’s Spring Lineup",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPOVlVcjZVVU1yVmV0SllZdjZTOGprVnR0dkpIZDNEX3l3RjA1RTB0bFlDNVV3ek1ITlJWZkd6MHVSUXp4LVpXTjAwWGNWVXpzX1R0em5sd3pZNFZYMXFMdTd4N3JoLTdJVjJDdU1nU1IxRTQ3MjdYYVJOQ2pDQnctekhrdVlPTHEyRmFV?oc=5",
-   "image": null,
-   "source": "CNET",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-10T05:46:18+00:00"
-  },
-  {
    "id": "9f0701988e67",
    "title": "I've been testing Ninja's microwave/air fryer hybrid for 2 weeks — now I don't want it to leave my kitchen",
    "summary": "Ninja's first-ever microwave also includes a unique air fryer capability and after putting it through its paces, I'm sold on the cooking if not the overall size of the appliance.",
@@ -173,17 +613,6 @@
    "sourceId": "tomsguide",
    "category": "general",
    "published": "2026-10-10T05:30:00+00:00"
-  },
-  {
-   "id": "f94d279ba109",
-   "title": "Someone was tired of paying for Adobe products, so they used AI to make their own alternatives",
-   "summary": "Very much a case of \"If you don't like it, make one yourself.\"",
-   "link": "https://www.xda-developers.com/someone-was-tired-of-paying-for-adobe-products-so-they-used-ai-to-make-their-own-alternatives/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2025/07/adobe-billing-plan.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-10T05:26:30+00:00"
   },
   {
    "id": "303dfc5bc57d",
@@ -230,17 +659,6 @@
    "published": "2026-10-10T04:30:00+00:00"
   },
   {
-   "id": "2d43842a8fdd",
-   "title": "Apple Pushes iPhone Users Still on iOS 26 to Upgrade to iOS 27",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNEtnWmNwVnIxbGMtU08yYm1DWXI0MURjb1Jtei1XaXRHZjZqZE4yYlU1d1FkVzA5aTR0TlV2UkJzTDI5RHNtbVUta2FuTFlZZjZjem1pckJZZGxJaU5qb19UMC1KUnd2c09rVGh0SGtJbmRWQ0RSNGx3RWNFRENhMVVJUzJuN0hKMUR3OE1vOFRfek1kVk1MRDdCZko?oc=5",
-   "image": null,
-   "source": "The Mac Observer",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-10T04:10:21+00:00"
-  },
-  {
    "id": "8a3ec5bdd8af",
    "title": "iPhone 18 Pro Max users on AT&T: Take these steps to save your service",
    "summary": "",
@@ -250,6 +668,17 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-10T03:01:29+00:00"
+  },
+  {
+   "id": "6cf05870be7b",
+   "title": "Top Analyst Says iPhone 18 Pro and Pro Max Lead Times Have Dropped, But Apple’s Cycle Is ‘Off to a Solid Start’",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSjJHNHEwMmJnbFNiYkxvOWZOMkdSbUN4ckl6QnJxR1JlYTBFUEhzcmRYdnA2bFdIb3h5M2pRU3ZTZXprLTNXTjBBQkVVZnVaZUd2S3VvUHI2UG9pUFE4YTk5ZndFVWRPVFdQaHQyU3VUOFg5RFBUMVJuVGFtQXhZYjdMenlZbGZaelNRSGRtMV9pa3NzTnc?oc=5",
+   "image": null,
+   "source": "Benzinga",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-10T02:34:12+00:00"
   },
   {
    "id": "ce3b5e1350be",
@@ -283,28 +712,6 @@
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-10T00:54:57+00:00"
-  },
-  {
-   "id": "a0bec781c759",
-   "title": "This mini PC with a 5.7-inch touchscreen drops to $480",
-   "summary": "An all-in-one solution at a great price",
-   "link": "https://www.xda-developers.com/this-mini-pc-with-a-screen-is-just-480/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2026/10/copy-of-169-3-3.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-10T00:19:47+00:00"
-  },
-  {
-   "id": "f4e937fe9dd3",
-   "title": "I was ready to pay for a remote desktop app, but Windows 11 already ships one for free",
-   "summary": "You won't see Microsoft advertise this one, though",
-   "link": "https://www.xda-developers.com/your-windows-11-is-secretly-running-built-in-remote-tools-youve-never-touched-and-theyre-more-useful-than-you-think/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/main-fi-2.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-10T00:00:17+00:00"
   },
   {
    "id": "b60f3730e1b1",
@@ -362,17 +769,6 @@
    "published": "2026-10-09T23:01:32+00:00"
   },
   {
-   "id": "adc35517d4cf",
-   "title": "I used Fable 5.1 and GPT-6 Astra to build the same portfolio — the difference was immediately obvious",
-   "summary": "Same prompt executed very differently",
-   "link": "https://www.xda-developers.com/used-fable-5-1-and-gpt-6-astra-to-build-same-portfolio/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/portfolio-design-in-claude-and-codex-on-desktop-pc.jpeg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-09T23:00:18+00:00"
-  },
-  {
    "id": "ba2a95296e59",
    "title": "I flipped one overlooked Pixel setting; my daily battery anxiety completely disappeared",
    "summary": "I stopped carrying a power bank thanks to this Pixel feature",
@@ -428,61 +824,6 @@
    "published": "2026-10-09T22:04:00+00:00"
   },
   {
-   "id": "78484c92256c",
-   "title": "I gave my TV a free speed boost by changing these 4 settings",
-   "summary": "When my TV felt sluggish, I tweaked settings to improve its responsiveness.",
-   "link": "https://www.xda-developers.com/i-gave-my-tv-a-free-speed-boost-by-changing-these-settings/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/tv-settings-to-make-faster.JPEG",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-09T22:00:18+00:00"
-  },
-  {
-   "id": "1cfd626efa5c",
-   "title": "4 Google apps I replace on every new Android phone, and every replacement is free",
-   "summary": "A new Android phone gets four immediate replacements, and they don't cost me anything.",
-   "link": "https://www.xda-developers.com/google-apps-replace-on-new-android-phone-and-every-replacement-is-free/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/google-apps-on-pixel.jpeg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-09T21:30:18+00:00"
-  },
-  {
-   "id": "5a64d96dbc59",
-   "title": "Is iPhone 18 demand cooling off? Here’s how deep Apple reportedly is cutting component orders.",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZVJJRHJ6ZkF6UzZPLXdfX1hWY3NWWXBURnFueUZBNU5VaWNmbmY4Mzl0UlFmbURBQ3ZwX1h0V2VXeUQ2VnVFS1Y1RERvZFNmRUFOM2pTN3htWE1iNDQ3cXhDblRUZWRmTWF5QjdRU25WMFRaNkxYUmtXRTNTSHRuWnRDa3lqYUdhX3BRLUJqTGtqbkJXbnBiS0hvLXM3TmpVS1hSbVNyOFI2UXBLRThJNncyV0VNaGxROGZDU0J6RWkweWdCbnZpdmVhMExWVHc?oc=5",
-   "image": null,
-   "source": "MarketWatch",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-09T21:30:00+00:00"
-  },
-  {
-   "id": "ab0978b5bd87",
-   "title": "This 65-inch Mini-LED QLED Google Smart TV is just $374 and a big-screen steal",
-   "summary": "",
-   "link": "https://www.xda-developers.com/this-hisense-65-inch-m7-google-smart-tv-is-just-374/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2026/10/copy-of-169-7.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-09T21:16:01+00:00"
-  },
-  {
-   "id": "7bbffc115441",
-   "title": "Used enterprise hard drives are the last real storage deal, and I trust them more than new ones",
-   "summary": "The pre-owned enterprise storage market is alive and well",
-   "link": "https://www.xda-developers.com/used-enterprise-hard-drives-are-the-last-real-storage-deal-and-i-trust-them-more-than-new-ones/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/06/img_4595.png",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-09T21:00:17+00:00"
-  },
-  {
    "id": "628d790ff8a9",
    "title": "I started automating my routine with Gemini Spark; now I can't go back",
    "summary": "My day now practically runs itself",
@@ -503,17 +844,6 @@
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-09T20:54:53+00:00"
-  },
-  {
-   "id": "24cafa1903a4",
-   "title": "I handed a worst-case scenario to Intel's cut-down iGPU, and its gaming performance still surprised me",
-   "summary": "Panther Lake's iGPU capabilities are quite impressive",
-   "link": "https://www.xda-developers.com/i-handed-a-worst-case-scenario-to-intels-cut-down-igpu-and-its-gaming-performance-still-surprised-me/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/bf6-intel-igpu-386h.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-09T20:30:17+00:00"
   },
   {
    "id": "c67941bfdf68",
@@ -560,17 +890,6 @@
    "published": "2026-10-09T19:42:30+00:00"
   },
   {
-   "id": "b35887d8abb4",
-   "title": "Apple Stock Falls After Report of iPhone 18 Pro Production Cuts",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQYjFzQ0gzVjFFVnFMMFhkcVBPV2F6N21DTVBDM3lVREdMbExtVHN1QVdEaXYzd0JhS2VucVU2ZElHUjRkbXRMTGFXaTNXNXU4VzNNT3VubGdzVG9qcUdMdGtnVXBYQWRkZW1Cdk1jLVhsajY2M0tuZWczUUU3eHFVM3ZPOTVXU0pvclE?oc=5",
-   "image": null,
-   "source": "Barron's",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-09T19:38:00+00:00"
-  },
-  {
    "id": "1526f839f8f8",
    "title": "Five New Features Coming to Your iPhone in iOS 27.2",
    "summary": "",
@@ -580,28 +899,6 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-09T19:30:00+00:00"
-  },
-  {
-   "id": "f20747e18386",
-   "title": "Apple’s iPhone 18 Pro demand in question: What you should know",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPanZPLUlnQmJDeFR5ajctRjE4TmhHSVYxeXp4bFJvVHBmVTRZNlVJYlJTRUtycEtDSTZnSDk0ZnRCVE1NY04xamJ6ZUhQQUZWNXlXQjJ1Zk5vNVRPUEtZQ0NPd0RsRl9uUURPRnNzVVFQakVUMjRrOGdfcFRGV2VTbWkwZWVEMzlhVGtXT1NXcC1vTEJ0Ti1nN1F4S0hTWFpZaFlsVlpfdw?oc=5",
-   "image": null,
-   "source": "CNBC",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-09T19:27:14+00:00"
-  },
-  {
-   "id": "1961dca85a39",
-   "title": "Apple Loop: iPhone 17 Pro Max Problems, MacBook Release Dates, Apple’s Next Launch",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQmZIT0Z4Y09EaTZvdDYyNWtPVUlyRDFRalk1dGdzZFkyOHU5OEhrd0JCbEEtUTlNZU1OSkFCaHRuRmd0LUtrdDJYX09HS3JPSTZ2TkNOaklMSVR6aTEtNXVJVUpnRE5zTFU3SzQ0R2d5d3NLM0xFNW56dEF4LV83azBIeHdJdWgxNXhMOVB3Q2J1QUczZUJXc19GUFZ1TEFTUUpzSVB2c0UxQmdKSWlKWm9BWmhmQ0R0U1RVQml0c2ZsYnNKdUdN?oc=5",
-   "image": null,
-   "source": "Forbes",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-09T19:23:32+00:00"
   },
   {
    "id": "2140442ff16a",
@@ -615,17 +912,6 @@
    "published": "2026-10-09T19:02:07+00:00"
   },
   {
-   "id": "3d8216784153",
-   "title": "I switched to the Galaxy S26 Ultra, but its biggest display upgrade comes with a major catch",
-   "summary": "I used the Galaxy S26 Ultra and Galaxy S25 Ultra; the Privacy Display isn't a clear win",
-   "link": "https://www.androidpolice.com/galaxy-s26-ultra-display-upgrade-comes-with-major-catch/",
-   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2026/02/galaxy-s26-ultra-privacy-display-menu.JPG",
-   "source": "Android Police",
-   "sourceId": "androidpolice",
-   "category": "android",
-   "published": "2026-10-09T19:00:10+00:00"
-  },
-  {
    "id": "b8af25405d99",
    "title": "Apple Sees Shares Fall After Claims of iPhone 18 Pro Orders Being Slashed",
    "summary": "Apple shares reportedly fell following claims that the company has cut iPhone 18 Pro orders, raising questions about expected demand. The post Apple Sees Shares Fall After Claims of iPhone 18 Pro Orders Being Slashed…",
@@ -637,17 +923,6 @@
    "published": "2026-10-09T18:53:52+00:00"
   },
   {
-   "id": "892ee52d3e18",
-   "title": "The Fitbit tracker we've all been waiting for is nearly here",
-   "summary": "Fitbit Edge could be a big upgrade",
-   "link": "https://www.androidpolice.com/google-teases-fitbit-edge-for-oct-12-launch/",
-   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2026/06/fitbit-air-logo-module.JPG",
-   "source": "Android Police",
-   "sourceId": "androidpolice",
-   "category": "android",
-   "published": "2026-10-09T18:52:38+00:00"
-  },
-  {
    "id": "8d6bf2173a33",
    "title": "A Future iPhone Could Run On SpaceX As Starlink Mobile Upgrades Gather Pace",
    "summary": "A future iPhone could connect to SpaceX’s Starlink network as satellite-based mobile connectivity continues to advance. The post A Future iPhone Could Run On SpaceX As Starlink Mobile Upgrades Gather Pace first appeared…",
@@ -657,17 +932,6 @@
    "sourceId": "redmondpie",
    "category": "iphone",
    "published": "2026-10-09T18:41:01+00:00"
-  },
-  {
-   "id": "f1669e460211",
-   "title": "Wean yourself off the Action Button before you get an iPhone Duo",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTWRHV3pWVUNvMXJfR0MtdE1hbU5aSnB2UUNEam40UHcza2JxbFRTbjVhM2VHUlZPNklneG9WOVlmMWdXTkgtdXlEUkh6c2tIaGx5STcwQUhGbjlCX04wUkp0cmVEYnpDM0N5Zk1Rek9RRXFXUDB6cmhSRGZ5dFF6Vl82elhCWTVMYUg0dnRCYWkxMm9xdlNPX3JXUk84eWVRdl9HVHNKems?oc=5",
-   "image": null,
-   "source": "AppleInsider",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-09T18:35:00+00:00"
   },
   {
    "id": "484e10722a01",
@@ -725,17 +989,6 @@
    "published": "2026-10-09T18:01:57+00:00"
   },
   {
-   "id": "3ca6c7549952",
-   "title": "DarkSword and Coruna iOS exploits continue to attack crypto wallets",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVDBfUHQ3SzhrbmNPRFlKTDBaejE1N0NZbm85TUxlb3ZJT3UxR1ByeEZRNWEwVEhSS3BWWncyV2tBSmJSUG1oYXhnMFRjZ3ZVUW54YkxjNjhJT3BGQlJRR09qNGJ0U2podW5yQkROLVdud0hERXBYYmtUdkE2cC16VmgyQmtrd0RyZVJFbV9GMktoS3g3dE8tWVBzV3V4Wm9yaVVQTlkwa0VtR01ILXhudzlMcw?oc=5",
-   "image": null,
-   "source": "Macworld",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-09T17:55:40+00:00"
-  },
-  {
    "id": "e0c03d69425a",
    "title": "Galaxy S26 users get a tame October patch after One UI 9",
    "summary": "",
@@ -745,17 +998,6 @@
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-09T17:48:18+00:00"
-  },
-  {
-   "id": "bd784d58215d",
-   "title": "Apple cuts iPhone 18 Pro orders over weak sales: report",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB1a3VTMExvZGhhN0dTX0FyS2drVlVxR3VyeTFmTzhyS2tmMk5Na1JMY3Z5TTJNeGIyU2hMelY2QUJ0MElYRmlYVWRIWDBkeGpfWXBtdm5QRVd2SkpKdjJqamNHQ0hpcG84cG1VVnZOQ1JtWllZLTRhdnBR?oc=5",
-   "image": null,
-   "source": "FOX 9 Minneapolis-St. Paul",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-09T17:46:56+00:00"
   },
   {
    "id": "efd32d863358",
@@ -791,17 +1033,6 @@
    "published": "2026-10-09T17:32:12+00:00"
   },
   {
-   "id": "91c4c4a57c07",
-   "title": "Apple is cutting iPhone 18 Pro component orders amid soft demand",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WeTA0LWdoN3hYOWl6eEpiR0FYRWtuZld1Q3ZLeGFqMXl4OUVyTHVqS1YxdExoeHU1WFBnUVBmNnZoOFRpVElrbVI1MTlrRF9mSUJORC1uakRuUE1jVW1QM3dERXVEV0RjQjdIRTdKdkd5cXlKMGlmMEgybUR5ZG8?oc=5",
-   "image": null,
-   "source": "Quartz",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-09T17:31:27+00:00"
-  },
-  {
    "id": "754cd83f0786",
    "title": "The iPhone Duo Isn’t for Everyone, and That’s OK",
    "summary": "",
@@ -835,13 +1066,13 @@
    "published": "2026-10-09T17:20:00+00:00"
   },
   {
-   "id": "896c05f2feee",
+   "id": "4ad59701dbf4",
    "title": "Forget the Pixel 11; I'm saving my money for the Pixel 11a",
-   "summary": "Google's Pixel 11a proves flagship phones do too much",
-   "link": "https://www.androidpolice.com/forget-the-pixel-11-im-saving-my-money-for-the-pixel-11a/",
-   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/google-pixel-11a-shown-from-the-front-and-back.png",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQa2E2WXNrZE9vczZwSWZhSlhsM1NNN0R0bGcwUjJVVDI5ZklHQmVLLVg1VjhxelZkRFpQdGhuOUxsbjNHd0VTdnJoak9rdC1rT1JzQ01PQ01ROEZTZkhSeUdwamhlRG1GRGh3emxselNmb1ZRSExZZlNUZG9ONE5YdGhYQUEzNGJsR3o4M213THg?oc=5",
+   "image": null,
    "source": "Android Police",
-   "sourceId": "androidpolice",
+   "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-09T17:00:10+00:00"
   },
@@ -855,28 +1086,6 @@
    "sourceId": "tomsguide",
    "category": "general",
    "published": "2026-10-09T17:00:00+00:00"
-  },
-  {
-   "id": "4ccc5ecc20e7",
-   "title": "Cramer: Investors selling Apple on latest iPhone 18 report are 'stupid as plywood'",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSFJlTGg5UE16TjZFLWpLTk4wOXoxVDlBajA1RW1ZNHExVjg5Z181ekJFMTVhbVcxbU1uR0VIUXduLVIzM09LMEUtNEUtall3dG9OOHF4WG14R0Jac0FHc3J6eGhONmcyM0Z1ajB4MU9fdkJ2ek94T1oxOGxGdzNwUG5URlhQYWVtcDJUSFRELVpGUDVaMFdGLWo4a1J5bWZZZk0zLUhoRElMd2tRdDh2ZEhjV1BzVUZwaXBQMQ?oc=5",
-   "image": null,
-   "source": "CNBC",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-09T16:43:00+00:00"
-  },
-  {
-   "id": "973d775e7013",
-   "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5Ld05oVjdpSVo1elVEdkl6dU9MMGVHTktrclhPa3FvTGtPVHRUeHpfUThTQzZ4dkpGQ1YtdHFsejJtTUFFWVhfWUtoTXZWeVQ1LXJHaE5wX0dEQjVFZzM4b3NTMnJ2QlJtOFFDZTQ2c0JmTlFuVUtHSTVEczg?oc=5",
-   "image": null,
-   "source": "The Hacker News",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-09T16:29:00+00:00"
   },
   {
    "id": "17c7355f3c78",
@@ -956,17 +1165,6 @@
    "published": "2026-10-09T15:35:33+00:00"
   },
   {
-   "id": "c08e66009c89",
-   "title": "Apple’s $1,999 iPhone Duo Could Cost You a Lot Less With This AT&T Deal",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9haHN5YXhNQkdmb2dHMWR2MEM4NFQtM1ExdWdUMUpaaEVGT0E5dXBydjJmdGJMbng0dkZpU2l2RVJWZVZkWThuSzREdDR5c1NRTjR4T0U4bXFCTU1wcUh3czNJWkY1MXhfazhV?oc=5",
-   "image": null,
-   "source": "CNET",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-09T15:35:00+00:00"
-  },
-  {
    "id": "a62afba2bbb3",
    "title": "Clean smarter, not harder — 5 vacuum cleaning tips to cut your chore time in half",
    "summary": "Getting the vacuum cleaning done in your home isn't about how fast you can do it, it's about how efficient you are.",
@@ -1000,28 +1198,6 @@
    "published": "2026-10-09T15:17:15+00:00"
   },
   {
-   "id": "170d5796b6e3",
-   "title": "Mint Mobile slashes unlimited to $10/month for its 10th anniversary",
-   "summary": "Huge savings",
-   "link": "https://www.androidpolice.com/mint-mobile-unlimited-for-just-10month/",
-   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2026/10/copy-of-169-4.jpg",
-   "source": "Android Police",
-   "sourceId": "androidpolice",
-   "category": "android",
-   "published": "2026-10-09T15:00:10+00:00"
-  },
-  {
-   "id": "c5a21d159404",
-   "title": "I took Google Earth's flight simulator for a spin; it's surprisingly addictive",
-   "summary": "It's way more fun than I expected",
-   "link": "https://www.androidpolice.com/i-took-google-earths-flight-simulator-for-a-spin-surprisingly-addictive/",
-   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/google-earth-flight-simulator-with-an-airplane-flying-above-earth.png",
-   "source": "Android Police",
-   "sourceId": "androidpolice",
-   "category": "android",
-   "published": "2026-10-09T15:00:10+00:00"
-  },
-  {
    "id": "f167fb548275",
    "title": "3 new Hulu shows you need to binge-watch this weekend (Oct. 9-11)",
    "summary": "Here are three new to Hulu shows that you need to add to your weekend watchlist right now.",
@@ -1053,17 +1229,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-09T14:44:12+00:00"
-  },
-  {
-   "id": "4b3046f268d6",
-   "title": "The Sonos Era 100 at $149 is the smart speaker deal everyone's been waiting for",
-   "summary": "This is the best budget smart speaker",
-   "link": "https://www.androidpolice.com/sonos-era-100-149-deal/",
-   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2026/02/copy-of-169-2-1.jpg",
-   "source": "Android Police",
-   "sourceId": "androidpolice",
-   "category": "android",
-   "published": "2026-10-09T14:21:36+00:00"
   },
   {
    "id": "dfd505ba3909",
@@ -1198,28 +1363,6 @@
    "published": "2026-10-09T12:37:23+00:00"
   },
   {
-   "id": "a870c76c087b",
-   "title": "Apple’s iPhone Duo Has A MagSafe Accessories Problem",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVFVjMUFVVmc1ZXlncC1WV0FOcGt3cktNN09FeHBXLUd6VnVjTjlIbU1nVkExVzd5akRPNHFVLUNORktMMnZEemRfT0dPQjJvSlVQS3pjRS00MjJmbG4wdklMWi1BVUJrNDdiVEhmVGRnck1paElPZC1YSEF6YW8wU1UyQTZzZDNENXNoZk1MZ0ZXaU9hczlBZGl1SHhqRDhaX1RHeEE1YVU?oc=5",
-   "image": null,
-   "source": "Forbes",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-09T12:33:54+00:00"
-  },
-  {
-   "id": "15ed3194b4d7",
-   "title": "Apple Reportedly Cuts iPhone 18 Pro Orders After Price Hike Dampens Demand",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNLTV3UkJ3a1JpLS1QV3JYcGFITlRhUXFkZUlCd3hTa19WTDlnMUh1WTVVTkN6b3pIbGszN2pTTGFHcTFwNU52d282YzhaaXNrc2tIX1lpdGhwamxmQmt0d2hjZGZTWVdEenFCMGYwOElUQjV6cTFGWHoxNDVhYWJtaXIyeGgzZkJWd2c?oc=5",
-   "image": null,
-   "source": "MacRumors",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-09T12:23:14+00:00"
-  },
-  {
    "id": "cf35e497b872",
    "title": "Weekly deals roundup: Galaxy S26, S26 Ultra, Pixel 11 Pro, and more post-Prime Day gems",
    "summary": "",
@@ -1231,37 +1374,15 @@
    "published": "2026-10-09T12:06:01+00:00"
   },
   {
-   "id": "90bf9fe20dd0",
-   "title": "Hatch Sleep Clock vs Hatch Restore 3 sunrise alarm clock",
-   "summary": "I've got both the new Hatch Sleep Clock and Restore 3 on my nightstand. Here's how the two compare, and the one I recommend snapping up before the clocks go back.",
-   "link": "https://www.tomsguide.com/wellness/sleep-tech/hatch-seep-clock-vs-hatch-restore-3",
-   "image": "https://cdn.mos.cms.futurecdn.net/SZzMmqGgAdkngs5YRtZAuM-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-09T11:26:20+00:00"
-  },
-  {
-   "id": "8221ece40dc9",
-   "title": "SpaceX just announced plans to make Starlink a 'major' US mobile carrier",
-   "summary": "SpaceX is going all in on Starlink Mobile, and it won't just rely on satellite coverage.",
-   "link": "https://www.tomsguide.com/phones/network-carriers/spacex-just-announced-plans-to-make-starlink-a-major-us-mobile-carrier",
-   "image": "https://cdn.mos.cms.futurecdn.net/pQDB83PeRrpFPMmMn7gbdd-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-09T11:14:29+00:00"
-  },
-  {
-   "id": "078692cdbe92",
-   "title": "Adidas running shoes and sneakers are up to 50% off — 15 deals I'd shop now",
-   "summary": "Adidas running shoes are dropping to super-cheap prices, so it's the perfect time for an upgrade. Check out the deals I'd add to my cart.",
-   "link": "https://www.tomsguide.com/wellness/running/adidas-running-shoes-and-sneakers-are-up-to-50-percent-off-15-deals-id-shop-now",
-   "image": "https://cdn.mos.cms.futurecdn.net/hUPcLrfdEpudP8pUDhZBTM-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-09T10:55:17+00:00"
+   "id": "6a2af989fd0f",
+   "title": "AT&T Delivers Value, Choice, and Flexibility with the New iPhone Duo – Backed by America’s Best Guarantee.",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE40Q0xNa0FNTUlrdVlDOXNkd0hPdm9wQjFPUlo0VzBzdlFKcTE2Vjh0YW9xZ2NRenVWa0ZMTmgwQ1VPWG1VYlBQRHpMRGM4Vjk0SmZXUjY0R2NLaVFQ?oc=5",
+   "image": null,
+   "source": "AT&T Newsroom",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-09T11:05:00+00:00"
   },
   {
    "id": "a03d29bf55db",
@@ -1297,72 +1418,6 @@
    "published": "2026-10-09T10:30:10+00:00"
   },
   {
-   "id": "ca8788775697",
-   "title": "23 Home Depot deals to instantly upgrade your home for fall — up to 50% off furniture, decor, grills and more",
-   "summary": "Home Depot's fall sale is slashing prices on some of the best home and garden items. Check out the deals that you'll want for the new season.",
-   "link": "https://www.tomsguide.com/home/outdoors/23-home-depot-deals-to-instantly-upgrade-your-home-for-fall-up-to-50-percent-off-furniture-decor-grills-and-more",
-   "image": "https://cdn.mos.cms.futurecdn.net/2GAw4L2CCvYxZfJ3E3KC7S-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-09T10:30:00+00:00"
-  },
-  {
-   "id": "090be322c6a4",
-   "title": "MacBook Ultra and iPad mini 8 tipped for October 27 Apple event — here's what we know",
-   "summary": "Apple has reportedly got a second October event lined up, and this could be when we finally see the long-awaited touchscreen MacBook Ultra.",
-   "link": "https://www.tomsguide.com/computing/macbooks/macbook-ultra-and-ipad-mini-8-tipped-for-october-27-apple-event-heres-what-we-know",
-   "image": "https://cdn.mos.cms.futurecdn.net/aeAsuGHPsdeNftt767USaK-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "iphone",
-   "published": "2026-10-09T10:21:07+00:00"
-  },
-  {
-   "id": "61236a632e5f",
-   "title": "The Cherry XTRFY K63W Pro Compact is the world’s first ultra-wideband mechanical gaming keyboard — and it’s as powerful as it’s flawed",
-   "summary": "With 8,000Hz polling and ultra-wideband connectivity, the Cherry XTRFY K63W Pro Compact is a powerful gaming keyboard, but its flaws are hard to ignore.",
-   "link": "https://www.tomsguide.com/computing/keyboards/cherry-xtrfy-k63w-pro-compact-review",
-   "image": "https://cdn.mos.cms.futurecdn.net/EzyTktyJEXfRT4mXxuB3jQ-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-09T10:19:35+00:00"
-  },
-  {
-   "id": "eace923d4df3",
-   "title": "Beyerdynamic DT 275 Pro review",
-   "summary": "The Beyerdynamic DT 275 Pro headphones are an audio win, with sleek looks and detailed music; just watch out for heavier tracks.",
-   "link": "https://www.tomsguide.com/audio/headphones/beyerdynamic-dt-275-pro-review",
-   "image": "https://cdn.mos.cms.futurecdn.net/ad8fRpmE5dfcHqdwFM2Ms8-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-09T10:10:14+00:00"
-  },
-  {
-   "id": "bfbd6ad422d9",
-   "title": "Logitech’s latest esports mouse clicks faster and gets you more kills — what happened to my scoreboards after a week gaming",
-   "summary": "The Logitech G Pro X3 SuperStrike is the fastest lightweight clicker on the market, although it’s got some serious competition these days.",
-   "link": "https://www.tomsguide.com/computing/mice/logitech-g-pro-x3-superstrike-review",
-   "image": "https://cdn.mos.cms.futurecdn.net/KhYf6ZPZuNhoPAkZWZtG5V-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-09T10:06:19+00:00"
-  },
-  {
-   "id": "ff1dc08ff4ec",
-   "title": "I tested the Garmin Forerunner 970 vs Coros Pace 4 Pro — which should you buy?",
-   "summary": "You can’t really go wrong with either the Coros Pace 4 Pro or Garmin Forerunner 970, but each has its relative pros and cons.",
-   "link": "https://www.tomsguide.com/wellness/smartwatches/i-tested-the-garmin-forerunner-970-vs-coros-pace-4-pro-which-should-you-buy",
-   "image": "https://cdn.mos.cms.futurecdn.net/iw7ku5z7ZRYzurLEtPiuzX-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-09T10:00:00+00:00"
-  },
-  {
    "id": "1441da1f5a0d",
    "title": "Apple Shares Dip After Report Says It’s Cutting iPhone 18 Pro Component Orders",
    "summary": "",
@@ -1374,39 +1429,6 @@
    "published": "2026-10-09T09:38:03+00:00"
   },
   {
-   "id": "756c342b6dc7",
-   "title": "I had no idea clothespins had a hidden feature — here's what the two holes are actually for",
-   "summary": "Stop ruining fine fabrics with harsh peg marks. Here is how the dual-hole design in standard clothespins protects your wardrobe.",
-   "link": "https://www.tomsguide.com/home/i-had-no-idea-clothespins-had-a-hidden-feature-heres-what-the-two-holes-are-actually-for",
-   "image": "https://cdn.mos.cms.futurecdn.net/6GdSaQBtD2ssECr3oZ6UBc-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-09T09:30:00+00:00"
-  },
-  {
-   "id": "eea645aaad9d",
-   "title": "3Z brands launches 1-year sleep trial for Helix, Bear, Leesa mattresses — why it’s a red flag if your bed doesn’t come with a trial",
-   "summary": "As Helix, Bear, and Leesa give shoppers a full 365 nights to test out their beds, we dive into why buying a mattress without an adequate sleep trial could cost you big",
-   "link": "https://www.tomsguide.com/mattresses/3z-brands-launches-1-year-sleep-trial-for-helix-bear-leesa-mattresses-why-its-a-red-flag-if-your-bed-doesnt-come-with-a-trial",
-   "image": "https://cdn.mos.cms.futurecdn.net/PexfhXxwVRxdCeiZ7ZhaCC-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-09T09:05:11+00:00"
-  },
-  {
-   "id": "5544bae7aeb3",
-   "title": "I didn’t believe an Nvidia RTX Spark laptop would have the same performance both on and off the charger — so I put it to the test",
-   "summary": "I tested an Nvidia RTX Spark laptop on battery. From an accidental Blender test to zero gaming throttle, here is how Nvidia killed the battery penalty.",
-   "link": "https://www.tomsguide.com/computing/cpus/i-didnt-believe-an-nvidia-rtx-spark-laptop-would-have-the-same-performance-both-on-and-off-the-charger-so-i-put-it-to-the-test",
-   "image": "https://cdn.mos.cms.futurecdn.net/ncUsQrKhMKyB9b3W5dXtL9-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-09T09:00:00+00:00"
-  },
-  {
    "id": "f279d96e3c43",
    "title": "5 best OnePlus 16 alternatives you can actually buy in the US",
    "summary": "",
@@ -1416,6 +1438,17 @@
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-09T09:00:00+00:00"
+  },
+  {
+   "id": "296b502351fd",
+   "title": "Three Teams Demonstrate Remote Hacks of Fully Patched Google Pixel 10 at Pwn2Own",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNR1VIR1pGYjB1ZmU3WjdEdzZwWjZOVHdQajV1ZmN3cDNrb1JfTjVybkpiUGUtbUJQVVROV3ZYNGtfZGdXTC16bVIteWJtbGxHZHRFdmdHTUl3RFdYOHlWS2ZIMVFjei1lbmg4UHp2MVRLSHFNWDVMeFNKUmRxZk9YQVNwV08?oc=5",
+   "image": null,
+   "source": "The Hacker News",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-09T08:26:00+00:00"
   },
   {
    "id": "1fe95dd4209d",
@@ -1484,17 +1517,6 @@
    "published": "2026-10-09T00:00:00+00:00"
   },
   {
-   "id": "3906007856c9",
-   "title": "Best smartphone Prime Day deals: Last chance to save on Samsung Galaxy, Google Pixel, more",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbTlmLWQ1cWQ1bVpnVVdEVFZvc292RGRGQVQya05lQjA0cVg1OUZ0RG5lZV9OMkZqT0t2ZFMzV2Vib2FYRXctSmNQLVY2VXBEMndNaTJTNGhRN2F6Y3htOXBhWEY3WFJEOTJ6RTFwY2hpMnNmdGxnbTNIazBkM0Vqdw?oc=5",
-   "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-08T23:29:34+00:00"
-  },
-  {
    "id": "7983c61b5fbd",
    "title": "Researchers uncover new DarkSword spyware variant affecting unpatched iPhones",
    "summary": "iVerify released a report today detailing P7 DarkSword, a new variant of the malware associated with the DarkSword iPhone exploit chain uncovered earlier this year. Here are the details. more…",
@@ -1504,6 +1526,17 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-08T23:08:18+00:00"
+  },
+  {
+   "id": "5c603dddbc4f",
+   "title": "Google's killing Safety Signal on Pixel Watch 2 and 3",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQR2lrdUx5TU9XUnZsc3RCQ1hkWnplUmowbTRlelVzcTl1Ql9LVUhxYndCNnpodUM0WnpoOWVsNGhhQnZWcHpRaTBYRWVTM0lMLWxyTHc0Z0xwSWVrTklzOFgwWUZObXhKVVNGeEphQWFTOFl4TEZiSmYwS0VUbExLczZlRUE3akE?oc=5",
+   "image": null,
+   "source": "Android Police",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-08T22:14:26+00:00"
   },
   {
    "id": "e80498a6ae00",
@@ -1748,17 +1781,6 @@
    "published": "2026-10-08T16:03:08+00:00"
   },
   {
-   "id": "f701fdad0167",
-   "title": "I think Google's latest Pixel price hike is an act of self-sabotage, and I refuse to stay silent",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRlM3MzFyU1Y3SWJ0aTdDTmQ0V19YcE1GZTlPU2I3M2ktamVQWjNxbGRod01qTnNSanNHaGVvYmM2WGY1WDlNZGxVYkxpUFY5blBham5QOWpKR2NHaFFiRnRGMlhKZ241djBrSFhMamk5bmc5cFJYaENsSlBuUXRvYVR4QVJfVy12bm5KTXlRT0dHLTdIcGR4M0xjYTNrR3ZueHZTVjI2bmttMXZBUnhaal9tQ21FTjQ?oc=5",
-   "image": null,
-   "source": "PhoneArena",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-08T15:59:57+00:00"
-  },
-  {
    "id": "9f9f6cdb782a",
    "title": "Deals: Galaxy Z Fold 8 up to $628 off, Pixel 11 Pro up to nearly $400 off, Nothing Headphone (a) 35% off, more",
    "summary": "",
@@ -1825,17 +1847,6 @@
    "published": "2026-10-08T13:55:27+00:00"
   },
   {
-   "id": "2c1d07e3abf8",
-   "title": "Last chance October Prime Day phone deals: Discounts from Samsung, Google, and more",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdnpwR0xKMzR4T1pmY2hXUHFYb0ZEWDBHd0dFQVJfU0pJbldVVWxUaEJKUkZlT194QjhUcHlZa0E5MlktZ2llYXRYaTBTaWI3WnFHU1BOSHRRQ0otZ3RiMmpxT3JVVTdveTZpR3dzcXhCbTAwV0NfNk5JdF9jZUs5Um5B?oc=5",
-   "image": null,
-   "source": "ZDNET",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-08T13:54:53+00:00"
-  },
-  {
    "id": "4d4eb9f29615",
    "title": "Get A Windows 11 Laptop From HP With 1TB Of Cloud Storage For $299.99 Only",
    "summary": "The clock is ticking on a deal that can get you a brand-new everyday HP laptop for as little as $299.99. This deal is still available today, even though the Amazon Prime Day sales event came to a close yesterday. The…",
@@ -1856,72 +1867,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-08T13:40:59+00:00"
-  },
-  {
-   "id": "d73162bdec14",
-   "title": "Samsung Galaxy S27 Ultra release date expectations, price estimates, and upgrades",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUWk5T21Rc3AxTGZOb1ltZXY0MWZJTDZmVkF4cUx1eXoyY3RDTGhyc25la0tva3pRek1hZTZheU9FWE5XcnR5Tnpwbkw5V0ljUmFZWUVOM2ZpemhKM0FIOE15MjRhZFFnU1A2MUJOMy1lNzcxc0FLbWk3X2dCQkNPR19R?oc=5",
-   "image": null,
-   "source": "PhoneArena",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-08T12:47:57+00:00"
-  },
-  {
-   "id": "6516e26aab7e",
-   "title": "The best CarPlay upgrades to try in iOS 27",
-   "summary": "Apple released iOS 27 to everyone a few weeks ago, and it includes several CarPlay changes worth checking out. Here are a few changes I’ve been loving so far. more…",
-   "link": "https://9to5mac.com/2026/10/08/the-best-carplay-upgrades-to-try-ios-27/",
-   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/carplay27-1.jpg?quality=82&#038;strip=all&#038;w=1600",
-   "source": "9to5Mac",
-   "sourceId": "9to5mac",
-   "category": "iphone",
-   "published": "2026-10-08T12:24:41+00:00"
-  },
-  {
-   "id": "e797e03257b0",
-   "title": "Sketchy rumor again says OLED iPad mini will lack one key feature",
-   "summary": "Apple is widely expected to introduce a new OLED iPad mini as soon as later this month. A sketchy new rumor today once again claims the new iPad mini will switch to OLED but still have a 60Hz refresh rate and lack…",
-   "link": "https://9to5mac.com/2026/10/08/sketchy-rumor-again-says-ipad-mini-will-lack-promotion/",
-   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ipad-mini-6-jb.jpg?quality=82&#038;strip=all&#038;w=1600",
-   "source": "9to5Mac",
-   "sourceId": "9to5mac",
-   "category": "iphone",
-   "published": "2026-10-08T12:08:51+00:00"
-  },
-  {
-   "id": "7607e58d7a73",
-   "title": "I stopped chasing 8 hours of sleep on my Pixel Watch 4 after Google showed me what matters",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQLW9GcUZURGFVbjl5RC1LUUpseVhCQUQ2U2pDUjl6TTNNNFd2aEh4WkMyWC16c1dVT2pGNjByVVVGYVdqbVhUaEZEdHZHZ1l5RHNkVEVjSzBweTdNcjdSeUFHNHZyY1hQUktnUVJDaFlDbTN3aUMyQ2FSYkxBWWxQOS1YWVU1RThrS0E5N2NjMUlFMjVwSjdzTDF4UkE3TEJSdjdKeV9TUzJBU011ZkE?oc=5",
-   "image": null,
-   "source": "Android Police",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-08T11:00:10+00:00"
-  },
-  {
-   "id": "647b088d4a49",
-   "title": "I swapped 5 Samsung Galaxy apps for better alternatives, and I'm not going back",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBWRloyVmtJOXpaVlJmZFNiYmFOVW03WUZqa0JlWnJobWVPVzB0WFZ6LTRrQnA1QldtZDk1VDc4U0VTMmVvYnotWE9fNEJVelY0eUNGTl8wXzBLSzNsbm14NVJWSExqR0xsSlM5TDhVWXY3ZmdTcWd1ZTg5RQ?oc=5",
-   "image": null,
-   "source": "How-To Geek",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-08T10:30:15+00:00"
-  },
-  {
-   "id": "ceaa56c7b9be",
-   "title": "Samsung wants to sell fewer phones to make more money",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQ2Q0U2JwUTBFci1OdkQ1WlltNGNkdFB5OG1xVnpDZmhkd1A5UzBQWFVTTFpfWk85cnVMakdzN0RDcEItRV9wWnE4TVh3Zi02c0hKV0JvTy1SZ19jMmN2Qk1qeC1vNTRjY2xJMmdkdzFHNkJyNGpudm8yVmtocUJxd2xKMU5UTnRYLWVEdg?oc=5",
-   "image": null,
-   "source": "Android Police",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-08T09:14:19+00:00"
   },
   {
    "id": "97cd87ef11a7",
