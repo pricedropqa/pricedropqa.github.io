@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T23:32:49.759210+00:00",
+ "updated": "2026-10-18T01:41:28.967624+00:00",
  "sources": {
   "androidpolice": {
    "items": 10,
@@ -22,15 +22,59 @@
    "feed": "https://www.tomsguide.com/feeds.xml"
   },
   "gn-android": {
-   "items": 39,
+   "items": 38,
    "feed": "https://news.google.com/rss/search?q=android+phone+OR+samsung+galaxy+OR+google+pixel+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   },
   "gn-iphone": {
-   "items": 32,
+   "items": 33,
    "feed": "https://news.google.com/rss/search?q=iphone+OR+ios+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   }
  },
  "items": [
+  {
+   "id": "bcdc038affe2",
+   "title": "Siri's Access To Your Personal Data Is Greater Than Ever - Here's How To Restrict It",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9LbnM2ME9RYXh2bF91bWtnV0FOekRYWGs3NDh0dEw4ZkNwdnVtNTZkTEpSaFdEbEd6Nm5vWGFfVHdPRFFJblFPbTB3T1p3UTF4TktEc0Z4MTNrUDcxUVhKOXQ1dDRRUzZvaWJTdXZqZWtfU0MweHhIRE9n?oc=5",
+   "image": null,
+   "source": "BGR",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-18T01:28:33+00:00"
+  },
+  {
+   "id": "6915ce1feb89",
+   "title": "The 4 Best Budget Android Phones That Still Support Wireless Charging",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOS1lkWERRd0tONnEzWGcxekJIXzZrMzZrQXMyY3lMZzY2OWpoSmtjdDVmMzFxblUxbzdXYlJhQ0JRMmlGbXhyUE1jOWFtMzF1UXIxMjhyaVhDV2kyQ1R3SXllZG1XUWlzV2dKWDVPVEhBekRZTjI3NVhNdDgxU21uN05QRHU?oc=5",
+   "image": null,
+   "source": "BGR",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-18T00:30:18+00:00"
+  },
+  {
+   "id": "6aad1c99ce6a",
+   "title": "Google is linking your phone number to accounts you wanted to keep separate",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNa2s5WVJmRXo4R3ZlNHppYjdzWG1MX2ktUUJnVFg3aHZXNXczbVZxTXhEVENETkJYM2JoX3dMelFqMnFUREJBRWJNMmtQYlZ1Sm1JUVVEMUJTc1E2Q3drSzMyb1FQYzhPdHVXcjFTeVRsSjlzVWUyZ1p4Rk5qS3RxV3lXNzNGV3VPbUpiRHY3OUpvTjJqSlUtcFlJZWt6aDFFMGE0eUNobFZsUXVBUGFDLVdrcWd1YWYzQzEyZQ?oc=5",
+   "image": null,
+   "source": "Android Central",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-18T00:13:04+00:00"
+  },
+  {
+   "id": "5afd094efcbc",
+   "title": "I rebuilt my Windows PC from one YAML file, and I'm never clicking through installers again",
+   "summary": "A starting point I’ll actually reuse.",
+   "link": "https://www.xda-developers.com/rebuilt-windows-pc-from-one-yaml-file-never-clicking-through-installers-again/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/windows-11-clean-desktop-hero.jpeg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-18T00:00:19+00:00"
+  },
   {
    "id": "3805a65be32e",
    "title": "I run OpenCode with a different model for every job, and I haven't hit a rate limit yet",
@@ -73,7 +117,7 @@
    "source": "Cult of Mac",
    "sourceId": "gn-iphone",
    "category": "iphone",
-   "published": "2026-10-17T22:41:15+00:00"
+   "published": "2026-10-17T22:43:27+00:00"
   },
   {
    "id": "0857406accb8",
@@ -302,7 +346,7 @@
    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNUVNhcjZqdDM2V1A2eGVJa1NodlR3TndBWnR3dU51WEprRnFJdDNQczZTTlFoQl9YRjZVbldCNlBLYnRmYmJ3SmdQaXI4VTc0VXZyX0ZGTS1RdmZRRkxjNmY5eDZ2X0ZrRktEYkRob2c2S0EzVGg4bFpFR29jTE51Q2RYREM5Yk1scHlIaXVXOVVFa1RyNVVBR1E4Q0xQOEZrWVZ5ZzJNcVl3S1NfMV9wTE9FNkNycDZtVGtpVDJoTzJkbU95WXJVZ1haTE9Sd3V4?oc=5",
    "image": null,
    "source": "MarketWatch",
-   "sourceId": "gn-android",
+   "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-17T18:40:00+00:00"
   },
@@ -318,6 +362,17 @@
    "published": "2026-10-17T18:30:19+00:00"
   },
   {
+   "id": "85ff77864013",
+   "title": "Apple bets on the same Siri AI technology with new HomeView device that led to a $250M settlement for iPhone users",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOGh1MjdWNklWVWFKTjRsNDhxNG1QelE3MG1PVms0REFHXzdJQjhzV3c5ellERnVSa2F5aE9vUVhhdlRaWEszelg4TERLZng5QzRmT2MxRzlIdjZoY1pIZDVsYVJIamktQ3ZneUdXakE5aXA2aGRpc0l5ZHV4WVIycTVmOEE0X3ZCa205SGtlaXY?oc=5",
+   "image": null,
+   "source": "Yahoo Finance",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-17T18:30:00+00:00"
+  },
+  {
    "id": "4be9d0f736df",
    "title": "Apple Says iPhone Duo Demand Has Been ‘Extraordinary’ As All Models Sell Out",
    "summary": "Apple says iPhone Duo demand has been “extraordinary” as the new devices sell out, with some buyers facing longer delivery times. The post Apple Says iPhone Duo Demand Has Been ‘Extraordinary’ As All Models Sell Out…",
@@ -327,6 +382,17 @@
    "sourceId": "redmondpie",
    "category": "iphone",
    "published": "2026-10-17T18:27:33+00:00"
+  },
+  {
+   "id": "46ade7a9b2d2",
+   "title": "Verizon to Charge $10 a Month for iPhone Handoff, Double T-Mobile's Fee",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9WT2VOU1ByOHZ4ckx6UGo0U2trakRrQW9oSktVejdrMDE5UEw0bUpHdFVFSld3UVFtMTFzT0ZLYTRuQUJ2QnRZZHlmbFNEd2ZaaUY3UVU4VlNpbHF4T1cyelVCajRUU0JXNkhmQXF3RkgzUjBLQWc?oc=5",
+   "image": null,
+   "source": "BigGo Finance",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-17T18:15:00+00:00"
   },
   {
    "id": "782aba199b46",
@@ -349,17 +415,6 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-17T18:07:04+00:00"
-  },
-  {
-   "id": "bebdbc1397ba",
-   "title": "Steam Remote Play feels laggy by default, but 3 hidden settings can fix it",
-   "summary": "Steam Remote Play lets you play games anywhere in the home, but if you don't check these settings, you're bound to have problems.",
-   "link": "https://www.xda-developers.com/steam-remote-play-feels-laggy-default-hidden-settings-fix/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/steam-remote-play-laptop.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-17T18:00:19+00:00"
   },
   {
    "id": "8d14ee12e66d",
@@ -404,6 +459,17 @@
    "sourceId": "redmondpie",
    "category": "iphone",
    "published": "2026-10-17T17:32:51+00:00"
+  },
+  {
+   "id": "f22279f83942",
+   "title": "Comparison between iPhone 17 Pro and Pixel 11 Pro: Which one is truly worth buying?",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNenlzVGd3aWt2Y3JaaU1ybjhMMTl1QnE0elFLT1dGb0N2WklmYlJqSkVKYVFtNTAxX2RYOU1WOG83ZXJvU3JCSkNEZTJzZHJKLWI4OHU2U29VVGFteUhuamJPMEJ5X01KeVRPNkxGUzVxUWhHMUZIZ3JlcmNsa3dDQ0xrdGE2aXE1bzJOSm5uLVZVLUUyalBfeGpUZFBPV2NqX0VJbGRRNklFY25oSXpLcWVRNS1QMV9Jb3VmSDllVFVoeklFdFR5RVZWdHM?oc=5",
+   "image": null,
+   "source": "آي-فون إسلام",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-17T17:08:50+00:00"
   },
   {
    "id": "6455c92b9c80",
@@ -461,17 +527,6 @@
    "published": "2026-10-17T16:00:13+00:00"
   },
   {
-   "id": "5a0ead53c042",
-   "title": "5 International Destinations That Cost Less Than a New iPhone",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeTZId1daQk56cUQwZEE0blUweXdJSmVxcnVTbVRUM3FqVjdUUlNtNmtMaGhQbmpCV0FGb3NOTzZuQ3dXdG1FUEUwZ2NoRUhEb0pnTS00dVhNd1dIdk50Si1XNzRlbnRJUnBiaG5ELUh0dENTa0xVUE5NR1g3Wk9JNEpnN2x1SC1JVmV1a3U2X01tZnZkREQyd1hxNENJZ0NtNDBCc05qMWY2ekx0UFE?oc=5",
-   "image": null,
-   "source": "Kiplinger",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-17T16:00:00+00:00"
-  },
-  {
    "id": "09e43a9c4799",
    "title": "EE announces iPhone Handoff pricing details for UK customers",
    "summary": "As part of its iPhone Duo preorder announcement, UK carrier EE has announced pricing details for iPhone Handoff – making it the first carrier in the UK to do so. Here are the details. more…",
@@ -516,17 +571,6 @@
    "published": "2026-10-17T15:00:00+00:00"
   },
   {
-   "id": "1f6d5e5512f8",
-   "title": "Apple Says iPhone Duo Demand is \"Extraordinary\"",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQXFCYVp3bUlkcTBNb3FyVk12RjZxSmVYOHVISGN0aVliYjU2OGZEN3c2NmJqa3ZlUFlmOUE1Q0Fob3pYZFlYRnEyRTF3T2dheENCV2xuVTA0MkFwbHpnT3VXQWJVcXVLWEhrY3lyNzJRa2EwLTlzY0t5LWNFcUFhQ3NjWFlrdWRrMmxRVGVzc2h5UQ?oc=5",
-   "image": null,
-   "source": "Thurrott.com",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-17T14:52:08+00:00"
-  },
-  {
    "id": "54633008f741",
    "title": "Apple’s $1,999 Foldable iPhone Sold Out in Minutes. Deliveries Now Slip to January",
    "summary": "",
@@ -569,17 +613,6 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-17T14:24:10+00:00"
-  },
-  {
-   "id": "c98d9411b17d",
-   "title": "Your iPhone Camera Isn't Equivalent To A DSLR Camera — Here's Why",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5WYlRUbDh0WGM5cFVlbFBobW9JS1BzNFVXX2g0eDhxYmFlVjlPQ1FIZ2phc3Ruel9ienNRY3Y2cE4zQ2laVzNNYzFPSzJWT0pheWw4UjlSV1ExS29adkp0Z3phNEh4cWJnakc1RWlUR2pSN0w4MUpoc3VEaXg?oc=5",
-   "image": null,
-   "source": "BGR",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-17T13:47:00+00:00"
   },
   {
    "id": "278b203d59dd",
@@ -703,17 +736,6 @@
    "published": "2026-10-17T12:30:00+00:00"
   },
   {
-   "id": "c17c47f630bf",
-   "title": "iPhone Duo storage tiers run from $1,999 for 256GB to $3,199 for 2TB",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE93eHF5S0VHREZjYzdnR3dRODJMeW03YlBITXBBSjRoaWYzVHRzRlpoRnNSSF9nd0xOZDA4U0tsc0s4NWREamtKMXRRU1MxT1NPS05SR2N3emVuWHF6RUptbDBJbmhaQ3hiYXhLa2ZLblQzeTJuaDJfYTdTMA?oc=5",
-   "image": null,
-   "source": "The Mac Observer",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-17T12:28:16+00:00"
-  },
-  {
    "id": "deb4fab4f740",
    "title": "Official Apple iPhone 18 Pro/Max cases up to 32% off at Amazon, deals from $33",
    "summary": "",
@@ -756,17 +778,6 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-17T11:47:00+00:00"
-  },
-  {
-   "id": "0cbb2c0eb060",
-   "title": "The Asus Googlebook 14 packs power and Android love in a small package",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5yM2RFQzJEcXRxRTJHRTl2c21ZMjVxM0Jfb041N2F2LWVfNTI4MHpfTjdnV0JHVFh2REhCcHk3UEpQa2JKLXZZR1NzSmZMR1NsM21rMENEWnQxck1iWlQzbEh3?oc=5",
-   "image": null,
-   "source": "MakeUseOf",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-17T11:15:17+00:00"
   },
   {
    "id": "145edbad975d",
@@ -899,17 +910,6 @@
    "sourceId": "tomsguide",
    "category": "general",
    "published": "2026-10-17T09:30:00+00:00"
-  },
-  {
-   "id": "25335fe02d75",
-   "title": "The 5 best smartwatches of 2026: Comparing the latest models from Apple, Google, and Samsung",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1jbHNnLXBNZlNwZ3Bzc1hoRVRQODFwb3U3azdaOTNxOU1qV1FoeW9NSXRScXRVLWNYVHYxVDVCakItNWRxRHhaLWpOMUdBMlRFQUhadjFVSmZTaFNtYU9fX2dTMXEtVXNVOHc?oc=5",
-   "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-17T09:22:58+00:00"
   },
   {
    "id": "9ded2eed0feb",
@@ -1152,6 +1152,17 @@
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-16T23:24:25+00:00"
+  },
+  {
+   "id": "890079daf539",
+   "title": "All the news about the iPhone Duo",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE81bXZZZHZBT1FkUGdfeGpBRVB1SlMxSFRTbVo0aFpXTndXZ0pxN2dkT3VYbVhOQm11UzZnSlhnd3ZIRDQzR3JrbU1DOHN1aTJUSDRpdmF5UW1ZNE0wWHE5MDZsNnh4WExVT2wtelIwYmNGUlZvYUFub2lfZ0RjUQ?oc=5",
+   "image": null,
+   "source": "The Verge",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-16T23:04:40+00:00"
   },
   {
    "id": "f61d3309a1c0",
@@ -1790,17 +1801,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-16T01:00:14+00:00"
-  },
-  {
-   "id": "6d1c0d913165",
-   "title": "Slow Android? 5 ways I speed up my phone – that aren’t clearing cache",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWW5RMWdaQTkydk9TNnBjR056VElRTGxndXRXNkZmOThLRlhsV1RMYmNiOS1FSWNqaDZmaktzSDc0ZEJGQXNjWjZPUndTN2ZFTXFkZFBQMlBRTjRiZ0RzRGpHYXBXVDVtV2piTTJ3WDdZV0s4b081WkZWOGVOV3NFX0lXdkxwcUZDWUE?oc=5",
-   "image": null,
-   "source": "ZDNET",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-16T01:00:00+00:00"
   },
   {
    "id": "2f8f981a5889",
