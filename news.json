@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T21:16:29.240022+00:00",
+ "updated": "2026-10-24T23:26:22.421409+00:00",
  "sources": {
   "androidpolice": {
    "items": 10,
@@ -22,7 +22,7 @@
    "feed": "https://www.tomsguide.com/feeds.xml"
   },
   "gn-android": {
-   "items": 35,
+   "items": 36,
    "feed": "https://news.google.com/rss/search?q=android+phone+OR+samsung+galaxy+OR+google+pixel+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   },
   "gn-iphone": {
@@ -32,6 +32,28 @@
  },
  "items": [
   {
+   "id": "717bd54d2dbb",
+   "title": "I use four different browsers on purpose, and it's the best privacy habit I have",
+   "summary": "Why settle for one when you can have four?",
+   "link": "https://www.xda-developers.com/use-four-different-browsers-on-purpose-best-privacy-habit-i-have/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/08/zen-browser-on-macbook.jpeg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-24T23:00:20+00:00"
+  },
+  {
+   "id": "b518ccd47aa4",
+   "title": "I replaced YouTube Music with Metrolist to get a cleaner open source listening interface",
+   "summary": "Metrolist fixes YouTube Music's cluttered UI",
+   "link": "https://www.androidpolice.com/replaced-youtube-music-with-metrolist-cleaner-open-source-listening-interface/",
+   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/03/a-smartphone-placed-between-headphones-displaying-the-metrolist-music-player-interface.png",
+   "source": "Android Police",
+   "sourceId": "androidpolice",
+   "category": "android",
+   "published": "2026-10-24T23:00:13+00:00"
+  },
+  {
    "id": "797aa9f5d395",
    "title": "I Used Xiaomi’s Folding iPhone Duo Rival and I Like It",
    "summary": "",
@@ -40,7 +62,73 @@
    "source": "CNET",
    "sourceId": "gn-iphone",
    "category": "iphone",
-   "published": "2026-10-24T21:01:51+00:00"
+   "published": "2026-10-24T22:31:28+00:00"
+  },
+  {
+   "id": "ee82bc5bed0f",
+   "title": "iPhone Duo Owners Report Devices Breaking Worldwide as Fears Grow Over Critical Design Flaw",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPcDR3SjAzaDlmQTRDUGZ6bnNtbmw4dzM1ckQ2YU9Ma3dEWkpQd18ySVFMM2tudnIyZDY2MS1YZWgzV3FQNldGaG5rRkxmU1pTYmV4OFNoaEdMb1lpS19aSG5ONGtuaF9IaWoxdlBXLWRtMGk1a1NaUTNpSjl3ZGRKckFDMm9NUHdzWmpZaEliaGQ0NXk3NzBYdkhqOEloR3plLVJicTlJYmJGTHRVcWdvUGhBWk9WSnJNNHBmMQ?oc=5",
+   "image": null,
+   "source": "Gadget Review",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-24T22:03:16+00:00"
+  },
+  {
+   "id": "d750473f8ca2",
+   "title": "5 TV features I disable before anyone in my family is allowed to watch anything",
+   "summary": "Your brand-new TV isn't ready until you make it ready",
+   "link": "https://www.xda-developers.com/tv-features-i-disable-before-anyone-is-allowed-to-watch/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/smart-tv-soundbar-harry-potter-series.png",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-24T22:00:20+00:00"
+  },
+  {
+   "id": "eff5eb795f2e",
+   "title": "My old Pixel has a battery setting Google won't let newer owners turn off",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA4SzJuZW85cDJmNmdEQ3N6Uzg5a2Y5ckhiU2pPLVdCc3k2bE9VM0dJcjhyYWt5QXVzSVQ1T1U1UUMybVNlcDM0MG9HNGtBcHZQRFlTZkhub1RTRlFFM3g2WVF2cFQ0UHptSWZEdldn?oc=5",
+   "image": null,
+   "source": "MakeUseOf",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-24T22:00:17+00:00"
+  },
+  {
+   "id": "f675c5bbda07",
+   "title": "Hands-on: Belkin’s new semi solid state batteries make for a much lighter carry",
+   "summary": "Belkin is now offering two new semi solid state batteries for your iPhone. There’s one 10,000mAh offering with a USB-C port for charging. The second is a 5,000mAh MagSafe offering , which offers 15W Qi2 charging. Both…",
+   "link": "https://9to5mac.com/2026/10/24/belkin-new-semi-solid-state-battery-options-for-iphone/",
+   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/DSC03234.jpg?quality=82&#038;strip=all&#038;w=1600",
+   "source": "9to5Mac",
+   "sourceId": "9to5mac",
+   "category": "iphone",
+   "published": "2026-10-24T21:46:33+00:00"
+  },
+  {
+   "id": "76abb5f133f8",
+   "title": "Uh-oh: iPhone Duo displays are reportedly cracking along the hinge on launch day",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdWo5aWVDeFFyQWpNQ28zU2xNRUQ2R25MRlVGenRUeUU4OVZJYUFKUHJpZlJHdDNqYVdnbE9rWWtmRjY3THBIV2dkMnhoRXlzTHlOcjBRN3VDYkxGU3NkZ2xQUkNkQUE4QTZseURUTnRiME05bFYzQ2hScWNmaERETEN3RnRobERS?oc=5",
+   "image": null,
+   "source": "Mashable",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-24T21:42:41+00:00"
+  },
+  {
+   "id": "6fb25d91db52",
+   "title": "I ran a 9B model trained on Claude's reasoning on my 8GB GPU, and it made me rethink paying for Claude",
+   "summary": "A free model that got a bigger job than I expected",
+   "link": "https://www.xda-developers.com/ran-9b-model-trained-on-claude-reasoning-on-8gb-gpu/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/qwythos-9b-in-lm-studio-on-desktop-pc.jpeg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-24T21:30:20+00:00"
   },
   {
    "id": "e1a78010949d",
@@ -65,6 +153,17 @@
    "published": "2026-10-24T21:00:13+00:00"
   },
   {
+   "id": "664a48e93eb1",
+   "title": "Foldable iPhone Duo hits market amid debate about price, features",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9OSmZsVjVISlhfNE41ZHZKWXY4dy1xcGdBelpqa3Bzam42QjhfVXBZNEVudEdaYjNoZDRibWJ5ZUN6OWdaTEk2LVJCUlVjR2VEa3FBSERmUlFUUmE1WjMwcWZmUTNIMEE?oc=5",
+   "image": null,
+   "source": "CBS News",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-24T21:00:00+00:00"
+  },
+  {
    "id": "a53aea1b68c6",
    "title": "iPhone Duo apps start using the fold for video, games and multitasking",
    "summary": "",
@@ -74,6 +173,17 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-24T20:54:08+00:00"
+  },
+  {
+   "id": "3ac636284a99",
+   "title": "Your iPhone can spot scams for you with iOS 27 – but you have to opt in",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbkJucjcybk9PeVlyQVZvakhYNm9zVFRmSlZsRXEtek5qMUlDN1VlbnhMdWdWNTVJdkFrdkp0d2c5NmdMMWFBSEpPVzlLRnI1aFhSblNJOXNfTUt3RFhHcmJYOEdSelJVeU1yd3F6LTF6YmFyT2d1X0R0TjBob3RGYl9MeGdZN3M?oc=5",
+   "image": null,
+   "source": "ZDNET",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-24T20:31:42+00:00"
   },
   {
    "id": "225fcebee5c3",
@@ -142,15 +252,15 @@
    "published": "2026-10-24T19:07:51+00:00"
   },
   {
-   "id": "3ac636284a99",
-   "title": "Your iPhone can spot scams for you with iOS 27 – but you have to opt in",
+   "id": "890079daf539",
+   "title": "All the news about the iPhone Duo",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbkJucjcybk9PeVlyQVZvakhYNm9zVFRmSlZsRXEtek5qMUlDN1VlbnhMdWdWNTVJdkFrdkp0d2c5NmdMMWFBSEpPVzlLRnI1aFhSblNJOXNfTUt3RFhHcmJYOEdSelJVeU1yd3F6LTF6YmFyT2d1X0R0TjBob3RGYl9MeGdZN3M?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE81bXZZZHZBT1FkUGdfeGpBRVB1SlMxSFRTbVo0aFpXTndXZ0pxN2dkT3VYbVhOQm11UzZnSlhnd3ZIRDQzR3JrbU1DOHN1aTJUSDRpdmF5UW1ZNE0wWHE5MDZsNnh4WExVT2wtelIwYmNGUlZvYUFub2lfZ0RjUQ?oc=5",
    "image": null,
-   "source": "ZDNET",
+   "source": "The Verge",
    "sourceId": "gn-iphone",
    "category": "iphone",
-   "published": "2026-10-24T19:01:42+00:00"
+   "published": "2026-10-24T19:07:01+00:00"
   },
   {
    "id": "5c84e4c9f5e7",
@@ -263,17 +373,6 @@
    "published": "2026-10-24T18:03:16+00:00"
   },
   {
-   "id": "e66230486ab7",
-   "title": "After using 4 Microsoft 365 alternatives for a month, one is a clear winner",
-   "summary": "Microsoft 365 isn't the only option for getting work done. I tried four alternatives, and one was hard to beat.",
-   "link": "https://www.xda-developers.com/after-using-different-microsoft-365-alternatives-month-one-clear-winner/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/img_5772.jpeg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-24T18:01:26+00:00"
-  },
-  {
    "id": "1b750d03ce0b",
    "title": "iPhone Duo one day later: Here’s why its quirks don’t make it any less incredible",
    "summary": "Yesterday, I picked up my iPhone Duo at Apple Fifth Avenue , and it’s been a wonder to use. Of course, the phone isn’t perfect, but after my first day of usage, I’m looking forward to daily driving it – even if it has a…",
@@ -296,26 +395,15 @@
    "published": "2026-10-24T17:40:00+00:00"
   },
   {
-   "id": "d76e03e660d5",
+   "id": "33167eb39509",
    "title": "These 4 Android settings are disabled by default, but I refuse to use my phone without them",
-   "summary": "Not every default Android setting is the best",
-   "link": "https://www.xda-developers.com/i-refuse-to-use-my-phone-without-these-android-settings/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/oneplus-15-android-16-settings-advanced-protection.png",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRk1HcThoQ1V1VS11Ym9uelNvLWpuelF3bEo2WFZSSWc0ZHA5WWJGVEFqdW5Zbk1aZWpEbWduWU5hUzdrakYxT1Q1bG5mbmd6WkN3UUJsTmJPcGk3LTd2NncxZzdBcGpicC1KYXkxRjJXeWQ1M1g1WnJILXFTOXM3TzZvSzRjU3lOc2pWR2p3ZnU?oc=5",
+   "image": null,
    "source": "XDA",
-   "sourceId": "xda",
+   "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-24T17:30:20+00:00"
-  },
-  {
-   "id": "40f2c54adce5",
-   "title": "My spare monitor became a family dashboard, and a Raspberry Pi is all it needed",
-   "summary": "A dusty low-res monitor now anchors household life displaying weather, photo slideshows, calendars and chore alerts.",
-   "link": "https://www.xda-developers.com/my-spare-monitor-became-a-family-dashboard-with-a-raspberry-pi/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/rpi-4-b-family-dashboard.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-24T17:00:22+00:00"
   },
   {
    "id": "f18604124a7f",
@@ -338,17 +426,6 @@
    "sourceId": "tomsguide",
    "category": "general",
    "published": "2026-10-24T16:00:00+00:00"
-  },
-  {
-   "id": "af780c2d6cd2",
-   "title": "iPhone Duo Sales Forecast: 20M Units, $8B Boost [2026]",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1LME5WelJGTHJPNHgydC1OYTFUeGhVaVVaNS02Rzc2Q2tKZUxDbG05RlZENm5IMk42c00xLTdiTk5XUFh1T1lRaUZBcEpmQ2s5SjZ2VmFWVmZHRjBKR2xleWVVcktVcURXRXFZSHVmVm43QS1KWUVTbG9IWEU?oc=5",
-   "image": null,
-   "source": "shattered.io",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-24T15:50:15+00:00"
   },
   {
    "id": "4b3972a4c7a7",
@@ -393,17 +470,6 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-24T15:00:00+00:00"
-  },
-  {
-   "id": "666d8987324e",
-   "title": "Is Demand for Apple’s iPhone 18 Pro Weakening? Jefferies Reports Shorter Delivery Times and Order Cuts",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZXR1V0pLSXZnakhfc0V2OU9kQXgtM2xTZktvUGlnQ3ZDVlpaVjJicnBSVDV0VkVsbEo2VFlpb3UtaWFQWFZOVjAtYmg2XzB2UE9ZQ2UxSlhUOW1lR0h0UTFoQ3NHVEg5eTVnMTVaSXFKTDAtNXBMTGQzVU9EMTFPR05icFprZmYwUXprUlpKMW5lMVlSQWc?oc=5",
-   "image": null,
-   "source": "Yahoo Finance",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-24T14:51:41+00:00"
   },
   {
    "id": "7f5d1a63d788",
@@ -527,6 +593,17 @@
    "published": "2026-10-24T12:12:00+00:00"
   },
   {
+   "id": "19bc7fe843a9",
+   "title": "Some iPhone Duos are breaking just hours after purchase",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPaGwyWVhsanlUYmtsRkdQWmtiMERNUklKMWwwZ2tGMHZMSWszM3RaZjZ3akFmeVllWGJuRmk3NGhZZ3FUaWhmS2FmWHlvV0FKNTlOUzdHb0tqN2d2Z25pYmd4bVV2UWlxeGdEaHR0VWh3aERHN2pzaGxDbml6aWgyU0NwQXA?oc=5",
+   "image": null,
+   "source": "SamMobile",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-24T12:04:00+00:00"
+  },
+  {
    "id": "fc617553625c",
    "title": "I switched from Chrome to Firefox on Android; extensions are the reason I'm staying",
    "summary": "Chrome on mobile doesn't need to be this bad",
@@ -536,17 +613,6 @@
    "sourceId": "androidpolice",
    "category": "android",
    "published": "2026-10-24T12:00:14+00:00"
-  },
-  {
-   "id": "76abb5f133f8",
-   "title": "Uh-oh: iPhone Duo displays are reportedly cracking along the hinge on launch day",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdWo5aWVDeFFyQWpNQ28zU2xNRUQ2R25MRlVGenRUeUU4OVZJYUFKUHJpZlJHdDNqYVdnbE9rWWtmRjY3THBIV2dkMnhoRXlzTHlOcjBRN3VDYkxGU3NkZ2xQUkNkQUE4QTZseURUTnRiME05bFYzQ2hScWNmaERETEN3RnRobERS?oc=5",
-   "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-24T11:52:58+00:00"
   },
   {
    "id": "1398b8514e5c",
@@ -626,17 +692,6 @@
    "published": "2026-10-24T11:00:00+00:00"
   },
   {
-   "id": "2e7e7111708d",
-   "title": "iPhone Duo Review Roundup: 5 Critics, $1,999 [2026]",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNaFl2NUI2MU5DQWl5YUZ6VUc4RVMxNFpLMnlmRlh1MlcwcVJvSEFxWmpjeVVmejUyNXhtc1R1cExXZk81dDRIOGdSSzl3TTB4aGRGZUhvM0UweXlCVmZFaDY2b1hweV9RTlduUVctQ1IyOWprUVhaTmtqNS1aQ21BbW1QV0xwdw?oc=5",
-   "image": null,
-   "source": "https://tech-insider.org/",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-24T10:50:06+00:00"
-  },
-  {
    "id": "208bf35ba3e3",
    "title": "Why are Android phones showing Google Play system update dated January 2027? What Pixel, Vivo and other us",
    "summary": "",
@@ -679,17 +734,6 @@
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-24T10:31:18+00:00"
-  },
-  {
-   "id": "fb164ad6c16f",
-   "title": "3 Galaxy Watch faces that look as cool as they are useful",
-   "summary": "These are the best I've tried so far",
-   "link": "https://www.androidpolice.com/galaxy-watch-faces-that-look-as-cool-as-they-are-useful/",
-   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/galaxy-watch-displaying-a-fallout-pip-boy-watch-face-with-two-other-watch-face-designs-floating-nearby.png",
-   "source": "Android Police",
-   "sourceId": "androidpolice",
-   "category": "android",
-   "published": "2026-10-24T10:30:13+00:00"
   },
   {
    "id": "d94a91eefe1d",
@@ -855,17 +899,6 @@
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-24T08:25:45+00:00"
-  },
-  {
-   "id": "7d7ef5f21ecd",
-   "title": "T-Mobile is giving away the Apple iPhone 17 for free — how to qualify",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9vODV0bE9jS29GcVJDQzRnVUFWaTJTVFFQU3Z1T2YtblJMQUV0akFycnBmY0t5eHlKbVBxc1dJTS13eWJjNndwbm52TEcyRDEzR1V3WlA3aVQ0NGtUcTFuR0Z2elpUdw?oc=5",
-   "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-24T08:00:00+00:00"
   },
   {
    "id": "c08f2291064a",
@@ -1770,17 +1803,6 @@
    "published": "2026-10-22T23:23:32+00:00"
   },
   {
-   "id": "68503658beb1",
-   "title": "I moved all my favorite apps to the Samsung Edge Panel to clean up my home screen",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZldTM2hLbHN4SzY4RE8ybFJzNnY5eC0wTUo2Wm0zOGFpSDM2MjNqSlJhbGRhbXJEWEJ5eW45Y2h2bTcybjNNNGZzZGxmLXpUVGtuMGJQNnJkZ1Z1TFpXM1VxaEV1dTVXaXZjazk0MlZyaGFYeDZIOXJDaFYxcjJvOW1fell1YXhGUzhFZXFZNE05dVNyaXRfaQ?oc=5",
-   "image": null,
-   "source": "Android Police",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-22T23:00:13+00:00"
-  },
-  {
    "id": "4897e566cd7c",
    "title": "MacBook Neo helps Apple soften the blow of global PC market downturn, per report",
    "summary": "A new Counterpoint Research report on global PC shipments for Q3 2026 shows Apple outperforming the broader market, with the MacBook Neo helping cushion the impact of declining demand. Here are the details. more…",
@@ -1900,17 +1922,6 @@
    "sourceId": "redmondpie",
    "category": "iphone",
    "published": "2026-10-22T18:56:48+00:00"
-  },
-  {
-   "id": "75b367382a53",
-   "title": "Amazon unveils Kindle+ subscription, a rebrand with more audiobooks",
-   "summary": "Today Amazon announced that its Kindle Unlimited subscription has been rebranded ‘Kindle+’ and includes more audiobooks than before. Here are the details. more…",
-   "link": "https://9to5mac.com/2026/10/22/amazon-unveils-kindle-subscription-a-rebrand-with-more-audiobooks/",
-   "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/kindle-plus.jpg?quality=82&#038;strip=all&#038;w=1600",
-   "source": "9to5Mac",
-   "sourceId": "9to5mac",
-   "category": "iphone",
-   "published": "2026-10-22T18:46:45+00:00"
   }
  ]
 }
