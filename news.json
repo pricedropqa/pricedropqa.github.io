@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T02:26:09.791708+00:00",
+ "updated": "2026-10-28T08:46:29.872981+00:00",
  "sources": {
   "androidpolice": {
    "items": 10,
@@ -22,15 +22,312 @@
    "feed": "https://www.tomsguide.com/feeds.xml"
   },
   "gn-android": {
-   "items": 39,
+   "items": 38,
    "feed": "https://news.google.com/rss/search?q=android+phone+OR+samsung+galaxy+OR+google+pixel+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   },
   "gn-iphone": {
-   "items": 32,
+   "items": 33,
    "feed": "https://news.google.com/rss/search?q=iphone+OR+ios+when%3A2d&hl=en-US&gl=US&ceid=US:en"
   }
  },
  "items": [
+  {
+   "id": "8c4f934ac83f",
+   "title": "Blue Indicator on Samsung Galaxy Phone: What It Means",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUXF3Q1pHRVp3UHB6MGJYYjhmUXBBUHVud0ZGSGdlVkU0TFNwUVZsWmx3WUxVaUxtaU9lc0dUUzlIdUJPbkVZUEtubTBib3lhNno5UmNiZmVHX1NBUUJFV2dRY1ZuWjdEQ08tazZwSkUtTmNiamN5RlBTRUFoTUVGT2JYZ1gyMl9wa2RLV3pPTEtXMEdH?oc=5",
+   "image": null,
+   "source": "Gadget Hacks",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-28T08:29:43+00:00"
+  },
+  {
+   "id": "c11dac68abbc",
+   "title": "iPhone 25W MagSafe Charging Compatibility by Model",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdWxkWTdwaDVNbUtuV3dYX2NEY2RUbWZKWVNXYXloN0N3U3N3Y0xUd3RSa21qNVIwa1JyWWlTbWp2dmVYdi1mMUo5SkpUdk9QQ1RzOFdjaFhXTVY4MG1QVnBTZFZiS3B5ejZ0eG5pM2xxUUdINHBVRHFORGZWQ3hJS1hXNDE4TDd0amY4anJlUQ?oc=5",
+   "image": null,
+   "source": "Gadget Hacks",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-28T08:29:26+00:00"
+  },
+  {
+   "id": "f705a7e00e45",
+   "title": "iPhone XR and iPhone XS Security Update Fixes Exploited Flaw",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQkltN1dUcWk0RHUyc3lzSlNLa0JGcDRlQk94WFcyQTF3ZlNzcVZDdDRoeXpKclBKVkRhcGtEWW5tTEo2Yks2SWtFb3FpMlEwYjhiaElpbnJ2cHU5bUZ5M0J4M1lnRWRmbEtlNGl3cTJYdmdHY21qNVB6MktPSHVXWEJLZ2F5dkRkcDkxeVZaVW50eWtyS1dwd0FOejQ?oc=5",
+   "image": null,
+   "source": "Gadget Hacks",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-28T08:28:05+00:00"
+  },
+  {
+   "id": "ffe6194acc49",
+   "title": "Hackers breached 25 servers, including U.S. government-linked systems — and AI tools may have helped",
+   "summary": "Hackers exploited critical security flaws to breach 25 servers, including U.S. government-linked systems. Researchers say AI tools may have played a role.",
+   "link": "https://www.tomsguide.com/ai/hackers-breached-25-servers-including-u-s-government-linked-systems-and-ai-tools-may-have-helped",
+   "image": "https://cdn.mos.cms.futurecdn.net/9JmTabf9SdZjLaW9muABUj-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-28T08:15:00+00:00"
+  },
+  {
+   "id": "7056bb7d28ce",
+   "title": "3 Android Auto apps that do what Google Maps and Waze can’t",
+   "summary": "Three great Android Auto alternatives that offer unique features and better offline tools than Google Maps or Waze.",
+   "link": "https://www.tomsguide.com/phones/android-phones/3-android-auto-apps-that-do-what-google-maps-and-waze-cant",
+   "image": "https://cdn.mos.cms.futurecdn.net/PC32WMU9qCFmRhLnLQHj5D-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "android",
+   "published": "2026-10-28T08:00:00+00:00"
+  },
+  {
+   "id": "baae6873f4c1",
+   "title": "Gemini eSIM setup: Google's AI may soon do it for you",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMGJVd1pXNXpZTVV3dG9fMVBKTmEzSDFLVEJ3TkRNZjY1RXhtQ1ZuMFVsejJ5aC04cDhqQ0lYcVNGOGptRUtTRDZuNGlVQk1fUzZ2YTNkeW1xcVU3a2dlbjhvcTdMcjgxWjZEazl2M0NnVVVuR0NrM2pVQXpuVl9GY2t6YkRYRjQyZV9JQ2lwTzBjZzZtUmw5QdIBlAFBVV95cUxOVHpqUDdiM19vRXZUQjlienhvWTg0dC1jR0xobmxKblJxcFNVby1WdU53dnBTUkJTMThkdUkxWkZ4ZjhoX0VZa0ZDaFMwS3hRVXg2amNKWExaWEtzNzZ2S21yZnhyd3E0SGNxMlY1UlpKSktQSndaNkVaRUxObF9Qd2N6cmJEdERNRHdGcm9VdVg3T2s5?oc=5",
+   "image": null,
+   "source": "The News International",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-28T07:51:53+00:00"
+  },
+  {
+   "id": "c23ef4541021",
+   "title": "Google Confirms Pixel And Samsung Upgrade—This Changes Texting On Your Phone",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQX0IxMkpHNTFnWnJ0Yy1nR2FJWUItRU1heFNwcWNBTGdJeU9COXotcl96NWQ5YnpNNDVFZEdIbmJZbFU1Xy1DOFpoQTNrZFZEOXMwSDhxaGxINGtDMF9jakN5T2RFbmcxakg0VmNTb3AxZVdCSnJESGk0RjRxWW02ZElSaWtqY1F0eG8yRmdrOGR1dUVCb2ltWDZWcnBrU1lIWGtRZzJXZ3ZNTHgtMW9WQU01R0FhRkxSRExZUkRmaHFzbVNsV2o0?oc=5",
+   "image": null,
+   "source": "Forbes",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-28T07:39:19+00:00"
+  },
+  {
+   "id": "f817d3882b31",
+   "title": "M6 iMac vs M4 iMac: Is Apple’s latest all-in-one actually worth the upgrade?",
+   "summary": "The ultimate all-in-one just got an upgrade: the M6 iMac is here. But if you already have the M4 model, is this worth the upgrade?",
+   "link": "https://www.tomsguide.com/computing/apple-desktops/imac-m6-vs-imac-m4",
+   "image": "https://cdn.mos.cms.futurecdn.net/zPK5qtinQBMdvkjmmBNLXd-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "iphone",
+   "published": "2026-10-28T07:30:00+00:00"
+  },
+  {
+   "id": "a375ffac6dd7",
+   "title": "The real reason your toilet keeps getting a ring (and why bleach won't fix it)",
+   "summary": "What actually causes toilet rings, and the simple trick to stop them coming back.",
+   "link": "https://www.tomsguide.com/home/the-real-reason-your-toilet-keeps-getting-a-ring-and-why-bleach-wont-fix-it",
+   "image": "https://cdn.mos.cms.futurecdn.net/XgkD3s8rSWPz7jap9qiguP-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-28T07:00:00+00:00"
+  },
+  {
+   "id": "f52337513a17",
+   "title": "Crackgate: How Apple Sold Out a $2,000 Defective iPhone With Less Features",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBING9HS0lwX1ZpR3FZTDJVU0hoel9ZdWZnSThPNk5YUlJqdlQxV2JLNDk4eld2WUt2YV9BVktldTdNQzM1S1VJdFNfNXU2b3JtRVE?oc=5",
+   "image": null,
+   "source": "Emerald Book",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-28T06:37:47+00:00"
+  },
+  {
+   "id": "58bc1c84467d",
+   "title": "Honor Win RT vs Pixel 10a: 10,000mAh vs Google's Camera",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9VQjJlUW9jcWtaTVFHN3ZCV2ljZ05kRWhMZ2UxeFZicGdnMWpvZngtcjNpWlgxbkJCSDBSanNJMkNuam1RVVR0NjR4UXBCT1lKb1AzTXVnWjlzcnM?oc=5",
+   "image": null,
+   "source": "Memeburn",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-28T06:36:05+00:00"
+  },
+  {
+   "id": "25e3afa98429",
+   "title": "Police are using AI to track where you drive — and your next road trip could raise a red flag",
+   "summary": "Police are using AI and license plate cameras to flag suspicious driving patterns. Here's how the technology works and what drivers should know.",
+   "link": "https://www.tomsguide.com/ai/police-are-using-ai-to-track-where-you-drive-and-your-next-road-trip-could-raise-a-red-flag",
+   "image": "https://cdn.mos.cms.futurecdn.net/Eqzi75BPM6smuRMMPCewZY-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-28T06:30:00+00:00"
+  },
+  {
+   "id": "515153fa5e1f",
+   "title": "iPhone 17e: $599, A19 Chip, 256GB Budget iPhone [2026]",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVnRZbktIZkROMjZKRkI0YzBzczZiaFFPZ3RESkIzUGp4YjUyZXVwdlBhWG81YzhWR0NPX1hsTmZacllZU0xqVkI3LWNobDQzUUxKWHBTeXhVM0I0cnd4LXJUa1k0V0RMTDhhMnFrSDdUX2xhS1Z5cEhCSmp4VEVWQw?oc=5",
+   "image": null,
+   "source": "shattered.io",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-28T06:15:35+00:00"
+  },
+  {
+   "id": "4512b2abf6d2",
+   "title": "I tried the 'tarp burrito' method to clear leaves from my yard — and it's a game changer",
+   "summary": "The fall leaves look lovely on the trees, but not so lovely when they start to swamp your entire yard. Here's what happened when I tried making a 'tarp burrito' to clear up my lawn.",
+   "link": "https://www.tomsguide.com/home/i-tried-the-tarp-burrito-method-to-clear-leaves-from-my-yard-and-its-a-game-changer",
+   "image": "https://cdn.mos.cms.futurecdn.net/baf83uCjUfihnuMTZ9Hpnk-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-28T06:00:00+00:00"
+  },
+  {
+   "id": "4ceb78847d14",
+   "title": "Google Photos finally lets you clean up your cluttered Collections tab. Here's how",
+   "summary": "Pin, hide, or arrange albums the way you want",
+   "link": "https://www.androidpolice.com/google-photos-lets-you-clean-up-cluttered-collections-tab-library-guide/",
+   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2026/10/pixel-smartphone-showing-google-photos-with-pictures-of-snow-monkey-in-photos-view-highlighted.jpg",
+   "source": "Android Police",
+   "sourceId": "androidpolice",
+   "category": "android",
+   "published": "2026-10-28T05:53:53+00:00"
+  },
+  {
+   "id": "d16501e51ec1",
+   "title": "Can't find variable aperture on your iPhone 18 Pro? Here's how to get started",
+   "summary": "iPhone 18 Pro Max's standout feature isn't particularly easy to find if you don't know where to look. Here's how to get started with variable aperture photography.",
+   "link": "https://www.tomsguide.com/phones/iphones/cant-find-variable-aperture-on-your-iphone-18-pro-heres-how-to-get-started",
+   "image": "https://cdn.mos.cms.futurecdn.net/Ps5cuSJ8Gtww8vSAKrrAFU-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "iphone",
+   "published": "2026-10-28T05:45:00+00:00"
+  },
+  {
+   "id": "31c3333501d1",
+   "title": "AI is supposed to save you time - but these 3 signs mean it's actually slowing you down",
+   "summary": "While the promise of AI revolves around making your work life easier and boosting your productivity, there are cases of adding more time to your tasks.",
+   "link": "https://www.tomsguide.com/ai/ai-is-supposed-to-save-you-time-but-these-3-signs-mean-its-actually-slowing-you-down",
+   "image": "https://cdn.mos.cms.futurecdn.net/by5zZWQg3wgxQSkjeMJk8V-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-28T05:30:00+00:00"
+  },
+  {
+   "id": "8d056d9753bf",
+   "title": "MacBook Pro M6 vs MacBook Pro M5: Biggest upgrades you need to know",
+   "summary": "The MacBook Pro M6 was just announced, but should you upgrade from the M5 model? We explain the differences to help you decide.",
+   "link": "https://www.tomsguide.com/computing/macbooks/macbook-pro-m6-vs-macbook-pro-m5-biggest-upgrades-you-need-to-know",
+   "image": "https://cdn.mos.cms.futurecdn.net/hCpirMP2baMxycViseRaVB-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "iphone",
+   "published": "2026-10-28T05:00:00+00:00"
+  },
+  {
+   "id": "736b6b265c7d",
+   "title": "iOS 27.2 Brings Two New Features To Apple's CarPlay",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5GOUFJNjdEWEFnYUFvMXc4WUxJVWdTVDJhTGZlYi1jRGItN1BTcVF0OWJMZ0FoTUV3N2szSXRRRElURkJscWVTZ1JId2E4ZTdTSGVnVF9YTGVLUDBheFJvT0Nwek0yaHV6bDdSNmZIUDlwazFaS1REVk5mTkdldw?oc=5",
+   "image": null,
+   "source": "Engadget",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-28T04:51:00+00:00"
+  },
+  {
+   "id": "890079daf539",
+   "title": "All the news about the iPhone Duo",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE81bXZZZHZBT1FkUGdfeGpBRVB1SlMxSFRTbVo0aFpXTndXZ0pxN2dkT3VYbVhOQm11UzZnSlhnd3ZIRDQzR3JrbU1DOHN1aTJUSDRpdmF5UW1ZNE0wWHE5MDZsNnh4WExVT2wtelIwYmNGUlZvYUFub2lfZ0RjUQ?oc=5",
+   "image": null,
+   "source": "The Verge",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-28T04:44:27+00:00"
+  },
+  {
+   "id": "6e0aa8505c8b",
+   "title": "Android 18 will give your phonebook a much-needed privacy upgrade",
+   "summary": "New permission to manage contacts",
+   "link": "https://www.androidpolice.com/android-18-phonebook-much-needed-privacy-upgrade/",
+   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2024/10/google-contact-filter-on.jpg",
+   "source": "Android Police",
+   "sourceId": "androidpolice",
+   "category": "android",
+   "published": "2026-10-28T04:35:40+00:00"
+  },
+  {
+   "id": "455f1ba95579",
+   "title": "I wore the Apple Watch Ultra 4 and the Garmin Fenix 9 Pro for a marathon, and this watch won by miles",
+   "summary": "Our Fitness Editor put the Apple Watch Ultra 4 and Garmin Fenix 9 Pro to the test",
+   "link": "https://www.tomsguide.com/wellness/smartwatches/i-wore-the-apple-watch-ultra-4-and-the-garmin-fenix-9-pro-for-a-marathon-and-one-watch-won-by-miles",
+   "image": "https://cdn.mos.cms.futurecdn.net/m59Bv6tL6SZTCXa5dPivhf-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "iphone",
+   "published": "2026-10-28T04:30:00+00:00"
+  },
+  {
+   "id": "84b323887555",
+   "title": "3 reasons why I’m glad Google didn’t give the Fitbit Edge NFC",
+   "summary": "The new Fitbit Edge fitness tracker lacks NFC for contactless payments, a feature found in its three-year-old predecessor. Here's why that's actually a good thing.",
+   "link": "https://www.tomsguide.com/wellness/fitness-trackers/3-reasons-why-im-glad-google-didnt-give-the-fitbit-edge-nfc",
+   "image": "https://cdn.mos.cms.futurecdn.net/Hzzx3SFfMkmhMJhnHgrwmC-1920-80.jpg",
+   "source": "Tom's Guide",
+   "sourceId": "tomsguide",
+   "category": "general",
+   "published": "2026-10-28T04:15:00+00:00"
+  },
+  {
+   "id": "cc67535b9cca",
+   "title": "Best iPhone Duo deal: How to get $1,000 off the Apple iPhone Duo",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1iVVN0Vm9VS0tBUTkzcXlOSXlocTFHaFJPUVI4TDNDSWNxbG9KajFIMlptcUtBZjVZWFFSeTh1TFRyYTVCaXhFY2JfZi1tai10U2FWTDkxMnhlSUN1OGstLXZfWUZLVExGbWRHaE9TMmVpa09leF9N?oc=5",
+   "image": null,
+   "source": "Mashable",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-28T03:36:04+00:00"
+  },
+  {
+   "id": "2d5de1114843",
+   "title": "A researcher claims Samsung TVs use connected devices with mics to listen in on you",
+   "summary": "A genuine privacy concern, or a case of advertised features being misconstrued?",
+   "link": "https://www.xda-developers.com/a-researcher-claims-samsung-tvs-uses-connected-devices-with-mics-to-listen-in-on-you/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/07/jellyfin-on-samsung-tv.jpeg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-28T03:24:07+00:00"
+  },
+  {
+   "id": "1ea931d5643d",
+   "title": "Qwen 3.8 invents Alibaba URLs with a real key ID, and that's why I don't think it's a backdoor",
+   "summary": "Qwen 3.8 still has a problem, but not in the way you're thinking.",
+   "link": "https://www.xda-developers.com/qwen-invents-alibaba-urls-real-key-id-dont-think-backdoor/",
+   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/qwen-3-8-flash-next-false-url-fetch.jpg",
+   "source": "XDA",
+   "sourceId": "xda",
+   "category": "android",
+   "published": "2026-10-28T02:56:40+00:00"
+  },
+  {
+   "id": "565966c8aba9",
+   "title": "Diwali 2026 smartphone deals: Samsung Galaxy S25 Ultra to iPhone 17, top premium phones to gift",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPOW9VT3VnYUlPMmplTmZUVVZDMjA4aUFlcWk4VkVnNzcyYTFnd0tIQnZWRXNxdU9CQzFxS0RQb0J1U1llQ0t5WHNNV1JPeHZUVHdEdGwyNjZYUmtHbnNld0tVWHEtSDhIT0dWV29LSjlGQW54b2psZnlBMDBMcjNLajNRSnJ2SzJJZ0k5dTdPaGpod1YxNjM1Y3hfWWhLQ1NiWWxySW1TV29fVEZOc0duQkVGU1VqNktkQVhLclhhSVEwbUphWHZaU3B0d2E2UElIQmUzNXlfZjc2WDVwekVZajU2YjB0N1M2dUo5XzlqZndmR0U10gH6AUFVX3lxTFBJLWtyRDhxR3VfeUZLSEljVDhzOXRqa1E3NUFOWUlvNlFkM1JGUkkzSDVWZU9XeWlJemN6NXNHcEhDd3UwUWpQdEI2S0hFS1FYSUZzVWhHc0ZhS0pFSWFBckZzdHh3QzF0eXJQc2JVMXBYMC02R0JDV0t0S3p1bWxuYjdVRHhJd0dyQWxvbWFnNGNpUmRKbTJrelR3NmlBQmV1RmE0T1hSalZJeGE5Slh5Y1hiUEJQMjRyazBhX190QkoyazVpSDZwVUdXbVFBQzZTR0ItVmo2WkctTVc0UFA2aWtGcjdYVzB5S0dHZ2hialI1NnJoaUM0Qmc?oc=5",
+   "image": null,
+   "source": "Business Today",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-28T02:30:08+00:00"
+  },
   {
    "id": "1c064eb5c0bd",
    "title": "Those US-made laptops BlueChip is building may get Starlink-like antennas, too",
@@ -74,6 +371,17 @@
    "sourceId": "tomsguide",
    "category": "android",
    "published": "2026-10-28T01:37:34+00:00"
+  },
+  {
+   "id": "8e28a9bd2a53",
+   "title": "iPhone Duo preorder delivery timeline might be improving",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBHRVFJUE80b0VHQlN4VkNVajdXM0JwQnctcngxOGdqUUhsRFg3NElRams5VEEtMkpvaXZsMzlyUGdqSFlIMS0yZlpvZ0YxWTBVSGVuUjY5UHlvMHIzbFZSd2RTbjI0M0dlYWc1bmlBMEE?oc=5",
+   "image": null,
+   "source": "Mashable",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-28T00:57:37+00:00"
   },
   {
    "id": "2f32fe88c8da",
@@ -142,17 +450,6 @@
    "published": "2026-10-27T23:54:30+00:00"
   },
   {
-   "id": "c77c26e26eee",
-   "title": "Apple’s $2,000 iPhone Duo Has a Major Design Flaw | by Michael Swengel | Oct, 2026",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdVlIMXhZbTA5N0ZTbVZ1R1VNSTFSekl4QnJGS2pGNDJwWnI0SHNMQ3c1RUthMHdfSjVlUGw4OWFnNFBLaEdURExBSldCelFXZlUtVGh0QzEySTNUMGFuVHljSjh2RXFzMUt3eG1UcVBfVzJDb2twdmJjTGY0M0szbXhDOVFwWHZheWtNT0pCYld2NUpIQzBWZXNFVQ?oc=5",
-   "image": null,
-   "source": "Medium",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-27T23:46:00+00:00"
-  },
-  {
    "id": "7c1dfde0345a",
    "title": "T-Mobile Is Offering $1,000 Off Discount on the Apple iPhone Duo Foldable Smartphone",
    "summary": "",
@@ -165,7 +462,7 @@
   },
   {
    "id": "16646f0dcd25",
-   "title": "Google Pixel reunites with Oscar Piastri for third Emotive campaign, ‘Ask more of your phone’ via Emotive",
+   "title": "Google Pixel reunites with Oscar Piastri for third Emotive campaign, ‘Ask more of your phone’",
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNkFRSGFaVjRLSmx0cGR5b2lNR3UzSkwtZlhDcmlnUFM4MG90RWZZTGszY2JsbnRkTmxDRXNCeER3Zjdfb3lMRkZqU1gzMUI1MUhkV2tQQTk0bXVncFNZTnRRdG5DYWs2akl0SWRNODVKNy1abHlnSlQtZDFDV2xMcGJCa2NjQ2s5SG9MWEliVENoTEl2cVpSTjZYbTNydkZBSGwyWmlUYk5lVk5tUWdnTzlNNHEtOTEzRUh4QjNB?oc=5",
    "image": null,
@@ -184,17 +481,6 @@
    "sourceId": "gn-iphone",
    "category": "iphone",
    "published": "2026-10-27T23:19:32+00:00"
-  },
-  {
-   "id": "4056751b67f6",
-   "title": "The iPhone Duo could be boosting Samsung Galaxy foldable sales",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE41cGVOVVJ1WXExRDlHeTFGRFRBcGMzTmdNYmNJQmd0UmotRWhfdWNOMFBBVG5DR3lnd2tRaVJYYTRLdGZzVEplaUtQY2ctVno1THhDN0xEb3dBZWttTjQtRkhfZVJ2cWJGS00zTGF2cW80UmM?oc=5",
-   "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-27T23:09:48+00:00"
   },
   {
    "id": "8dbd8bfaba18",
@@ -274,6 +560,17 @@
    "published": "2026-10-27T22:50:54+00:00"
   },
   {
+   "id": "a289002dcc04",
+   "title": "New iPhone 18e leak covers its chip, cameras, and display - GSMArena.com news",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOYzI0RDgwZzVkYVE2Z29ud1Z4TWx6Yml6Y3hfdVFTdU5CQllZLXZUQTBPX09DdnRUQV8xS2gxUDB2SFg5Mkc2OWF6TXJUanpDc2NYczFvN3pZWUtiOVJxYnU2SWstaGQ2YjJTeFFIMDJnMV9qUDEzaG9RVnRqbGdhbGdBUS12bm9zQ2ZiRWFmVDEwSVczQS1IUDh1UdIBlwFBVV95cUxQeTJ4OXdHNE8zbVZLTlMtRmpXbGVKenJFWXdjZmltLWZqVjlJLTBTbjkyUnNyZTQxaFU5OEVHVmJyUVkxaHFDYWdhWXo2VHd1bS10SmhOOFZXMmNzVmh1X2dIT0huRUNXSkhhbFpjOEtqRHY4eDl6d1p6a3VVT0stNEFDWExxUU9WT3VtWW9CeGpEbE9DM1k0?oc=5",
+   "image": null,
+   "source": "GSMArena.com",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-27T22:44:02+00:00"
+  },
+  {
    "id": "f0ddfc3945ae",
    "title": "The Apple iPhone 18 Pro is (almost) free before Black Friday — how to claim",
    "summary": "",
@@ -293,7 +590,7 @@
    "source": "The Apple Post",
    "sourceId": "gn-iphone",
    "category": "iphone",
-   "published": "2026-10-27T22:21:49+00:00"
+   "published": "2026-10-27T22:24:23+00:00"
   },
   {
    "id": "ba6f9f63c7e5",
@@ -305,6 +602,28 @@
    "sourceId": "androidpolice",
    "category": "android",
    "published": "2026-10-27T22:09:36+00:00"
+  },
+  {
+   "id": "f643238af140",
+   "title": "Pixel phones are still missing alarms, turning anxiety dreams into reality",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE42Rlg4VUhSSFpsOFFYYzg4MGZvWUJ1QzlMSDMtN3dPREV6U01PTi1ZR0ZURDBjZGs3YkNmRV82MGRqbzhNQmp0Qnk1eGVORkFnTDZ1ZWJpS0hzNnRuczBQN2Y1cGZqV2M0Z1F2THl4Mnd1dw?oc=5",
+   "image": null,
+   "source": "Android Authority",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-27T22:06:00+00:00"
+  },
+  {
+   "id": "318888c57568",
+   "title": "T-Mobile Is Offering $1,000 Off the Latest Apple iPhone 18 Pro and Pro Max",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE92enQyYnBfcXlzYzhGNEpVelp1amthdm5waGJqRU95U2Nzb0Q2Vmc3RWYxc2JQOTZrMTBIUlZSRVIxa0FaQ1hFQTZGRWFDamp6YVlaaEQwTGx3b3JFdWtyeExTUjBtWnF1OGxLelZfSTVuTE9ac1hJ?oc=5",
+   "image": null,
+   "source": "IGN",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-27T22:04:12+00:00"
   },
   {
    "id": "6186349b4524",
@@ -373,26 +692,15 @@
    "published": "2026-10-27T21:30:21+00:00"
   },
   {
-   "id": "80b50b1002e6",
-   "title": "Apple Knows Some iPhone Duos Have a Major Issue | What’s News for Oct. 27",
+   "id": "270237201986",
+   "title": "Authority Insights: Exclusive reports, app teardowns, leaks, and in-depth tech coverage you won't find anywhere else.",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPcTdTN2czMzRDNDJ2T3FyTVdWU0RMb2hQd09fR20yZUpISDF6MjdRdFdFdEt2a2xWUE1lQ3pGaTJNc0hsUUQ0eXR1ZWhIZHBVSExGTHNfX3A1RHVGd3hkbzMwV3hhdm1YZjZqekhCUjU1N3VFZG5iTmMzQTZCWXdNYUtORFMydkZja1pEUGM0QnlTZXNxTWpsMG40VQ?oc=5",
-   "image": null,
-   "source": "WSJ",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-27T21:22:46+00:00"
-  },
-  {
-   "id": "f643238af140",
-   "title": "Pixel phones are still missing alarms, turning anxiety dreams into reality",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE42Rlg4VUhSSFpsOFFYYzg4MGZvWUJ1QzlMSDMtN3dPREV6U01PTi1ZR0ZURDBjZGs3YkNmRV82MGRqbzhNQmp0Qnk1eGVORkFnTDZ1ZWJpS0hzNnRuczBQN2Y1cGZqV2M0Z1F2THl4Mnd1dw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1PUU9sYWw0SEgyTVpKRnBsNDkzREpuMFFWR25wSzhaVHJGMzRSdkU5bkZ1YVYyUWhJZl9WZ2gtRDRScVdfSVRocUV2UnRKS1lIODhXeEh6UXRzNzQtbk9Pc2RR?oc=5",
    "image": null,
    "source": "Android Authority",
    "sourceId": "gn-android",
    "category": "android",
-   "published": "2026-10-27T21:17:30+00:00"
+   "published": "2026-10-27T21:29:39+00:00"
   },
   {
    "id": "15487d3a5ef2",
@@ -428,17 +736,6 @@
    "published": "2026-10-27T21:00:22+00:00"
   },
   {
-   "id": "f8097de1d015",
-   "title": "The 14 best iPhone Duo cases with hinge protection, kickstands",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObWRhcFd0T255aXByclQycGttV3hCVm5TUWdSOS1OZ3BUbVRyMmJDVGxjRXFZbDBaS2pyRGpITXdDWkx0ai1hV1RhR0IxWnMyakNvWjFGZDRLT25oaEZNcE9WVjhCOW5sbUNmZmtMQVB0QUtsQkdWVVBhLVppSElNT3hTZXI?oc=5",
-   "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-27T21:00:18+00:00"
-  },
-  {
    "id": "40a1a3291b65",
    "title": "I paired Google Sheets with Forms to create a versatile tracker in minutes",
    "summary": "It became my personal tracking app",
@@ -459,6 +756,17 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-27T20:57:05+00:00"
+  },
+  {
+   "id": "8c690b45f3f4",
+   "title": "After testing device cases for years, these are the best ones for your iPhone Duo",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5nWFRsWHRMT2NXRTFzTTRTdHpGS3NKWThJUlJhYnRFVXZWTW5LZ25BZzBVV2lXSFdNLV94LVZhcGVYYUtyTm9NWnY4Zm9hdE1NWkdZWTJJODhfTGg3b3ZaNXBVeU4wN3JqUHU0RjZUazh2YWc?oc=5",
+   "image": null,
+   "source": "Business Insider",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-27T20:46:00+00:00"
   },
   {
    "id": "e8c30221e177",
@@ -505,17 +813,6 @@
    "published": "2026-10-27T20:30:12+00:00"
   },
   {
-   "id": "c63622cb45e7",
-   "title": "I made self-hosting harder than it needed to be by making this one mistake",
-   "summary": "I spent so much time perfecting my homelab that I nearly forgot why I built it in the first place.",
-   "link": "https://www.xda-developers.com/made-self-hosting-harder-than-it-needed-to-be-by-making-this-one-mistake/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/docker-desktop-lenovo-laptop-lamp-background.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-27T20:00:22+00:00"
-  },
-  {
    "id": "86305822f814",
    "title": "Report: iPhone 18 Pro sales down 4% in the US, but China drives 3.1% global growth",
    "summary": "Counterpoint Research’s latest report offers a look at global iPhone 18 Pro sales during the first three weeks of availability. Here are the details. more…",
@@ -525,17 +822,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-27T19:44:07+00:00"
-  },
-  {
-   "id": "4ec98cbb70a7",
-   "title": "Your router keeps a list of every device that has ever connected, and some of them might not be yours",
-   "summary": "They might be posing a security risk.",
-   "link": "https://www.xda-developers.com/router-keeps-list-every-device-ever-connected-some-them-might-not-yours/",
-   "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/10/router-overhead-view.jpg",
-   "source": "XDA",
-   "sourceId": "xda",
-   "category": "android",
-   "published": "2026-10-27T19:30:20+00:00"
   },
   {
    "id": "5e02de142892",
@@ -579,7 +865,7 @@
    "source": "GSMArena.com",
    "sourceId": "gn-android",
    "category": "android",
-   "published": "2026-10-27T19:00:06+00:00"
+   "published": "2026-10-27T18:54:02+00:00"
   },
   {
    "id": "1e8062ee687d",
@@ -692,17 +978,6 @@
    "published": "2026-10-27T17:45:10+00:00"
   },
   {
-   "id": "f22279f83942",
-   "title": "Comparison between iPhone 17 Pro and Pixel 11 Pro: Which one is truly worth buying?",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNenlzVGd3aWt2Y3JaaU1ybjhMMTl1QnE0elFLT1dGb0N2WklmYlJqSkVKYVFtNTAxX2RYOU1WOG83ZXJvU3JCSkNEZTJzZHJKLWI4OHU2U29VVGFteUhuamJPMEJ5X01KeVRPNkxGUzVxUWhHMUZIZ3JlcmNsa3dDQ0xrdGE2aXE1bzJOSm5uLVZVLUUyalBfeGpUZFBPV2NqX0VJbGRRNklFY25oSXpLcWVRNS1QMV9Jb3VmSDllVFVoeklFdFR5RVZWdHM?oc=5",
-   "image": null,
-   "source": "آي-فون إسلام",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-27T17:36:01+00:00"
-  },
-  {
    "id": "89ba01f99639",
    "title": "Microsoft just offered 60,000 workers a way out as AI spending soars — here's what it could mean for your job",
    "summary": "Microsoft is offering 60,000 workers voluntary buyouts as AI spending surges. Here's what it means for your job and three ways to protect your career.",
@@ -736,17 +1011,6 @@
    "published": "2026-10-27T17:00:15+00:00"
   },
   {
-   "id": "69f7ed3ffa70",
-   "title": "I don't trust Google's Fitbit devices — here's why",
-   "summary": "They don't take fitness seriously",
-   "link": "https://www.androidpolice.com/i-dont-trust-googles-fitbit-devices-heres-why/",
-   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/four-fitbit-wearables-surrounded-by-red-warning-icons.png",
-   "source": "Android Police",
-   "sourceId": "androidpolice",
-   "category": "android",
-   "published": "2026-10-27T17:00:10+00:00"
-  },
-  {
    "id": "192f86dd5467",
    "title": "Twelve South launches new Airfly View dongle with built-in screen",
    "summary": "Last month, Twelve South introduced the wildly popular AirFly Drive , its first wireless CarPlay adapter (which is now back in stock after initially selling out). Now, the popular accessory maker is back with Airfly…",
@@ -758,15 +1022,15 @@
    "published": "2026-10-27T16:34:43+00:00"
   },
   {
-   "id": "f4d5a95e5cb7",
-   "title": "Baseus' Spacemate RD1 Plus is a 14-in-1 dock that works flat on a desk or upright",
-   "summary": "This article is sponsored by Baseus",
-   "link": "https://www.androidpolice.com/baseus-spacemate-rd1-plus-14-in-1-dock/",
-   "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/10/baseus-spacemate-rd1-plus-feature-image.jpg",
-   "source": "Android Police",
-   "sourceId": "androidpolice",
-   "category": "android",
-   "published": "2026-10-27T16:30:10+00:00"
+   "id": "977d8f16d8c6",
+   "title": "iPhone Duo Gets Apple Pencil Support, but There's a Catch for Existing Owners",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZVlhRndBSWpXbUd2Zms1ZGRzTHEzcE9TeFg0aXpNWUJhdkdGUExOU1FEd25qVzVFU015SzZTSGd5cTc3WWQwcW43OUxxSFFRVC1YQnk2VlVpNzF0NGlHZEd1WDgzR2lxS2MyemMzQldpb2xSb3ViMFduaU1xUm5yWDktWjJqdmNnbmRQZE5zQzFOd194Wi1RR1FBcWVJSmM?oc=5",
+   "image": null,
+   "source": "Gadget Hacks",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-27T16:24:12+00:00"
   },
   {
    "id": "6cb519aab3f9",
@@ -780,15 +1044,15 @@
    "published": "2026-10-27T16:23:35+00:00"
   },
   {
-   "id": "8e28a9bd2a53",
-   "title": "iPhone Duo preorder delivery timeline might be improving",
+   "id": "711c62f5751b",
+   "title": "Apple iPhone Duo Vs Google Pixel 11 Pro Fold: The Differences Beyond Foldable Style",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBHRVFJUE80b0VHQlN4VkNVajdXM0JwQnctcngxOGdqUUhsRFg3NElRams5VEEtMkpvaXZsMzlyUGdqSFlIMS0yZlpvZ0YxWTBVSGVuUjY5UHlvMHIzbFZSd2RTbjI0M0dlYWc1bmlBMEE?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONU9TX2RxYUpOc2VfVUJILUR1SWVKSDJTSC1MM1M4WWQzNVdrR2pheGdZWkJSbGYxY195YktIaXViUUk3a3ExNFJjN1pDWVRTR0NaVkcxd0huZDVtbFNrWG5XUW1IN2VzZjFndm9OMEtyTi1vSXp3UzV5MmZ0LVdva05LcDY?oc=5",
    "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-27T16:02:07+00:00"
+   "source": "Engadget",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-27T16:15:00+00:00"
   },
   {
    "id": "3c8d48e97428",
@@ -857,6 +1121,17 @@
    "published": "2026-10-27T15:37:00+00:00"
   },
   {
+   "id": "318a79e26f9c",
+   "title": "iPhone Duo screens are cracking within hours for some owners—and a possible cause has emerged",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOejZ3Q1NBN3FmZWVYVTYyYUt1SVR6ZE9KZFl0UEc3SjJrSHN2bU1zeG5VUnV0bF9TTHJOMXo3ZjBScTdfbkt6cmNtd1NmWGhYMTRXUmJiN2NVM0hzckU4a3hlbkdTalNiZUppcDNzMmpZa0k4NXQtOUlpRzhIU0VlYzFHZEhqUQ?oc=5",
+   "image": null,
+   "source": "Fortune",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-27T15:37:00+00:00"
+  },
+  {
    "id": "f360d67b553f",
    "title": "Deals: AirPods Pro 3 20% off, Apple Pencil (USB-C), most affordable M5 MacBook Air $200 off, AirTag 2, more",
    "summary": "Alongside the ongoing pre-order discount on the new Apple TV 4K, Amazon has now brought back the 20% price drop on AirPods Pro 3 and is still offering Apple Pencil (USB-C) down at $69 (or even less ). Today’s 9to5Toys…",
@@ -868,17 +1143,6 @@
    "published": "2026-10-27T15:30:46+00:00"
   },
   {
-   "id": "890079daf539",
-   "title": "All the news about the iPhone Duo",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE81bXZZZHZBT1FkUGdfeGpBRVB1SlMxSFRTbVo0aFpXTndXZ0pxN2dkT3VYbVhOQm11UzZnSlhnd3ZIRDQzR3JrbU1DOHN1aTJUSDRpdmF5UW1ZNE0wWHE5MDZsNnh4WExVT2wtelIwYmNGUlZvYUFub2lfZ0RjUQ?oc=5",
-   "image": null,
-   "source": "The Verge",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-27T15:24:38+00:00"
-  },
-  {
    "id": "b1d47bca4ad8",
    "title": "iOS 27.2 introduces new age verification feature using selfie",
    "summary": "iOS 27.2 is here , and it introduces a new feature for age verification using a selfie. Here are the details. more…",
@@ -888,17 +1152,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-27T15:21:41+00:00"
-  },
-  {
-   "id": "c5015495e316",
-   "title": "Apple's New iPhone Duo Breaks After 75,000 Folds in Real-Life Test",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWThmbDk0MzVWeWZ3ZnRZM2N4UlE4Ylluc2NJZ25tdlZkb3BVanFfT05KNDVOZ0VuQ0daR00wbVcxSUs3MGVWempfRWhTMkVFT3pheExaSVlJV1VERzktc2ZsTk5xcVlpb2k5SXN6MHhyLVdmOEYwbkVJX2FTRTBaWlRkTzRrcjR3eTlz?oc=5",
-   "image": null,
-   "source": "Gizmodo",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-27T15:15:06+00:00"
   },
   {
    "id": "99eb3926414a",
@@ -1176,6 +1429,17 @@
    "published": "2026-10-27T12:54:49+00:00"
   },
   {
+   "id": "052d595dd844",
+   "title": "Best iPhone Duo hidden features that'll make you need this phone",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5EQmhTRzBYRE1sY3duSU14WllFWUotQ1NwQXhtZFlGWU9SazlnOWY3MXFBSDRiR2V0bnQ0UXhhTkUxdGQzRHNZWk80T0dxZU05TzR4dnNyYnhtTmNSVnVzWGhMdTdDMEJuUUpUNlVuX3FERXloOUx2bF9n?oc=5",
+   "image": null,
+   "source": "Mashable",
+   "sourceId": "gn-iphone",
+   "category": "iphone",
+   "published": "2026-10-27T12:46:47+00:00"
+  },
+  {
    "id": "45339bbf63ca",
    "title": "Keep Your Trusty iPhone 16 Pro Looking Brand New With 50% Off The Official Beats Case",
    "summary": "Protecting your iPhone is more important than ever thanks to high repair costs and the ease with which those big displays can be damaged. The good news is that there is no shortage of options when it comes to choosing a…",
@@ -1231,6 +1495,17 @@
    "published": "2026-10-27T12:00:00+00:00"
   },
   {
+   "id": "e30ed8e1025f",
+   "title": "Best Smartwatches For 2026",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1wZ0V6T0xCRGZNTXNWR3FqZUlqdURDYTRVRThIQUF5RnhZRURtcXRGaHM5VTlFVVFjdHpsb0xfaV9LMjlaM0RON3hTLTdVVXVwMEtWdFRXNlkxbnR0amhxVkRKcmlZeHNXcjZJNDd5WnpQVlFPTXc?oc=5",
+   "image": null,
+   "source": "Engadget",
+   "sourceId": "gn-android",
+   "category": "android",
+   "published": "2026-10-27T11:44:02+00:00"
+  },
+  {
    "id": "2a8dd4baaff8",
    "title": "The best temperature to set your thermostat this fall — according to an HVAC expert",
    "summary": "Stop guessing: The ideal thermostat setting for fall to keep your home cozy without wasting energy.",
@@ -1253,17 +1528,6 @@
    "published": "2026-10-27T11:42:22+00:00"
   },
   {
-   "id": "78c24aa9859a",
-   "title": "7 of the biggest iOS 27.2 upgrades — from Siri improvements to the new Apple Music icon",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPVUxaN0lCQzVwbER4MG03STVPaWtzd0ctcVdTcVJoa1FQRUUtTm9aaFU2bWZLNUJyVDJ4eEdRTFVxMVRmVVItVG1kZkNFVlFpelFGV0ZtaGItNmpmS1UxRmMwT3FBTFRSRGpGNzQ1SHhNNGFzWlVkc2hYOW85b01SZV9tX1cwSXBfU1B5NmFwRUFPbFY3MmlKX1VyXzNfUFpwNDg4M0JZMHJ4RU5aVVJGblJLUXd4U241bG5EVDVjN2ZvOUJkOXljTFNTbTY0UC1WZkpvc1l3bmVXZ1pUTVZFUEhDbkpvYTk5VUw1ODFEZDBkRk0wWExlUWM2WXI?oc=5",
-   "image": null,
-   "source": "TechRadar",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-27T11:41:37+00:00"
-  },
-  {
    "id": "033438a2b33c",
    "title": "Asics running shoes are up to 56% off — 17 best deals to set PRs this fall",
    "summary": "Don't miss your chance to get 50% off or more on Asics running shoes! Some of the best pairs we've tested are dropping in price.",
@@ -1284,17 +1548,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-27T11:37:56+00:00"
-  },
-  {
-   "id": "34fbc53638f7",
-   "title": "Pixel 6 Owners, Google’s 5-Year Update Promise Runs Out This Month",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTFM2Nm5nbTROWjFWVGI3R2l2Q2poa2RTZG9yM0tCRHJjZXdUdldQQ3BRUWt5T1V1ZXczY2dZLXNYQVowS29peWxpZjFHbXVWcjhDQi1Pdy1FWEFmUzJjajlIVVViczIxZ1RrWDB4eDVUcS16TWRaLU5vLTZpMkRPNEdLSVBPUVhuOWFJczJ4YzFwTlY1cjhqSDVIcl9LUXZNbWRXeEJCci1PZw?oc=5",
-   "image": null,
-   "source": "Talk Android",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-27T11:33:29+00:00"
   },
   {
    "id": "5b708ee89648",
@@ -1330,28 +1583,6 @@
    "published": "2026-10-27T11:00:00+00:00"
   },
   {
-   "id": "57b7e3078869",
-   "title": "iPhone 18e Could Get Two Key Upgrades While Keeping 60Hz Display",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcFJmQjhPOFpBUTRqa1dOZGFOVkc4cDlrbG1tbXJObnRkSzk0aHdHTE1uZ3RyTjI0dzNQWllPWWx3OXNVTm53VDRmQ0J0WUhNU3FTTFh2OHliSU5nTHl5aGEyelRLT2pFVWpBVE1WZDBxcDQ1UWVCLUt6NzFTQmlEXw?oc=5",
-   "image": null,
-   "source": "MacRumors",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-27T10:41:38+00:00"
-  },
-  {
-   "id": "cb704a1f17b4",
-   "title": "These iOS 27.2 features will make you want to download the latest updates right away",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeHJwTy1KcDBNQ3ZEaGo3QmFUZTRCcEFndHlJUUlMT21YX1JIbnJkWjNONkJLSU9UUUdkb1lMUHFTRE05OHFRemFSVGp2SURvWEJRN2xmeENqMjM5Um9oTVpST2lDVkdJdWcxUEc1Vm9ORHEwMl9oQWQ3ZFJ4N1Rzc1A2Z2lVcnp3SkRSZlp3b1ZJTldXRkR3U29oWlRPbFF3anRjbk9ES0dZbTZLVUR1bDBCbWhfcm1VZzJqVkZmYWNKd0FoU3lPbUdB?oc=5",
-   "image": null,
-   "source": "Macworld",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-27T10:30:58+00:00"
-  },
-  {
    "id": "15dca43bfa19",
    "title": "Feeling exhausted after the clocks went back? 5 fast ways to reset your circadian rhythm today",
    "summary": "An extra hour in bed sounds great, but experts say it may actually be bad for your sleep routine and energy levels. Here's how to stay on track...",
@@ -1360,17 +1591,6 @@
    "source": "Tom's Guide",
    "sourceId": "tomsguide",
    "category": "general",
-   "published": "2026-10-27T10:30:00+00:00"
-  },
-  {
-   "id": "ae2ba3801550",
-   "title": "iPad mini 8 vs iPad mini 7: What's new, and is it worth buying?",
-   "summary": "The new iPad mini 8 adds a lot of upgrades, but they all come at a high cost. Here are all the differences between the two iPads.",
-   "link": "https://www.tomsguide.com/computing/ipads/1-ipad-mini-8-vs-ipad-mini-7-whats-new-and-is-it-worth-buying",
-   "image": "https://cdn.mos.cms.futurecdn.net/usNqeYW8gfAp9jTjDWfLZD-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "iphone",
    "published": "2026-10-27T10:30:00+00:00"
   },
   {
@@ -1385,50 +1605,6 @@
    "published": "2026-10-27T10:00:00+00:00"
   },
   {
-   "id": "86dad37d24fb",
-   "title": "I ran 40 miles in the Brooks Hyperion Max 4 — here’s why I think it misses the mark",
-   "summary": "The Brooks Hyperion Max 4 promises a speedy, springy ride for fast training, but it’s heavy and feels sluggish compared to the best rivals in its category.",
-   "link": "https://www.tomsguide.com/wellness/running/i-ran-40-miles-in-the-brooks-hyperion-max-4-heres-why-i-think-it-misses-the-mark",
-   "image": "https://cdn.mos.cms.futurecdn.net/ms3xHdXqo6TmCrPo3EZN3D-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-27T10:00:00+00:00"
-  },
-  {
-   "id": "052d595dd844",
-   "title": "Best iPhone Duo hidden features that'll make you need this phone",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5EQmhTRzBYRE1sY3duSU14WllFWUotQ1NwQXhtZFlGWU9SazlnOWY3MXFBSDRiR2V0bnQ0UXhhTkUxdGQzRHNZWk80T0dxZU05TzR4dnNyYnhtTmNSVnVzWGhMdTdDMEJuUUpUNlVuX3FERXloOUx2bF9n?oc=5",
-   "image": null,
-   "source": "Mashable",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-27T09:41:43+00:00"
-  },
-  {
-   "id": "31bcba9c0be8",
-   "title": "I compared prices and plans for 5 kid-friendly smartphones — this is the one I'd pick for my child",
-   "summary": "The choice to get your kid a smartphone is important, and there are a lot of options. I compared 5 kid-friendly phones and their plans to see which one is good for you.",
-   "link": "https://www.tomsguide.com/phones/i-compared-prices-and-plans-for-5-kid-friendly-smartphones-this-is-the-one-id-pick-for-my-child",
-   "image": "https://cdn.mos.cms.futurecdn.net/ewXH6agH8sVcTS9a2r43nk-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-27T09:30:00+00:00"
-  },
-  {
-   "id": "ea986445d066",
-   "title": "Apple event LIVE: MacBook Pro M6 and iMac M6 just announced ahead of 'Pro and Tell'",
-   "summary": "This is probably the biggest week of Apple announcements of 2026, as the Cupertino crew looks set to announce a new OLED MacBook Pro with a touchscreen.",
-   "link": "https://www.tomsguide.com/news/live/apple-oled-macbook-pro-pro-ipad-mini-8-pro-and-tell-event-live-updates",
-   "image": "https://cdn.mos.cms.futurecdn.net/V5EiTaG9tYFDda4txds47n-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "iphone",
-   "published": "2026-10-27T09:20:40+00:00"
-  },
-  {
    "id": "89815397ffec",
    "title": "New Google Accessibility Features Added to Pixel and Android",
    "summary": "",
@@ -1440,72 +1616,6 @@
    "published": "2026-10-27T09:19:23+00:00"
   },
   {
-   "id": "617648f37e77",
-   "title": "Initial global sales of Apple iPhone 18 Pro higher than 17 series - Counterpoint Research",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQYnhBVGhVeWd0MVh1dmZsRno0RGxDVUZ3NHhpUEFVM21WT3c4VXJ4d0gzN1V6b09FMkVOYzN3b3o0azZ4R1hEZk5ON09aRllTUkNTTDBOblRWM1FvUTFOZWUxNkR5X3ptRWRBZi1TZV9oTHZNOFZWX00yTGt4LS1ORE1jdFZma0dQRExyRGRmSngyMmV4bXdlMktZSzFiNVJCRTNwdEM4bHBTcEVaSV8yUU96ZFpwWmttZGtiQ3FQSmExWkFnZVl5X3I4OFotbG12Nmc?oc=5",
-   "image": null,
-   "source": "Reuters",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-27T09:06:36+00:00"
-  },
-  {
-   "id": "e6ed4c77339b",
-   "title": "I couldn't stop sneezing in my bedroom — until I found these 5 hidden dust traps",
-   "summary": "Stop pushing dust around. Here's how to target the five hidden dust traps in your bedroom and keep your air clean for good.",
-   "link": "https://www.tomsguide.com/home/i-couldnt-stop-sneezing-in-my-bedroom-until-i-found-these-5-hidden-dust-traps",
-   "image": "https://cdn.mos.cms.futurecdn.net/Rj8fviGAwA6PTnjwTiwemY-1920-80.png",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-27T09:00:00+00:00"
-  },
-  {
-   "id": "421c72263ab8",
-   "title": "ChatGPT is giving people bizarre advice — I put it to the test to see why",
-   "summary": "ChatGPT is sending frustrated users to journalists for tech support. I recreated three real-world scenarios to see whether it would do the same to me.",
-   "link": "https://www.tomsguide.com/ai/chatgpt-is-giving-people-bizarre-advice-i-put-it-to-the-test-to-see-why",
-   "image": "https://cdn.mos.cms.futurecdn.net/RjBV7y8NRDJbDMJuptuDKY-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-27T08:15:00+00:00"
-  },
-  {
-   "id": "4eaea851c90a",
-   "title": "In the era of the iPhone Duo and endless feeds, Apple's iPod easter egg hits differently",
-   "summary": "Apple’s interactive 2001 iPod easter egg reminds us of tech’s greatest lost luxury: a device that played your music and left you alone.",
-   "link": "https://www.tomsguide.com/computing/in-the-era-of-folding-glass-and-endless-feeds-apples-ipod-easter-egg-hits-differently",
-   "image": "https://cdn.mos.cms.futurecdn.net/B7dwTgWoQVak6HqKSEmKtg-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "iphone",
-   "published": "2026-10-27T07:30:00+00:00"
-  },
-  {
-   "id": "af3caa357418",
-   "title": "Struggle to squat? Here are five alternative moves for building stronger legs after 60",
-   "summary": "5 ways to build strong legs after 60, without doing a single squat",
-   "link": "https://www.tomsguide.com/wellness/workouts/struggle-to-squat-here-are-five-alternative-moves-for-building-stronger-legs-after-60",
-   "image": "https://cdn.mos.cms.futurecdn.net/r9EbytpDFfnu77oFtgdF9E-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-27T07:00:00+00:00"
-  },
-  {
-   "id": "7fe337d05655",
-   "title": "5 ChatGPT plugins that are a must-have for anyone who wants to protect themselves from scams before it's too late",
-   "summary": "These 5 ChatGPT plugins will come in handy whenever you want to check if a text, email, or link is legit or a scam waiting to happen.",
-   "link": "https://www.tomsguide.com/ai/5-chatgpt-plugins-that-are-a-must-have-for-anyone-who-wants-to-protect-themselves-from-scams-before-its-too-late",
-   "image": "https://cdn.mos.cms.futurecdn.net/82UCDHvRdDUoFNrPBkwWL4-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-27T06:30:00+00:00"
-  },
-  {
    "id": "1d55d1eb02b1",
    "title": "Google’s Best Photography Weapon Isn’t on the Pixel 11, and I Don’t Know Why",
    "summary": "",
@@ -1515,28 +1625,6 @@
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-27T06:18:41+00:00"
-  },
-  {
-   "id": "d8deb5da4c2c",
-   "title": "Ditch the daily coffee run: 5 barista-approved coffee machines with early Black Friday discounts",
-   "summary": "No need to wait for Black Friday, because five of my barista-approved coffee makers are already discounted, including Ninja, Nespresso, and Casabrews.",
-   "link": "https://www.tomsguide.com/home/coffee-makers/ditch-the-daily-coffee-run-5-barista-approved-coffee-machines-with-early-black-friday-discounts",
-   "image": "https://cdn.mos.cms.futurecdn.net/42dPEixp2D2eMSCA97J4LL-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "general",
-   "published": "2026-10-27T05:30:00+00:00"
-  },
-  {
-   "id": "a92d64853fbd",
-   "title": "I walked 6,000 steps with the Fitbit Edge vs Apple Watch 12 — and I'm shocked by the results",
-   "summary": "I put two of the top wearables of 2026, the Apple Watch 12 and Fitbit Edge, to the test in a head-to-head comparison of fitness tracking performance.",
-   "link": "https://www.tomsguide.com/wellness/fitness-trackers/i-walked-6-000-steps-with-the-fitbit-edge-vs-apple-watch-12-and-im-shocked-by-the-results",
-   "image": "https://cdn.mos.cms.futurecdn.net/TtQxRKJttrbF8a9gdZX7gH-1920-80.jpg",
-   "source": "Tom's Guide",
-   "sourceId": "tomsguide",
-   "category": "iphone",
-   "published": "2026-10-27T05:00:00+00:00"
   },
   {
    "id": "325fba304780",
@@ -1669,28 +1757,6 @@
    "sourceId": "9to5mac",
    "category": "iphone",
    "published": "2026-10-26T20:26:07+00:00"
-  },
-  {
-   "id": "e752367e0d01",
-   "title": "My iPhone Duo In-Store Experience Almost Has Me Convinced I Need One",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOd2FtblBoTThfenFkZndpTGJ5cGRxM29qeWFVcjBjUkZKWlM0TnpsampQeEppSi1sVUVHRmhoYjEtYlhpVjVFTld0MndnXzBkc2VRcHpJVTFTX3FybG5qekNPdlRrUkUyWUZfQm1xZF9ZY1U1aXl2VDE1dEJWTTlabg?oc=5",
-   "image": null,
-   "source": "CNET",
-   "sourceId": "gn-iphone",
-   "category": "iphone",
-   "published": "2026-10-26T20:06:05+00:00"
-  },
-  {
-   "id": "be38401222c1",
-   "title": "Asad Kashif",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBmd1Q4WVYtRlo2aXkyRHI4TnpMTDM4QXZDenlCZGN6STRYWkppMHdXVTZmanJKZXdFbW90aFlTd2FUUkNUekFpcFZfcVpKOEU?oc=5",
-   "image": null,
-   "source": "www.bgr.com",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-26T19:34:54+00:00"
   },
   {
    "id": "9b2bd3d01d84",
@@ -1878,72 +1944,6 @@
    "sourceId": "gn-android",
    "category": "android",
    "published": "2026-10-26T09:50:00+00:00"
-  },
-  {
-   "id": "cad340a020c2",
-   "title": "HONOR Win RT vs Pixel 10a: Which Wins at $499? [2026]",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5FSTVvTnk0b3FENDVpRTJnaW5Ybk1RVDhtNmNPdVg5aHYzNHh0eDRSS0F6dUtpLTVpck1JREMwLTZ4dVU2SmpKdzB0T1hSRkU1MDZZaVp6RnN2LXpBUGwtRzNZUkp4MjV3eUhRZjhCM2ZqYmE5YWJhRG5R?oc=5",
-   "image": null,
-   "source": "shattered.io",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-26T08:20:17+00:00"
-  },
-  {
-   "id": "c7db5527bc49",
-   "title": "Honor Win RT vs Pixel 10a: 185Hz vs 120Hz [2026]",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JWFliRE9OMnRPR2xBem85QVJKa1cwUVZ6TUhyTzQzZUFvcEFlQ3FJVl95dTdIM25RT1lhWTRBaVlhTHk2UWVlNTdPLW1LQWxOd3dEaUNVZ0dvNTFOQ1lReGtJYnlWVFNyR1hWU29ramZST1RiT0RYODN4TF9zWDg?oc=5",
-   "image": null,
-   "source": "https://tech-insider.org/",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-26T08:07:07+00:00"
-  },
-  {
-   "id": "638a02e37d64",
-   "title": "Honor Win RT vs. Google Pixel 10a: Ultimate Smartphone Comparison",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQWtubXdlWmFWM0x0ZFZMb0NUYWNfMlRocjl1WGpZcDhudGRHNC1seFZDMmJ2RUhsRG01U2luaUtJUTVuNnJtcmk5WHRkWS04STN4Qzd1dk9nckxJaUI4UzZoam1KZkc3YjIxbEdXOUxTNWlYRXdDMWRMSXQzOENrNnlPWlpoNXpGYnJnS3FPc083YTBha3JmaQ?oc=5",
-   "image": null,
-   "source": "Nokiamob",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-26T07:52:33+00:00"
-  },
-  {
-   "id": "ccf99f9d8277",
-   "title": "Galaxy Z Fold 8 seen as closest Android match to iPhone Duo among foldables",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNODNxUTI5T0ZTcV9aaEUwc1pSdGNjX0JEdDNMdVB2TlNtUWtVQm9jTjg2Q1R3a3Y3S2RTOEg2d1lPOXVaaWpKYTU4QkhvUzJNVGRMTHRxZFZ2UjVYMjVaVllXa1AzdmV2UGxUMWsxaUxCSzdCSEpjRVdzNW1qT3pQRnNQNVFDM0YwU2Ztb1I4T0s3ZTJ6OFNSaFJSLVh4TVpLUjE2RHhQYWZFTTJ1bF9GcDA3WXE2em9GdmVSaE50eENRLWVETFoycm5GVWY?oc=5",
-   "image": null,
-   "source": "디지털투데이",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-26T04:50:21+00:00"
-  },
-  {
-   "id": "9e173ff2e0d4",
-   "title": "Long-time Pixel users reveal why they're still loyal to Google and what keeps them from switching",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5xSXV4VklheXlXZEFQdk1KNmVIdHZhY1MteFEyLXFPYktIUWdadUs5bnBrN1FDVjV4eE04NkJqN3htWE5KUUNGNk1OeWQyR1dFY2lPTGtoeHJla1c3RUNONDZ3blQ2T2piUHFLRmh5akdkc0M3MG1tYUlB?oc=5",
-   "image": null,
-   "source": "Android Authority",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-26T04:36:00+00:00"
-  },
-  {
-   "id": "8f002b69c815",
-   "title": "Google Pixel’s Recent Apps Screen Gets a Big Downgrade With Latest Update",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcWIxOGM2UFhWNV90NnVQUjFGc2lac2N3UjBMVXl4dHpfamlwbVphcVBTczBidXVPRUxlVmI1UVE0OFJZandzeFZNM1Q1cjQwLXg3WFh1Qm9WdVpIZk91cDNLeXhZV2pScUJNM01mb05mV0xRUnRJd2U4YnhNQllQV1dWazJMaFhPRXNGSTlCR2pia25FZmlnbFFBdjY5TFJNUUE?oc=5",
-   "image": null,
-   "source": "Nokiapoweruser",
-   "sourceId": "gn-android",
-   "category": "android",
-   "published": "2026-10-26T03:38:34+00:00"
   }
  ]
 }
