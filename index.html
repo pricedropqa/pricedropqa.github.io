@@ -38,6 +38,7 @@ h1{font-size:26px;margin:0;letter-spacing:-.3px}
 
 /* ---------- Sections and cards ---------- */
 h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:26px 0 10px}
+h2 .note{text-transform:none;letter-spacing:0;font-weight:500}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
 .card{
   display:flex;flex-direction:column;gap:6px;text-decoration:none;color:inherit;
@@ -90,39 +91,80 @@ footer a{color:inherit}
     </div>
   </div>
 
-  <!-- Private apps: links are added only after the login lock (Cloudflare Access) is ready -->
-  <h2>Private apps</h2>
+  <!-- Cloud apps: each one asks for its own passcode / PIN -->
+  <h2>My cloud apps</h2>
   <div class="grid">
+    <a class="card" href="https://class-notebook.mathewdev84.workers.dev/">
+      <span class="ico">📒</span>
+      <span class="name">Class Notebook</span>
+      <span class="desc">Python, CEH &amp; class notes</span>
+    </a>
+    <a class="card" href="https://linkbox.mathewdev84.workers.dev/">
+      <span class="ico">🔗</span>
+      <span class="name">LinkBox</span>
+      <span class="desc">Saved videos &amp; links</span>
+    </a>
+    <a class="card" href="https://quire-pdf.pages.dev/">
+      <span class="ico">📄</span>
+      <span class="name">Quire PDF</span>
+      <span class="desc">Read &amp; edit PDFs</span>
+    </a>
     <div class="card locked">
       <span class="ico">🗂️</span>
       <span class="name">Vault</span>
       <span class="desc">Personal documents</span>
       <span class="badge">🔒 Locked soon</span>
     </div>
-    <div class="card locked">
-      <span class="ico">📒</span>
-      <span class="name">Class Notebook</span>
-      <span class="desc">Python, CEH &amp; class notes</span>
-      <span class="badge">🔒 Locked soon</span>
-    </div>
-    <div class="card locked">
-      <span class="ico">🔗</span>
-      <span class="name">LinkBox</span>
-      <span class="desc">Saved videos &amp; links</span>
-      <span class="badge">🔒 Locked soon</span>
-    </div>
-    <div class="card locked">
-      <span class="ico">📄</span>
-      <span class="name">Quire PDF</span>
-      <span class="desc">Read &amp; edit PDFs</span>
-      <span class="badge">🔒 Locked soon</span>
-    </div>
-    <div class="card locked">
+  </div>
+
+  <!-- Home server apps: these addresses only open on devices signed in to my Tailscale -->
+  <h2>Home server <span class="note">· opens with Tailscale on</span></h2>
+  <div class="grid">
+    <a class="card" href="http://matroxpi5.tail566768.ts.net:8096/">
+      <span class="ico">🎬</span>
+      <span class="name">Matflix</span>
+      <span class="desc">Movies &amp; 5.1 songs</span>
+    </a>
+    <a class="card" href="https://matroxpi5.tail566768.ts.net/">
+      <span class="ico">⬇️</span>
+      <span class="name">PiSave</span>
+      <span class="desc">Save videos to the Pi</span>
+    </a>
+    <a class="card" href="https://matroxpi5.tail566768.ts.net:8443/">
+      <span class="ico">✂️</span>
+      <span class="name">AtmosCut</span>
+      <span class="desc">Cut songs from Atmos movies</span>
+    </a>
+    <a class="card" href="http://matroxpi5.tail566768.ts.net:5070/">
+      <span class="ico">🎛️</span>
+      <span class="name">RemixPi</span>
+      <span class="desc">Bass remix &amp; 5.1</span>
+    </a>
+    <a class="card" href="http://matroxpi5.tail566768.ts.net:5050/">
+      <span class="ico">🔊</span>
+      <span class="name">Sonos</span>
+      <span class="desc">Speaker presets</span>
+    </a>
+    <a class="card" href="http://matroxpi5.tail566768.ts.net:8123/">
+      <span class="ico">🏠</span>
+      <span class="name">Home Assistant</span>
+      <span class="desc">Smart home</span>
+    </a>
+    <a class="card" href="http://matroxpi5.tail566768.ts.net:5678/">
+      <span class="ico">⚙️</span>
+      <span class="name">n8n</span>
+      <span class="desc">Automations</span>
+    </a>
+    <a class="card" href="http://matroxpi5.tail566768.ts.net:3000/">
+      <span class="ico">🛡️</span>
+      <span class="name">AdGuard</span>
+      <span class="desc">Ad blocking</span>
+    </a>
+    <a class="card" href="https://matroxpi5.tail566768.ts.net:8444/">
       <span class="ico">📲</span>
       <span class="name">Android Apps</span>
-      <span class="desc">PiWatch, Cruise, ShotBox…</span>
-      <span class="badge">🔒 Locked soon</span>
-    </div>
+      <span class="desc">Cruise, PiWatch, Dhow…</span>
+    </a>
   </div>
 
   <footer>© <span id="yr"></span> Mathew · pricedropqa.qa</footer>
