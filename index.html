@@ -1,795 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>PriceDrop QA – Phone & Gadget Prices in Qatar</title>
-<meta name="description" content="Compare phone, tablet and gadget prices from local shops in Qatar. Find the best deal and contact the shop on WhatsApp.">
-<meta name="theme-color" content="#0f766e">
-<meta property="og:title" content="PriceDrop QA – Phone & Gadget Prices in Qatar">
-<meta property="og:description" content="Compare prices from local shops in Qatar and find the best deal.">
-<meta property="og:image" content="icons/icon-512.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="PriceDrop">
+<title>Mathew's Apps</title>
+<meta name="description" content="Mathew's personal apps in one place.">
+<meta name="theme-color" content="#4f46e5">
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icons/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 <style>
-  /* ===== Colours – change these to re-brand the app ===== */
-  :root{
-    --brand:#0f766e; --brand-2:#14b8a6; --brand-ink:#0f766e; --accent:#f59e0b;
-    --bg:#f3f5f7; --card:#ffffff; --card-2:#f8fafc; --text:#0f172a; --muted:#64748b; --line:#e2e8f0;
-    --good:#16a34a; --bad:#e11d48; --shadow:0 1px 2px rgba(15,23,42,.06),0 4px 14px rgba(15,23,42,.06);
-    --radius:16px;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{ --bg:#0b1120; --card:#131b2e; --card-2:#18223a; --text:#e5e7eb; --muted:#94a3b8; --line:#243049;
-           --brand-ink:#2dd4bf; --shadow:0 1px 2px rgba(0,0,0,.3); }
-  }
-  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-  html,body{margin:0}
-  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Arabic",sans-serif;background:var(--bg);color:var(--text);
-       padding-bottom:calc(76px + env(safe-area-inset-bottom))}
-  button{font:inherit;color:inherit}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+/* ---------- Colours (light) ---------- */
+:root{
+  --bg:#f5f6fb; --card:#ffffff; --ink:#151827; --muted:#646a80; --line:#e3e6f0;
+  --accent:#4f46e5; --accent2:#7c3aed; --soft:#eef0ff; --lock:#8a8fa3;
+}
+/* ---------- Colours (dark: follows the phone's setting) ---------- */
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0e1018; --card:#171a26; --ink:#eceef6; --muted:#9aa0b8; --line:#262a3a; --soft:#1e2140; --lock:#6d7290; }
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Malayalam",sans-serif;
+  background:var(--bg); color:var(--ink); line-height:1.45;
+  padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+}
+.wrap{max-width:880px;margin:0 auto;padding:28px 16px 48px}
 
-  /* Header */
-  header{position:sticky;top:0;z-index:30;background:linear-gradient(135deg,var(--brand),#115e59);color:#fff;
-         padding-top:env(safe-area-inset-top);box-shadow:0 2px 10px rgba(0,0,0,.12)}
-  .hrow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0 8px}
-  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:.2px}
-  .logo img{width:34px;height:34px;border-radius:9px}
-  .logo span{color:var(--accent)}
-  .hbtns{display:flex;gap:8px}
-  .hbtn{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff;border-radius:10px;padding:6px 11px;font-size:14px;font-weight:600;cursor:pointer}
-  .hbtn.install{display:none;background:var(--accent);border-color:var(--accent);color:#111}
-  .search{position:relative;padding-bottom:12px}
-  .search input{width:100%;border:0;border-radius:12px;padding:12px 14px 12px 40px;font-size:15px;outline:none;background:#fff;color:#0f172a}
-  [dir=rtl] .search input{padding:12px 40px 12px 14px}
-  .search svg{position:absolute;left:13px;top:13px;width:18px;height:18px;color:#64748b}
-  [dir=rtl] .search svg{left:auto;right:13px}
+/* ---------- Top header ---------- */
+header{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+header img{width:52px;height:52px;border-radius:14px}
+h1{font-size:26px;margin:0;letter-spacing:-.3px}
+.tag{color:var(--muted);margin:2px 0 0;font-size:14px}
+.clock{color:var(--muted);font-size:13px;margin:14px 0 22px}
 
-  /* Banner */
-  .banners{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:14px 0 2px;scrollbar-width:none}
-  .banners::-webkit-scrollbar,.hs::-webkit-scrollbar{display:none}
-  .banner{flex:0 0 min(100%,520px);scroll-snap-align:start;border-radius:var(--radius);padding:18px;color:#fff;min-height:104px;
-          display:flex;flex-direction:column;justify-content:center;text-decoration:none;position:relative;overflow:hidden}
-  .banner b{font-size:18px;display:block;margin-bottom:4px}
-  .banner small{opacity:.9;font-size:14px;line-height:1.4}
-  .banner .tag{position:absolute;top:10px;right:12px;font-size:10px;opacity:.7;text-transform:uppercase;letter-spacing:.5px}
-  [dir=rtl] .banner .tag{right:auto;left:12px}
+/* ---------- Sections and cards ---------- */
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:26px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.card{
+  display:flex;flex-direction:column;gap:6px;text-decoration:none;color:inherit;
+  background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;
+  transition:transform .12s ease, border-color .12s ease;
+}
+a.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+a.card:active{transform:scale(.98)}
+.ico{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:22px;background:var(--soft)}
+.name{font-weight:650;font-size:15px}
+.desc{color:var(--muted);font-size:12.5px}
+.card.locked{opacity:.72;cursor:default}
+.badge{align-self:flex-start;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;background:var(--soft);color:var(--accent)}
+.card.locked .badge{color:var(--lock)}
 
-  /* Category tiles */
-  .hs{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding:14px 0 4px}
-  .tile{flex:0 0 auto;min-width:84px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;text-align:center;cursor:pointer;box-shadow:var(--shadow)}
-  .tile i{font-style:normal;font-size:24px;display:block;margin-bottom:4px}
-  .tile span{font-size:13px;font-weight:600}
-  .tile.on{background:var(--brand);border-color:var(--brand);color:#fff}
-  .chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:10px 0 2px}
-  .chip{flex:0 0 auto;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 14px;font-size:14px;cursor:pointer}
-  .chip.on{background:var(--text);color:var(--bg);border-color:var(--text)}
-  .filters{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:10px 0}
-  .filters select{width:100%;padding:9px 8px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:14px}
-
-  h2{font-size:18px;margin:18px 0 10px;display:flex;justify-content:space-between;align-items:center}
-  h2 a{font-size:14px;color:var(--brand-ink);text-decoration:none;font-weight:600;cursor:pointer}
-
-  /* Product cards */
-  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-  @media (min-width:640px){ .grid{grid-template-columns:repeat(3,1fr)} }
-  @media (min-width:900px){ .grid{grid-template-columns:repeat(4,1fr)} }
-  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;cursor:pointer;box-shadow:var(--shadow);
-        display:flex;flex-direction:column;position:relative;transition:transform .12s}
-  .card:active{transform:scale(.98)}
-  .pic{aspect-ratio:1/1;background:var(--card-2);display:flex;align-items:center;justify-content:center;overflow:hidden}
-  .pic img{width:100%;height:100%;object-fit:contain;padding:10px}
-  .pic svg{width:100%;height:100%}
-  .body{padding:10px 12px 12px;display:flex;flex-direction:column;gap:3px;flex:1}
-  .brand{font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
-  .name{font-weight:700;font-size:14.5px;line-height:1.3}
-  .sub{color:var(--muted);font-size:12.5px}
-  .price{font-size:18px;font-weight:800;color:var(--brand-ink);margin-top:4px}
-  .old{color:var(--muted);text-decoration:line-through;font-size:12px;font-weight:400;margin-inline-start:4px}
-  .shops{font-size:12px;color:var(--muted);margin-top:auto;padding-top:4px}
-  .disc{position:absolute;top:8px;left:8px;background:var(--bad);color:#fff;font-size:11.5px;font-weight:800;border-radius:7px;padding:3px 7px}
-  [dir=rtl] .disc{left:auto;right:8px}
-  .heart{position:absolute;top:6px;right:6px;width:34px;height:34px;border-radius:50%;border:0;background:rgba(255,255,255,.9);cursor:pointer;
-         display:flex;align-items:center;justify-content:center;font-size:17px;box-shadow:0 1px 4px rgba(0,0,0,.12)}
-  [dir=rtl] .heart{right:auto;left:6px}
-  .cmpbtn{position:absolute;top:44px;right:6px;width:34px;height:34px;border-radius:50%;border:0;background:rgba(255,255,255,.9);cursor:pointer;
-          font-size:15px;box-shadow:0 1px 4px rgba(0,0,0,.12);color:#0f172a}
-  [dir=rtl] .cmpbtn{right:auto;left:6px}
-  .cmpbtn.on{background:var(--brand);color:#fff}
-  .tier{display:inline-block;font-size:10.5px;font-weight:700;border-radius:6px;padding:2px 6px;background:rgba(20,184,166,.12);color:var(--brand-ink)}
-  .oosb{font-size:11px;color:var(--bad);font-weight:700}
-  .empty{text-align:center;color:var(--muted);padding:50px 10px}
-  .empty i{font-style:normal;font-size:40px;display:block;margin-bottom:8px}
-
-  /* Deals strip */
-  .strip{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
-  .strip .card{flex:0 0 150px}
-  @media (min-width:640px){ .strip .card{flex-basis:180px} }
-
-  .notice{margin:12px 0 0;padding:10px 12px;border-radius:12px;background:#fef3c7;color:#78350f;font-size:13px}
-
-  /* Bottom nav */
-  nav.bottom{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:1px solid var(--line);
-             padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -2px 12px rgba(0,0,0,.05)}
-  nav.bottom .in{max-width:620px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
-  nav.bottom button{border:0;background:none;padding:8px 0 9px;cursor:pointer;color:var(--muted);font-size:11.5px;font-weight:600;position:relative}
-  nav.bottom button i{font-style:normal;font-size:21px;display:block;line-height:1.3;filter:grayscale(1);opacity:.75}
-  nav.bottom button.on{color:var(--brand-ink)}
-  nav.bottom button.on i{filter:none;opacity:1}
-  .count{position:absolute;top:4px;left:calc(50% + 6px);background:var(--bad);color:#fff;border-radius:999px;font-size:10px;padding:1px 5px;min-width:16px}
-
-  /* Detail sheet */
-  .sheet-bg{position:fixed;inset:0;background:rgba(2,6,23,.5);display:none;z-index:40}
-  .sheet{position:fixed;left:0;right:0;bottom:0;max-height:92vh;overflow:auto;background:var(--card);border-radius:22px 22px 0 0;z-index:41;
-         transform:translateY(105%);transition:transform .28s cubic-bezier(.2,.8,.2,1);max-width:720px;margin:0 auto;
-         padding:0 16px calc(20px + env(safe-area-inset-bottom))}
-  .sheet.open{transform:none}
-  .grab{position:sticky;top:0;background:var(--card);padding:10px 0 6px;display:flex;justify-content:space-between;align-items:center;z-index:2}
-  .grab::before{content:"";position:absolute;left:50%;top:6px;width:40px;height:4px;border-radius:4px;background:var(--line);transform:translateX(-50%)}
-  .ibtn{border:0;background:var(--card-2);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
-  .hero{display:flex;gap:14px;align-items:center}
-  .hero .pic{width:120px;flex:0 0 120px;border-radius:14px}
-  .specs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:14px}
-  .spec{background:var(--card-2);border-radius:12px;padding:9px 11px;font-size:13px}
-  .spec small{display:block;color:var(--muted);font-size:11.5px}
-  .yt{display:flex;align-items:center;gap:10px;margin-top:12px;padding:11px 13px;border-radius:12px;background:#dc2626;color:#fff;text-decoration:none;font-weight:700;font-size:14px}
-  .scores,.experts{margin-top:14px;background:var(--card-2);border-radius:12px;padding:12px}
-  .stitle{font-weight:700;font-size:14px;margin-bottom:8px}
-  .experts .btns{margin-top:0;flex-wrap:wrap}
-  .experts .btn{font-size:13px;white-space:nowrap}
-  .bar{display:grid;grid-template-columns:90px 1fr 42px;align-items:center;gap:8px;font-size:13px;margin:6px 0}
-  .bar i{height:8px;border-radius:8px;background:var(--line);overflow:hidden;display:block}
-  .bar b{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--brand-2));border-radius:8px}
-  .bar em{font-style:normal;color:var(--muted);text-align:end}
-  .range{margin-top:14px;font-size:14px;color:var(--muted)}
-  .shop{border:1px solid var(--line);border-radius:14px;padding:12px;margin-top:10px}
-  .shop.best{border-color:var(--good);box-shadow:0 0 0 1px var(--good) inset}
-  .shop .row{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
-  .bestb{display:inline-block;background:var(--good);color:#fff;font-size:10.5px;font-weight:700;border-radius:6px;padding:2px 6px;margin-inline-start:6px;vertical-align:2px}
-  .btns{display:flex;gap:6px;margin-top:10px}
-  .btn{flex:1;text-align:center;text-decoration:none;border-radius:10px;padding:10px 6px;font-size:14px;font-weight:700;border:1px solid var(--line);color:var(--text);background:var(--card);cursor:pointer}
-  .btn.wa{background:#25d366;border-color:#25d366;color:#fff}
-  .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
-  .offer{color:var(--good);font-size:13px;margin-top:6px}
-  .hint{color:var(--muted);font-size:12.5px;text-align:center;margin:16px 0 4px}
-
-  /* Compare */
-  .specs-link{display:grid;gap:2px;margin:0 0 14px;padding:14px 16px;border-radius:var(--radius);background:linear-gradient(135deg,#0f766e,#14b8a6);color:#fff;text-decoration:none;box-shadow:var(--shadow)}
-  .specs-link b{font-size:16px}
-  .specs-link span{font-size:13px;opacity:.9}
-  .ctable{width:100%;border-collapse:collapse;font-size:14px;background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
-  .ctable td,.ctable th{border-bottom:1px solid var(--line);padding:10px 8px;text-align:start;vertical-align:top}
-  .ctable th{color:var(--muted);font-weight:600;font-size:12.5px;width:24%}
-  .ctable .pic{width:80px;border-radius:10px;margin-bottom:6px}
-  .win{color:var(--good);font-weight:800}
-  .rm{border:0;background:none;color:var(--bad);font-size:12px;cursor:pointer;padding:4px 0;font-weight:600}
-
-  .toast{position:fixed;left:50%;bottom:calc(86px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);opacity:0;z-index:50;
-         background:var(--text);color:var(--bg);padding:10px 16px;border-radius:12px;font-size:14px;transition:.25s;pointer-events:none;white-space:nowrap}
-  .toast.show{opacity:1;transform:translateX(-50%)}
-  .contact{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-top:28px;box-shadow:var(--shadow)}
-  .contact h2{margin:0 0 4px}
-  .contact .sub{margin:0}
-  footer{text-align:center;color:var(--muted);font-size:12px;padding:28px 16px 10px;line-height:1.6}
-  footer a{color:var(--brand-ink)}
-  .view[hidden]{display:none}
-  .soon{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px 18px;margin-top:16px;text-align:center}
-  .soon i{font-style:normal;font-size:44px;display:block;margin-bottom:6px}
-  .soon h3{margin:0 0 6px;font-size:21px}
-  .soon p{margin:0 auto;color:var(--muted);font-size:14.5px;line-height:1.5;max-width:460px}
-  .soon .btns{justify-content:center;margin-top:16px}
-  .soon .btn{flex:0 1 220px}
-
-  /* News */
-  .nlist{display:grid;gap:10px}
-  @media (min-width:760px){ .nlist{grid-template-columns:1fr 1fr} }
-  .nitem{display:flex;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px;text-decoration:none;color:inherit;box-shadow:var(--shadow)}
-  .nitem:active{transform:scale(.99)}
-  .nitem img{flex:0 0 92px;width:92px;height:92px;border-radius:10px;object-fit:cover;background:var(--card-2)}
-  .nitem .nb{min-width:0;display:flex;flex-direction:column;gap:3px}
-  .nmeta{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);flex-wrap:wrap}
-  .ntag{font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.4px;padding:2px 6px;border-radius:5px;color:#fff;background:#7c3aed}
-  .ntag.android{background:#16a34a} .ntag.iphone{background:#2563eb}
-  .ntitle{font-weight:700;font-size:14.5px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-  .nsum{font-size:12.5px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-  .nitem.top{flex-direction:column}
-  .nitem.top img{width:100%;height:180px;flex-basis:auto}
-  .nitem.top .ntitle{font-size:17px}
-  .nsrc{padding-top:6px}
-  .nmore{display:block;margin:12px auto 0;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:10px 18px;font-weight:700;cursor:pointer}
+footer{margin-top:34px;color:var(--muted);font-size:12px;text-align:center}
+footer a{color:inherit}
 </style>
 </head>
 <body>
+<div class="wrap">
 
-<header>
-  <div class="wrap">
-    <div class="hrow">
-      <div class="logo"><img src="icons/icon-192.png" alt=""><div>PriceDrop<span> QA</span></div></div>
-      <div class="hbtns">
-        <button class="hbtn install" id="installBtn" data-t="install">Install</button>
-        <button class="hbtn" id="langBtn">عربي</button>
-      </div>
+  <header>
+    <img src="icons/icon-192.png" alt="">
+    <div>
+      <h1>Mathew's Apps</h1>
+      <p class="tag">My personal apps in one place</p>
     </div>
-    <div class="search">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input id="q" type="search" autocomplete="off" data-tp="search">
+  </header>
+  <div class="clock" id="clock"></div>
+
+  <!-- Public apps: anyone can open these -->
+  <h2>Open apps</h2>
+  <div class="grid">
+    <a class="card" href="news/">
+      <span class="ico">📰</span>
+      <span class="name">PD News</span>
+      <span class="desc">Tech, Malayalam &amp; world news</span>
+    </a>
+    <a class="card" href="https://www.youtube.com/@SuperSimpleTechs" target="_blank" rel="noopener">
+      <span class="ico">▶️</span>
+      <span class="name">Super Simple Tech</span>
+      <span class="desc">My YouTube channel</span>
+    </a>
+    <div class="card locked">
+      <span class="ico">🎬</span>
+      <span class="name">OTT Board</span>
+      <span class="desc">Upcoming movie &amp; series releases</span>
+      <span class="badge">Coming soon</span>
     </div>
   </div>
-</header>
 
-<div class="wrap">
-  <!-- HOME -->
-  <section class="view" id="v-home">
-    <div class="banners" id="banners"></div>
-    <div class="soon" id="soon" hidden>
-      <i>⏳</i>
-      <h3 data-t="soonTitle">Prices coming soon</h3>
-      <p data-t="soonText">We're partnering with shops across Qatar to bring you trusted, up-to-date phone and gadget prices. Check back soon!</p>
-      <div class="btns"><button class="btn primary" data-go="news">📰 <span data-t="soonNews">Read tech news</span></button></div>
+  <!-- Private apps: links are added only after the login lock (Cloudflare Access) is ready -->
+  <h2>Private apps</h2>
+  <div class="grid">
+    <div class="card locked">
+      <span class="ico">🗂️</span>
+      <span class="name">Vault</span>
+      <span class="desc">Personal documents</span>
+      <span class="badge">🔒 Locked soon</span>
     </div>
-    <div class="hs" id="types"></div>
-    <div class="chips" id="tiers"></div>
-    <div class="filters">
-      <select id="brand"></select>
-      <select id="area"></select>
-      <select id="sort"></select>
+    <div class="card locked">
+      <span class="ico">📒</span>
+      <span class="name">Class Notebook</span>
+      <span class="desc">Python, CEH &amp; class notes</span>
+      <span class="badge">🔒 Locked soon</span>
     </div>
-    <div id="topBlock">
-      <h2><span data-t="topDeals">🔥 Top 10 Deals</span><a data-go="deals" data-t="seeAll">See all</a></h2>
-      <div class="strip" id="deals"></div>
+    <div class="card locked">
+      <span class="ico">🔗</span>
+      <span class="name">LinkBox</span>
+      <span class="desc">Saved videos &amp; links</span>
+      <span class="badge">🔒 Locked soon</span>
     </div>
-    <h2 id="listTitle"></h2>
-    <div class="grid" id="list"></div>
-    <div class="empty" id="empty" hidden><i>🔍</i><span data-t="noMatch">No devices match. Try another filter.</span></div>
-  </section>
+    <div class="card locked">
+      <span class="ico">📄</span>
+      <span class="name">Quire PDF</span>
+      <span class="desc">Read &amp; edit PDFs</span>
+      <span class="badge">🔒 Locked soon</span>
+    </div>
+    <div class="card locked">
+      <span class="ico">📲</span>
+      <span class="name">Android Apps</span>
+      <span class="desc">PiWatch, Cruise, ShotBox…</span>
+      <span class="badge">🔒 Locked soon</span>
+    </div>
+  </div>
 
-  <!-- DEALS -->
-  <section class="view" id="v-deals" hidden>
-    <h2 data-t="allDeals">🔥 All deals – biggest discount first</h2>
-    <div class="grid" id="dealList"></div>
-  </section>
-
-  <!-- COMPARE -->
-  <section class="view" id="v-compare" hidden>
-    <h2 data-t="compare">Compare</h2>
-    <a class="specs-link" href="compare.html">
-      <b>📱 Full spec comparison</b>
-      <span>30 phones · flagship, mid-range and budget · every spec side by side</span>
-    </a>
-    <div id="cmpBox"></div>
-  </section>
-
-  <!-- SAVED -->
-  <section class="view" id="v-saved" hidden>
-    <h2 data-t="saved">❤️ Saved</h2>
-    <div class="grid" id="savedList"></div>
-  </section>
-
-  <!-- NEWS -->
-  <section class="view" id="v-news" hidden>
-    <h2><span data-t="newsTitle">📰 Tech News</span><small id="newsUpd" style="font-size:12px;color:var(--muted);font-weight:500"></small></h2>
-    <div class="chips" id="newsCats" style="padding-top:0"></div>
-    <div class="chips nsrc" id="newsSrcs"></div>
-    <div class="nlist" id="newsList" style="margin-top:10px"></div>
-    <p class="hint" data-t="newsNote">Headlines link to the original publishers.</p>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2 data-t="contactUs">Contact us</h2>
-    <p class="sub" data-t="contactText">Questions, wrong price, or want your shop listed? We're happy to help.</p>
-    <div class="btns" id="contactBtns"></div>
-  </section>
-
-  <footer>
-    <span data-t="disclaimer">Prices are provided by shops and may change. Please confirm with the shop before visiting.</span><br>
-    <span id="updated"></span><br>
-    <a id="shopLink" target="_blank" rel="noopener" data-t="shopOwner" hidden>Shop owner? List your prices for free</a>
-  </footer>
+  <footer>© <span id="yr"></span> Mathew · pricedropqa.qa</footer>
 </div>
 
-<nav class="bottom"><div class="in">
-  <button data-go="home" class="on"><i>🏠</i><span data-t="home">Home</span></button>
-  <button data-go="deals"><i>🔥</i><span data-t="deals">Deals</span></button>
-  <button data-go="compare"><i>⚖️</i><span data-t="compare">Compare</span><b class="count" id="cCount" hidden></b></button>
-  <button data-go="saved"><i>❤️</i><span data-t="saved">Saved</span><b class="count" id="sCount" hidden></b></button>
-  <button data-go="news"><i>📰</i><span data-t="news">News</span></button>
-</div></nav>
-
-<div class="sheet-bg" id="bg"></div>
-<div class="sheet" id="sheet"></div>
-<div class="toast" id="toast"></div>
-
-<!-- Sample data, used only when the page is opened directly from your computer -->
-<script type="text/plain" id="sample">
-type,tier,brand,model,storage,shop,area,price,old_price,offer,in_stock,whatsapp,phone,map_url,updated,image,ram,display,camera,battery,chipset,youtube
-Phone,Flagship,Apple,iPhone 17 Pro Max,256GB,Sample Mobiles,Al Sadd,4299,4599,Free cover + screen guard,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
-Phone,Flagship,Apple,iPhone 17 Pro Max,256GB,Demo Gadget Store,Najma,4349,4599,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,,,,,,
-Phone,Flagship,Apple,iPhone 17 Pro Max,256GB,Test Tech Center,Al Wakra,4399,,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-24,,,,,,,
-Phone,Flagship,Apple,iPhone 17 Pro,256GB,Sample Mobiles,Al Sadd,3899,4199,Free AirTag,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
-Phone,Flagship,Apple,iPhone 17 Pro,256GB,Demo Gadget Store,Najma,3949,,,No,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-24,,,,,,,
-Phone,Mid-Range,Apple,iPhone 17,256GB,Sample Mobiles,Al Sadd,2849,3099,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
-Phone,Mid-Range,Apple,iPhone 17,256GB,Test Tech Center,Al Wakra,2799,3099,Cashback QR 100,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
-Phone,Flagship,Samsung,Galaxy S25 Ultra,256GB,Demo Gadget Store,Najma,3499,4299,Free Galaxy Buds,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,12GB,"6.9"" AMOLED 120Hz",200MP main,5000mAh,Snapdragon 8 Elite,
-Phone,Flagship,Samsung,Galaxy S25 Ultra,256GB,Sample Mobiles,Al Sadd,3599,4299,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-24,,,,,,,
-Phone,Flagship,Samsung,Galaxy Z Fold7,512GB,Test Tech Center,Al Wakra,6199,6899,Free Watch,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
-Phone,Mid-Range,Samsung,Galaxy A56,256GB,Sample Mobiles,Al Sadd,1449,1699,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,8GB,"6.7"" AMOLED 120Hz",50MP main,5000mAh,Exynos 1580,
-Phone,Mid-Range,Samsung,Galaxy A56,256GB,Demo Gadget Store,Najma,1399,1699,Free charger,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,,,,,,
-Phone,Budget,Samsung,Galaxy A26,128GB,Test Tech Center,Al Wakra,899,999,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
-Phone,Low End,Samsung,Galaxy A06,64GB,Sample Mobiles,Al Sadd,379,429,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
-Phone,Low End,Samsung,Galaxy A06,64GB,Demo Gadget Store,Najma,369,,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-23,,,,,,,
-Phone,Mid-Range,Xiaomi,Redmi Note 15 Pro+,512GB,Demo Gadget Store,Najma,1599,1899,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,,,,,,
-Phone,Budget,Xiaomi,Redmi Note 15,256GB,Sample Mobiles,Al Sadd,799,899,Free cover,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
-Phone,Low End,Xiaomi,Redmi A5,128GB,Test Tech Center,Al Wakra,349,399,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
-Phone,Budget,Honor,X9c,256GB,Test Tech Center,Al Wakra,1099,1299,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
-Phone,Low End,Tecno,Spark 40,128GB,Sample Mobiles,Al Sadd,429,,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
-Tablet,Flagship,Apple,iPad Pro 11 M5,256GB,Sample Mobiles,Al Sadd,4199,4399,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
-Tablet,Mid-Range,Apple,iPad Air 11 M3,128GB,Demo Gadget Store,Najma,2249,2499,Free pencil tip set,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,,,,,,
-Tablet,Budget,Apple,iPad 11th Gen,128GB,Test Tech Center,Al Wakra,1299,1449,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
-Tablet,Mid-Range,Samsung,Galaxy Tab S10 FE,128GB,Sample Mobiles,Al Sadd,1599,1899,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
-Tablet,Low End,Samsung,Galaxy Tab A9,64GB,Demo Gadget Store,Najma,549,649,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,,,,,,
-Watch,Flagship,Apple,Apple Watch Ultra 3,49mm,Sample Mobiles,Al Sadd,3099,3299,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
-Watch,Mid-Range,Samsung,Galaxy Watch8,44mm,Test Tech Center,Al Wakra,1049,1299,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
-Earbuds,Mid-Range,Apple,AirPods Pro 3,,Demo Gadget Store,Najma,899,999,,Yes,97400000002,97400000002,https://maps.google.com/?q=Najma+Doha,2026-09-25,,,,,,,
-Earbuds,Budget,Xiaomi,Redmi Buds 6,,Sample Mobiles,Al Sadd,129,169,,Yes,97400000001,97400000001,https://maps.google.com/?q=Al+Sadd+Doha,2026-09-25,,,,,,,
-Accessory,Budget,Anker,Power Bank 20000mAh,,Test Tech Center,Al Wakra,119,149,,Yes,97400000003,97400000003,https://maps.google.com/?q=Al+Wakra,2026-09-25,,,,,,,
-</script>
-
 <script>
-/* ============================================================
-   SETTINGS – the only part you normally need to change
-   ============================================================ */
-// Google Sheet "Publish to web → CSV" link. Leave "" to use data.csv
-const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSqzhWqh0owb8PXtowEXL_nrhhqWcS4ExRpAJJ5rdqG05X_tEI5xvUiMAMiTE7Hw97q1z8V-aovur1y/pub?output=csv";
-
-// Your own WhatsApp number (974XXXXXXXX) – shows "Shop owner? List your prices" link + banner. Leave "" to hide.
-const OWNER_WHATSAPP = "97472124373";
-
-// Contact section. Phone in international format without + (974XXXXXXXX). Leave email "" to hide it.
-const CONTACT_PHONE = "97472124373";
-const CONTACT_EMAIL = "pricedropqa@gmail.com";
-
-// Price tiers (must match the "tier" column)
-const TIERS = ["Flagship", "Mid-Range", "Budget", "Low End"];
-
-// Device types / tabs (must match the "type" column). Add new ones here, e.g. {key:"Laptop", icon:"💻", en:"Laptops", ar:"لابتوب"}
-const TYPES = [
-  {key:"Phone",     icon:"📱", en:"Phones",      ar:"هواتف"},
-  {key:"Tablet",    icon:"📲", en:"Tablets",     ar:"تابلت"},
-  {key:"Watch",     icon:"⌚", en:"Watches",     ar:"ساعات"},
-  {key:"Speaker",   icon:"🔊", en:"Speakers",    ar:"مكبرات صوت"},
-  {key:"Headphones",icon:"🎧", en:"Headphones",  ar:"سماعات رأس"},
-  {key:"Earbuds",   icon:"🎵", en:"Earbuds",     ar:"سماعات أذن"},
-  {key:"Accessory", icon:"🔋", en:"Accessories", ar:"إكسسوارات"},
-  {key:"Camera",    icon:"📷", en:"Cameras",     ar:"كاميرات"}
-];
-
-// Home screen banners. Later you can sell these spots to brands/shops.
-// link: any URL (or "" for none). color: background.
-const BANNERS = [
-  {en:["Compare before you buy","Prices from local shops across Qatar – in one place."], ar:["قارن قبل أن تشتري","أسعار المحلات في قطر في مكان واحد."], link:"", color:"linear-gradient(135deg,#0f766e,#14b8a6)"},
-  {en:["Save your favourites ❤️","Tap the heart on any device to find it later."], ar:["احفظ المفضلة ❤️","اضغط على القلب لحفظ أي جهاز."], link:"", color:"linear-gradient(135deg,#7c3aed,#db2777)"}
-];
-const CURRENCY = "QR";
-
-// Online-store prices, updated automatically twice a day by GitHub Actions (fetch_online.py)
-const ONLINE_CSV_URL = "https://raw.githubusercontent.com/pricedropqa/pricedropqa.github.io/main/online.csv";
-// Online-store prices are ON HOLD until each store gives written permission. Set to true to show them again.
-const SHOW_ONLINE_PRICES = false;
-// Shop prices (Google Sheet / data.csv) are ON HOLD too: the home screen shows "Prices coming soon". Set to true to show prices again.
-const SHOW_SHOP_PRICES = false;
-/* ============================================================ */
-
-const I18N = {
-  en:{search:"Search phones, tablets, brands…",install:"Install",topDeals:"🔥 Top 10 Deals",seeAll:"See all",noMatch:"No devices match. Try another filter.",
-      allDeals:"🔥 All deals – biggest discount first",compare:"Compare",saved:"Saved",home:"Home",deals:"Deals",
-      disclaimer:"Prices are provided by shops and may change. Please confirm with the shop before visiting.",shopOwner:"Shop owner? List your prices for free",
-      all:"All",allBrands:"All brands",allAreas:"All areas",low:"Price: low → high",high:"Price: high → low",disc:"Biggest discount",name:"Name A–Z",
-      shop:"shop",shops:"shops",from:"from",best:"Best price",oos:"Out of stock",updated:"updated",call:"Call",map:"Map",whatsapp:"WhatsApp",
-      range:"Price range",in:"in",ram:"RAM",display:"Display",camera:"Camera",battery:"Battery",chipset:"Chipset",storage:"Storage",
-      review:"Watch our video review",share:"Share",tell:"Tell the shop you found them on PriceDrop QA 🙂",
-      cmpEmpty:"Tap ⚖️ on up to 3 devices to compare them here.",savedEmpty:"Nothing saved yet. Tap ❤️ on a device to save it.",
-      lowest:"Lowest price",category:"Category",discount:"Discount",bestShop:"Best shop",offer:"Offer",remove:"Remove",
-      added:"Added to compare",max3:"You can compare up to 3 devices",savedT:"Saved ❤️",removedT:"Removed",copied:"Link copied",
-      lastUpdated:"Last updated",contactUs:"📞 Contact us",contactText:"Questions, wrong price, or want your shop listed? We're happy to help.",email:"Email",website:"View on website",onlineStore:"Online store",ourScore:"PriceDrop Score",experts:"Expert reviews",results:"Results for",preview:"Preview mode – showing sample data. Real prices appear once the site is online.",
-      sheetFail:"Could not read the Google Sheet – showing saved data.",loading:"Loading prices…",view:"View details",soonTitle:"Prices coming soon",soonText:"We're partnering with shops across Qatar to bring you trusted, up-to-date phone and gadget prices. Check back soon!",soonNews:"Read tech news",
-      news:"News",newsTitle:"📰 Tech News",newsNote:"Headlines link to the original publishers.",allSources:"All sources",android:"Android",iphone:"iPhone",tech:"Tech",loadMore:"Load more",newsFail:"Could not load news. Try again.",newsLoading:"Loading news…",ago_m:"m ago",ago_h:"h ago",ago_d:"d ago",justNow:"just now"},
-  ar:{search:"ابحث عن هاتف، تابلت، ماركة…",install:"تثبيت",topDeals:"🔥 أفضل 10 عروض",seeAll:"عرض الكل",noMatch:"لا توجد أجهزة مطابقة. جرّب فلتر آخر.",
-      allDeals:"🔥 كل العروض – الأعلى خصماً أولاً",compare:"مقارنة",saved:"المحفوظة",home:"الرئيسية",deals:"العروض",
-      disclaimer:"الأسعار من المحلات وقد تتغير. يرجى التأكد مع المحل قبل الزيارة.",shopOwner:"صاحب محل؟ أضف أسعارك مجاناً",
-      all:"الكل",allBrands:"كل الماركات",allAreas:"كل المناطق",low:"السعر: من الأقل",high:"السعر: من الأعلى",disc:"أعلى خصم",name:"الاسم أ–ي",
-      shop:"محل",shops:"محلات",from:"من",best:"أفضل سعر",oos:"غير متوفر",updated:"تحديث",call:"اتصال",map:"الموقع",whatsapp:"واتساب",
-      range:"نطاق السعر",in:"في",ram:"الرام",display:"الشاشة",camera:"الكاميرا",battery:"البطارية",chipset:"المعالج",storage:"التخزين",
-      review:"شاهد مراجعتنا بالفيديو",share:"مشاركة",tell:"أخبر المحل أنك وجدته عبر PriceDrop QA 🙂",
-      cmpEmpty:"اضغط ⚖️ على 3 أجهزة كحد أقصى لمقارنتها هنا.",savedEmpty:"لا يوجد شيء محفوظ. اضغط ❤️ لحفظ جهاز.",
-      lowest:"أقل سعر",category:"الفئة",discount:"الخصم",bestShop:"أفضل محل",offer:"العرض",remove:"إزالة",
-      added:"أضيف للمقارنة",max3:"يمكنك مقارنة 3 أجهزة فقط",savedT:"تم الحفظ ❤️",removedT:"تمت الإزالة",copied:"تم نسخ الرابط",
-      lastUpdated:"آخر تحديث",contactUs:"📞 اتصل بنا",contactText:"لديك سؤال، سعر خاطئ، أو تريد إضافة محلك؟ يسعدنا مساعدتك.",email:"البريد",website:"عرض في الموقع",onlineStore:"متجر إلكتروني",ourScore:"تقييم PriceDrop",experts:"مراجعات الخبراء",results:"نتائج",preview:"وضع المعاينة – بيانات تجريبية.",
-      sheetFail:"تعذر قراءة الجدول – عرض البيانات المحفوظة.",loading:"جاري تحميل الأسعار…",view:"التفاصيل",soonTitle:"الأسعار قريباً",soonText:"نعمل مع المحلات في قطر لنقدم لكم أسعاراً موثوقة ومحدّثة للهواتف والأجهزة. تابعونا قريباً!",soonNews:"اقرأ أخبار التقنية",
-      news:"الأخبار",newsTitle:"📰 أخبار التقنية",newsNote:"العناوين تفتح في مواقع الناشرين الأصلية.",allSources:"كل المصادر",android:"أندرويد",iphone:"آيفون",tech:"تقنية",loadMore:"عرض المزيد",newsFail:"تعذر تحميل الأخبار. حاول مرة أخرى.",newsLoading:"جاري تحميل الأخبار…",ago_m:"د",ago_h:"س",ago_d:"ي",justNow:"الآن"}
-};
-const TIER_AR = {"Flagship":"رائد","Mid-Range":"متوسط","Budget":"اقتصادي","Low End":"أساسي"};
-
-/* ---------- state & helpers ---------- */
-const store = {
-  get(k,d){ try{ const v=localStorage.getItem("pd_"+k); return v?JSON.parse(v):d; }catch(e){ return d; } },
-  set(k,v){ try{ localStorage.setItem("pd_"+k,JSON.stringify(v)); }catch(e){} }
-};
-let rows=[], products=[];
-const state = { view:"home", type:"Phone", tier:"", brand:"", area:"", q:"", sort:"low",
-  compare: store.get("compare",[]), favs: store.get("favs",[]), lang: store.get("lang","en") };
-const $ = id => document.getElementById(id);
-const t = k => (I18N[state.lang]||I18N.en)[k] || I18N.en[k] || k;
-const fmt = n => CURRENCY + " " + Number(n).toLocaleString("en-US");
-const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const tierName = x => state.lang==="ar" ? (TIER_AR[x]||x) : x;
-const typeName = k => { const ty=TYPES.find(x=>x.key===k); return ty ? ty[state.lang]||ty.en : k; };
-function toast(msg){ const el=$("toast"); el.textContent=msg; el.classList.add("show"); clearTimeout(toast.t); toast.t=setTimeout(()=>el.classList.remove("show"),1800); }
-
-/* ---------- CSV ---------- */
-function parseCSV(text){
-  const out=[]; let row=[], field="", q=false;
-  for(let i=0;i<text.length;i++){
-    const c=text[i];
-    if(q){ if(c==='"'){ if(text[i+1]==='"'){field+='"';i++;} else q=false; } else field+=c; }
-    else if(c==='"') q=true;
-    else if(c===','){ row.push(field); field=""; }
-    else if(c==='\n'||c==='\r'){ if(c==='\r'&&text[i+1]==='\n') i++; row.push(field); field=""; if(row.some(v=>v.trim()!=="")) out.push(row); row=[]; }
-    else field+=c;
-  }
-  row.push(field); if(row.some(v=>v.trim()!=="")) out.push(row);
-  const head=out.shift().map(h=>h.trim().toLowerCase());
-  return out.map(r=>Object.fromEntries(head.map((h,i)=>[h,(r[i]||"").trim()])));
-}
-async function getCSV(url){
-  const res = await fetch(url + (url.includes("?")?"&":"?") + "t=" + Date.now());
-  if(!res.ok) throw new Error(res.status);
-  const text = await res.text();
-  if(/^\s*</.test(text)) throw new Error("not csv");
-  return parseCSV(text);
-}
-
-/* ---------- load ---------- */
-async function load(){
-  applyLang(); buildControls();
-  $("listTitle").textContent = t("loading");
-  let note="";
-  if(!SHOW_SHOP_PRICES){ rows=[]; }
-  else try{ if(!SHEET_CSV_URL || SHEET_CSV_URL.startsWith("__")) throw 0; rows = await getCSV(SHEET_CSV_URL); }
-  catch(e1){
-    try{ rows = await getCSV("data.csv"); if(SHEET_CSV_URL && !SHEET_CSV_URL.startsWith("__")) note=t("sheetFail"); }
-    catch(e2){ rows = parseCSV($("sample").textContent.trim()); note=t("preview"); }
-  }
-  // add online-store prices (silently skipped if not available yet)
-  if(SHOW_ONLINE_PRICES){ try{ const online = await getCSV(ONLINE_CSV_URL).catch(()=>getCSV("online.csv")); rows = rows.concat(online); }catch(e){} }
-  if(note){ const n=document.createElement("div"); n.className="notice"; n.textContent=note; $("v-home").prepend(n); }
-  rows = rows.filter(r=>r.model && r.price).map(r=>({ ...r,
-    price:+String(r.price).replace(/[^\d.]/g,""), old_price:+String(r.old_price||"").replace(/[^\d.]/g,"")||0,
-    in_stock: !/^(no|n|0|false|out)$/i.test(r.in_stock||"yes") }));
-  buildProducts(); buildControls(); render();
-  const latest = rows.map(r=>r.updated).filter(Boolean).sort().pop();
-  if(latest) $("updated").textContent = t("lastUpdated")+": "+latest;
-  openFromHash();
-}
-
-function buildProducts(){
-  const map=new Map();
-  rows.forEach(r=>{
-    const id=[r.brand,r.model,r.storage].join("|").toLowerCase().replace(/\s+/g," ");
-    if(!map.has(id)) map.set(id,{id,type:r.type,tier:r.tier,brand:r.brand,model:r.model,storage:r.storage,shops:[],spec:{}});
-    const p=map.get(id); p.shops.push(r);
-    ["image","ram","display","camera","battery","chipset","youtube","dxomark"].forEach(k=>{ if(r[k] && !p.spec[k]) p.spec[k]=r[k]; });
-    Object.keys(r).forEach(k=>{ if(k.startsWith("score_") && r[k] && !p.scores?.[k]) (p.scores=p.scores||{})[k]=r[k]; });
+// Show today's date and time (Qatar) at the top
+function tick(){
+  const now = new Date();
+  document.getElementById("clock").textContent = now.toLocaleString("en-GB",{
+    weekday:"long", day:"numeric", month:"long", hour:"2-digit", minute:"2-digit", timeZone:"Asia/Qatar"
   });
-  products=[...map.values()].map(p=>{
-    p.shops.sort((a,b)=>(b.in_stock-a.in_stock)||(a.price-b.price));
-    p.best=p.shops.find(s=>s.in_stock)||p.shops[0];
-    p.min=p.best.price; p.max=Math.max(...p.shops.map(s=>s.price));
-    p.ref=p.best.old_price||0;  // discount = best shop's own old price
-    p.disc=p.ref>p.min?Math.round((p.ref-p.min)/p.ref*100):0;
-    p.areas=[...new Set(p.shops.map(s=>s.area))];
-    p.anyStock=p.shops.some(s=>s.in_stock);
-    return p;
-  });
-  state.compare=state.compare.filter(id=>products.some(p=>p.id===id));
-  state.favs=state.favs.filter(id=>products.some(p=>p.id===id));
 }
+tick(); setInterval(tick, 30000);
+document.getElementById("yr").textContent = new Date().getFullYear();
 
-/* ---------- picture: real image or generated placeholder ---------- */
-const BRAND_HUE = {apple:220, samsung:215, xiaomi:24, redmi:24, poco:48, honor:190, huawei:0, oppo:150, vivo:230, realme:50, oneplus:355, google:140, nothing:0, tecno:265, infinix:120, nokia:205, motorola:200, anker:200, jbl:25, sony:280, lenovo:350};
-function hue(s){ const k=(s||"").toLowerCase(); if(k in BRAND_HUE) return BRAND_HUE[k]; let h=7; for(const c of k) h=(h*131+c.charCodeAt(0))%360; return h; }
-function placeholder(p){
-  const h=hue(p.brand||"x"), ty=(TYPES.find(x=>x.key===p.type)||{icon:"📦"}).icon;
-  const phone = p.type==="Phone", tab = p.type==="Tablet";
-  const body = phone ? `<rect x="70" y="30" width="60" height="120" rx="12" fill="hsl(${h} 45% 30%)"/><rect x="75" y="38" width="50" height="104" rx="7" fill="url(#g${h}${p.brand&&p.brand.toLowerCase()==="apple"?"a":""})"/><circle cx="100" cy="44" r="2.4" fill="#0b1120"/>`
-    : tab ? `<rect x="45" y="45" width="110" height="80" rx="10" fill="hsl(${h} 45% 30%)"/><rect x="52" y="51" width="96" height="68" rx="6" fill="url(#g${h}${p.brand&&p.brand.toLowerCase()==="apple"?"a":""})"/>`
-    : `<circle cx="100" cy="88" r="50" fill="url(#g${h}${p.brand&&p.brand.toLowerCase()==="apple"?"a":""})"/><text x="100" y="104" text-anchor="middle" font-size="44">${ty}</text>`;
-  return `<svg viewBox="0 0 200 180" role="img" aria-label="${esc(p.brand)}"><defs><linearGradient id="g${h}${p.brand&&p.brand.toLowerCase()==="apple"?"a":""}" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="hsl(${h} ${p.brand&&p.brand.toLowerCase()==="apple"?12:70}% 64%)"/><stop offset="1" stop-color="hsl(${(h+35)%360} ${p.brand&&p.brand.toLowerCase()==="apple"?12:70}% 42%)"/></linearGradient></defs>
-    ${body}<text x="100" y="172" text-anchor="middle" font-size="13" font-weight="700" fill="hsl(${h} 30% 50%)" font-family="system-ui">${esc((p.brand||"").toUpperCase())}</text></svg>`;
+// Register the service worker so the page can be installed as an app
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+  navigator.serviceWorker.register("sw.js");
 }
-function pic(p){
-  const src=p.spec.image;
-  return `<div class="pic">${src?`<img src="${esc(src)}" alt="${esc(p.brand+" "+p.model)}" loading="lazy" onerror="this.parentNode.innerHTML=placeholderById('${esc(p.id)}')">`:placeholder(p)}</div>`;
-}
-window.placeholderById = id => placeholder(products.find(p=>p.id===id)||{brand:"",type:""});
-
-/* ---------- controls ---------- */
-function buildControls(){
-  $("types").innerHTML = TYPES.map(x=>`<div class="tile ${x.key===state.type?"on":""}" data-type="${x.key}"><i>${x.icon}</i><span>${esc(x[state.lang]||x.en)}</span></div>`).join("");
-  $("tiers").innerHTML = ["",...TIERS].map(x=>`<button class="chip ${x===state.tier?"on":""}" data-tier="${x}">${x?esc(tierName(x)):t("all")}</button>`).join("");
-  fill("brand",t("allBrands"),[...new Set(rows.map(r=>r.brand))].sort());
-  fill("area",t("allAreas"),[...new Set(rows.map(r=>r.area))].sort());
-  $("sort").innerHTML=["low","high","disc","name"].map(k=>`<option value="${k}" ${k===state.sort?"selected":""}>${t(k)}</option>`).join("");
-  $("banners").innerHTML = BANNERS.concat(OWNER_WHATSAPP?[{en:["Own a mobile shop?","List your prices on PriceDrop QA for free. Tap to WhatsApp us."],ar:["عندك محل جوالات؟","أضف أسعارك مجاناً. اضغط لمراسلتنا."],link:"https://wa.me/"+OWNER_WHATSAPP,color:"linear-gradient(135deg,#f59e0b,#ea580c)"}]:[])
-    .map(b=>{ const [h,s]=b[state.lang]||b.en; const tag=b.link?"a":"div";
-      return `<${tag} class="banner" style="background:${b.color}" ${b.link?`href="${esc(b.link)}" target="_blank" rel="noopener"`:""}><b>${esc(h)}</b><small>${esc(s)}</small></${tag}>`; }).join("");
-  const msg=encodeURIComponent("Hi PriceDrop QA, ");
-  $("contactBtns").innerHTML =
-    (CONTACT_PHONE?`<a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/${CONTACT_PHONE}?text=${msg}">${t("whatsapp")}</a>
-     <a class="btn" href="tel:+${CONTACT_PHONE}">📞 ${t("call")}</a>`:"")+
-    (CONTACT_EMAIL?`<a class="btn" href="mailto:${esc(CONTACT_EMAIL)}">✉️ ${t("email")}</a>`:"");
-  $("contact").hidden = !CONTACT_PHONE && !CONTACT_EMAIL;
-  if(OWNER_WHATSAPP){ $("shopLink").hidden=false; $("shopLink").href="https://wa.me/"+OWNER_WHATSAPP; }
-}
-function fill(id,label,vals){ const cur=state[id]; $(id).innerHTML=`<option value="">${esc(label)}</option>`+vals.map(v=>`<option ${v===cur?"selected":""}>${esc(v)}</option>`).join(""); }
-
-function filtered(){
-  const q=state.q.toLowerCase();
-  return products.filter(p=>
-    (q ? (p.brand+" "+p.model+" "+p.storage+" "+p.type).toLowerCase().includes(q) : p.type===state.type) &&
-    (!state.tier || p.tier===state.tier) && (!state.brand || p.brand===state.brand) && (!state.area || p.areas.includes(state.area))
-  ).sort({low:(a,b)=>a.min-b.min, high:(a,b)=>b.min-a.min, disc:(a,b)=>b.disc-a.disc, name:(a,b)=>(a.brand+a.model).localeCompare(b.brand+b.model)}[state.sort]);
-}
-
-/* ---------- cards ---------- */
-function card(p){
-  const fav=state.favs.includes(p.id), cmp=state.compare.includes(p.id), n=p.shops.length;
-  return `<div class="card" data-id="${esc(p.id)}">
-    ${pic(p)}
-    ${p.disc?`<span class="disc">-${p.disc}%</span>`:""}
-    <button class="heart" data-fav="${esc(p.id)}" aria-label="Save">${fav?"❤️":"🤍"}</button>
-    <button class="cmpbtn ${cmp?"on":""}" data-cmp="${esc(p.id)}" aria-label="Compare">⚖️</button>
-    <div class="body">
-      <div class="brand">${esc(p.brand)}</div>
-      <div class="name">${esc(p.model)}</div>
-      <div class="sub">${p.storage?esc(p.storage)+" · ":""}<span class="tier">${esc(tierName(p.tier))}</span></div>
-      <div class="price">${fmt(p.min)}${p.ref>p.min?`<span class="old">${fmt(p.ref)}</span>`:""}</div>
-      <div class="shops">${p.anyStock?`${n} ${n>1?t("shops"):t("shop")} · ${esc(p.best.shop)}`:`<span class="oosb">${t("oos")}</span>`}</div>
-    </div></div>`;
-}
-
-/* ---------- render ---------- */
-function render(){
-  document.querySelectorAll("#types .tile").forEach(b=>b.classList.toggle("on",b.dataset.type===state.type && !state.q));
-  document.querySelectorAll("#tiers .chip").forEach(b=>b.classList.toggle("on",b.dataset.tier===state.tier));
-  document.querySelectorAll("nav.bottom button").forEach(b=>b.classList.toggle("on",b.dataset.go===state.view));
-  ["home","deals","compare","saved","news"].forEach(v=>$("v-"+v).hidden = v!==state.view);
-  if(state.view==="news") renderNews();
-
-  const soon = !SHOW_SHOP_PRICES && !SHOW_ONLINE_PRICES;
-  $("soon").hidden = !soon;
-  ["types","tiers","topBlock","listTitle","list"].forEach(id=>{ $(id).style.display = soon?"none":""; });
-  document.querySelector(".filters").style.display = soon?"none":"";
-  if(soon){ $("empty").hidden=true; $("dealList").innerHTML=`<div class="empty" style="grid-column:1/-1"><i>⏳</i>${t("soonTitle")}</div>`; }
-  if(state.view==="home" && !soon){
-    const top=products.filter(p=>p.disc>0 && p.anyStock && p.type===state.type).sort((a,b)=>b.disc-a.disc).slice(0,10);
-    $("topBlock").hidden = !top.length || !!state.q;
-    $("deals").innerHTML = top.map(card).join("");
-    const list=filtered();
-    $("listTitle").textContent = state.q ? `${t("results")} “${state.q}” (${list.length})` : `${state.tier?tierName(state.tier)+" ":""}${typeName(state.type)} (${list.length})`;
-    $("list").innerHTML = list.map(card).join("");
-    $("empty").hidden = list.length>0;
-  }
-  if(state.view==="deals" && !soon){
-    const all=products.filter(p=>p.disc>0 && p.anyStock).sort((a,b)=>b.disc-a.disc);
-    $("dealList").innerHTML = all.map(card).join("") || `<div class="empty"><i>🔥</i></div>`;
-  }
-  if(state.view==="saved"){
-    const favs=state.favs.map(id=>products.find(p=>p.id===id)).filter(Boolean);
-    $("savedList").innerHTML = favs.map(card).join("");
-    if(!favs.length) $("savedList").innerHTML=`<div class="empty" style="grid-column:1/-1"><i>🤍</i>${t("savedEmpty")}</div>`;
-  }
-  if(state.view==="compare") renderCompare();
-  const c=state.compare.length, s=state.favs.length;
-  $("cCount").hidden=!c; $("cCount").textContent=c; $("sCount").hidden=!s; $("sCount").textContent=s;
-}
-
-function renderCompare(){
-  const ps=state.compare.map(id=>products.find(p=>p.id===id)).filter(Boolean);
-  if(!ps.length){ $("cmpBox").innerHTML=`<div class="empty"><i>⚖️</i>${t("cmpEmpty")}</div>`; return; }
-  const minP=Math.min(...ps.map(p=>p.min));
-  const rowsDef=[
-    [t("lowest"), p=>`<span class="${p.min===minP&&ps.length>1?"win":""}">${fmt(p.min)}</span>`],
-    [t("category"), p=>esc(tierName(p.tier))],
-    [t("storage"), p=>esc(p.storage||"–")],
-    [t("ram"), p=>esc(p.spec.ram||"–")],
-    [t("display"), p=>esc(p.spec.display||"–")],
-    [t("camera"), p=>esc(p.spec.camera||"–")],
-    [t("battery"), p=>esc(p.spec.battery||"–")],
-    [t("chipset"), p=>esc(p.spec.chipset||"–")],
-    [t("discount"), p=>p.disc?p.disc+"%":"–"],
-    [t("bestShop"), p=>esc(p.best.shop)+`<br><span class="sub">${esc(p.best.area)}</span>`],
-    [t("offer"), p=>esc(p.best.offer||"–")]
-  ];
-  $("cmpBox").innerHTML=`<div style="overflow-x:auto"><table class="ctable">
-    <tr><th></th>${ps.map(p=>`<td>${pic(p)}<b>${esc(p.brand)} ${esc(p.model)}</b><br><button class="rm" data-cmp="${esc(p.id)}">✕ ${t("remove")}</button></td>`).join("")}</tr>
-    ${rowsDef.map(([l,f])=>`<tr><th>${l}</th>${ps.map(p=>`<td>${f(p)}</td>`).join("")}</tr>`).join("")}
-    <tr><th></th>${ps.map(p=>`<td><button class="btn primary" data-open="${esc(p.id)}">${t("view")}</button></td>`).join("")}</tr>
-  </table></div>`;
-}
-
-/* ---------- detail sheet ---------- */
-function openProduct(id, push=true){
-  const p=products.find(x=>x.id===id); if(!p) return;
-  if(push) history.replaceState(null,"","#p="+encodeURIComponent(id));
-  const fav=state.favs.includes(p.id);
-  const specs=[["storage",p.storage],["ram",p.spec.ram],["display",p.spec.display],["camera",p.spec.camera],["battery",p.spec.battery],["chipset",p.spec.chipset]]
-    .filter(([,v])=>v).map(([k,v])=>`<div class="spec"><small>${t(k)}</small>${esc(v)}</div>`).join("");
-  const shops=p.shops.map((s,i)=>{
-    const msg=encodeURIComponent(`Hi, I saw on PriceDrop QA: ${p.brand} ${p.model} ${p.storage} for ${fmt(s.price)}. Is it available?`);
-    const best=i===0&&s.in_stock&&p.shops.length>1;
-    return `<div class="shop ${best?"best":""}">
-      <div class="row"><div><b>${esc(s.shop)}</b>${best?`<span class="bestb">${t("best")}</span>`:""}
-        <div class="sub">${s.url?"🌐 "+t("onlineStore"):"📍 "+esc(s.area)}${s.updated?` · ${t("updated")} ${esc(s.updated)}`:""}</div>
-        ${!s.in_stock?`<div class="oosb">${t("oos")}</div>`:""}</div>
-        <div style="text-align:end"><div class="price" style="margin:0">${fmt(s.price)}</div>${s.old_price>s.price?`<span class="old">${fmt(s.old_price)}</span>`:""}</div></div>
-      ${s.offer?`<div class="offer">🎁 ${esc(s.offer)}</div>`:""}
-      <div class="btns">
-        ${s.whatsapp?`<a class="btn wa" target="_blank" rel="noopener" data-lead="whatsapp" data-shop="${esc(s.shop)}" href="https://wa.me/${esc(s.whatsapp.replace(/\D/g,""))}?text=${msg}">${t("whatsapp")}</a>`:""}
-        ${s.phone?`<a class="btn" data-lead="call" data-shop="${esc(s.shop)}" href="tel:+${esc(s.phone.replace(/\D/g,""))}">📞 ${t("call")}</a>`:""}
-        ${s.map_url?`<a class="btn" target="_blank" rel="noopener" data-lead="map" data-shop="${esc(s.shop)}" href="${esc(s.map_url)}">📍 ${t("map")}</a>`:""}
-        ${s.url?`<a class="btn primary" target="_blank" rel="noopener" data-lead="website" data-shop="${esc(s.shop)}" href="${esc(s.url)}">🌐 ${t("website")}</a>`:""}
-      </div></div>`;
-  }).join("");
-  $("sheet").innerHTML=`
-    <div class="grab"><button class="ibtn" id="x" aria-label="Close">✕</button>
-      <span><button class="ibtn" data-share="${esc(p.id)}" aria-label="${t("share")}">↗</button>
-      <button class="ibtn" data-fav="${esc(p.id)}" aria-label="Save">${fav?"❤️":"🤍"}</button>
-      <button class="ibtn" data-cmp="${esc(p.id)}" aria-label="Compare" style="${state.compare.includes(p.id)?"background:var(--brand);color:#fff":""}">⚖️</button></span></div>
-    <div class="hero">${pic(p)}<div>
-      <div class="brand">${esc(p.brand)} · ${esc(typeName(p.type))}</div>
-      <div class="name" style="font-size:20px">${esc(p.model)}</div>
-      <div class="sub" style="margin-top:4px"><span class="tier">${esc(tierName(p.tier))}</span> ${p.disc?`<span class="disc" style="position:static">-${p.disc}%</span>`:""}</div>
-      <div class="price" style="font-size:24px">${fmt(p.min)}</div></div></div>
-    ${specs?`<div class="specs">${specs}</div>`:""}
-    ${p.spec.youtube?`<a class="yt" href="${esc(p.spec.youtube)}" target="_blank" rel="noopener">▶ ${t("review")}</a>`:""}
-    ${scoreBars(p)}
-    ${expertLinks(p)}
-    <div class="range">${t("range")}: <b>${fmt(p.min)} – ${fmt(p.max)}</b> ${t("in")} ${p.shops.length} ${p.shops.length>1?t("shops"):t("shop")}</div>
-    ${shops}
-    <p class="hint">${t("tell")}</p>`;
-  $("bg").style.display="block"; requestAnimationFrame(()=>$("sheet").classList.add("open"));
-  $("sheet").scrollTop=0;
-}
-/* PriceDrop's own scores: any sheet column named score_xxx (0-10), e.g. score_bass, score_camera */
-function scoreBars(p){
-  const s=p.scores; if(!s) return "";
-  const rows=Object.entries(s).map(([k,v])=>{ const n=Math.max(0,Math.min(10,parseFloat(v)||0));
-    const label=k.replace(/^score_/,"").replace(/_/g," ").replace(/\b\w/g,c=>c.toUpperCase());
-    return `<div class="bar"><span>${esc(label)}</span><i><b style="width:${n*10}%"></b></i><em>${n}/10</em></div>`; }).join("");
-  return `<div class="scores"><div class="stitle">⭐ ${t("ourScore")}</div>${rows}</div>`;
-}
-/* Links to independent expert reviews (we only link – their scores stay on their sites) */
-function expertLinks(p){
-  const q=encodeURIComponent(`${p.brand} ${p.model}`), audio=["Speaker","Headphones","Earbuds"].includes(p.type);
-  const links=[];
-  if(p.type==="Phone"||p.type==="Camera"||audio) links.push(["DXOMARK", p.spec.dxomark || `https://www.dxomark.com/?s=${q}`]);
-  if(audio) links.push(["SoundGuys", `https://www.soundguys.com/?s=${q}`]);
-  if(!p.spec.youtube) links.push(["YouTube", `https://www.youtube.com/results?search_query=${q}+review`]);
-  if(!links.length) return "";
-  return `<div class="experts"><div class="stitle">🔎 ${t("experts")}</div><div class="btns">${links.map(([n,u])=>`<a class="btn" target="_blank" rel="noopener" href="${esc(u)}">${n} ↗</a>`).join("")}</div></div>`;
-}
-function closeSheet(){ $("sheet").classList.remove("open"); setTimeout(()=>$("bg").style.display="none",280);
-  if(location.hash) history.replaceState(null,"",location.pathname+location.search); }
-function openFromHash(){ const m=location.hash.match(/^#p=(.+)$/); if(m) openProduct(decodeURIComponent(m[1]),false); }
-
-/* ---------- actions ---------- */
-function toggleFav(id){
-  const on=state.favs.includes(id);
-  state.favs = on ? state.favs.filter(x=>x!==id) : [...state.favs,id];
-  store.set("favs",state.favs); toast(on?t("removedT"):t("savedT")); refresh(id);
-}
-function toggleCmp(id){
-  if(state.compare.includes(id)) state.compare=state.compare.filter(x=>x!==id);
-  else { if(state.compare.length>=3){ toast(t("max3")); return; } state.compare.push(id); toast(t("added")); }
-  store.set("compare",state.compare); refresh(id);
-}
-function refresh(id){ render(); if($("sheet").classList.contains("open")) openProduct(id,false); }
-async function share(id){
-  const p=products.find(x=>x.id===id); const url=location.origin+location.pathname+"#p="+encodeURIComponent(id);
-  const text=`${p.brand} ${p.model} ${p.storage} – ${t("from")} ${fmt(p.min)} on PriceDrop QA`;
-  try{ if(navigator.share) await navigator.share({title:"PriceDrop QA",text,url}); else { await navigator.clipboard.writeText(text+" "+url); toast(t("copied")); } }catch(e){}
-}
-/* ---------- news ---------- */
-const news = { items:null, updated:"", cat:"", src:"", shown:30, loading:false, failed:false };
-function ago(iso){
-  const s=(Date.now()-new Date(iso))/1000;
-  if(s<60) return t("justNow");
-  if(s<3600) return Math.floor(s/60)+" "+t("ago_m");
-  if(s<86400) return Math.floor(s/3600)+" "+t("ago_h");
-  return Math.floor(s/86400)+" "+t("ago_d");
-}
-async function loadNews(){
-  if(news.loading) return; news.loading=true; news.failed=false;
-  try{
-    const r=await fetch("news.json?t="+Date.now()); if(!r.ok) throw 0;
-    const d=await r.json(); news.items=d.items||[]; news.updated=d.updated||"";
-  }catch(e){ news.failed=true; }
-  news.loading=false; if(state.view==="news") renderNews();
-}
-function renderNews(){
-  const list=$("newsList");
-  if(!news.items){
-    list.innerHTML=`<div class="empty">${news.failed?t("newsFail"):t("newsLoading")}</div>`;
-    if(!news.failed) loadNews(); return;
-  }
-  $("newsUpd").textContent = news.updated ? t("updated")+" "+ago(news.updated) : "";
-  const cats=[["",t("all")],["android",t("android")],["iphone",t("iphone")],["general",t("tech")]];
-  $("newsCats").innerHTML=cats.map(([v,l])=>`<button class="chip ${news.cat===v?"on":""}" data-ncat="${v}">${esc(l)}</button>`).join("");
-  const srcs=[...new Set(news.items.map(i=>i.source))].sort();
-  $("newsSrcs").innerHTML=[["",t("allSources")],...srcs.map(s=>[s,s])].map(([v,l])=>`<button class="chip ${news.src===v?"on":""}" data-nsrc="${esc(v)}">${esc(l)}</button>`).join("");
-  const items=news.items.filter(i=>(!news.cat||i.category===news.cat)&&(!news.src||i.source===news.src));
-  if(!items.length){ list.innerHTML=`<div class="empty"><i>📰</i></div>`; return; }
-  const lab={android:t("android"),iphone:t("iphone"),general:t("tech")};
-  list.innerHTML=items.slice(0,news.shown).map((i,n)=>`
-    <a class="nitem ${n===0&&i.image?"top":""}" href="${esc(i.link)}" target="_blank" rel="noopener">
-      ${i.image?`<img src="${esc(i.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:""}
-      <div class="nb">
-        <div class="nmeta"><span class="ntag ${esc(i.category)}">${esc(lab[i.category]||i.category)}</span><span>${esc(i.source)}</span><span>· ${ago(i.published)}</span></div>
-        <div class="ntitle">${esc(i.title)}</div>
-        ${i.summary?`<div class="nsum">${esc(i.summary)}</div>`:""}
-      </div>
-    </a>`).join("") + (items.length>news.shown?`<button class="nmore" data-nmore="1">${t("loadMore")}</button>`:"");
-}
-document.addEventListener("click", e=>{
-  const b=e.target.closest("[data-ncat],[data-nsrc],[data-nmore]"); if(!b) return;
-  if(b.dataset.ncat!==undefined){ news.cat=b.dataset.ncat; news.shown=30; }
-  else if(b.dataset.nsrc!==undefined){ news.src=b.dataset.nsrc; news.shown=30; }
-  else news.shown+=30;
-  renderNews();
-});
-
-function go(v){ state.view=v; window.scrollTo(0,0); render(); }
-function applyLang(){
-  document.documentElement.lang=state.lang; document.documentElement.dir=state.lang==="ar"?"rtl":"ltr";
-  $("langBtn").textContent = state.lang==="ar"?"English":"عربي";
-  document.querySelectorAll("[data-t]").forEach(el=>el.textContent=t(el.dataset.t));
-  $("q").placeholder=t("search");
-}
-
-document.addEventListener("click", e=>{
-  const el=e.target.closest("[data-fav],[data-cmp],[data-share],[data-open],[data-lead],[data-go],[data-type],[data-tier],.card,#x,#bg");
-  if(!el) return;
-  if(el.dataset.fav){ e.stopPropagation(); toggleFav(el.dataset.fav); return; }
-  if(el.dataset.cmp){ e.stopPropagation(); toggleCmp(el.dataset.cmp); return; }
-  if(el.dataset.share){ share(el.dataset.share); return; }
-  if(el.dataset.open){ openProduct(el.dataset.open); return; }
-  if(el.dataset.lead){ trackLead(el.dataset.lead, el.dataset.shop); return; }
-  if(el.dataset.go){ closeSheet(); go(el.dataset.go); return; }
-  if(el.dataset.type){ state.type=el.dataset.type; state.q=""; $("q").value=""; render(); return; }
-  if(el.dataset.tier!==undefined && el.classList.contains("chip")){ state.tier=el.dataset.tier; render(); return; }
-  if(el.id==="x"||el.id==="bg"){ closeSheet(); return; }
-  if(el.classList.contains("card")) openProduct(el.dataset.id);
-});
-$("q").addEventListener("input", e=>{ state.q=e.target.value.trim(); if(state.view!=="home") state.view="home"; render(); });
-["brand","area","sort"].forEach(id=>$(id).addEventListener("change",e=>{ state[id]=e.target.value; render(); }));
-$("langBtn").onclick=()=>{ state.lang=state.lang==="ar"?"en":"ar"; store.set("lang",state.lang); applyLang(); buildControls(); render(); };
-document.addEventListener("keydown", e=>{ if(e.key==="Escape") closeSheet(); });
-
-// Lead tracking: WhatsApp / call / map taps per shop (shows in Google Analytics once added)
-function trackLead(kind, shop){ if(window.gtag) gtag("event","lead_"+kind,{shop}); }
-
-// Install as app
-let deferred;
-window.addEventListener("beforeinstallprompt", e=>{ e.preventDefault(); deferred=e; $("installBtn").style.display="block"; });
-$("installBtn").onclick=async()=>{ if(!deferred) return; deferred.prompt(); await deferred.userChoice; deferred=null; $("installBtn").style.display="none"; };
-if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js");
-
-load();
 </script>
 </body>
 </html>
