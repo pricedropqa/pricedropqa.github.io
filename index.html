@@ -54,6 +54,7 @@ a.card:active{transform:scale(.98)}
 .badge{align-self:flex-start;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;background:var(--soft);color:var(--accent)}
 .card.locked .badge{color:var(--lock)}
 
+.tip{color:var(--muted);font-size:12px;margin:8px 2px 0}
 footer{margin-top:34px;color:var(--muted);font-size:12px;text-align:center}
 footer a{color:inherit}
 </style>
@@ -94,11 +95,6 @@ footer a{color:inherit}
   <!-- Cloud apps: each one asks for its own passcode / PIN -->
   <h2>My cloud apps</h2>
   <div class="grid">
-    <a class="card" href="https://class-notebook.mathewdev84.workers.dev/">
-      <span class="ico">📒</span>
-      <span class="name">Class Notebook</span>
-      <span class="desc">Python, CEH &amp; class notes</span>
-    </a>
     <a class="card" href="https://linkbox.mathewdev84.workers.dev/">
       <span class="ico">🔗</span>
       <span class="name">LinkBox</span>
@@ -116,6 +112,62 @@ footer a{color:inherit}
       <span class="badge">🔒 Locked soon</span>
     </div>
   </div>
+
+  <!-- Learning: plans, notes and study files -->
+  <h2>Learning</h2>
+  <div class="grid">
+    <a class="card" href="https://class-notebook.mathewdev84.workers.dev/">
+      <span class="ico">📒</span>
+      <span class="name">Class Notebook</span>
+      <span class="desc">My class notes &amp; screenshots</span>
+    </a>
+    <a class="card" href="https://claude.ai/artifact/NZzCSd5NSGM7U5SYJsrnT6">
+      <span class="ico">🐍</span>
+      <span class="name">Python Path</span>
+      <span class="desc">12-week Python plan</span>
+    </a>
+    <a class="card" href="https://claude.ai/artifact/MXCqRL98YJj4sfoXGvg6Wy">
+      <span class="ico">🐧</span>
+      <span class="name">Linux &amp; Kali Plan</span>
+      <span class="desc">Daily Linux lessons</span>
+    </a>
+    <a class="card" href="https://claude.ai/artifact/G4CywFDLGfK29YGH5hKaTx">
+      <span class="ico">🐞</span>
+      <span class="name">Cybersecurity Roadmap</span>
+      <span class="desc">Kali, Python &amp; bug bounty</span>
+    </a>
+    <a class="card" href="https://claude.ai/artifact/75nVFUNRCSKKxepXooiA3c">
+      <span class="ico">🧭</span>
+      <span class="name">Connected Roadmap</span>
+      <span class="desc">Kali + Python + Security</span>
+    </a>
+    <a class="card" href="https://claude.ai/artifact/UahWQ6FSzTMgG1MEBKgmn7">
+      <span class="ico">🏭</span>
+      <span class="name">ICS Security</span>
+      <span class="desc">Industrial security roadmap</span>
+    </a>
+    <a class="card" href="https://claude.ai/artifact/UmSRFGfsizvsBJoNJJ8cgA">
+      <span class="ico">🎓</span>
+      <span class="name">CEH Refresher</span>
+      <span class="desc">CEH concepts notebook</span>
+    </a>
+    <a class="card" href="https://claude.ai/artifact/3XUCw4gjXGb3tJSPC5DrcV">
+      <span class="ico">📶</span>
+      <span class="name">WiFi Hack Flow</span>
+      <span class="desc">WPA2 pentest steps</span>
+    </a>
+    <a class="card" href="https://claude.ai/artifact/6dub1HjQnHE6JJ4t816mKg">
+      <span class="ico">🤖</span>
+      <span class="name">PG in AI</span>
+      <span class="desc">AI study options</span>
+    </a>
+    <a class="card" href="https://matroxpi5.tail566768.ts.net:8445/">
+      <span class="ico">📚</span>
+      <span class="name">Study files</span>
+      <span class="desc">PDF notes · Tailscale</span>
+    </a>
+  </div>
+  <p class="tip">Plans open in Claude (sign in as me). Study files open with Tailscale on.</p>
 
   <!-- Home server apps: these addresses only open on devices signed in to my Tailscale -->
   <h2>Home server <span class="note">· opens with Tailscale on</span></h2>
