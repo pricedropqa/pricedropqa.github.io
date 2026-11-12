@@ -1,6 +1,6 @@
 // Service worker for Mathew's Apps.
 // Change the version number whenever you update the page so phones get the new version.
-const CACHE = "mathews-apps-v3";
+const CACHE = "mathews-apps-v4";
 const SHELL = ["./", "index.html", "manifest.json", "icons/icon-192.png", "icons/icon-512.png", "icons/favicon.svg"];
 
 self.addEventListener("install", e => {
